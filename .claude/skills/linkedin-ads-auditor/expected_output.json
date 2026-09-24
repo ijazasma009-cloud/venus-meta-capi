@@ -1,0 +1,344 @@
+{
+  "summary": {
+    "overall_health": "NEEDS WORK",
+    "total_spend": 14200,
+    "total_leads": 82,
+    "average_cpl": 173.17,
+    "lead_to_opportunity": "14.6%",
+    "cost_per_opportunity": 1183.33,
+    "primary_issues": [
+      "Ebook campaign targeting includes junior titles (AEs, SDRs) inflating lead volume but hurting quality",
+      "Lead Gen Form fields too long on Webinar (7 fields) and Retargeting (7 fields + custom question)",
+      "Retargeting audience too small (8.5K) with high frequency, causing fatigue and $425 CPL",
+      "ABM campaign has good quality but website conversion path is inefficient vs Lead Gen Form"
+    ],
+    "projected_improvement": "30% CPL reduction, 25% quality improvement achievable"
+  },
+  "benchmark_comparison": {
+    "industry": "B2B SaaS",
+    "metrics": {
+      "cpl": {
+        "your_value": 173.17,
+        "benchmark_low": 80,
+        "benchmark_avg": 100,
+        "benchmark_high": 150,
+        "status": "ABOVE AVERAGE",
+        "note": "Higher than typical, but lead quality matters more"
+      },
+      "ctr": {
+        "your_value": 0.45,
+        "benchmark": 0.50,
+        "status": "SLIGHTLY BELOW",
+        "note": "Room for creative improvement"
+      },
+      "form_completion": {
+        "campaign_1": {"value": 32, "benchmark": 30, "status": "GOOD"},
+        "campaign_2": {"value": 24, "benchmark": 30, "status": "BELOW - form too long"},
+        "campaign_4": {"value": 18, "benchmark": 30, "status": "POOR - form too long"}
+      },
+      "lead_to_opportunity": {
+        "your_value": 14.6,
+        "benchmark": 15,
+        "status": "ACCEPTABLE",
+        "note": "At benchmark, but targeting fixes could improve"
+      }
+    }
+  },
+  "campaign_analysis": {
+    "tier_ranking": {
+      "optimize": [
+        {
+          "campaign": "Demand Gen - Ebook Download",
+          "spend": 5500,
+          "cpl": 114.58,
+          "lead_to_opp": "~12% (estimated lower than avg)",
+          "assessment": "Lowest CPL but quality issues. Junior titles diluting pool.",
+          "priority_fixes": ["Remove AE, SDR, SDR Manager from targeting", "Keep Manager+ seniority only"]
+        },
+        {
+          "campaign": "Demand Gen - Webinar Registration",
+          "spend": 4200,
+          "cpl": 190.91,
+          "lead_to_opp": "~18% (estimated higher than avg)",
+          "assessment": "Higher quality leads but CPL elevated by 7-field form.",
+          "priority_fixes": ["Remove Phone field", "Remove Company Size field (get from LinkedIn data)"]
+        }
+      ],
+      "fix": [
+        {
+          "campaign": "ABM - Target Accounts",
+          "spend": 2800,
+          "cpl": 350.00,
+          "lead_to_opp": "~30%+ (best quality)",
+          "assessment": "Best lead quality but inefficient path. Website conversion losing people.",
+          "priority_fixes": ["Switch to Lead Gen Form", "Pre-qualify with 1 custom question instead of full website form"]
+        },
+        {
+          "campaign": "Retargeting - Website Visitors",
+          "spend": 1700,
+          "cpl": 425.00,
+          "lead_to_opp": "Variable",
+          "assessment": "Small audience (8.5K) exhausted. Frequency 3.8 causing fatigue. 7-field form with custom question killing completion.",
+          "priority_fixes": ["Expand audience to 30-90 day visitors + engagers", "Reduce form to 4-5 fields", "Add frequency cap"]
+        }
+      ]
+    }
+  },
+  "targeting_audit": {
+    "campaign_1_ebook": {
+      "current_audience_size": 420000,
+      "assessment": "TOO BROAD",
+      "issues": [
+        {
+          "issue": "Includes junior titles",
+          "details": "Account Executive, SDR Manager are not decision-makers for $25K ACV purchase",
+          "impact": "Sales feedback confirms these leads don't convert",
+          "fix": "Remove: Account Executive, SDR Manager"
+        },
+        {
+          "issue": "Company size too broad",
+          "details": "51-200 employees may be too small for $25K ACV product",
+          "impact": "72% company fit rate indicates 28% wrong size",
+          "fix": "Consider starting at 201+ employees"
+        }
+      ],
+      "recommended_targeting": {
+        "job_titles": ["VP Sales", "Director of Sales", "Head of Sales", "Chief Revenue Officer", "Sales Manager"],
+        "seniority": ["Manager", "Director", "VP", "CXO"],
+        "company_size": ["201-500", "501-1000", "1001-5000"],
+        "keep": ["Industries", "Geography"],
+        "estimated_new_audience": 180000,
+        "expected_impact": "CPL may increase 10-15%, but quality significantly better"
+      }
+    },
+    "campaign_2_webinar": {
+      "current_audience_size": 145000,
+      "assessment": "GOOD - well targeted",
+      "issues": [
+        {
+          "issue": "Could test broader industries",
+          "details": "Currently only Software and IT, but your ICP includes Financial Services and Professional Services",
+          "fix": "Consider adding FS and PS to test"
+        }
+      ],
+      "recommended_targeting": "Keep current, test industry expansion"
+    },
+    "campaign_3_abm": {
+      "current_audience_size": 12000,
+      "assessment": "APPROPRIATE for ABM",
+      "issues": [
+        {
+          "issue": "None with targeting",
+          "details": "150 accounts with senior titles is correct ABM approach"
+        }
+      ],
+      "note": "Issue is campaign setup (website vs Lead Gen Form), not targeting"
+    },
+    "campaign_4_retargeting": {
+      "current_audience_size": 8500,
+      "assessment": "TOO SMALL - causing fatigue",
+      "issues": [
+        {
+          "issue": "Audience exhaustion",
+          "details": "8,500 audience with 60K impressions = frequency 7+ to same people",
+          "impact": "Ad fatigue, declining CTR (0.33%), high CPL ($425)"
+        }
+      ],
+      "recommended_targeting": {
+        "expand_to": "180-day website visitors + LinkedIn page engagers + ad engagers",
+        "estimated_new_audience": 25000,
+        "expected_impact": "Lower frequency, improved efficiency"
+      }
+    }
+  },
+  "lead_quality_analysis": {
+    "quality_score": 62,
+    "quality_tier": "C",
+    "metrics": {
+      "lead_to_opportunity": {"value": "14.6%", "benchmark": "15%", "status": "ACCEPTABLE"},
+      "title_match_rate": {"value": "65%", "benchmark": "80%", "status": "BELOW - targeting too broad"},
+      "company_fit_rate": {"value": "72%", "benchmark": "75%", "status": "ACCEPTABLE"}
+    },
+    "quality_issues": [
+      {
+        "issue": "Junior titles in ebook leads",
+        "evidence": "Sales feedback: 'often junior - AEs and SDRs'",
+        "solution": "Remove non-decision-maker titles from targeting"
+      },
+      {
+        "issue": "Wrong company size",
+        "evidence": "Sales feedback: 'wrong company size (too small)'",
+        "solution": "Tighten company size to 201+ employees"
+      }
+    ],
+    "quality_improvement_plan": [
+      "Fix ebook targeting → Expected title match improvement: 65% → 80%",
+      "Tighten company size → Expected company fit improvement: 72% → 85%",
+      "Projected lead-to-opp improvement: 14.6% → 20%+"
+    ]
+  },
+  "creative_audit": {
+    "overall_assessment": "NEEDS IMPROVEMENT - generic copy, stock imagery",
+    "by_campaign": {
+      "campaign_1_ebook": {
+        "score": 5,
+        "issues": [
+          {"element": "Headline", "issue": "'Download Our Free Ebook' is generic", "fix": "Lead with benefit: 'Boost Sales Productivity 30%'"},
+          {"element": "Image", "issue": "Stock 'people in meeting' is overused", "fix": "Use data visualization, product screenshot, or custom graphic"},
+          {"element": "Body", "issue": "Feature-focused, not outcome-focused", "fix": "Lead with result: 'Teams using these strategies close 30% more deals'"}
+        ]
+      },
+      "campaign_2_webinar": {
+        "score": 6,
+        "issues": [
+          {"element": "Headline", "issue": "'Join Our Live Webinar' doesn't convey value", "fix": "'Scale Your Sales Team Without Burning Out'"},
+          {"element": "Image", "issue": "Speaker headshot is good", "status": "Keep"},
+          {"element": "Body", "issue": "'Limited spots' urgency is good", "status": "Keep"}
+        ]
+      },
+      "campaign_3_abm": {
+        "score": 7,
+        "issues": [
+          {"element": "All", "status": "Solid ABM creative", "note": "Product screenshot and specific claim work well"}
+        ]
+      },
+      "campaign_4_retargeting": {
+        "score": 6,
+        "issues": [
+          {"element": "Format", "issue": "Carousel is good for retargeting", "status": "Keep"},
+          {"element": "Slides", "issue": "Testimonial slide is strong", "fix": "Lead with testimonial, not features"}
+        ]
+      }
+    },
+    "format_recommendations": [
+      "Test Document Ads for ebook - typically higher engagement",
+      "Test Video for webinar promotion - convey energy of live event",
+      "Keep Carousel for retargeting - multiple messages work well"
+    ]
+  },
+  "lead_gen_form_audit": {
+    "campaign_1_ebook": {
+      "fields": 6,
+      "completion_rate": 32,
+      "assessment": "ACCEPTABLE",
+      "recommendation": "Consider removing Phone to increase completion 5-10%",
+      "note": "If sales needs Phone, keep it"
+    },
+    "campaign_2_webinar": {
+      "fields": 7,
+      "completion_rate": 24,
+      "assessment": "TOO LONG",
+      "recommendation": "Remove Company Size (LinkedIn provides this), remove Phone unless essential",
+      "expected_improvement": "24% → 32%+ completion"
+    },
+    "campaign_4_retargeting": {
+      "fields": "7 + custom question",
+      "completion_rate": 18,
+      "assessment": "TOO LONG",
+      "recommendation": "Remove custom question, reduce to 4-5 fields (Name, Email, Company, Title)",
+      "expected_improvement": "18% → 30%+ completion"
+    }
+  },
+  "economics_analysis": {
+    "current_state": {
+      "average_cpl": 173.17,
+      "lead_to_opportunity": "14.6%",
+      "cost_per_opportunity": 1186.10,
+      "opportunity_to_customer": "16.7% (2/12)",
+      "cost_per_customer_cac": 7100,
+      "customer_ltv": 25000,
+      "ltv_cac_ratio": "3.5:1"
+    },
+    "assessment": "PROFITABLE but improvable",
+    "analysis": "At 3.5:1 LTV:CAC, LinkedIn is profitable. However, improving lead quality could significantly improve unit economics.",
+    "projected_with_improvements": {
+      "projected_cpl": 145,
+      "projected_lead_to_opp": "20%",
+      "projected_cost_per_opportunity": 725,
+      "projected_cac": 4350,
+      "projected_ltv_cac": "5.7:1",
+      "improvement": "+63% efficiency"
+    }
+  },
+  "action_plan": {
+    "immediate_this_week": [
+      {
+        "priority": 1,
+        "action": "Remove junior titles from Ebook campaign targeting",
+        "details": "Remove: Account Executive, SDR Manager. Keep: VP, Director, Head of, CRO, Sales Manager",
+        "expected_impact": "Title match rate 65% → 80%"
+      },
+      {
+        "priority": 2,
+        "action": "Shorten Retargeting Lead Gen Form",
+        "details": "Remove custom question, reduce to 5 fields max",
+        "expected_impact": "Completion rate 18% → 30%"
+      },
+      {
+        "priority": 3,
+        "action": "Add frequency cap to Retargeting campaign",
+        "details": "Set 2 impressions per week cap",
+        "expected_impact": "Reduce fatigue, improve CTR"
+      }
+    ],
+    "short_term_next_2_weeks": [
+      {
+        "action": "Expand Retargeting audience",
+        "details": "Add: 180-day visitors, LinkedIn page followers, ad engagers",
+        "expected_impact": "Audience 8.5K → 25K+, reduced frequency"
+      },
+      {
+        "action": "Switch ABM campaign to Lead Gen Form",
+        "details": "Create simple 4-field form with 1 qualifying question",
+        "expected_impact": "CPL $350 → $200, maintain quality"
+      },
+      {
+        "action": "Shorten Webinar form",
+        "details": "Remove Company Size and Phone fields",
+        "expected_impact": "Completion 24% → 32%"
+      }
+    ],
+    "medium_term_next_month": [
+      {
+        "action": "Test new Ebook creative",
+        "details": "Benefit-focused headline, custom graphic instead of stock",
+        "expected_impact": "CTR improvement 0.47% → 0.60%"
+      },
+      {
+        "action": "Tighten company size across campaigns",
+        "details": "Test 201+ employees minimum",
+        "expected_impact": "Company fit rate 72% → 85%"
+      },
+      {
+        "action": "Test Document Ad format for Ebook",
+        "details": "Use LinkedIn's native document ad for ebook preview",
+        "expected_impact": "Higher engagement, potentially lower CPL"
+      }
+    ]
+  },
+  "monitoring_framework": {
+    "weekly_tracking": [
+      "CPL by campaign",
+      "CTR trends",
+      "Form completion rates",
+      "Frequency by campaign"
+    ],
+    "bi_weekly_tracking": [
+      "Lead quality feedback from sales",
+      "Title match rate from CRM",
+      "Lead-to-opportunity progress"
+    ],
+    "red_flags": [
+      "CPL increases >15% in a week",
+      "CTR drops below 0.35%",
+      "Frequency exceeds 4 in 30 days",
+      "Form completion drops below 20%"
+    ],
+    "success_criteria_30_days": [
+      "Blended CPL below $150",
+      "Title match rate above 75%",
+      "Lead-to-opportunity rate above 18%",
+      "Retargeting CPL below $300"
+    ]
+  }
+}

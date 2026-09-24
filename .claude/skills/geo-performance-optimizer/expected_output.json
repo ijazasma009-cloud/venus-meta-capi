@@ -1,0 +1,100 @@
+{
+  "executive_summary": {
+    "health_score": "yellow",
+    "locations_analyzed": 4,
+    "period": "2025-01-01 to 2025-01-31",
+    "top_performer": {
+      "location": "Atlanta, Georgia",
+      "cpa": 36
+    },
+    "worst_performer": {
+      "location": "Miami, Florida",
+      "cpa": 90
+    },
+    "estimated_monthly_savings": 516
+  },
+  "top_performers": [
+    {
+      "rank": 1,
+      "location": "Atlanta, Georgia",
+      "spend": 900,
+      "conversions": 25,
+      "cpa": 36,
+      "vs_target": "-28%",
+      "recommended_bid_adjustment": "+25%",
+      "confidence": "high"
+    },
+    {
+      "rank": 2,
+      "location": "Savannah, Georgia",
+      "spend": 180,
+      "conversions": 5,
+      "cpa": 36,
+      "vs_target": "-28%",
+      "recommended_bid_adjustment": "+20%",
+      "confidence": "medium"
+    }
+  ],
+  "underperformers": [
+    {
+      "rank": 1,
+      "location": "Miami, Florida",
+      "spend": 720,
+      "conversions": 8,
+      "cpa": 90,
+      "vs_target": "+80%",
+      "recommended_bid_adjustment": "-35%",
+      "confidence": "good"
+    }
+  ],
+  "dead_zones": [
+    {
+      "location": "Birmingham, Alabama",
+      "spend": 300,
+      "conversions": 0,
+      "clicks": 150,
+      "recommendation": "Decrease bid -50% or exclude"
+    }
+  ],
+  "bid_adjustments": {
+    "campaign": "Brand Campaign",
+    "adjustments": [
+      {"location": "Atlanta, Georgia", "current": "+0%", "recommended": "+25%", "change": "+25%"},
+      {"location": "Savannah, Georgia", "current": "+0%", "recommended": "+20%", "change": "+20%"},
+      {"location": "Miami, Florida", "current": "+0%", "recommended": "-35%", "change": "-35%"},
+      {"location": "Birmingham, Alabama", "current": "+0%", "recommended": "-50%", "change": "-50%"}
+    ]
+  },
+  "geographic_distribution": [
+    {"region": "Atlanta, Georgia", "spend": 900, "conversions": 25, "cpa": 36, "percent_of_total": "43%"},
+    {"region": "Miami, Florida", "spend": 720, "conversions": 8, "cpa": 90, "percent_of_total": "34%"},
+    {"region": "Birmingham, Alabama", "spend": 300, "conversions": 0, "cpa": null, "percent_of_total": "14%"},
+    {"region": "Savannah, Georgia", "spend": 180, "conversions": 5, "cpa": 36, "percent_of_total": "9%"}
+  ],
+  "expansion_recommendations": {
+    "consider_adding": [
+      "Augusta, Georgia - Adjacent to Atlanta success, similar market",
+      "Charleston, South Carolina - In service area, underserved"
+    ],
+    "consider_excluding": [
+      "Birmingham, Alabama - 0 conversions with $300 spend"
+    ]
+  },
+  "impact_projection": {
+    "current": {
+      "total_spend": 2100,
+      "conversions": 38,
+      "blended_cpa": 55.26
+    },
+    "projected": {
+      "total_spend": 2100,
+      "conversions": 43,
+      "blended_cpa": 48.84
+    },
+    "change": {
+      "conversions": "+13%",
+      "cpa": "-12%"
+    },
+    "confidence": "medium"
+  }
+}

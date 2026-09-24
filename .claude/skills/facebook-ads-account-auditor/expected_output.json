@@ -1,0 +1,164 @@
+{
+  "audit_summary": {
+    "account_name": "Acme E-commerce",
+    "audit_date": "2024-01-15",
+    "period_analyzed": "Last 30 days",
+    "overall_health_score": "Needs Work",
+    "area_scores": {
+      "pixel_tracking": {"score": "Yellow", "priority": "High"},
+      "campaign_structure": {"score": "Yellow", "priority": "Medium"},
+      "audience_health": {"score": "Yellow", "priority": "Medium"},
+      "budget_efficiency": {"score": "Yellow", "priority": "Medium"},
+      "creative_health": {"score": "Red", "priority": "High"}
+    }
+  },
+  "estimated_impact": {
+    "current_monthly_spend": 12500,
+    "estimated_waste_percentage": "15-25%",
+    "estimated_waste_dollars": "1875-3125",
+    "potential_monthly_savings": "1500-2500"
+  },
+  "detailed_findings": {
+    "pixel_tracking": {
+      "current_state": {
+        "pixel_status": "Installed",
+        "capi_status": "Not Enabled",
+        "events_configured": ["PageView", "ViewContent", "AddToCart", "Purchase"],
+        "optimization_event": "Purchase",
+        "deduplication": false
+      },
+      "issues": [
+        {
+          "issue": "No Conversions API (CAPI) enabled",
+          "impact": "Estimated 30-40% conversion data loss due to iOS 14.5+ and browser restrictions",
+          "fix": "Implement CAPI through partner integration or direct server setup"
+        }
+      ],
+      "recommendations": [
+        "Enable Conversions API through Shopify/WooCommerce integration or direct implementation",
+        "Set up event deduplication once CAPI is live"
+      ]
+    },
+    "campaign_structure": {
+      "current_state": {
+        "active_campaigns": 3,
+        "total_ad_sets": 12,
+        "total_ads": 15,
+        "avg_conversions_per_adset_weekly": 3.75
+      },
+      "issues": [
+        {
+          "issue": "Too many ad sets fragmenting conversion data",
+          "impact": "12 ad sets with only 180 monthly conversions = ~3.75 conversions/ad set/week (need 50+ for optimal learning)",
+          "fix": "Consolidate to 3-4 ad sets maximum"
+        },
+        {
+          "issue": "Interest-based campaign has 6 ad sets with 1 ad each",
+          "impact": "No creative testing possible, insufficient data per ad set",
+          "fix": "Consolidate into 1-2 ad sets with 4-6 ads each"
+        }
+      ],
+      "recommendations": [
+        "Merge similar audiences into fewer ad sets",
+        "Target 3-5 ad sets total across prospecting",
+        "Add 3-4 ads per ad set for creative testing"
+      ]
+    },
+    "audience_health": {
+      "current_state": {
+        "audience_mix": {
+          "retargeting_percent": 22,
+          "prospecting_lookalike_percent": 44,
+          "prospecting_interest_percent": 34
+        }
+      },
+      "issues": [
+        {
+          "issue": "Potential overlap between LAL 1% and LAL 3%",
+          "impact": "1% is subset of 3%, causing auction overlap and inflated CPMs",
+          "fix": "Exclude 1% audience from 3% ad set, or consolidate"
+        }
+      ],
+      "recommendations": [
+        "Check audience overlap in Ads Manager",
+        "Consider using only 1% LAL or Advantage+ for prospecting",
+        "Test broad targeting with Advantage+ Audience"
+      ]
+    },
+    "budget_efficiency": {
+      "current_state": {
+        "daily_budget_total": 450,
+        "budget_distribution": {
+          "prospecting_lal": "44%",
+          "retargeting": "22%",
+          "interest_based": "34%"
+        }
+      },
+      "issues": [
+        {
+          "issue": "Budget spread across 12 ad sets",
+          "impact": "Average $37.50/day per ad set - insufficient for $70 CPA target",
+          "fix": "Consolidate budget into fewer ad sets"
+        }
+      ],
+      "recommendations": [
+        "Minimum $100/day per ad set at current CPA",
+        "Consolidate to 3-4 ad sets and redistribute budget"
+      ]
+    },
+    "creative_health": {
+      "current_state": {
+        "total_active_ads": 15,
+        "avg_ads_per_adset": 1.25,
+        "creative_types": {"static": 10, "video": 3, "carousel": 2},
+        "oldest_ad_age_days": 75,
+        "last_new_creative_days_ago": 21
+      },
+      "issues": [
+        {
+          "issue": "Oldest creative is 75 days old and likely fatigued",
+          "impact": "Creative fatigue is primary driver of CPA increase",
+          "fix": "Replace ads older than 45 days with fresh creative"
+        },
+        {
+          "issue": "Only 1 ad per ad set in interest-based campaign",
+          "impact": "No creative testing, no optimization possible",
+          "fix": "Add 3-5 ads per ad set"
+        },
+        {
+          "issue": "No new creative in 21 days",
+          "impact": "Testing velocity too slow for performance maintenance",
+          "fix": "Aim for 2-3 new creatives per week"
+        }
+      ],
+      "recommendations": [
+        "Immediately add 4-6 new creatives",
+        "Pause ads older than 60 days",
+        "Establish weekly creative testing cadence"
+      ]
+    }
+  },
+  "prioritized_action_plan": {
+    "immediate": [
+      "Add 4-6 new creatives across campaigns",
+      "Pause ads older than 60 days",
+      "Consolidate Interest-based campaign from 6 to 2 ad sets"
+    ],
+    "short_term": [
+      "Implement Conversions API",
+      "Reduce total ad sets from 12 to 4-5",
+      "Check and resolve audience overlap between LAL 1% and 3%"
+    ],
+    "ongoing": [
+      "Add 2-3 new creatives weekly",
+      "Monitor frequency and pause when >3.0",
+      "Review structure monthly"
+    ]
+  },
+  "expected_outcomes": {
+    "cpa_reduction_percent": "15-25%",
+    "roas_improvement_percent": "15-30%",
+    "estimated_monthly_savings": "1500-2500",
+    "timeline_weeks": "3-6"
+  }
+}

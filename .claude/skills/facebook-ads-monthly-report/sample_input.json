@@ -1,0 +1,58 @@
+{
+  "report_info": {
+    "client_name": "StyleBox Subscription",
+    "report_month": "January 2024",
+    "prepared_date": "2024-02-01"
+  },
+  "goals": {
+    "cpa_target": 45,
+    "conversions_target": 400,
+    "roas_target": 2.5,
+    "spend_budget": 18000
+  },
+  "this_month_performance": {
+    "spend": 17500,
+    "conversions": 425,
+    "cpa": 41.18,
+    "roas": 2.8,
+    "ctr": 1.35,
+    "cpm": 22.50,
+    "impressions": 778000,
+    "reach": 520000
+  },
+  "last_month_performance": {
+    "spend": 15000,
+    "conversions": 340,
+    "cpa": 44.12,
+    "roas": 2.4,
+    "ctr": 1.2,
+    "cpm": 20.00,
+    "impressions": 750000,
+    "reach": 480000
+  },
+  "campaign_breakdown": [
+    {"name": "Prospecting - LAL Subscribers", "spend": 8000, "conversions": 180, "cpa": 44.44, "roas": 2.5, "mom_change": "-5% CPA"},
+    {"name": "Prospecting - Interest Fashion", "spend": 4000, "conversions": 75, "cpa": 53.33, "roas": 2.0, "mom_change": "+10% CPA"},
+    {"name": "Retargeting - Site Visitors", "spend": 3500, "conversions": 120, "cpa": 29.17, "roas": 4.0, "mom_change": "-8% CPA"},
+    {"name": "Retargeting - Cart Abandoners", "spend": 2000, "conversions": 50, "cpa": 40.00, "roas": 3.2, "mom_change": "Flat"}
+  ],
+  "top_ads": [
+    {"name": "UGC Unboxing Video", "spend": 4500, "conversions": 110, "cpa": 40.91, "ctr": 2.1, "insight": "Authentic unboxing content resonated strongly"},
+    {"name": "Before/After Carousel", "spend": 3200, "conversions": 85, "cpa": 37.65, "ctr": 1.8, "insight": "Transformation visuals drove high engagement"},
+    {"name": "Founder Story Video", "spend": 2800, "conversions": 60, "cpa": 46.67, "ctr": 1.5, "insight": "Brand story built trust with cold audiences"}
+  ],
+  "creative_tests": [
+    {"test": "UGC vs Professional video", "result": "UGC won by 25% lower CPA", "learning": "Authenticity beats polish for our audience"},
+    {"test": "Long copy vs Short copy", "result": "Long copy won by 15%", "learning": "Our audience wants details before subscribing"}
+  ],
+  "key_changes": [
+    "Increased budget from $15k to $17.5k",
+    "Launched new UGC creative series",
+    "Tested long-form copy",
+    "Expanded LAL to 2%"
+  ],
+  "external_factors": [
+    "Post-holiday period (lower competition)",
+    "New Year's resolution traffic boost"
+  ]
+}

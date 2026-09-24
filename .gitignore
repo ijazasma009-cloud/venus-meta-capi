@@ -25,3 +25,6 @@ test/.*_t.cjs
 .DS_Store
 Thumbs.db
 *.log
+
+# The three calendar workbooks are deliverables, not client data.
+!context/content-calendar/*.xlsx

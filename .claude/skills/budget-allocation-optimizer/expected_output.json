@@ -1,0 +1,210 @@
+{
+  "summary": {
+    "allocation_efficiency": "YELLOW",
+    "total_budget": 15000,
+    "total_spend": 14545,
+    "total_conversions": 291,
+    "blended_cpa": 49.98,
+    "optimization_opportunity": "+18-24 conversions/month estimated"
+  },
+  "current_state": {
+    "efficiency_ranking": [
+      {
+        "rank": 1,
+        "campaign": "Brand - Exact Match",
+        "spend": 2987,
+        "conversions": 112,
+        "cpa": 26.67,
+        "vs_target": "-47%",
+        "budget_status": "Capped",
+        "is_lost_budget": "18%",
+        "tier": "Star"
+      },
+      {
+        "rank": 2,
+        "campaign": "Non-Brand - Problem/Solution",
+        "spend": 2478,
+        "conversions": 52,
+        "cpa": 47.65,
+        "vs_target": "-5%",
+        "budget_status": "Capped",
+        "is_lost_budget": "22%",
+        "tier": "Solid"
+      },
+      {
+        "rank": 3,
+        "campaign": "Non-Brand - Product",
+        "spend": 4956,
+        "conversions": 89,
+        "cpa": 55.69,
+        "vs_target": "+11%",
+        "budget_status": "Capped",
+        "is_lost_budget": "12%",
+        "tier": "Borderline"
+      },
+      {
+        "rank": 4,
+        "campaign": "Remarketing",
+        "spend": 1234,
+        "conversions": 14,
+        "cpa": 88.14,
+        "vs_target": "+76%",
+        "budget_status": "Not capped",
+        "is_lost_budget": "3%",
+        "tier": "Underperformer"
+      },
+      {
+        "rank": 5,
+        "campaign": "Non-Brand - Competitor",
+        "spend": 2890,
+        "conversions": 24,
+        "cpa": 120.42,
+        "vs_target": "+141%",
+        "budget_status": "Not capped",
+        "is_lost_budget": "5%",
+        "tier": "Underperformer"
+      }
+    ],
+    "observations": [
+      "Brand and Problem/Solution are highly efficient but budget-constrained—leaving conversions on the table",
+      "Competitor campaign spending full budget at 2.4x target CPA—significant waste",
+      "Remarketing not even spending its budget at poor efficiency—audience may be exhausted",
+      "22% IS lost to budget on Problem/Solution is the biggest opportunity"
+    ]
+  },
+  "reallocation_recommendations": {
+    "summary": {
+      "total_to_reallocate": 2100,
+      "from_campaigns": 2,
+      "to_campaigns": 2,
+      "expected_impact": "+18-24 conversions/month"
+    },
+    "moves": [
+      {
+        "priority": 1,
+        "from": "Non-Brand - Competitor",
+        "to": "Non-Brand - Problem/Solution",
+        "amount": 1500,
+        "rationale": "Competitor campaign at $120 CPA is burning money. Problem/Solution is efficient ($48) AND has 22% IS lost to budget—biggest opportunity in account.",
+        "donor_before": {
+          "budget": 3000,
+          "cpa": 120.42
+        },
+        "donor_after": {
+          "budget": 1500,
+          "projected_cpa": 115.00,
+          "note": "Reduced spend should improve efficiency slightly"
+        },
+        "recipient_before": {
+          "budget": 2500,
+          "cpa": 47.65
+        },
+        "recipient_after": {
+          "budget": 4000,
+          "projected_cpa": 52.00,
+          "note": "60% budget increase, expect ~10% CPA increase"
+        },
+        "impact": {
+          "conversions_lost": 12,
+          "conversions_gained": 29,
+          "net_gain": 17
+        }
+      },
+      {
+        "priority": 2,
+        "from": "Remarketing",
+        "to": "Brand - Exact Match",
+        "amount": 600,
+        "rationale": "Remarketing not spending its budget anyway and CPA is 76% above target. Brand is most efficient campaign with 18% IS lost to budget.",
+        "donor_before": {
+          "budget": 1500,
+          "cpa": 88.14
+        },
+        "donor_after": {
+          "budget": 900,
+          "projected_cpa": 85.00,
+          "note": "Reducing to actual spend level plus buffer"
+        },
+        "recipient_before": {
+          "budget": 3000,
+          "cpa": 26.67
+        },
+        "recipient_after": {
+          "budget": 3600,
+          "projected_cpa": 29.00,
+          "note": "20% budget increase, expect ~8% CPA increase"
+        },
+        "impact": {
+          "conversions_lost": 7,
+          "conversions_gained": 21,
+          "net_gain": 14
+        }
+      }
+    ]
+  },
+  "projected_outcome": {
+    "before": {
+      "total_budget": 15000,
+      "total_conversions": 291,
+      "blended_cpa": 49.98
+    },
+    "after": {
+      "total_budget": 15000,
+      "projected_conversions": 312,
+      "projected_blended_cpa": 46.63
+    },
+    "change": {
+      "conversions": "+21 (+7%)",
+      "cpa": "-$3.35 (-7%)"
+    },
+    "confidence": "Medium-High",
+    "assumptions": [
+      "Problem/Solution can absorb 60% more budget at ~10% CPA increase",
+      "Brand can absorb 20% more budget at ~8% CPA increase",
+      "Reduced Competitor spend won't impact brand visibility significantly"
+    ]
+  },
+  "risks": [
+    {
+      "risk": "Problem/Solution may hit CPA ceiling faster than projected",
+      "mitigation": "Increase budget in 25% increments weekly, monitor closely"
+    },
+    {
+      "risk": "Competitor campaign may have strategic value beyond conversions",
+      "mitigation": "Keep $1,500 minimum to maintain some conquest presence"
+    },
+    {
+      "risk": "Remarketing audience may recover with fresh creative",
+      "mitigation": "Test new creative before fully reallocating"
+    }
+  ],
+  "implementation_plan": {
+    "week_1": [
+      "Reduce Competitor budget from $3,000 to $2,250 (-$750)",
+      "Increase Problem/Solution budget from $2,500 to $3,250 (+$750)",
+      "Monitor daily for 5 days"
+    ],
+    "week_2": [
+      "If stable, complete Competitor reduction to $1,500 (-$750 more)",
+      "Increase Problem/Solution to $4,000 (+$750 more)",
+      "Reduce Remarketing from $1,500 to $900 (-$600)",
+      "Increase Brand from $3,000 to $3,600 (+$600)"
+    ],
+    "week_3": [
+      "Full evaluation of new allocation",
+      "Fine-tune based on actual performance"
+    ],
+    "success_metrics": [
+      "Total conversions should reach 300+ within 3 weeks",
+      "Blended CPA should be below $48",
+      "No individual campaign CPA should spike >25%"
+    ]
+  },
+  "final_allocation": {
+    "Brand - Exact Match": {"old": 3000, "new": 3600, "change": "+600"},
+    "Non-Brand - Product": {"old": 5000, "new": 5000, "change": "0"},
+    "Non-Brand - Competitor": {"old": 3000, "new": 1500, "change": "-1500"},
+    "Non-Brand - Problem/Solution": {"old": 2500, "new": 4000, "change": "+1500"},
+    "Remarketing": {"old": 1500, "new": 900, "change": "-600"}
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "summary": {
+    "total_spend": 45000,
+    "total_purchases": 1125,
+    "blended_cpa": 40.00,
+    "target_cpa": 35,
+    "vs_target": "+14%",
+    "blended_roas": 2.5,
+    "target_roas": 3.0,
+    "health_score": 62,
+    "health_status": "YELLOW",
+    "primary_issue": "Creative fatigue and performance degradation over time"
+  },
+  "health_dashboard": {
+    "cpm": {"value": 12.86, "benchmark": 12.00, "status": "green", "trend": "stable"},
+    "ctr": {"value": 1.5, "benchmark": 1.5, "status": "yellow", "trend": "declining"},
+    "cpc": {"value": 0.86, "benchmark": 1.00, "status": "green", "trend": "stable"},
+    "cpa": {"value": 40.00, "benchmark": 35.00, "status": "yellow", "trend": "worsening"},
+    "roas": {"value": 2.5, "benchmark": 3.0, "status": "yellow", "trend": "worsening"},
+    "frequency": {"value": 2.8, "benchmark": 3.0, "status": "yellow", "trend": "rising"}
+  },
+  "funnel_analysis": {
+    "impressions": 3500000,
+    "clicks": 52500,
+    "ctr_percent": 1.5,
+    "landing_page_views": 48000,
+    "lp_view_rate": 91.4,
+    "purchases": 1125,
+    "conversion_rate": 2.14,
+    "bottleneck": "Conversion rate is the weakest link - declining CTR feeding fewer qualified visitors"
+  },
+  "campaign_tiers": {
+    "tier_1_winners": [
+      {
+        "name": "Prospecting - Lookalikes",
+        "spend": 12000,
+        "purchases": 340,
+        "cpa": 35.29,
+        "vs_target": "+1%",
+        "roas": 3.1,
+        "action": "Scale budget 25% - best performer, still efficient"
+      },
+      {
+        "name": "Retargeting - Website Visitors",
+        "spend": 6000,
+        "purchases": 210,
+        "cpa": 28.57,
+        "vs_target": "-18%",
+        "roas": 3.15,
+        "action": "Scale budget 20% - watch frequency (currently 4.8)"
+      }
+    ],
+    "tier_2_performers": [
+      {
+        "name": "Prospecting - Broad",
+        "spend": 22000,
+        "purchases": 485,
+        "cpa": 45.36,
+        "vs_target": "+30%",
+        "roas": 2.2,
+        "action": "Pause underperforming ads, refresh creative - CPA trending worse"
+      }
+    ],
+    "tier_3_borderline": [
+      {
+        "name": "Retargeting - Cart Abandoners",
+        "spend": 3000,
+        "purchases": 75,
+        "cpa": 40.00,
+        "vs_target": "+14%",
+        "roas": 2.0,
+        "action": "Reduce frequency cap, test urgency-based creative"
+      }
+    ],
+    "tier_4_losers": [
+      {
+        "name": "Advantage+ Shopping",
+        "spend": 2000,
+        "purchases": 15,
+        "cpa": 133.33,
+        "vs_target": "+281%",
+        "roas": 0.85,
+        "action": "PAUSE immediately - burning money, not enough data/learning"
+      }
+    ]
+  },
+  "creative_analysis": {
+    "top_performers": [
+      {
+        "name": "Video - Brand Story",
+        "campaign": "Prospecting - Lookalikes",
+        "format": "Video",
+        "spend": 7000,
+        "cpa": 31.82,
+        "ctr": 1.9,
+        "hook_rate": 38,
+        "status": "Fresh - maintain",
+        "insight": "Strong hook rate driving efficiency - replicate this hook style"
+      },
+      {
+        "name": "Dynamic Product Ads",
+        "campaign": "Retargeting",
+        "format": "DPA",
+        "spend": 4000,
+        "cpa": 26.67,
+        "ctr": 1.8,
+        "status": "Evergreen performer",
+        "insight": "DPA working well for retargeting - expected"
+      },
+      {
+        "name": "Video - Summer Collection Hero",
+        "campaign": "Prospecting - Broad",
+        "format": "Video",
+        "spend": 8500,
+        "cpa": 40.48,
+        "ctr": 1.8,
+        "hook_rate": 32,
+        "status": "FATIGUED - CTR down 25%",
+        "insight": "Was top performer, now fatiguing after 45 days. Create variations."
+      }
+    ],
+    "underperformers": [
+      {
+        "name": "Static - Product Grid",
+        "campaign": "Prospecting - Broad",
+        "format": "Image",
+        "spend": 3000,
+        "cpa": 93.75,
+        "ctr": 0.8,
+        "issue": "Poor CTR, high CPA",
+        "action": "PAUSE - 2.7x target CPA, not improving"
+      },
+      {
+        "name": "Static - Lifestyle Shot",
+        "campaign": "Prospecting - Lookalikes",
+        "format": "Image",
+        "spend": 5000,
+        "cpa": 41.67,
+        "ctr": 1.3,
+        "issue": "Declining CTR, above target",
+        "action": "Test new static variants or pause for video"
+      }
+    ],
+    "fatigue_alerts": [
+      {
+        "ad": "Video - Summer Collection Hero",
+        "days_running": 45,
+        "ctr_decline": "-25%",
+        "severity": "HIGH",
+        "action": "Create 2-3 new variations with different hooks immediately"
+      },
+      {
+        "ad": "Static - Lifestyle Shot",
+        "days_running": 28,
+        "ctr_decline": "-15%",
+        "severity": "MEDIUM",
+        "action": "Test new image creative within 1 week"
+      }
+    ],
+    "creative_mix": {
+      "current": {
+        "video": "55%",
+        "image": "25%",
+        "carousel": "13%",
+        "dpa": "7%"
+      },
+      "assessment": "Mix is reasonable but static images underperforming. Shift budget from static to video/carousel. Consider adding UGC variety.",
+      "recommendation": "Target 60% video, 25% carousel, 10% DPA, 5% static for testing"
+    }
+  },
+  "audience_analysis": {
+    "winning_audiences": [
+      {
+        "name": "LAL - Purchasers 1%",
+        "campaign": "Prospecting - Lookalikes",
+        "size": "2.5M",
+        "spend": 8000,
+        "cpa": 32.00,
+        "vs_target": "-9%",
+        "recommendation": "Scale this audience - best prospecting performer"
+      },
+      {
+        "name": "Broad - US - 18-65",
+        "campaign": "Prospecting - Broad",
+        "size": "85M",
+        "spend": 15000,
+        "cpa": 46.88,
+        "vs_target": "+34%",
+        "recommendation": "Large scale but inefficient - let Advantage+ optimize within"
+      }
+    ],
+    "losing_audiences": [
+      {
+        "name": "LAL - Purchasers 3%",
+        "campaign": "Prospecting - Lookalikes",
+        "size": "7.5M",
+        "spend": 4000,
+        "cpa": 44.44,
+        "issue": "Wider LAL diluting quality",
+        "action": "Reduce budget, reallocate to 1% LAL"
+      },
+      {
+        "name": "Interest - Fashion Enthusiasts",
+        "campaign": "Prospecting - Broad",
+        "size": "12M",
+        "spend": 7000,
+        "cpa": 42.42,
+        "issue": "High frequency (3.5) suggests audience saturation",
+        "action": "Pause or expand targeting"
+      }
+    ],
+    "frequency_concerns": [
+      {"audience": "Retargeting - Cart Abandoners", "frequency": 6.2, "action": "Set frequency cap at 3-4/week"},
+      {"audience": "Retargeting - Website Visitors", "frequency": 4.8, "action": "Monitor - approaching fatigue threshold"},
+      {"audience": "Interest - Fashion Enthusiasts", "frequency": 3.5, "action": "Expand audience or reduce spend"}
+    ]
+  },
+  "placement_analysis": {
+    "rankings": [
+      {"placement": "Facebook Feed", "spend": 15000, "cpa": 35.71, "cpm": 11.50, "efficiency_rank": 1, "action": "Maintain or increase"},
+      {"placement": "Instagram Feed", "spend": 12000, "cpa": 38.10, "cpm": 13.00, "efficiency_rank": 2, "action": "Maintain"},
+      {"placement": "Instagram Reels", "spend": 6000, "cpa": 41.38, "cpm": 12.00, "efficiency_rank": 3, "action": "Test more Reels-native creative"},
+      {"placement": "Instagram Stories", "spend": 8000, "cpa": 44.44, "cpm": 14.50, "efficiency_rank": 4, "action": "Reduce if manual placements"},
+      {"placement": "Facebook Reels", "spend": 2500, "cpa": 55.56, "cpm": 10.00, "efficiency_rank": 5, "action": "Low volume, monitor"},
+      {"placement": "Audience Network", "spend": 1500, "cpa": 75.00, "cpm": 5.00, "efficiency_rank": 6, "action": "Exclude from prospecting"}
+    ],
+    "recommendation": "Keep Advantage+ placements but exclude Audience Network from conversion campaigns. Low CPM doesn't offset terrible conversion rate."
+  },
+  "trend_analysis": {
+    "weekly_performance": [
+      {"week": 1, "spend": 10000, "cpa": 32.26, "ctr": 1.65, "assessment": "Strong baseline"},
+      {"week": 2, "spend": 11000, "cpa": 36.07, "ctr": 1.58, "assessment": "Budget increase absorbed well"},
+      {"week": 3, "spend": 12000, "cpa": 43.64, "ctr": 1.45, "assessment": "DEGRADATION started - fatigue + A+ Shopping launch"},
+      {"week": 4, "spend": 12000, "cpa": 51.06, "ctr": 1.32, "assessment": "Continued decline - action needed"}
+    ],
+    "trend_diagnosis": "Performance degrading 58% over 4 weeks (CPA $32 → $51). Primary causes: 1) Creative fatigue on hero video, 2) Advantage+ Shopping burning budget with no returns, 3) Overall frequency creeping up",
+    "if_no_action": "CPA will likely hit $60+ within 2 weeks"
+  },
+  "root_cause_analysis": {
+    "primary_issue": "Creative fatigue compounded by poor budget allocation to failing campaign",
+    "causal_chain": [
+      "Top-performing video running 45 days without refresh",
+      "CTR declined 25%, reducing qualified traffic",
+      "Conversion rate dropped as traffic quality decreased",
+      "Simultaneously, $2K/month bleeding into Advantage+ Shopping with 0.85 ROAS",
+      "Blended CPA dragged up by both factors"
+    ],
+    "contributing_factors": [
+      "Retargeting frequency too high (6.2 on cart abandoners)",
+      "Static image creative consistently underperforming",
+      "3% Lookalike diluting the efficient 1% LAL results"
+    ]
+  },
+  "action_plan": {
+    "immediate_this_week": [
+      {"priority": 1, "action": "PAUSE Advantage+ Shopping campaign", "impact": "Stop $2K/month waste, improve blended CPA by $3-4", "effort": "5 minutes"},
+      {"priority": 2, "action": "PAUSE 'Static - Product Grid' ad", "impact": "Stop inefficient spend, improve Broad campaign CPA", "effort": "5 minutes"},
+      {"priority": 3, "action": "Create 3 new video variations of Summer Collection Hero with different hooks", "impact": "Refresh fatigued winner, restore CTR", "effort": "Creative production"},
+      {"priority": 4, "action": "Set frequency cap of 3/week on Cart Abandoners", "impact": "Reduce wasted impressions, improve efficiency", "effort": "10 minutes"}
+    ],
+    "short_term_next_2_weeks": [
+      {"action": "Shift $3K budget from 3% LAL to 1% LAL", "impact": "Concentrate on best-performing audience"},
+      {"action": "Test 2 new carousel creatives for Prospecting - Broad", "impact": "Diversify creative mix beyond video"},
+      {"action": "Increase Retargeting - Website Visitors budget by 20%", "impact": "Scale efficient campaign while CPA is low"},
+      {"action": "Exclude Audience Network from all conversion campaigns", "impact": "Remove lowest-quality placement"}
+    ],
+    "medium_term_next_month": [
+      {"action": "Build creative testing calendar - 3-5 new ads per week", "impact": "Prevent future fatigue issues"},
+      {"action": "Test Advantage+ Audience on Broad campaign", "impact": "Let algorithm find best targeting within broad"},
+      {"action": "Review Advantage+ Shopping after 30 days if relaunched with better catalog", "impact": "Give ASC fair test with proper setup"}
+    ]
+  },
+  "expected_impact": {
+    "if_actions_completed": {
+      "timeline": "2-3 weeks",
+      "projected_cpa": 35,
+      "projected_improvement": "-12.5%",
+      "confidence": "Medium-High"
+    },
+    "primary_risks": [
+      "New creative may not match original performance",
+      "Scaling retargeting may exhaust audience faster"
+    ],
+    "mitigation": "Test multiple creative variants simultaneously, monitor frequency daily on scaled audiences"
+  },
+  "monitoring_checklist": {
+    "daily": [
+      "CPA by campaign",
+      "Spend pacing",
+      "Learning phase status",
+      "New creative CTR"
+    ],
+    "every_3_days": [
+      "Frequency by audience",
+      "CTR trends on all active creatives"
+    ],
+    "weekly": [
+      "Week-over-week CPA trend",
+      "Placement performance",
+      "Creative fatigue check"
+    ],
+    "red_flags": [
+      "CPA >$45 for 3+ consecutive days",
+      "CTR drops >20% on any ad week-over-week",
+      "Frequency >4.0 on any prospecting audience",
+      "New creative CTR <1.2% after 3 days"
+    ]
+  }
+}

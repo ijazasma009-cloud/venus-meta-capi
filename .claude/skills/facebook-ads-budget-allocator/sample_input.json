@@ -1,0 +1,70 @@
+{
+  "account_info": {
+    "account_name": "TechGadgets Online",
+    "total_daily_budget": 500,
+    "target_cpa": 35,
+    "analysis_period": "Last 14 days"
+  },
+  "campaigns": [
+    {
+      "name": "Prospecting - LAL Purchasers",
+      "type": "Prospecting",
+      "daily_budget": 200,
+      "spend_14d": 2800,
+      "conversions_14d": 70,
+      "cpa": 40,
+      "trend": "Stable",
+      "audience_size": 2100000,
+      "frequency": 1.8
+    },
+    {
+      "name": "Prospecting - Interest Based",
+      "type": "Prospecting",
+      "daily_budget": 100,
+      "spend_14d": 1400,
+      "conversions_14d": 25,
+      "cpa": 56,
+      "trend": "Declining",
+      "audience_size": 8000000,
+      "frequency": 0.8
+    },
+    {
+      "name": "Retargeting - Website Visitors",
+      "type": "Retargeting",
+      "daily_budget": 100,
+      "spend_14d": 1400,
+      "conversions_14d": 55,
+      "cpa": 25.45,
+      "trend": "Stable",
+      "audience_size": 50000,
+      "frequency": 3.2
+    },
+    {
+      "name": "Retargeting - Cart Abandoners",
+      "type": "Retargeting",
+      "daily_budget": 50,
+      "spend_14d": 700,
+      "conversions_14d": 35,
+      "cpa": 20,
+      "trend": "Stable",
+      "audience_size": 8000,
+      "frequency": 4.5
+    },
+    {
+      "name": "Prospecting - Advantage+",
+      "type": "Prospecting",
+      "daily_budget": 50,
+      "spend_14d": 700,
+      "conversions_14d": 22,
+      "cpa": 31.82,
+      "trend": "Improving",
+      "audience_size": "Broad",
+      "frequency": 1.2
+    }
+  ],
+  "constraints": {
+    "budget_change": "Maintain total budget",
+    "must_run": ["Retargeting - Cart Abandoners"],
+    "notes": "Want to improve blended CPA from current $38 to target $35"
+  }
+}

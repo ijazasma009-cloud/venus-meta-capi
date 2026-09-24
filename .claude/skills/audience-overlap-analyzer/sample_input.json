@@ -1,0 +1,126 @@
+{
+  "platform": "Meta Ads",
+  "account_context": {
+    "business": "E-commerce - Home Goods",
+    "monthly_spend": 45000,
+    "primary_objective": "Purchases",
+    "concern": "CPMs have risen 35% in last 6 weeks, suspect internal competition"
+  },
+  "audiences": [
+    {
+      "name": "LAL - Purchasers 1%",
+      "type": "Lookalike",
+      "source": "Customer purchase list",
+      "size": 2400000,
+      "campaign": "Prospecting - Lookalikes",
+      "spend": 12000,
+      "conversions": 180,
+      "cpm": 18.50,
+      "frequency": 2.8,
+      "cpa": 66.67
+    },
+    {
+      "name": "LAL - Purchasers 2%",
+      "type": "Lookalike",
+      "source": "Customer purchase list",
+      "size": 4800000,
+      "campaign": "Prospecting - Lookalikes Expansion",
+      "spend": 8000,
+      "conversions": 95,
+      "cpm": 16.20,
+      "frequency": 2.4,
+      "cpa": 84.21
+    },
+    {
+      "name": "LAL - High Value Customers 1%",
+      "type": "Lookalike",
+      "source": "Top 20% customers by LTV",
+      "size": 2400000,
+      "campaign": "Prospecting - High Value",
+      "spend": 6000,
+      "conversions": 72,
+      "cpm": 19.80,
+      "frequency": 2.6,
+      "cpa": 83.33
+    },
+    {
+      "name": "Interest - Home Decor",
+      "type": "Interest",
+      "targeting": "Interest in Home Decor, Interior Design, Home Improvement",
+      "size": 35000000,
+      "campaign": "Prospecting - Interest Based",
+      "spend": 5000,
+      "conversions": 48,
+      "cpm": 12.40,
+      "frequency": 1.8,
+      "cpa": 104.17
+    },
+    {
+      "name": "Broad - US 25-54",
+      "type": "Broad",
+      "targeting": "US, Ages 25-54, All genders",
+      "size": 120000000,
+      "campaign": "Prospecting - Broad",
+      "spend": 4000,
+      "conversions": 38,
+      "cpm": 9.80,
+      "frequency": 1.2,
+      "cpa": 105.26
+    },
+    {
+      "name": "Retargeting - Website Visitors 30d",
+      "type": "Custom Audience",
+      "source": "Pixel - All website visitors, 30 days",
+      "size": 180000,
+      "campaign": "Retargeting",
+      "spend": 4500,
+      "conversions": 85,
+      "cpm": 22.50,
+      "frequency": 5.2,
+      "cpa": 52.94
+    },
+    {
+      "name": "Retargeting - Product Viewers 14d",
+      "type": "Custom Audience",
+      "source": "Pixel - Product page viewers, 14 days",
+      "size": 95000,
+      "campaign": "Retargeting",
+      "spend": 3000,
+      "conversions": 62,
+      "cpm": 24.80,
+      "frequency": 6.8,
+      "cpa": 48.39
+    },
+    {
+      "name": "Retargeting - Cart Abandoners 7d",
+      "type": "Custom Audience",
+      "source": "Pixel - Add to cart, no purchase, 7 days",
+      "size": 28000,
+      "campaign": "Retargeting",
+      "spend": 2500,
+      "conversions": 55,
+      "cpm": 28.50,
+      "frequency": 8.4,
+      "cpa": 45.45
+    }
+  ],
+  "overlap_data_from_meta_tool": {
+    "lal_1_vs_lal_2": "100% of LAL 1% is contained in LAL 2%",
+    "lal_1_vs_lal_hv_1": "68% overlap",
+    "lal_2_vs_lal_hv_1": "72% overlap",
+    "interest_vs_broad": "Interest audience is subset of Broad",
+    "website_visitors_vs_product_viewers": "Product viewers 100% contained in website visitors",
+    "product_viewers_vs_cart_abandoners": "Cart abandoners 100% contained in product viewers"
+  },
+  "exclusions_currently_in_place": [
+    "Past purchasers excluded from all prospecting",
+    "No other exclusions configured"
+  ],
+  "historical_cpm_trend": {
+    "6_weeks_ago": 12.50,
+    "4_weeks_ago": 14.20,
+    "2_weeks_ago": 16.80,
+    "current": 18.50,
+    "change": "+48%"
+  }
+}

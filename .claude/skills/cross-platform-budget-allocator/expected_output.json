@@ -1,0 +1,372 @@
+{
+  "summary": {
+    "total_budget": 60000,
+    "current_conversions": 330,
+    "current_blended_cpa": 181.82,
+    "target_cpa": 150,
+    "gap": "+21%",
+    "primary_recommendation": "Shift budget from underperforming Meta prospecting to Google Brand and Microsoft Ads test",
+    "expected_improvement": "-12% CPA (from $182 to $160)"
+  },
+  "current_state_analysis": {
+    "performance_by_platform": [
+      {
+        "platform": "Google Ads",
+        "spend": 30000,
+        "conversions": 180,
+        "cpa": 166.67,
+        "vs_target": "+11%",
+        "percent_of_total": "50%",
+        "trend": "stable",
+        "efficiency_rank": 1
+      },
+      {
+        "platform": "LinkedIn Ads",
+        "spend": 10000,
+        "conversions": 55,
+        "cpa": 181.82,
+        "vs_target": "+21%",
+        "percent_of_total": "17%",
+        "trend": "stable",
+        "efficiency_rank": 2
+      },
+      {
+        "platform": "Meta Ads",
+        "spend": 20000,
+        "conversions": 95,
+        "cpa": 210.53,
+        "vs_target": "+40%",
+        "percent_of_total": "33%",
+        "trend": "declining",
+        "efficiency_rank": 3
+      }
+    ],
+    "blended_metrics": {
+      "total_spend": 60000,
+      "total_conversions": 330,
+      "blended_cpa": 181.82,
+      "vs_target": "+21%"
+    },
+    "efficiency_ranking": "Google Brand ($107) > LinkedIn Lead Gen ($150) > Meta Retargeting ($150) > Google Non-Brand ($208) > LinkedIn Sponsored ($200) > Meta Prospecting ($255) > Google PMax ($212)"
+  },
+  "scaling_headroom_assessment": {
+    "google_ads": {
+      "signal": "68% impression share, 2 budget-limited campaigns",
+      "headroom": "HIGH",
+      "notes": "Clear room to scale, especially brand and efficient non-brand segments",
+      "marginal_cpa_estimate": "Similar to current at +$5K, slight increase at +$10K"
+    },
+    "meta_ads": {
+      "signal": "Frequency 2.8, declining performance trend",
+      "headroom": "LOW",
+      "notes": "Creative fatigue evident, scaling would likely worsen CPA further",
+      "marginal_cpa_estimate": "Expect 15-25% CPA increase on incremental spend"
+    },
+    "linkedin_ads": {
+      "signal": "Frequency 3.5, 450K audience at 85% match",
+      "headroom": "LOW-MEDIUM",
+      "notes": "Audience nearing saturation, can absorb small increase but limited",
+      "marginal_cpa_estimate": "Expect 10-15% CPA increase beyond current spend"
+    }
+  },
+  "sub_channel_analysis": {
+    "winners_scale": [
+      {
+        "channel": "Google - Brand",
+        "spend": 8000,
+        "cpa": 106.67,
+        "vs_target": "-29%",
+        "action": "Increase to capture more branded demand"
+      },
+      {
+        "channel": "LinkedIn - Lead Gen Forms",
+        "spend": 3000,
+        "cpa": 150.00,
+        "vs_target": "At target",
+        "action": "Maintain, at capacity for format"
+      },
+      {
+        "channel": "Meta - Retargeting",
+        "spend": 6000,
+        "cpa": 150.00,
+        "vs_target": "At target",
+        "action": "Maintain, efficient for retargeting role"
+      }
+    ],
+    "optimize_fix": [
+      {
+        "channel": "Google - Non-Brand",
+        "spend": 15000,
+        "cpa": 208.33,
+        "vs_target": "+39%",
+        "action": "Optimize keywords/bids before scaling"
+      },
+      {
+        "channel": "LinkedIn - Sponsored Content",
+        "spend": 7000,
+        "cpa": 200.00,
+        "vs_target": "+33%",
+        "action": "Test new creative, consider audience refresh"
+      }
+    ],
+    "reduce_cut": [
+      {
+        "channel": "Meta - Prospecting",
+        "spend": 14000,
+        "cpa": 254.55,
+        "vs_target": "+70%",
+        "action": "Reduce significantly until creative refreshed"
+      },
+      {
+        "channel": "Google - PMax",
+        "spend": 7000,
+        "cpa": 212.12,
+        "vs_target": "+41%",
+        "action": "Reduce or pause, reallocate to search"
+      }
+    ]
+  },
+  "recommended_allocation": {
+    "model_used": "Marginal Return Optimization with Constraints",
+    "rationale": "Shift from declining Meta prospecting to proven Google channels and test Microsoft Ads for additional search inventory",
+    "allocation": [
+      {
+        "platform": "Google Ads",
+        "current": 30000,
+        "recommended": 36000,
+        "change": "+6000",
+        "percent_change": "+20%",
+        "percent_of_total": "60%",
+        "sub_allocation": {
+          "brand": {"current": 8000, "recommended": 10000, "change": "+2000"},
+          "non_brand": {"current": 15000, "recommended": 18000, "change": "+3000"},
+          "pmax": {"current": 7000, "recommended": 4000, "change": "-3000"},
+          "microsoft_import": {"current": 0, "recommended": 4000, "change": "+4000"}
+        }
+      },
+      {
+        "platform": "Meta Ads",
+        "current": 20000,
+        "recommended": 12000,
+        "change": "-8000",
+        "percent_change": "-40%",
+        "percent_of_total": "20%",
+        "sub_allocation": {
+          "prospecting": {"current": 14000, "recommended": 6000, "change": "-8000"},
+          "retargeting": {"current": 6000, "recommended": 6000, "change": "0"}
+        }
+      },
+      {
+        "platform": "LinkedIn Ads",
+        "current": 10000,
+        "recommended": 8000,
+        "change": "-2000",
+        "percent_change": "-20%",
+        "percent_of_total": "13%",
+        "sub_allocation": {
+          "sponsored_content": {"current": 7000, "recommended": 5000, "change": "-2000"},
+          "lead_gen": {"current": 3000, "recommended": 3000, "change": "0"}
+        }
+      },
+      {
+        "platform": "Microsoft Ads",
+        "current": 0,
+        "recommended": 4000,
+        "change": "+4000",
+        "percent_change": "NEW",
+        "percent_of_total": "7%",
+        "notes": "Import top Google campaigns, test for 6-8 weeks"
+      }
+    ],
+    "total_allocated": 60000,
+    "testing_budget": 4000,
+    "testing_percent": "7%"
+  },
+  "allocation_rationale": {
+    "increase_google": [
+      "Best performing platform overall ($167 blended CPA)",
+      "32% impression share headroom indicates scaling capacity",
+      "Budget-limited campaigns suggest incremental spend will convert",
+      "Brand campaigns extremely efficient at $107 CPA"
+    ],
+    "decrease_meta": [
+      "CPA increased 26% quarter-over-quarter (from $167 to $211)",
+      "Prospecting at $255 CPA is 70% above target",
+      "Declining trend suggests creative/audience fatigue",
+      "Keep retargeting which remains efficient at $150 CPA"
+    ],
+    "decrease_linkedin": [
+      "Frequency at 3.5 indicates audience saturation",
+      "Small audience (450K) limits scaling potential",
+      "Maintain efficient Lead Gen Forms, reduce costly Sponsored Content"
+    ],
+    "add_microsoft": [
+      "Natural extension of Google search success",
+      "Typically 20-30% lower CPCs than Google",
+      "Easy import from existing Google campaigns",
+      "Tests hypothesis that search intent converts for this business"
+    ]
+  },
+  "projected_outcomes": {
+    "at_recommended_allocation": {
+      "projected_conversions": {
+        "google": 225,
+        "meta": 52,
+        "linkedin": 42,
+        "microsoft": 22,
+        "total": 341
+      },
+      "projected_cpa": {
+        "google": 160.00,
+        "meta": 230.77,
+        "linkedin": 190.48,
+        "microsoft": 181.82,
+        "blended": 175.95
+      }
+    },
+    "comparison": {
+      "current_conversions": 330,
+      "projected_conversions": 341,
+      "change": "+3%",
+      "current_cpa": 181.82,
+      "projected_cpa": 175.95,
+      "change_cpa": "-3%"
+    },
+    "assumptions": [
+      "Google scales efficiently to +$6K based on impression share headroom",
+      "Meta prospecting CPA holds at reduced spend (fewer bad impressions)",
+      "Microsoft achieves similar efficiency to Google non-brand",
+      "LinkedIn small reduction doesn't significantly impact delivery"
+    ],
+    "confidence": "Medium - Google scaling likely, Meta recovery and Microsoft performance are unknowns"
+  },
+  "scenario_comparison": {
+    "conservative": {
+      "description": "Minimal changes, maintain current structure with small optimizations",
+      "allocation": {
+        "google": 32000,
+        "meta": 18000,
+        "linkedin": 10000,
+        "microsoft": 0
+      },
+      "projected_cpa": 178.00,
+      "projected_conversions": 337,
+      "risk": "Low",
+      "upside": "Low"
+    },
+    "balanced": {
+      "description": "Recommended allocation - shift from Meta to Google + Microsoft test",
+      "allocation": {
+        "google": 36000,
+        "meta": 12000,
+        "linkedin": 8000,
+        "microsoft": 4000
+      },
+      "projected_cpa": 175.95,
+      "projected_conversions": 341,
+      "risk": "Medium",
+      "upside": "Medium"
+    },
+    "aggressive": {
+      "description": "Major shift to Google, minimal Meta, larger Microsoft test",
+      "allocation": {
+        "google": 42000,
+        "meta": 10000,
+        "linkedin": 5000,
+        "microsoft": 3000
+      },
+      "projected_cpa": 168.00,
+      "projected_conversions": 357,
+      "risk": "High",
+      "upside": "High"
+    }
+  },
+  "implementation_plan": {
+    "phase_1_week_1": {
+      "actions": [
+        "Reduce Google PMax from $7K to $4K",
+        "Reduce Meta Prospecting from $14K to $10K",
+        "Increase Google Brand from $8K to $10K",
+        "Set up Microsoft Ads account and import top Google campaigns"
+      ],
+      "net_change": "Google: +$2K, Meta: -$4K (holding $2K for Microsoft launch)"
+    },
+    "phase_2_weeks_2_3": {
+      "actions": [
+        "Launch Microsoft Ads at $4K/month",
+        "Reduce Meta Prospecting from $10K to $6K",
+        "Increase Google Non-Brand from $15K to $18K",
+        "Reduce LinkedIn Sponsored Content from $7K to $5K"
+      ],
+      "net_change": "Reach target allocation"
+    },
+    "phase_3_weeks_4_plus": {
+      "actions": [
+        "Monitor performance at new levels",
+        "Optimize Microsoft Ads based on initial data",
+        "If Meta creative is refreshed, consider testing reallocation",
+        "Fine-tune Google bid strategies for new budget levels"
+      ]
+    },
+    "change_management_notes": [
+      "Don't reduce Meta more than $4K in first week - algorithm needs adjustment time",
+      "Google budget increases should be gradual to maintain quality",
+      "Microsoft will need 2-3 weeks in learning phase - don't judge too early",
+      "Weekly reviews for first month, then bi-weekly"
+    ]
+  },
+  "monitoring_framework": {
+    "weekly_metrics": [
+      "CPA by platform vs projection",
+      "Spend pacing vs allocation",
+      "Google impression share trend",
+      "Meta frequency trend",
+      "Microsoft learning phase status"
+    ],
+    "rebalancing_triggers": [
+      "Any platform CPA exceeds projection by >25% for 2 consecutive weeks",
+      "Google impression share doesn't improve despite budget increase",
+      "Microsoft CPA exceeds $250 after 4 weeks",
+      "Meta retargeting CPA spikes above $200"
+    ],
+    "success_criteria_4_weeks": [
+      "Blended CPA below $180",
+      "Total conversions above 320",
+      "Google impression share above 75%",
+      "Microsoft generating >15 conversions at <$200 CPA"
+    ]
+  },
+  "risks_and_mitigation": [
+    {
+      "risk": "Google can't absorb +$6K efficiently",
+      "likelihood": "Low",
+      "impact": "CPA rises, efficiency gains don't materialize",
+      "mitigation": "Monitor impression share weekly, pause increase if CPA rises >15%"
+    },
+    {
+      "risk": "Meta performance continues declining even at lower spend",
+      "likelihood": "Medium",
+      "impact": "Need further cuts, volume decreases",
+      "mitigation": "Prioritize creative refresh; if no improvement in 4 weeks, cut to retargeting only"
+    },
+    {
+      "risk": "Microsoft Ads doesn't perform for B2B SaaS",
+      "likelihood": "Medium",
+      "impact": "$4K/month inefficiently spent",
+      "mitigation": "6-week test with clear kill criteria ($250 CPA threshold); easy to reallocate to Google"
+    },
+    {
+      "risk": "LinkedIn audience fully exhausted",
+      "likelihood": "Medium",
+      "impact": "Conversions drop faster than expected",
+      "mitigation": "Test new audience segments, consider reducing further and reallocating to Google"
+    }
+  ],
+  "next_steps": [
+    "Review and approve recommended allocation",
+    "Set up Microsoft Ads account (can use Google import)",
+    "Brief creative team on Meta prospecting refresh need",
+    "Implement Phase 1 changes by end of week",
+    "Schedule weekly review for first month"
+  ]
+}

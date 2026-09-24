@@ -1,0 +1,77 @@
+{
+  "time_period": "Last 30 days",
+  "target_cpa": 50,
+  "business_type": "B2B SaaS",
+  "search_terms": [
+    {
+      "search_term": "project management software",
+      "clicks": 156,
+      "cost": 312.00,
+      "conversions": 8,
+      "match_type": "Broad"
+    },
+    {
+      "search_term": "free project management tools",
+      "clicks": 89,
+      "cost": 178.00,
+      "conversions": 0,
+      "match_type": "Broad"
+    },
+    {
+      "search_term": "project management certification",
+      "clicks": 67,
+      "cost": 134.00,
+      "conversions": 0,
+      "match_type": "Broad"
+    },
+    {
+      "search_term": "best project management software for teams",
+      "clicks": 45,
+      "cost": 135.00,
+      "conversions": 5,
+      "match_type": "Phrase"
+    },
+    {
+      "search_term": "monday vs asana",
+      "clicks": 34,
+      "cost": 68.00,
+      "conversions": 0,
+      "match_type": "Broad"
+    },
+    {
+      "search_term": "enterprise project management",
+      "clicks": 28,
+      "cost": 112.00,
+      "conversions": 3,
+      "match_type": "Broad"
+    },
+    {
+      "search_term": "project management jobs",
+      "clicks": 52,
+      "cost": 104.00,
+      "conversions": 0,
+      "match_type": "Broad"
+    },
+    {
+      "search_term": "agile project management tool",
+      "clicks": 23,
+      "cost": 69.00,
+      "conversions": 2,
+      "match_type": "Broad"
+    },
+    {
+      "search_term": "how to manage projects",
+      "clicks": 41,
+      "cost": 82.00,
+      "conversions": 0,
+      "match_type": "Broad"
+    },
+    {
+      "search_term": "project management software pricing",
+      "clicks": 19,
+      "cost": 57.00,
+      "conversions": 3,
+      "match_type": "Broad"
+    }
+  ]
+}

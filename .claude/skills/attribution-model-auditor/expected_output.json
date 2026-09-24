@@ -1,0 +1,291 @@
+{
+  "summary": {
+    "overall_health": "NEEDS WORK",
+    "platforms_audited": 3,
+    "overcounting_rate": "56%",
+    "primary_issues": [
+      "Platforms report 1,480 conversions vs 950 actual (56% overcounting)",
+      "TikTok missing CAPI - estimated 30-40% data loss on iOS",
+      "Attribution windows inconsistent: Google 30d, Meta 7d, TikTok 28d",
+      "View-through attribution inflating Meta and TikTok numbers"
+    ],
+    "estimated_data_loss": {
+      "tiktok": "30-40% (no CAPI)",
+      "meta": "~10% (CAPI at 72% EMQ)",
+      "google": "~5% (Enhanced Conversions working)"
+    }
+  },
+  "technical_setup_audit": {
+    "by_platform": {
+      "google_ads": {
+        "pixel_tag": {"status": "Installed", "assessment": "Good"},
+        "enhanced_conversions": {"status": "Enabled", "assessment": "Good"},
+        "ga4_linked": {"status": "Yes", "assessment": "Good"},
+        "offline_import": {"status": "No", "assessment": "Not needed for ecom"},
+        "overall": "GOOD - well configured"
+      },
+      "meta_ads": {
+        "pixel": {"status": "Installed", "assessment": "Good"},
+        "capi": {"status": "Enabled", "assessment": "Good"},
+        "event_match_quality": {"value": 72, "benchmark": 80, "assessment": "Below optimal"},
+        "aggregated_events": {"status": "8 configured", "assessment": "Good"},
+        "overall": "FAIR - EMQ needs improvement"
+      },
+      "tiktok_ads": {
+        "pixel": {"status": "Installed", "assessment": "Good"},
+        "capi": {"status": "NOT IMPLEMENTED", "assessment": "CRITICAL gap"},
+        "overall": "POOR - missing server-side tracking"
+      }
+    },
+    "ga4_integration": {
+      "status": "Configured",
+      "utm_tracking": "Mostly consistent, some gaps",
+      "cross_platform_view": "Available",
+      "assessment": "FAIR - UTM gaps causing attribution holes"
+    },
+    "critical_gaps": [
+      {
+        "gap": "TikTok CAPI not implemented",
+        "impact": "30-40% of TikTok conversions not tracked on iOS devices",
+        "priority": "HIGH",
+        "fix": "Implement TikTok Events API via Shopify app or direct integration"
+      },
+      {
+        "gap": "Meta Event Match Quality at 72%",
+        "impact": "~10-15% potential data loss on advanced matching",
+        "priority": "MEDIUM",
+        "fix": "Improve by sending more user parameters (phone, city, state)"
+      },
+      {
+        "gap": "UTM tracking inconsistent",
+        "impact": "Some conversions show as Direct in GA4",
+        "priority": "MEDIUM",
+        "fix": "Audit all campaigns for UTM consistency, use auto-tagging where possible"
+      }
+    ]
+  },
+  "attribution_window_analysis": {
+    "current_windows": {
+      "google": {"click": "30 days", "view": "1 day"},
+      "meta": {"click": "7 days", "view": "1 day"},
+      "tiktok": {"click": "28 days", "view": "7 days"}
+    },
+    "sales_cycle_alignment": {
+      "typical_purchase_time": "2-7 days",
+      "assessment": "Google and TikTok windows are longer than needed, Meta is appropriate",
+      "impact": "Google and TikTok over-claiming conversions outside realistic window"
+    },
+    "window_comparison_issue": {
+      "problem": "Can't fairly compare platforms with 7d vs 28d vs 30d windows",
+      "example": "Google claims a conversion from 25 days ago that Meta wouldn't",
+      "impact": "Google appears more efficient than it may actually be"
+    },
+    "recommendations": {
+      "google": {
+        "current": "30 days click",
+        "recommended": "7 days click",
+        "rationale": "Matches sales cycle, enables fair comparison with Meta"
+      },
+      "meta": {
+        "current": "7 days click, 1 day view",
+        "recommended": "7 days click ONLY",
+        "rationale": "View-through is inflating numbers; consider click-only for cleaner data"
+      },
+      "tiktok": {
+        "current": "28 days click, 7 days view",
+        "recommended": "7 days click, 1 day view",
+        "rationale": "Align with other platforms, view-through at 7 days is aggressive"
+      }
+    },
+    "standardization_benefit": "With all platforms at 7-day click, you can compare apples-to-apples"
+  },
+  "cross_platform_analysis": {
+    "platform_reported_vs_actual": {
+      "google_reported": 580,
+      "meta_reported": 720,
+      "tiktok_reported": 180,
+      "total_platform_reported": 1480,
+      "actual_shopify_orders": 950,
+      "overcounting": 530,
+      "overcounting_percent": "56%"
+    },
+    "ga4_comparison": {
+      "ga4_total": 920,
+      "vs_shopify": "-30 (3% undercount)",
+      "assessment": "GA4 is close to truth but slightly under due to tracking gaps",
+      "by_source_vs_platform": {
+        "google": {"platform": 580, "ga4": 410, "delta": "+170 (41% overcount)"},
+        "meta": {"platform": 720, "ga4": 380, "delta": "+340 (89% overcount)"},
+        "tiktok": {"platform": 180, "ga4": 85, "delta": "+95 (112% overcount)"}
+      }
+    },
+    "analysis": {
+      "why_platforms_overcount": [
+        "View-through attribution: User sees ad, buys later, platform claims credit",
+        "Multi-platform journeys: User sees Meta ad, clicks Google ad, both claim credit",
+        "Long windows: Google and TikTok counting conversions weeks after interaction",
+        "iOS data loss: May cause some duplicate counting via modeled conversions"
+      ],
+      "meta_specific": "89% overcount vs GA4 suggests heavy reliance on view-through and modeled conversions",
+      "tiktok_specific": "112% overcount suggests aggressive view-through (7-day window) and modeled data filling gaps from missing CAPI"
+    },
+    "true_contribution_estimate": {
+      "methodology": "Using GA4 as baseline (closer to truth than platform data)",
+      "estimated_contribution": {
+        "google": {"ga4_conversions": 410, "percent_of_paid": "47%", "estimated_true_revenue": 38540},
+        "meta": {"ga4_conversions": 380, "percent_of_paid": "43%", "estimated_true_revenue": 35700},
+        "tiktok": {"ga4_conversions": 85, "percent_of_paid": "10%", "estimated_true_revenue": 7650}
+      },
+      "caveat": "GA4 also has attribution biases (favors last-click channels)"
+    }
+  },
+  "data_loss_assessment": {
+    "by_platform": {
+      "google": {
+        "pre_ios14_accuracy": "~95%",
+        "current_estimated": "~90%",
+        "loss": "~5%",
+        "mitigation": "Enhanced Conversions helping",
+        "status": "GOOD"
+      },
+      "meta": {
+        "pre_ios14_accuracy": "~95%",
+        "current_estimated": "~80-85%",
+        "loss": "~10-15%",
+        "mitigation": "CAPI at 72% EMQ - could be better",
+        "status": "FAIR",
+        "improvement_opportunity": "Improve EMQ to 80%+ to recover ~5% more data"
+      },
+      "tiktok": {
+        "pre_ios14_accuracy": "~90%",
+        "current_estimated": "~55-65%",
+        "loss": "~30-40%",
+        "mitigation": "NONE - no CAPI",
+        "status": "POOR",
+        "improvement_opportunity": "CAPI implementation could recover 20-30% of lost data"
+      }
+    },
+    "total_estimated_lost_conversions": {
+      "google": "~30 conversions/month",
+      "meta": "~70-90 conversions/month",
+      "tiktok": "~55-70 conversions/month",
+      "total": "~155-190 conversions/month potentially untracked or misattributed"
+    }
+  },
+  "model_recommendation": {
+    "current_models": {
+      "google": "Data-driven",
+      "meta": "Last-touch (default)",
+      "tiktok": "Last-touch (default)"
+    },
+    "your_business_profile": {
+      "type": "E-commerce DTC",
+      "sales_cycle": "2-7 days (short)",
+      "channels": "Multi-channel (Search, Social)",
+      "goal": "Maximize ROAS"
+    },
+    "recommended_approach": {
+      "primary": "Standardized 7-day click attribution across all platforms",
+      "secondary": "Use GA4 as neutral source of truth for cross-platform comparison",
+      "advanced": "Consider incrementality tests if budget allows"
+    },
+    "model_reasoning": {
+      "why_standardize_windows": "Enables fair comparison between platforms",
+      "why_click_only": "View-through is contributing to overcounting, especially Meta and TikTok",
+      "why_7_days": "Matches your 2-7 day purchase cycle",
+      "why_ga4_as_truth": "More neutral than platform data, though still imperfect"
+    }
+  },
+  "source_of_truth_hierarchy": {
+    "recommended_hierarchy": [
+      {"rank": 1, "source": "Shopify", "use_for": "Total conversions and revenue", "why": "Actual money, can't be disputed"},
+      {"rank": 2, "source": "GA4", "use_for": "Cross-platform comparison and channel attribution", "why": "Neutral, same rules for all"},
+      {"rank": 3, "source": "Platform data", "use_for": "Within-platform optimization only", "why": "Use to optimize campaigns but don't compare across platforms"}
+    ],
+    "how_to_reconcile": {
+      "step_1": "Use Shopify total orders as the 'true' conversion count",
+      "step_2": "Use GA4 source breakdown to estimate each channel's contribution",
+      "step_3": "Use platform data only for optimizing within that platform (which ads, audiences, etc.)",
+      "step_4": "Don't compare Google's reported ROAS to Meta's reported ROAS directly"
+    }
+  },
+  "action_plan": {
+    "immediate_this_week": [
+      {
+        "priority": 1,
+        "action": "Implement TikTok CAPI",
+        "details": "Use TikTok Shopify app or direct Events API integration",
+        "expected_impact": "Recover 20-30% of lost TikTok conversions",
+        "effort": "Medium (Shopify app is easier)"
+      },
+      {
+        "priority": 2,
+        "action": "Standardize attribution windows to 7-day click",
+        "details": "Change Google from 30d to 7d, TikTok from 28d to 7d",
+        "expected_impact": "Reduce overcounting, enable fair comparison",
+        "effort": "Low (settings change)"
+      },
+      {
+        "priority": 3,
+        "action": "Consider disabling view-through on Meta and TikTok",
+        "details": "Or at least track click vs view separately in reporting",
+        "expected_impact": "Cleaner data, less inflated reporting",
+        "effort": "Low"
+      }
+    ],
+    "short_term_next_2_weeks": [
+      {
+        "action": "Improve Meta Event Match Quality",
+        "details": "Add phone, city, state to CAPI events, ensure email is hashed correctly",
+        "expected_impact": "EMQ 72% → 80%+, ~5% data recovery"
+      },
+      {
+        "action": "Audit UTM tracking across all campaigns",
+        "details": "Ensure consistent UTM parameters, fix campaigns with missing UTMs",
+        "expected_impact": "Better GA4 attribution accuracy"
+      },
+      {
+        "action": "Build custom report using recommended source of truth hierarchy",
+        "details": "Weekly report: Shopify totals, GA4 breakdown, platform optimization metrics",
+        "expected_impact": "Clearer decision-making, stop comparing biased numbers"
+      }
+    ],
+    "medium_term_next_month": [
+      {
+        "action": "Evaluate incrementality testing",
+        "details": "Consider holdout test on one platform to measure true lift",
+        "expected_impact": "Ground truth on actual platform contribution"
+      },
+      {
+        "action": "Reassess budget allocation based on cleaner data",
+        "details": "After 2-4 weeks of standardized tracking, rerun allocation analysis",
+        "expected_impact": "More accurate budget decisions"
+      }
+    ]
+  },
+  "monitoring_framework": {
+    "weekly_checks": [
+      "Platform sum vs Shopify total (track overcounting trend)",
+      "GA4 source breakdown (stable or shifting?)",
+      "Meta EMQ score (improving?)",
+      "TikTok data quality (after CAPI implementation)"
+    ],
+    "monthly_checks": [
+      "Full attribution review using standardized windows",
+      "Overcounting percentage trend",
+      "Data loss assessment update"
+    ],
+    "red_flags": [
+      "Overcounting increases significantly month-over-month",
+      "Meta EMQ drops below 65%",
+      "GA4 tracking shows major drops (indicates pixel issues)",
+      "Shopify orders increase but platform-reported conversions don't"
+    ],
+    "success_criteria_30_days": [
+      "TikTok CAPI implemented with EMQ >70%",
+      "All windows standardized to 7-day click",
+      "Overcounting reduced from 56% to <40%",
+      "Clear weekly reporting structure in place"
+    ]
+  }
+}

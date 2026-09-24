@@ -1,0 +1,107 @@
+{
+  "account_name": "FitGear Pro",
+  "analysis_date": "2024-02-14",
+  "target_cpa": 28.50,
+  "daily_budget": 450,
+  "creatives": [
+    {
+      "creative_id": "CR_001",
+      "creative_name": "UGC_Testimonial_Sarah_V1",
+      "days_running": 45,
+      "peak_ctr": 2.8,
+      "peak_cpm": 11.50,
+      "peak_cpa": 15.20,
+      "weekly_data": [
+        {"week": 1, "ctr": 2.8, "cpm": 11.50, "cpa": 15.20, "frequency": 1.2, "conversions": 48},
+        {"week": 2, "ctr": 2.7, "cpm": 12.00, "cpa": 16.50, "frequency": 1.8, "conversions": 52},
+        {"week": 3, "ctr": 2.5, "cpm": 12.80, "cpa": 17.25, "frequency": 2.3, "conversions": 42},
+        {"week": 4, "ctr": 2.3, "cpm": 14.20, "cpa": 19.80, "frequency": 2.9, "conversions": 35}
+      ],
+      "audience_size": 850000,
+      "cumulative_reach": 425000,
+      "was_top_performer": true
+    },
+    {
+      "creative_id": "CR_004",
+      "creative_name": "UGC_BeforeAfter_Mike_V2",
+      "days_running": 38,
+      "peak_ctr": 2.6,
+      "peak_cpm": 12.00,
+      "peak_cpa": 17.50,
+      "weekly_data": [
+        {"week": 1, "ctr": 2.4, "cpm": 13.50, "cpa": 21.00, "frequency": 1.1, "conversions": 38},
+        {"week": 2, "ctr": 2.6, "cpm": 12.00, "cpa": 17.50, "frequency": 1.5, "conversions": 55},
+        {"week": 3, "ctr": 2.5, "cpm": 12.50, "cpa": 18.20, "frequency": 1.9, "conversions": 48},
+        {"week": 4, "ctr": 2.4, "cpm": 13.00, "cpa": 19.05, "frequency": 2.2, "conversions": 45}
+      ],
+      "audience_size": 850000,
+      "cumulative_reach": 320000,
+      "was_top_performer": true
+    },
+    {
+      "creative_id": "CR_011",
+      "creative_name": "Static_NewYear_Promo",
+      "days_running": 52,
+      "peak_ctr": 2.2,
+      "peak_cpm": 10.50,
+      "peak_cpa": 22.00,
+      "weekly_data": [
+        {"week": 1, "ctr": 2.2, "cpm": 10.50, "cpa": 22.00, "frequency": 1.4, "conversions": 32},
+        {"week": 2, "ctr": 2.0, "cpm": 11.80, "cpa": 25.50, "frequency": 2.1, "conversions": 28},
+        {"week": 3, "ctr": 1.6, "cpm": 14.20, "cpa": 32.00, "frequency": 3.2, "conversions": 18},
+        {"week": 4, "ctr": 1.2, "cpm": 17.50, "cpa": 42.00, "frequency": 4.1, "conversions": 12}
+      ],
+      "audience_size": 650000,
+      "cumulative_reach": 520000,
+      "was_top_performer": false
+    },
+    {
+      "creative_id": "CR_012",
+      "creative_name": "Video_Influencer_Collab_V1",
+      "days_running": 21,
+      "peak_ctr": 3.1,
+      "peak_cpm": 14.00,
+      "peak_cpa": 19.00,
+      "weekly_data": [
+        {"week": 1, "ctr": 2.8, "cpm": 15.00, "cpa": 23.00, "frequency": 0.8, "conversions": 28},
+        {"week": 2, "ctr": 3.1, "cpm": 14.00, "cpa": 19.00, "frequency": 1.2, "conversions": 42},
+        {"week": 3, "ctr": 3.0, "cpm": 14.50, "cpa": 20.00, "frequency": 1.5, "conversions": 38}
+      ],
+      "audience_size": 850000,
+      "cumulative_reach": 180000,
+      "was_top_performer": true
+    },
+    {
+      "creative_id": "CR_013",
+      "creative_name": "Carousel_Product_Features_V2",
+      "days_running": 28,
+      "peak_ctr": 1.9,
+      "peak_cpm": 11.00,
+      "peak_cpa": 26.00,
+      "weekly_data": [
+        {"week": 1, "ctr": 1.9, "cpm": 11.00, "cpa": 26.00, "frequency": 1.0, "conversions": 22},
+        {"week": 2, "ctr": 1.8, "cpm": 11.50, "cpa": 27.50, "frequency": 1.6, "conversions": 20},
+        {"week": 3, "ctr": 1.7, "cpm": 12.20, "cpa": 29.00, "frequency": 2.2, "conversions": 18},
+        {"week": 4, "ctr": 1.5, "cpm": 13.80, "cpa": 34.00, "frequency": 2.9, "conversions": 14}
+      ],
+      "audience_size": 650000,
+      "cumulative_reach": 280000,
+      "was_top_performer": false
+    },
+    {
+      "creative_id": "CR_014",
+      "creative_name": "UGC_Gym_Routine_Alex",
+      "days_running": 14,
+      "peak_ctr": 2.5,
+      "peak_cpm": 12.50,
+      "peak_cpa": 21.00,
+      "weekly_data": [
+        {"week": 1, "ctr": 2.3, "cpm": 13.00, "cpa": 24.00, "frequency": 0.6, "conversions": 18},
+        {"week": 2, "ctr": 2.5, "cpm": 12.50, "cpa": 21.00, "frequency": 1.0, "conversions": 28}
+      ],
+      "audience_size": 850000,
+      "cumulative_reach": 95000,
+      "was_top_performer": false
+    }
+  ]
+}

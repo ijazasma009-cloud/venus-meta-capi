@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "health": "YELLOW",
+    "period": "Last 30 days",
+    "terms_reviewed": 10,
+    "estimated_monthly_waste": 566.00,
+    "opportunities_found": 4
+  },
+  "immediate_negatives": {
+    "total_wasted": 566.00,
+    "terms": [
+      {
+        "search_term": "free project management tools",
+        "clicks": 89,
+        "cost": 178.00,
+        "conversions": 0,
+        "action": "Exact negative",
+        "reason": "Free seekers - wrong intent"
+      },
+      {
+        "search_term": "project management certification",
+        "clicks": 67,
+        "cost": 134.00,
+        "conversions": 0,
+        "action": "Exact negative",
+        "reason": "Education seeker - wrong intent"
+      },
+      {
+        "search_term": "project management jobs",
+        "clicks": 52,
+        "cost": 104.00,
+        "conversions": 0,
+        "action": "Exact negative",
+        "reason": "Job seeker - wrong audience"
+      },
+      {
+        "search_term": "how to manage projects",
+        "clicks": 41,
+        "cost": 82.00,
+        "conversions": 0,
+        "action": "Exact negative",
+        "reason": "Informational query - not purchase intent"
+      },
+      {
+        "search_term": "monday vs asana",
+        "clicks": 34,
+        "cost": 68.00,
+        "conversions": 0,
+        "action": "Exact negative",
+        "reason": "Competitor comparison - unless conquesting"
+      }
+    ],
+    "pattern_negatives": [
+      {
+        "pattern": "free",
+        "match_type": "Phrase",
+        "reason": "Blocks free seekers"
+      },
+      {
+        "pattern": "certification",
+        "match_type": "Phrase",
+        "reason": "Blocks education seekers"
+      },
+      {
+        "pattern": "jobs",
+        "match_type": "Phrase",
+        "reason": "Blocks job seekers"
+      },
+      {
+        "pattern": "how to",
+        "match_type": "Phrase",
+        "reason": "Blocks informational queries"
+      }
+    ],
+    "copy_paste_list": "free project management tools\nproject management certification\nproject management jobs\nhow to manage projects\nmonday vs asana"
+  },
+  "keywords_to_promote": [
+    {
+      "search_term": "project management software",
+      "conversions": 8,
+      "cpa": 39.00,
+      "current_match": "Broad",
+      "recommendation": "Add as Exact - star performer"
+    },
+    {
+      "search_term": "best project management software for teams",
+      "conversions": 5,
+      "cpa": 27.00,
+      "current_match": "Phrase",
+      "recommendation": "Add as Exact - high intent long-tail"
+    },
+    {
+      "search_term": "enterprise project management",
+      "conversions": 3,
+      "cpa": 37.33,
+      "current_match": "Broad",
+      "recommendation": "Add as Exact - B2B intent"
+    },
+    {
+      "search_term": "project management software pricing",
+      "conversions": 3,
+      "cpa": 19.00,
+      "current_match": "Broad",
+      "recommendation": "Add as Exact - bottom funnel"
+    }
+  ],
+  "watchlist": [
+    {
+      "search_term": "agile project management tool",
+      "clicks": 23,
+      "cost": 69.00,
+      "conversions": 2,
+      "signal": "Borderline CPA ($34.50) - monitor",
+      "review_date": "2 weeks"
+    }
+  ],
+  "quality_breakdown": {
+    "gold_percent": 52,
+    "garbage_percent": 45,
+    "grey_zone_percent": 3
+  },
+  "strategic_insights": [
+    {
+      "pattern": "Intent mismatch issue",
+      "observation": "45% of spend going to non-commercial queries (free, jobs, how-to). Broad match is too broad.",
+      "recommendation": "Tighten match types and build robust negative list"
+    },
+    {
+      "pattern": "Long-tail opportunity",
+      "observation": "4+ word queries converting at 2x the rate of short queries",
+      "recommendation": "Create dedicated ad group for long-tail variations with specific ad copy"
+    }
+  ]
+}

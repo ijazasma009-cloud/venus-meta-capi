@@ -1,0 +1,57 @@
+{
+  "account_name": "Acme Corp",
+  "week_dates": "Jan 13-19, 2025",
+  "audience": "client",
+  "targets": {
+    "cpa": 50,
+    "monthly_budget": 15000,
+    "monthly_conversions": 300
+  },
+  "this_week": {
+    "spend": 3245.67,
+    "clicks": 1847,
+    "conversions": 78,
+    "cpa": 41.61,
+    "ctr": 4.2,
+    "impressions": 43976
+  },
+  "last_week": {
+    "spend": 3102.45,
+    "clicks": 1654,
+    "conversions": 63,
+    "cpa": 49.24,
+    "ctr": 3.9,
+    "impressions": 42410
+  },
+  "month_to_date": {
+    "spend": 6348.12,
+    "conversions": 141
+  },
+  "top_campaigns": [
+    {
+      "name": "Brand - Exact",
+      "conversions": 34,
+      "cpa": 28.50,
+      "change": "+15%"
+    },
+    {
+      "name": "Non-Brand - Product Features",
+      "conversions": 28,
+      "cpa": 45.20,
+      "change": "+23%"
+    }
+  ],
+  "bottom_campaigns": [
+    {
+      "name": "Non-Brand - Competitor",
+      "conversions": 4,
+      "cpa": 89.50,
+      "change": "-12%"
+    }
+  ],
+  "actions_completed": [
+    "Launched 3 new RSA variations in Product Features campaign",
+    "Added 15 negative keywords from search term review"
+  ],
+  "context": "New landing page went live on Tuesday"
+}

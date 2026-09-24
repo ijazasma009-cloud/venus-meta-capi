@@ -1,0 +1,110 @@
+{
+  "summary": {
+    "current_strategy": "Target CPA",
+    "running_since": "6 weeks",
+    "verdict": "RED",
+    "verdict_text": "Not Working",
+    "summary": "Target CPA is underperforming at $68 actual vs $50 target (36% over), with a worsening trend. The switch from Manual CPC actually increased CPA from $60 to $68. Data volume is borderline (42 conv/month) and campaign fragmentation is diluting the signal. Recommend reverting to Manual CPC or consolidating campaigns."
+  },
+  "data_sufficiency": {
+    "monthly_conversions": {
+      "value": 42,
+      "threshold": "30+ recommended",
+      "status": "warning",
+      "note": "Borderline - meets minimum but not comfortable"
+    },
+    "conversion_lag": {
+      "value": "3 days",
+      "threshold": "< 7 days ideal",
+      "status": "pass"
+    },
+    "time_on_strategy": {
+      "value": "6 weeks",
+      "threshold": "4+ weeks",
+      "status": "pass"
+    },
+    "strategy_status": {
+      "value": "Eligible",
+      "threshold": "Eligible",
+      "status": "pass"
+    },
+    "verdict": "Borderline - meets technical minimums but performance suggests insufficient signal"
+  },
+  "performance_analysis": {
+    "target_vs_actual": {
+      "target_cpa": 50,
+      "actual_cpa": 68,
+      "variance": "+36%",
+      "assessment": "Failing"
+    },
+    "trend": {
+      "week_1": "$63",
+      "week_2": "$64",
+      "week_3": "$68",
+      "week_4": "$79.50",
+      "direction": "Declining",
+      "note": "CPA increasing week-over-week - strategy is degrading, not optimizing"
+    },
+    "vs_previous_strategy": {
+      "manual_cpc_cpa": 60,
+      "target_cpa_cpa": 68,
+      "change": "+13%",
+      "verdict": "Smart Bidding performing WORSE than Manual CPC"
+    }
+  },
+  "diagnosis": {
+    "primary_issue": "Campaign fragmentation diluting conversion signal",
+    "contributing_factors": [
+      {
+        "factor": "Data fragmentation",
+        "evidence": "3 campaigns splitting 42 conversions = ~14 per campaign, well below threshold"
+      },
+      {
+        "factor": "Mixed performance profiles",
+        "evidence": "Brand CPA ($30) vs Competitor CPA ($116) - algorithm trying to optimize across vastly different economics"
+      },
+      {
+        "factor": "Target may be unrealistic for non-brand",
+        "evidence": "Non-brand campaigns at $85-116 CPA cannot hit $50 target, dragging portfolio down"
+      }
+    ],
+    "data_shows": "The algorithm is being asked to hit $50 CPA across campaigns with fundamentally different conversion economics. Brand can hit $30, but non-brand is 2-3x higher. The single target is impossible to achieve blended."
+  },
+  "recommendations": {
+    "option_a": {
+      "name": "Revert to Manual CPC",
+      "what": "Switch back to Manual CPC bidding",
+      "why": "Previous Manual CPC performance ($60 CPA) was better than current Target CPA ($68). With only 42 conversions/month split across 3 campaigns, data volume is insufficient for Smart Bidding to optimize.",
+      "expected_impact": "CPA reduction of ~$8 (12%) based on historical performance",
+      "risk": "Requires more manual management",
+      "timeline": "Evaluate after 2 weeks"
+    },
+    "option_b": {
+      "name": "Consolidate + Different Targets",
+      "what": "Merge non-brand campaigns into one, set separate targets: Brand at $35, Non-brand at $75",
+      "why": "More data per campaign, realistic targets for each. If you need Smart Bidding, this gives it a chance to work.",
+      "expected_impact": "Should stabilize CPA within targets, may improve over time",
+      "risk": "Loses granular control of competitor targeting",
+      "timeline": "Evaluate after 4 weeks (learning period)"
+    },
+    "what_not_to_do": "Don't lower the target to $40-45 hoping to force better performance. This typically causes impression share collapse as the algorithm realizes it can't hit the target."
+  },
+  "transition_plan": {
+    "if_switching_to_manual": [
+      "Step 1: Calculate current avg CPC by campaign (use as starting bids)",
+      "Step 2: Switch to Manual CPC - do all campaigns same day",
+      "Step 3: Set bids at calculated avg CPC",
+      "Step 4: Monitor daily for 3 days, adjust bids if impression share drops significantly",
+      "Step 5: Weekly bid optimization based on keyword performance"
+    ],
+    "success_metrics": {
+      "primary": "CPA should stabilize at $60-65 within 2 weeks",
+      "secondary": "Impression share should remain stable (not drop >10%)"
+    },
+    "rollback_criteria": "If CPA exceeds $75 for 2 consecutive weeks, re-evaluate strategy"
+  },
+  "watch_items": [
+    "Competitor campaign efficiency - may need to pause if CPA doesn't improve with any strategy",
+    "Conversion volume trends - if conversions increase to 60+/month, reconsider Smart Bidding"
+  ]
+}

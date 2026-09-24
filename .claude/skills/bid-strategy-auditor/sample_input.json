@@ -1,0 +1,53 @@
+{
+  "current_strategy": {
+    "type": "Target CPA",
+    "target": 50,
+    "running_since": "6 weeks",
+    "status": "Eligible"
+  },
+  "performance_last_30_days": {
+    "conversions": 42,
+    "cost": 2856,
+    "actual_cpa": 68,
+    "clicks": 1245,
+    "impressions": 28450
+  },
+  "weekly_breakdown": [
+    {"week": 1, "conversions": 12, "cost": 756, "cpa": 63},
+    {"week": 2, "conversions": 11, "cost": 704, "cpa": 64},
+    {"week": 3, "conversions": 10, "cost": 680, "cpa": 68},
+    {"week": 4, "conversions": 9, "cost": 716, "cpa": 79.50}
+  ],
+  "campaigns": [
+    {
+      "name": "Brand Campaign",
+      "conversions": 18,
+      "cost": 540,
+      "cpa": 30,
+      "strategy": "Target CPA"
+    },
+    {
+      "name": "Non-Brand - General",
+      "conversions": 15,
+      "cost": 1275,
+      "cpa": 85,
+      "strategy": "Target CPA"
+    },
+    {
+      "name": "Non-Brand - Competitor",
+      "conversions": 9,
+      "cost": 1041,
+      "cpa": 115.67,
+      "strategy": "Target CPA"
+    }
+  ],
+  "conversion_lag": "3 days average",
+  "previous_strategy": {
+    "type": "Manual CPC",
+    "performance": {
+      "conversions": 38,
+      "cost": 2280,
+      "cpa": 60
+    }
+  }
+}

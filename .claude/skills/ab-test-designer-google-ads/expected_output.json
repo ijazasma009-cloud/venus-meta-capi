@@ -1,0 +1,148 @@
+{
+  "test_name": "Headline Test: Feature vs Benefit Focus",
+  "status": "Ready for Launch",
+
+  "hypothesis": {
+    "statement": "If we change the headline from 'Project Management Software for Teams' to 'Ship Projects 2x Faster,' then CTR will improve by ≥10% because benefit-focused headlines addressing outcomes (speed) outperform feature-focused headlines (software type) based on competitive analysis and direct response copywriting principles.",
+    "confidence_level": "Medium-High",
+    "basis": "Competitor observation, established copywriting best practices, aligns with user intent (people want outcomes, not tools)"
+  },
+
+  "test_design": {
+    "variable_tested": "RSA Headline",
+    "control": {
+      "headline": "Project Management Software for Teams",
+      "description": "Feature-focused, describes what the product is"
+    },
+    "variation": {
+      "headline": "Ship Projects 2x Faster",
+      "description": "Benefit-focused, describes outcome user achieves"
+    },
+    "isolation_confirmed": "Only headline 1 differs between variations. All other headlines, descriptions, and ad settings remain identical."
+  },
+
+  "statistical_requirements": {
+    "baseline_metric": {
+      "name": "CTR",
+      "value": "4.2%"
+    },
+    "minimum_detectable_effect": {
+      "relative": "10%",
+      "absolute": "0.42 percentage points (4.2% → 4.62%)"
+    },
+    "sample_size_calculation": {
+      "formula": "n = 16 × p × (1-p) / MDE²",
+      "calculation": "n = 16 × 0.042 × 0.958 / 0.10² = 6,441 per variation",
+      "total_needed": 12882
+    },
+    "duration_calculation": {
+      "daily_traffic": 450,
+      "traffic_per_variation": 225,
+      "days_needed": "6,441 / 225 = 29 days",
+      "recommended_duration": "21 days (your constraint) - see note"
+    },
+    "confidence_level": "95%",
+    "statistical_power": "80%",
+    "note": "With 21-day constraint, you'll have ~4,725 clicks per variation. This gives ~75% power to detect 10% improvement, or full power to detect 12% improvement. Acceptable tradeoff given business constraint."
+  },
+
+  "success_criteria": {
+    "primary_metric": {
+      "metric": "Click-Through Rate (CTR)",
+      "winner_threshold": "≥10% relative improvement",
+      "confidence_required": "95%"
+    },
+    "secondary_metrics": [
+      {
+        "metric": "Conversion Rate",
+        "threshold": "Monitor - should not decrease >15%",
+        "reason": "Higher CTR is worthless if it attracts wrong audience"
+      }
+    ],
+    "guardrails": [
+      {
+        "metric": "CPA",
+        "threshold": "Must not increase >20%",
+        "reason": "Ensures we're not sacrificing efficiency for vanity clicks"
+      }
+    ],
+    "decision_rules": {
+      "winner": "Variation CTR ≥10% higher with 95% confidence AND guardrails pass",
+      "loser": "Variation CTR lower OR guardrails fail",
+      "inconclusive": "CTR improvement <10% or confidence <95% - extend test or accept null"
+    }
+  },
+
+  "execution_plan": {
+    "timeline": {
+      "setup_complete": "Day 0",
+      "test_start": "Day 1",
+      "implementation_check": "Day 2",
+      "first_checkpoint": "Day 7 (no decisions, verify tracking)",
+      "second_checkpoint": "Day 14 (statistical check, no early stopping)",
+      "test_end": "Day 21",
+      "analysis_complete": "Day 22",
+      "decision_date": "Day 23"
+    },
+    "traffic_split": "50% Control / 50% Variation",
+    "implementation_notes": [
+      "Create new RSA with variation headline pinned to position 1",
+      "Keep all other headlines identical to control",
+      "Enable experiment in Google Ads (campaign experiment feature)",
+      "Set 50/50 traffic split",
+      "Verify both ads serving on Day 1"
+    ],
+    "monitoring_checkpoints": [
+      "Day 1-2: Verify both variations receiving traffic",
+      "Day 7: Check impression split (should be ~50/50)",
+      "Day 14: Review data quality, note any anomalies",
+      "Day 21: End test, begin analysis"
+    ],
+    "do_not": [
+      "Check results daily hoping for early winner",
+      "Stop test early even if one variation looks better",
+      "Change anything else in the campaign during test"
+    ]
+  },
+
+  "risks_and_considerations": [
+    {
+      "risk": "Benefit claim may attract browsers, not buyers",
+      "mitigation": "CVR guardrail metric will catch this",
+      "likelihood": "Low-Medium"
+    },
+    {
+      "risk": "21-day window slightly underpowered",
+      "mitigation": "Accepting 12% MDE at full power, or 10% MDE at 75% power",
+      "likelihood": "Acceptable tradeoff"
+    },
+    {
+      "risk": "External factors during test period",
+      "mitigation": "Document any known events, promotions, or competitor changes",
+      "likelihood": "Unknown"
+    }
+  ],
+
+  "documentation_template": {
+    "pre_test": {
+      "test_name": "Headline Test: Feature vs Benefit Focus",
+      "hypothesis": "Benefit-focused headline will improve CTR by ≥10%",
+      "start_date": "[Date]",
+      "expected_end_date": "[Date + 21 days]",
+      "success_criteria": "≥10% CTR improvement at 95% confidence",
+      "guardrails": "CPA must not increase >20%"
+    },
+    "post_test": {
+      "actual_end_date": "[Date]",
+      "result": "[Win / Lose / Inconclusive]",
+      "control_ctr": "[X%]",
+      "variation_ctr": "[X%]",
+      "improvement": "[X%]",
+      "statistical_significance": "[X%]",
+      "guardrails_status": "[Pass / Fail]",
+      "decision": "[Implement / Reject / Extend]",
+      "key_learning": "[What we learned regardless of outcome]",
+      "next_test": "[What to test next based on results]"
+    }
+  }
+}

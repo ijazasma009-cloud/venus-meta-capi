@@ -1,0 +1,57 @@
+{
+  "brand": "FitGear Pro",
+  "product": {
+    "name": "PowerBand Resistance Set",
+    "price": 79.99,
+    "key_features": [
+      "5 resistance levels in one set",
+      "Portable - fits in any bag",
+      "Latex-free material",
+      "Includes door anchor and handles",
+      "90-day money-back guarantee"
+    ],
+    "primary_benefit": "Full gym workout anywhere",
+    "usp": "Only resistance band set with quick-change clips"
+  },
+  "campaign_objective": "Conversions - Purchase",
+  "target_audience": {
+    "demographics": "Adults 25-45",
+    "psychographics": "Fitness-interested but time-poor, can't always get to gym",
+    "pain_points": [
+      "Gym memberships are expensive",
+      "No time to commute to gym",
+      "Travel frequently for work",
+      "Want to stay fit at home"
+    ]
+  },
+  "current_offer": "20% off with code FIT20 + free shipping",
+  "platforms": ["Meta", "TikTok"],
+  "winning_creative_data": {
+    "creative_name": "UGC_BeforeAfter_Mike_V2",
+    "performance": {
+      "cpa": 19.05,
+      "roas": 3.94,
+      "ctr": 2.4,
+      "hook_rate": "45%",
+      "hold_rate": "31%"
+    },
+    "winning_elements": {
+      "hook_type": "Transformation",
+      "hook_script": "Mike starts frustrated trying to pack gym bag, then shows compact resistance bands fitting in laptop bag",
+      "body_structure": "Problem-Solution-Proof",
+      "cta_type": "Value",
+      "format": "Video 15-30s",
+      "tone": "Relatable, slightly frustrated to happy transition"
+    }
+  },
+  "brand_guidelines": {
+    "tone": "Motivating but not preachy, relatable fitness journey",
+    "restrictions": [
+      "No weight loss claims",
+      "No 'guaranteed results' language",
+      "No comparison to specific gym brands"
+    ],
+    "required_disclosures": "#ad or #sponsored required"
+  },
+  "brief_type": "new_creator_replicating_winner"
+}

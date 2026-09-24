@@ -1,0 +1,253 @@
+{
+  "account_info": {
+    "business": "E-commerce - Fashion DTC",
+    "objective": "Purchases",
+    "target_cpa": 35,
+    "target_roas": 3.0,
+    "analysis_period": "Last 30 days"
+  },
+  "account_summary": {
+    "total_spend": 45000,
+    "total_purchases": 1125,
+    "revenue": 112500,
+    "blended_cpa": 40.00,
+    "blended_roas": 2.5,
+    "total_impressions": 3500000,
+    "total_clicks": 52500,
+    "cpm": 12.86,
+    "ctr": 1.5,
+    "cpc": 0.86,
+    "landing_page_cvr": 2.14
+  },
+  "campaigns": [
+    {
+      "name": "Prospecting - Broad",
+      "objective": "Conversions",
+      "status": "Active",
+      "spend": 22000,
+      "purchases": 485,
+      "revenue": 48500,
+      "cpa": 45.36,
+      "roas": 2.2,
+      "impressions": 1800000,
+      "clicks": 27000,
+      "cpm": 12.22,
+      "ctr": 1.5,
+      "frequency": 2.8
+    },
+    {
+      "name": "Prospecting - Lookalikes",
+      "objective": "Conversions",
+      "status": "Active",
+      "spend": 12000,
+      "purchases": 340,
+      "revenue": 37400,
+      "cpa": 35.29,
+      "roas": 3.1,
+      "impressions": 900000,
+      "clicks": 14400,
+      "cpm": 13.33,
+      "ctr": 1.6,
+      "frequency": 2.1
+    },
+    {
+      "name": "Retargeting - Website Visitors",
+      "objective": "Conversions",
+      "status": "Active",
+      "spend": 6000,
+      "purchases": 210,
+      "revenue": 18900,
+      "cpa": 28.57,
+      "roas": 3.15,
+      "impressions": 450000,
+      "clicks": 7200,
+      "cpm": 13.33,
+      "ctr": 1.6,
+      "frequency": 4.8
+    },
+    {
+      "name": "Retargeting - Cart Abandoners",
+      "objective": "Conversions",
+      "status": "Active",
+      "spend": 3000,
+      "purchases": 75,
+      "revenue": 6000,
+      "cpa": 40.00,
+      "roas": 2.0,
+      "impressions": 200000,
+      "clicks": 2400,
+      "cpm": 15.00,
+      "ctr": 1.2,
+      "frequency": 6.2
+    },
+    {
+      "name": "Advantage+ Shopping",
+      "objective": "Sales",
+      "status": "Active",
+      "spend": 2000,
+      "purchases": 15,
+      "revenue": 1700,
+      "cpa": 133.33,
+      "roas": 0.85,
+      "impressions": 150000,
+      "clicks": 1500,
+      "cpm": 13.33,
+      "ctr": 1.0,
+      "frequency": 1.5
+    }
+  ],
+  "ad_sets": [
+    {
+      "campaign": "Prospecting - Broad",
+      "name": "Broad - US - 18-65",
+      "audience_size": "85M",
+      "spend": 15000,
+      "purchases": 320,
+      "cpa": 46.88,
+      "cpm": 11.50,
+      "frequency": 2.5
+    },
+    {
+      "campaign": "Prospecting - Broad",
+      "name": "Interest - Fashion Enthusiasts",
+      "audience_size": "12M",
+      "spend": 7000,
+      "purchases": 165,
+      "cpa": 42.42,
+      "cpm": 14.00,
+      "frequency": 3.5
+    },
+    {
+      "campaign": "Prospecting - Lookalikes",
+      "name": "LAL - Purchasers 1%",
+      "audience_size": "2.5M",
+      "spend": 8000,
+      "purchases": 250,
+      "cpa": 32.00,
+      "cpm": 14.50,
+      "frequency": 2.2
+    },
+    {
+      "campaign": "Prospecting - Lookalikes",
+      "name": "LAL - Purchasers 3%",
+      "audience_size": "7.5M",
+      "spend": 4000,
+      "purchases": 90,
+      "cpa": 44.44,
+      "cpm": 11.80,
+      "frequency": 1.8
+    }
+  ],
+  "ads": [
+    {
+      "campaign": "Prospecting - Broad",
+      "name": "Video - Summer Collection Hero",
+      "format": "Video",
+      "spend": 8500,
+      "purchases": 210,
+      "cpa": 40.48,
+      "ctr": 1.8,
+      "hook_rate": 32,
+      "days_running": 45,
+      "ctr_trend": "declining -25% vs first 2 weeks"
+    },
+    {
+      "campaign": "Prospecting - Broad",
+      "name": "Carousel - Best Sellers",
+      "format": "Carousel",
+      "spend": 6000,
+      "purchases": 145,
+      "cpa": 41.38,
+      "ctr": 1.4,
+      "days_running": 30,
+      "ctr_trend": "stable"
+    },
+    {
+      "campaign": "Prospecting - Broad",
+      "name": "UGC - Customer Review",
+      "format": "Video",
+      "spend": 4500,
+      "purchases": 98,
+      "cpa": 45.92,
+      "ctr": 1.6,
+      "hook_rate": 28,
+      "days_running": 21,
+      "ctr_trend": "stable"
+    },
+    {
+      "campaign": "Prospecting - Broad",
+      "name": "Static - Product Grid",
+      "format": "Image",
+      "spend": 3000,
+      "purchases": 32,
+      "cpa": 93.75,
+      "ctr": 0.8,
+      "days_running": 30,
+      "ctr_trend": "declining"
+    },
+    {
+      "campaign": "Prospecting - Lookalikes",
+      "name": "Video - Brand Story",
+      "format": "Video",
+      "spend": 7000,
+      "purchases": 220,
+      "cpa": 31.82,
+      "ctr": 1.9,
+      "hook_rate": 38,
+      "days_running": 28,
+      "ctr_trend": "stable"
+    },
+    {
+      "campaign": "Prospecting - Lookalikes",
+      "name": "Static - Lifestyle Shot",
+      "format": "Image",
+      "spend": 5000,
+      "purchases": 120,
+      "cpa": 41.67,
+      "ctr": 1.3,
+      "days_running": 28,
+      "ctr_trend": "declining -15%"
+    },
+    {
+      "campaign": "Retargeting - Website Visitors",
+      "name": "Dynamic Product Ads",
+      "format": "DPA",
+      "spend": 4000,
+      "purchases": 150,
+      "cpa": 26.67,
+      "ctr": 1.8,
+      "days_running": 60,
+      "ctr_trend": "stable"
+    },
+    {
+      "campaign": "Retargeting - Website Visitors",
+      "name": "Offer - 15% Off",
+      "format": "Image",
+      "spend": 2000,
+      "purchases": 60,
+      "cpa": 33.33,
+      "ctr": 1.2,
+      "days_running": 30,
+      "ctr_trend": "stable"
+    }
+  ],
+  "placements": [
+    {"placement": "Facebook Feed", "spend": 15000, "purchases": 420, "cpa": 35.71, "cpm": 11.50, "ctr": 1.4},
+    {"placement": "Instagram Feed", "spend": 12000, "purchases": 315, "cpa": 38.10, "cpm": 13.00, "ctr": 1.6},
+    {"placement": "Instagram Stories", "spend": 8000, "purchases": 180, "cpa": 44.44, "cpm": 14.50, "ctr": 1.8},
+    {"placement": "Instagram Reels", "spend": 6000, "purchases": 145, "cpa": 41.38, "cpm": 12.00, "ctr": 1.7},
+    {"placement": "Facebook Reels", "spend": 2500, "purchases": 45, "cpa": 55.56, "cpm": 10.00, "ctr": 1.3},
+    {"placement": "Audience Network", "spend": 1500, "purchases": 20, "cpa": 75.00, "cpm": 5.00, "ctr": 0.5}
+  ],
+  "week_over_week": {
+    "week_1": {"spend": 10000, "purchases": 310, "cpa": 32.26, "ctr": 1.65},
+    "week_2": {"spend": 11000, "purchases": 305, "cpa": 36.07, "ctr": 1.58},
+    "week_3": {"spend": 12000, "purchases": 275, "cpa": 43.64, "ctr": 1.45},
+    "week_4": {"spend": 12000, "purchases": 235, "cpa": 51.06, "ctr": 1.32}
+  },
+  "context": {
+    "recent_changes": "Increased budget 20% in week 2, launched Advantage+ Shopping in week 3",
+    "seasonality": "Post-holiday slowdown expected",
+    "attribution_window": "7-day click, 1-day view"
+  }
+}

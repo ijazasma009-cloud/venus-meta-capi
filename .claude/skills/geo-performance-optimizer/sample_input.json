@@ -1,0 +1,88 @@
+{
+  "workspace_id": 101,
+  "brand_id": 69,
+  "account_id": "9382431689",
+  "date_range": {
+    "start_date": "2025-01-01",
+    "end_date": "2025-01-31"
+  },
+  "target_cpa": 50,
+  "service_area": ["Georgia", "Florida", "Alabama", "South Carolina"],
+  "mcp_response": {
+    "status": "success",
+    "data": [
+      {
+        "campaign": {"id": "123", "name": "Brand Campaign"},
+        "user_location_view": {
+          "country_criterion_id": "2840",
+          "targeting_location": true
+        },
+        "location_name": "Atlanta, Georgia",
+        "metrics": {
+          "impressions": 15000,
+          "clicks": 450,
+          "cost_micros": 9000000000,
+          "conversions": 25,
+          "conversions_value": 5000,
+          "ctr": 0.03,
+          "average_cpc": 2000000,
+          "cost_per_conversion": 36000000
+        }
+      },
+      {
+        "campaign": {"id": "123", "name": "Brand Campaign"},
+        "user_location_view": {
+          "country_criterion_id": "2840",
+          "targeting_location": true
+        },
+        "location_name": "Miami, Florida",
+        "metrics": {
+          "impressions": 12000,
+          "clicks": 360,
+          "cost_micros": 7200000000,
+          "conversions": 8,
+          "conversions_value": 1600,
+          "ctr": 0.03,
+          "average_cpc": 2000000,
+          "cost_per_conversion": 90000000
+        }
+      },
+      {
+        "campaign": {"id": "123", "name": "Brand Campaign"},
+        "user_location_view": {
+          "country_criterion_id": "2840",
+          "targeting_location": true
+        },
+        "location_name": "Birmingham, Alabama",
+        "metrics": {
+          "impressions": 5000,
+          "clicks": 150,
+          "cost_micros": 3000000000,
+          "conversions": 0,
+          "conversions_value": 0,
+          "ctr": 0.03,
+          "average_cpc": 2000000,
+          "cost_per_conversion": 0
+        }
+      },
+      {
+        "campaign": {"id": "123", "name": "Brand Campaign"},
+        "user_location_view": {
+          "country_criterion_id": "2840",
+          "targeting_location": true
+        },
+        "location_name": "Savannah, Georgia",
+        "metrics": {
+          "impressions": 3000,
+          "clicks": 90,
+          "cost_micros": 1800000000,
+          "conversions": 5,
+          "conversions_value": 1000,
+          "ctr": 0.03,
+          "average_cpc": 2000000,
+          "cost_per_conversion": 36000000
+        }
+      }
+    ]
+  }
+}

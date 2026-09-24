@@ -1,0 +1,32 @@
+{
+  "business_info": {
+    "business_name": "FitGear Pro",
+    "industry": "Fitness Equipment E-commerce",
+    "product_type": "Home gym equipment and accessories",
+    "average_order_value": 120,
+    "ideal_customer": "Health-conscious adults 25-54, interested in home workouts"
+  },
+  "goals": {
+    "primary_objective": "Sales (Purchase)",
+    "target_roas": 3.0,
+    "monthly_budget": 8000
+  },
+  "current_assets": {
+    "website_visitors_monthly": 25000,
+    "email_list_size": 12000,
+    "customer_count": 3500,
+    "social_followers": {
+      "facebook": 8000,
+      "instagram": 15000
+    },
+    "video_content": true
+  },
+  "current_performance": {
+    "running_ads": true,
+    "current_audiences": ["LAL Purchasers 1%", "Interest - Fitness", "Retargeting - All Visitors"],
+    "best_performing": "LAL Purchasers 1%",
+    "worst_performing": "Interest - Fitness",
+    "monthly_conversions": 180
+  },
+  "geographic_focus": "United States"
+}

@@ -1,0 +1,283 @@
+{
+  "summary": {
+    "period": "2024-01-15 to 2024-02-14",
+    "total_creatives_analyzed": 10,
+    "total_spend": 12590.00,
+    "total_conversions": 507,
+    "overall_cpa": 24.83,
+    "overall_roas": 2.74
+  },
+  "tier_breakdown": {
+    "tier_1_stars": {
+      "count": 2,
+      "creatives": ["CR_001", "CR_004"],
+      "spend": 5650.00,
+      "conversions": 310,
+      "avg_cpa": 18.23,
+      "notes": "Both UGC video format with Value CTA"
+    },
+    "tier_2_solid": {
+      "count": 2,
+      "creatives": ["CR_006", "CR_009"],
+      "spend": 1540.00,
+      "conversions": 64,
+      "avg_cpa": 24.06,
+      "notes": "Static images performing at account average"
+    },
+    "tier_3_promising": {
+      "count": 1,
+      "creatives": ["CR_007"],
+      "spend": 180.00,
+      "conversions": 9,
+      "avg_cpa": 20.00,
+      "notes": "Insufficient spend but strong early signals"
+    },
+    "tier_4_average": {
+      "count": 2,
+      "creatives": ["CR_002", "CR_010"],
+      "spend": 2370.00,
+      "conversions": 92,
+      "avg_cpa": 25.76,
+      "notes": "Near average, monitor for improvement or decline"
+    },
+    "tier_5_underperformers": {
+      "count": 1,
+      "creatives": ["CR_003"],
+      "spend": 980.00,
+      "conversions": 18,
+      "avg_cpa": 54.44,
+      "notes": "High engagement (4% CTR) but poor conversion - Engagement Trap"
+    },
+    "tier_6_bleeders": {
+      "count": 2,
+      "creatives": ["CR_005", "CR_008"],
+      "spend": 1870.00,
+      "conversions": 14,
+      "avg_cpa": 133.57,
+      "notes": "Immediate pause recommended"
+    }
+  },
+  "waste_analysis": {
+    "spend_on_underperformers_and_bleeders": 2850.00,
+    "waste_percentage": 22.6,
+    "severity": "Significant",
+    "conversions_if_reallocated_to_stars": 156,
+    "actual_conversions_from_wasted_spend": 32,
+    "conversion_opportunity_cost": 124
+  },
+  "engagement_efficiency_matrix": {
+    "true_stars": ["CR_001", "CR_004"],
+    "hidden_gems": ["CR_007"],
+    "engagement_traps": ["CR_003", "CR_008"],
+    "silent_failures": ["CR_005", "CR_010"]
+  },
+  "video_funnel_analysis": [
+    {
+      "creative_id": "CR_001",
+      "hook_rate": "40.0%",
+      "hook_verdict": "Excellent",
+      "hold_rate": "25.0%",
+      "hold_verdict": "Good",
+      "diagnosis": "Strong throughout funnel"
+    },
+    {
+      "creative_id": "CR_004",
+      "hook_rate": "45.0%",
+      "hook_verdict": "Excellent",
+      "hold_rate": "31.1%",
+      "hold_verdict": "Excellent",
+      "diagnosis": "Best video performer - transformation hook highly effective"
+    },
+    {
+      "creative_id": "CR_005",
+      "hook_rate": "25.0%",
+      "hook_verdict": "Below Average",
+      "hold_rate": "16.0%",
+      "hold_verdict": "Poor",
+      "diagnosis": "Loses audience early, 60s too long, brand content not engaging"
+    },
+    {
+      "creative_id": "CR_007",
+      "hook_rate": "45.0%",
+      "hook_verdict": "Excellent",
+      "hold_rate": "33.3%",
+      "hold_verdict": "Excellent",
+      "diagnosis": "Strong signals despite low spend - scale candidate"
+    },
+    {
+      "creative_id": "CR_010",
+      "hook_rate": "24.0%",
+      "hook_verdict": "Below Average",
+      "hold_rate": "25.0%",
+      "hold_verdict": "Good",
+      "diagnosis": "Weak hook, those who stay convert okay - needs new opening"
+    }
+  ],
+  "pattern_analysis": {
+    "format_performance": {
+      "winner": "Video (15-30s)",
+      "winner_avg_cpa": 18.15,
+      "comparison": "36% better than account average",
+      "loser": "Video (30s+)",
+      "loser_avg_cpa": 120.83,
+      "ranking": [
+        {"format": "Video (15-30s)", "avg_cpa": 18.15, "sample_size": 3},
+        {"format": "Video (< 15s)", "avg_cpa": 20.00, "sample_size": 1},
+        {"format": "Static Image", "avg_cpa": 47.62, "sample_size": 4},
+        {"format": "Carousel", "avg_cpa": 54.44, "sample_size": 1},
+        {"format": "Video (30s+)", "avg_cpa": 120.83, "sample_size": 1}
+      ]
+    },
+    "hook_performance": {
+      "winner": "Transformation",
+      "winner_avg_cpa": 19.05,
+      "comparison": "33% better than account average",
+      "loser": "Curiosity Gap",
+      "loser_avg_cpa": 210.00,
+      "ranking": [
+        {"hook_type": "Transformation", "avg_cpa": 19.05},
+        {"hook_type": "Social Proof", "avg_cpa": 17.25},
+        {"hook_type": "Demonstration", "avg_cpa": 28.57},
+        {"hook_type": "Direct Benefit", "avg_cpa": 23.76},
+        {"hook_type": "Problem-Agitate", "avg_cpa": 54.44},
+        {"hook_type": "Bold Claim", "avg_cpa": 120.83},
+        {"hook_type": "Curiosity Gap", "avg_cpa": 210.00}
+      ]
+    },
+    "cta_performance": {
+      "winner": "Value",
+      "winner_avg_cpa": 18.48,
+      "ranking": [
+        {"cta_type": "Value", "avg_cpa": 18.48, "sample_size": 4},
+        {"cta_type": "Urgency", "avg_cpa": 35.86, "sample_size": 3},
+        {"cta_type": "Curiosity", "avg_cpa": 97.00, "sample_size": 2},
+        {"cta_type": "Social", "avg_cpa": 120.83, "sample_size": 1}
+      ]
+    }
+  },
+  "top_performers": [
+    {
+      "rank": 1,
+      "creative_id": "CR_001",
+      "name": "UGC_Testimonial_Sarah_V1",
+      "format": "Video (15-30s)",
+      "cpa": 17.25,
+      "roas": 4.06,
+      "spend": 2450.00,
+      "conversions": 142,
+      "why_it_works": "Social proof hook + Value CTA + UGC authenticity. 40% hook rate captures attention, testimonial builds trust, clear value prop converts."
+    },
+    {
+      "rank": 2,
+      "creative_id": "CR_004",
+      "name": "UGC_BeforeAfter_Mike_V2",
+      "format": "Video (15-30s)",
+      "cpa": 19.05,
+      "roas": 3.94,
+      "spend": 3200.00,
+      "conversions": 168,
+      "why_it_works": "Transformation hook is visually compelling and immediately communicates value. Highest hold rate (31%) shows content quality. UGC format builds trust."
+    },
+    {
+      "rank": 3,
+      "creative_id": "CR_007",
+      "name": "UGC_Unboxing_Jenna_V1",
+      "format": "Video (< 15s)",
+      "cpa": 20.00,
+      "roas": 3.50,
+      "spend": 180.00,
+      "conversions": 9,
+      "why_it_works": "Demonstration hook + short format + UGC style. Strong early metrics suggest scaling potential. Needs more spend to confirm."
+    }
+  ],
+  "kill_list": [
+    {
+      "creative_id": "CR_005",
+      "name": "Polished_Brand_Anthem_60s",
+      "spend": 1450.00,
+      "conversions": 12,
+      "cpa": 120.83,
+      "reason": "CPA 424% of target. Brand anthem content doesn't convert for direct response. 60s too long for feed. Kill immediately."
+    },
+    {
+      "creative_id": "CR_008",
+      "name": "Meme_Viral_Attempt_V1",
+      "spend": 420.00,
+      "conversions": 2,
+      "cpa": 210.00,
+      "reason": "ENGAGEMENT TRAP: Highest CTR (5%) but worst CPA. Attracts clickers not buyers. Viral intent misaligned with conversion goal."
+    }
+  ],
+  "red_flags": [
+    {
+      "flag": "Engagement Trap Detected",
+      "creative": "CR_003 (Carousel_Features_5Panel)",
+      "detail": "4% CTR (highest among non-meme content) but CPA of $54.44. High engagement, poor conversion. Consider landing page alignment or offer mismatch."
+    },
+    {
+      "flag": "Engagement Trap Detected",
+      "creative": "CR_008 (Meme_Viral_Attempt_V1)",
+      "detail": "5% CTR, $210 CPA. Classic engagement trap. Entertaining content attracts wrong audience."
+    },
+    {
+      "flag": "Format Imbalance Opportunity",
+      "detail": "All top 3 performers are video. Only 1 carousel tested. Consider testing more carousel formats with winning UGC/testimonial approach."
+    },
+    {
+      "flag": "Winning Pattern Not Replicated",
+      "detail": "UGC + Transformation hook + Value CTA = best combo. Only 1 creative uses transformation hook. Test more variations."
+    }
+  ],
+  "testing_recommendations": [
+    {
+      "priority": 1,
+      "test_concept": "New UGC video with Transformation hook (before/after)",
+      "based_on": "CR_004 is best performer with this pattern",
+      "expected_impact": "High - replicating proven winner",
+      "specific_brief": "Recruit 2-3 new creators for before/after content. Focus on visual transformation in first 3 seconds."
+    },
+    {
+      "priority": 2,
+      "test_concept": "Scale CR_007 (Unboxing) with increased budget",
+      "based_on": "Strong early metrics, only $180 spend",
+      "expected_impact": "Medium-High - validate promising creative",
+      "specific_brief": "Increase to $500 minimum to confirm performance before further scaling."
+    },
+    {
+      "priority": 3,
+      "test_concept": "Carousel with UGC testimonial content",
+      "based_on": "UGC wins in video, carousel format undertested",
+      "expected_impact": "Medium - format diversification",
+      "specific_brief": "5-panel carousel with customer testimonials, transformation stories, ending with Value CTA."
+    },
+    {
+      "priority": 4,
+      "test_concept": "Shorter video versions of CR_001 and CR_004",
+      "based_on": "CR_007 (<15s) shows strong performance, test if shorter versions of winners perform",
+      "expected_impact": "Medium - could unlock new placement efficiency",
+      "specific_brief": "Cut existing winners to <15s versions focusing on strongest 3 seconds + immediate CTA."
+    }
+  ],
+  "winning_patterns_summary": {
+    "format": "Video (15-30s) UGC style - 36% better CPA than average",
+    "hook": "Transformation (before/after) and Social Proof - 33% better CPA",
+    "cta": "Value-focused ('Get 20% off', 'Start Free') - 35% better CPA",
+    "combination": "UGC Video + Transformation/Social Proof Hook + Value CTA = formula for success"
+  },
+  "next_actions": {
+    "immediate": [
+      "Pause CR_005 and CR_008 (save $1,870/month)",
+      "Increase budget on CR_007 to $500",
+      "Reduce spend on CR_003 by 50%"
+    ],
+    "this_week": [
+      "Brief new UGC transformation content based on CR_004 success",
+      "Create shorter versions of CR_001 and CR_004",
+      "Test carousel with testimonial content"
+    ],
+    "monitor": [
+      "CR_002 and CR_010 - close to average, could tip either direction",
+      "CR_007 after budget increase - confirm performance holds"
+    ]
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "report_date": "2024-02-14",
+  "account_name": "FitGear Pro",
+  "analysis_period": "2024-01-15 to 2024-02-14",
+  "current_state_summary": {
+    "total_spend": 45000,
+    "total_conversions": 1750,
+    "blended_cpa": 25.71,
+    "blended_roas": 2.69,
+    "total_revenue": 120900,
+    "vs_target_cpa": "-19.7% (under target - good)"
+  },
+  "platform_efficiency_breakdown": [
+    {
+      "platform": "Meta",
+      "spend": 28500,
+      "percent_of_total": "63.3%",
+      "conversions": 1250,
+      "cpa": 22.80,
+      "roas": 3.07,
+      "efficiency_tier": "Gold (Tier 1)",
+      "tier_rationale": "CPA 88.7% of blended average",
+      "trend": "Stable",
+      "saturation": "45%",
+      "headroom": "Moderate - can increase 20-30%",
+      "verdict": "Primary performer - scale with caution"
+    },
+    {
+      "platform": "TikTok",
+      "spend": 8500,
+      "percent_of_total": "18.9%",
+      "conversions": 320,
+      "cpa": 26.56,
+      "roas": 2.26,
+      "efficiency_tier": "Silver (Tier 2)",
+      "tier_rationale": "CPA 103% of blended average, but improving trend",
+      "trend": "Improving",
+      "saturation": "25%",
+      "headroom": "High - significant room to scale",
+      "verdict": "Growth opportunity - increase investment"
+    },
+    {
+      "platform": "Pinterest",
+      "spend": 3000,
+      "percent_of_total": "6.7%",
+      "conversions": 95,
+      "cpa": 31.58,
+      "roas": 1.90,
+      "efficiency_tier": "Bronze (Tier 3)",
+      "tier_rationale": "CPA 123% of blended average",
+      "trend": "Stable",
+      "saturation": "20%",
+      "headroom": "High - undertested",
+      "verdict": "Test candidate - increase to validate"
+    },
+    {
+      "platform": "LinkedIn",
+      "spend": 5000,
+      "percent_of_total": "11.1%",
+      "conversions": 85,
+      "cpa": 58.82,
+      "roas": 1.70,
+      "efficiency_tier": "Bleeder (Tier 5)",
+      "tier_rationale": "CPA 229% of blended average",
+      "trend": "Declining",
+      "saturation": "70%",
+      "headroom": "Low - approaching saturation",
+      "verdict": "Constraint-limited - reduce to minimum"
+    }
+  ],
+  "efficiency_tier_summary": {
+    "gold_tier": {
+      "spend": 28500,
+      "percent": "63.3%",
+      "conversions": 1250,
+      "platforms": ["Meta"]
+    },
+    "silver_tier": {
+      "spend": 8500,
+      "percent": "18.9%",
+      "conversions": 320,
+      "platforms": ["TikTok"]
+    },
+    "bronze_tier": {
+      "spend": 3000,
+      "percent": "6.7%",
+      "conversions": 95,
+      "platforms": ["Pinterest"]
+    },
+    "underperformer_tier": {
+      "spend": 0,
+      "percent": "0%",
+      "conversions": 0,
+      "platforms": []
+    },
+    "bleeder_tier": {
+      "spend": 5000,
+      "percent": "11.1%",
+      "conversions": 85,
+      "platforms": ["LinkedIn"]
+    }
+  },
+  "waste_analysis": {
+    "bleeder_spend": 5000,
+    "excess_over_minimum_constraint": 2000,
+    "wasted_cpa_delta": 33.11,
+    "conversions_lost_to_inefficiency": 60,
+    "interpretation": "LinkedIn converts at $58.82 vs blended $25.71. The $2K above minimum constraint ($5K - $3K min) generates ~34 conversions at $58.82 CPA. If moved to Meta, would generate ~88 conversions. Lost opportunity: 54 conversions."
+  },
+  "reallocation_recommendation": {
+    "scenario_name": "Optimized Allocation",
+    "summary": "Reduce LinkedIn to minimum, scale TikTok and test Pinterest",
+    "allocation_table": [
+      {
+        "platform": "Meta",
+        "current_spend": 28500,
+        "current_percent": "63.3%",
+        "recommended_spend": 31000,
+        "recommended_percent": "68.9%",
+        "change": "+$2,500 (+8.8%)",
+        "rationale": "Primary performer, still has headroom. Scale gradually."
+      },
+      {
+        "platform": "TikTok",
+        "current_spend": 8500,
+        "current_percent": "18.9%",
+        "recommended_spend": 11500,
+        "recommended_percent": "25.6%",
+        "change": "+$3,000 (+35.3%)",
+        "rationale": "Improving trend, low saturation. Best growth opportunity."
+      },
+      {
+        "platform": "Pinterest",
+        "current_spend": 3000,
+        "current_percent": "6.7%",
+        "recommended_spend": 4500,
+        "recommended_percent": "10.0%",
+        "change": "+$1,500 (+50%)",
+        "rationale": "Low saturation, stable performance. Test with increased budget."
+      },
+      {
+        "platform": "LinkedIn",
+        "current_spend": 5000,
+        "current_percent": "11.1%",
+        "recommended_spend": 3000,
+        "recommended_percent": "6.7%",
+        "change": "-$2,000 (-40%)",
+        "rationale": "Reduce to business constraint minimum. High saturation, declining trend, worst efficiency."
+      },
+      {
+        "platform": "Testing Reserve",
+        "current_spend": 0,
+        "current_percent": "0%",
+        "recommended_spend": 0,
+        "recommended_percent": "0%",
+        "change": "$0",
+        "rationale": "Pinterest increase serves as test allocation this cycle."
+      }
+    ],
+    "total_spend": 50000,
+    "note": "Recommendation maintains $45K total. No testing reserve needed as Pinterest increase serves this purpose."
+  },
+  "impact_projection": {
+    "current_state": {
+      "total_spend": 45000,
+      "estimated_conversions": 1750,
+      "blended_cpa": 25.71,
+      "estimated_revenue": 120900,
+      "blended_roas": 2.69
+    },
+    "optimized_state": {
+      "total_spend": 45000,
+      "estimated_conversions": 1872,
+      "blended_cpa": 24.04,
+      "estimated_revenue": 129360,
+      "blended_roas": 2.87,
+      "calculations": {
+        "meta": "31000 / (22.80 * 1.05 scaling) = 1295 conversions",
+        "tiktok": "11500 / (26.56 * 1.08 scaling) = 401 conversions",
+        "pinterest": "4500 / (31.58 * 1.10 scaling) = 130 conversions",
+        "linkedin": "3000 / 58.82 = 51 conversions"
+      }
+    },
+    "difference": {
+      "additional_conversions": 122,
+      "conversion_increase_percent": "+7.0%",
+      "cpa_reduction": "-$1.67",
+      "cpa_improvement_percent": "-6.5%",
+      "additional_revenue": 8460,
+      "roas_improvement": "+0.18"
+    }
+  },
+  "scenario_comparison": [
+    {
+      "scenario": "Current State",
+      "total_spend": 45000,
+      "est_conversions": 1750,
+      "blended_cpa": 25.71,
+      "vs_current": "-"
+    },
+    {
+      "scenario": "Optimized (Recommended)",
+      "total_spend": 45000,
+      "est_conversions": 1872,
+      "blended_cpa": 24.04,
+      "vs_current": "+7.0% conversions"
+    },
+    {
+      "scenario": "Aggressive (Cut LinkedIn Entirely)",
+      "total_spend": 45000,
+      "est_conversions": 1920,
+      "blended_cpa": 23.44,
+      "vs_current": "+9.7% conversions (violates constraint)"
+    },
+    {
+      "scenario": "Conservative (Minor Adjustments)",
+      "total_spend": 45000,
+      "est_conversions": 1805,
+      "blended_cpa": 24.93,
+      "vs_current": "+3.1% conversions"
+    }
+  ],
+  "implementation_plan": {
+    "week_1": [
+      "Reduce LinkedIn daily budget from ~$167/day to $100/day",
+      "Increase TikTok daily budget from ~$283/day to $383/day",
+      "Monitor Meta frequency and CPM for saturation signals"
+    ],
+    "week_2": [
+      "If TikTok maintains efficiency, add remaining $1,500 to TikTok",
+      "Increase Pinterest from $100/day to $150/day",
+      "Begin scaling Meta by $500/week"
+    ],
+    "week_3": [
+      "Review all platform metrics vs. projections",
+      "Adjust based on actual vs. expected CPA",
+      "Finalize Pinterest test assessment"
+    ],
+    "week_4": [
+      "Full performance review",
+      "Lock in allocations that work",
+      "Plan next cycle adjustments"
+    ]
+  },
+  "monitoring_checkpoints": [
+    {
+      "day": 7,
+      "check": "TikTok CPA after 35% budget increase",
+      "success": "CPA < $30",
+      "warning": "CPA $30-$35",
+      "abort": "CPA > $40 (pause increase)"
+    },
+    {
+      "day": 7,
+      "check": "Meta frequency after budget increase",
+      "success": "Frequency < 2.8",
+      "warning": "Frequency 2.8-3.2",
+      "abort": "Frequency > 3.5 (pause increase)"
+    },
+    {
+      "day": 14,
+      "check": "Pinterest CPA with increased budget",
+      "success": "CPA < $35",
+      "warning": "CPA $35-$40",
+      "abort": "CPA > $45 (revert to original budget)"
+    },
+    {
+      "day": 30,
+      "check": "Blended CPA across all platforms",
+      "success": "CPA < $25",
+      "warning": "CPA $25-$28",
+      "abort": "CPA > $30 (full reallocation review)"
+    }
+  ],
+  "risk_assessment": [
+    {
+      "risk": "TikTok efficiency drops with scale",
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "mitigation": "Scale gradually (35% not 50%), monitor daily, quick pause trigger"
+    },
+    {
+      "risk": "Meta saturation accelerates",
+      "likelihood": "Medium",
+      "impact": "High",
+      "mitigation": "Watch frequency closely, cap at 3.0, don't exceed 70% of total spend"
+    },
+    {
+      "risk": "Pinterest doesn't scale",
+      "likelihood": "Medium",
+      "impact": "Low",
+      "mitigation": "Only 10% of budget, easy to reallocate if fails"
+    },
+    {
+      "risk": "LinkedIn stakeholder pushback",
+      "likelihood": "Low",
+      "impact": "Medium",
+      "mitigation": "Frame as 'maintaining presence' not 'cutting'. Show efficiency data."
+    }
+  ],
+  "constraints_honored": {
+    "linkedin_minimum": {
+      "constraint": "$3,000 minimum spend",
+      "recommendation": "$3,000",
+      "status": "Honored",
+      "efficiency_cost": "51 conversions at $58.82 CPA vs 131 conversions if allocated to Meta"
+    },
+    "testing_budget": {
+      "constraint": "10% for testing",
+      "recommendation": "Pinterest increase ($1,500 = 3.3%) serves testing purpose",
+      "status": "Partially addressed - could add Snapchat test in next cycle"
+    }
+  },
+  "next_cycle_considerations": [
+    "If TikTok continues improving, consider 30%+ allocation",
+    "Test Snapchat with $2-3K budget (younger demographic overlap)",
+    "Reassess LinkedIn: if still Tier 5, negotiate constraint reduction",
+    "Monitor Meta for Q2 CPM increases (competition increases)"
+  ],
+  "executive_summary": "Current allocation leaves $2K in suboptimal LinkedIn spend. By reducing LinkedIn to the $3K minimum constraint and shifting budget to TikTok (+$3K) and Pinterest (+$1.5K), we project +122 additional conversions (+7%) at the same total spend. TikTok's improving trend and low saturation (25%) makes it the best growth lever. Implementation is gradual over 4 weeks with clear abort triggers if efficiency drops."
+}

@@ -1,0 +1,319 @@
+{
+  "report_date": "2024-02-14",
+  "account_name": "FitGear Pro",
+  "platform": "Meta",
+  "analysis_summary": {
+    "campaigns_analyzed": 4,
+    "ad_sets_analyzed": 9,
+    "total_monthly_spend": 28500,
+    "account_frequency": 3.4,
+    "frequency_assessment": "Elevated - indicates significant overlap",
+    "critical_overlaps": 2,
+    "high_overlaps": 2,
+    "moderate_overlaps": 3,
+    "estimated_monthly_waste": 2850,
+    "waste_percentage": "10%"
+  },
+  "overlap_matrix": {
+    "visual": "See matrix below",
+    "pairs": [
+      {"pair": "AS001 ↔ AS002", "overlap": "35%", "severity": "Moderate", "color": "🟡"},
+      {"pair": "AS001 ↔ AS003", "overlap": "42%", "severity": "High", "color": "🟠"},
+      {"pair": "AS002 ↔ AS003", "overlap": "28%", "severity": "Moderate", "color": "🟡"},
+      {"pair": "AS004 ↔ AS005", "overlap": "68%", "severity": "Critical", "color": "🔴"},
+      {"pair": "AS004 ↔ AS006", "overlap": "45%", "severity": "High", "color": "🟠"},
+      {"pair": "AS005 ↔ AS006", "overlap": "52%", "severity": "High", "color": "🟠"},
+      {"pair": "AS001 ↔ AS009", "overlap": "~60%", "severity": "High", "color": "🟠", "note": "Estimated - Brand overlaps Fitness interests"},
+      {"pair": "Prospecting ↔ Retargeting", "overlap": "Unknown", "severity": "Critical Risk", "color": "🔴", "note": "No exclusions applied"}
+    ],
+    "matrix_display": {
+      "note": "Overlap percentages between all audience pairs",
+      "headers": ["AS001", "AS002", "AS003", "AS004", "AS005", "AS006", "AS007", "AS008", "AS009"],
+      "interpretation": "🔴 Critical (>60%), 🟠 High (40-60%), 🟡 Moderate (25-40%), 🟢 Low (<25%)"
+    }
+  },
+  "critical_issues": [
+    {
+      "issue": "Lookalike Cannibalization",
+      "ad_sets": ["AS004 (LAL Purchasers)", "AS005 (LAL High-Value)"],
+      "overlap": "68%",
+      "problem": "High-value purchasers are a subset of all purchasers. These lookalikes are nearly identical - you're bidding against yourself for the same people.",
+      "evidence": {
+        "combined_spend": 7000,
+        "combined_frequency": "2.95 average but account shows 3.4 - indicates overlap driving frequency up",
+        "cpa_comparison": "AS004: $21.43 vs AS005: $23.81 - both competing for same pool"
+      },
+      "estimated_waste": 1200,
+      "waste_calculation": "68% overlap × $2,500 (lower performer) × 0.7 efficiency loss = $1,190"
+    },
+    {
+      "issue": "Retargeting Bleed into Prospecting",
+      "problem": "Prospecting campaigns have NO exclusions for retargeting audiences. Website visitors and cart abandoners are being served prospecting ads at higher CPAs.",
+      "evidence": {
+        "retargeting_audience_size": 97000,
+        "prospecting_reach": "Millions - guaranteed overlap",
+        "retargeting_cpa": "$16-18",
+        "prospecting_cpa": "$27-32",
+        "implication": "Paying $27+ for people who could be converted at $16"
+      },
+      "estimated_waste": 850,
+      "waste_calculation": "Estimated 5% of prospecting reach is retargeting-eligible × prospecting spend × CPA delta"
+    }
+  ],
+  "high_severity_issues": [
+    {
+      "issue": "Interest Targeting Overlap - Fitness/Running",
+      "ad_sets": ["AS001 (Fitness Enthusiasts)", "AS003 (Running & Cardio)"],
+      "overlap": "42%",
+      "problem": "Both contain 'Fitness' interest. 42% of Running audience also matches Fitness targeting.",
+      "recommendation": "Exclude 'Running' interest from AS001, or consolidate into single ad set with all fitness interests"
+    },
+    {
+      "issue": "Triple LAL Overlap",
+      "ad_sets": ["AS004", "AS005", "AS006"],
+      "combined_overlap": "45-68%",
+      "problem": "All three lookalikes share significant overlap. Email subscribers often become purchasers, creating nested overlap.",
+      "recommendation": "Consolidate into tiered LAL structure with exclusion cascade"
+    },
+    {
+      "issue": "Brand Campaign Overlap",
+      "ad_sets": ["AS009 (Brand Awareness)", "AS001 (Prospecting Interest)"],
+      "overlap": "~60% estimated",
+      "problem": "Broad Fitness targeting in Brand campaign overlaps heavily with Fitness Enthusiasts prospecting.",
+      "recommendation": "Different objective doesn't justify same audience. Either exclude or accept as intentional reinforcement."
+    }
+  ],
+  "moderate_issues": [
+    {
+      "issue": "Yoga/Wellness + Fitness Overlap",
+      "ad_sets": ["AS001", "AS002"],
+      "overlap": "35%",
+      "recommendation": "Monitor - could consolidate if performance similar"
+    },
+    {
+      "issue": "Yoga/Running Overlap",
+      "ad_sets": ["AS002", "AS003"],
+      "overlap": "28%",
+      "recommendation": "Lower priority - some overlap acceptable for distinct audiences"
+    }
+  ],
+  "priority_fix_list": [
+    {
+      "priority": 1,
+      "issue": "Retargeting Bleed",
+      "action": "Add retargeting exclusions to ALL prospecting campaigns",
+      "estimated_monthly_savings": 850,
+      "implementation_time": "1 hour",
+      "details": {
+        "campaigns_to_update": ["Prospecting - Interest", "Prospecting - Lookalike", "Brand Awareness"],
+        "exclusions_to_add": [
+          "Website visitors (last 180 days)",
+          "Purchasers (all time)",
+          "Cart abandoners (last 30 days)",
+          "Email list (if available as custom audience)"
+        ]
+      }
+    },
+    {
+      "priority": 2,
+      "issue": "LAL Consolidation",
+      "action": "Restructure lookalike ad sets into tiered approach with exclusions",
+      "estimated_monthly_savings": 1200,
+      "implementation_time": "2 hours",
+      "details": {
+        "current_structure": {
+          "AS004": "LAL 1% Purchasers - $4,500",
+          "AS005": "LAL 1% High-Value - $2,500",
+          "AS006": "LAL 1% Email - $1,500"
+        },
+        "recommended_structure": {
+          "tier_1": {
+            "name": "LAL 0-1% Best Customers",
+            "seed": "Combined: Purchasers + High-Value + Email (deduplicated)",
+            "budget": "$5,000",
+            "exclusions": "None"
+          },
+          "tier_2": {
+            "name": "LAL 1-2% Expansion",
+            "seed": "Same combined seed",
+            "budget": "$3,500",
+            "exclusions": "Exclude Tier 1 (0-1% LAL)"
+          }
+        },
+        "rationale": "Consolidating seeds creates stronger signal. Tiered approach prevents overlap."
+      }
+    },
+    {
+      "priority": 3,
+      "issue": "Interest Targeting Consolidation",
+      "action": "Restructure interest ad sets to reduce overlap",
+      "estimated_monthly_savings": 600,
+      "implementation_time": "1.5 hours",
+      "details": {
+        "current_structure": "3 separate interest ad sets with 28-42% overlap",
+        "recommended_structure": {
+          "option_a_consolidate": {
+            "single_ad_set": "All Fitness Interests combined",
+            "interests": ["Fitness", "Gym", "Weight training", "CrossFit", "Yoga", "Pilates", "Wellness", "Home workout", "Running", "Marathon", "Cardio"],
+            "budget": "$12,000",
+            "pros": "Maximum data consolidation, faster learning, no self-competition",
+            "cons": "Lose ability to see which interest performs best"
+          },
+          "option_b_segment_clean": {
+            "ad_set_1": {
+              "name": "Strength Training",
+              "interests": ["Gym", "Weight training", "CrossFit"],
+              "exclusions": ["Yoga", "Running"]
+            },
+            "ad_set_2": {
+              "name": "Mind-Body",
+              "interests": ["Yoga", "Pilates", "Wellness"],
+              "exclusions": ["Gym", "Running"]
+            },
+            "ad_set_3": {
+              "name": "Cardio",
+              "interests": ["Running", "Marathon", "Cardio"],
+              "exclusions": ["Gym", "Yoga"]
+            },
+            "remove": "Broad 'Fitness' interest from all (too overlapping)",
+            "pros": "Clean segments, can compare performance",
+            "cons": "Smaller audiences, may limit reach"
+          }
+        },
+        "recommendation": "Option B if want to maintain testing capability, Option A if performance similar and want simplicity"
+      }
+    },
+    {
+      "priority": 4,
+      "issue": "Brand Campaign Overlap",
+      "action": "Decide: exclude or accept as reinforcement",
+      "estimated_monthly_savings": 200,
+      "implementation_time": "30 minutes",
+      "details": {
+        "options": {
+          "option_a_exclude": {
+            "action": "Add prospecting audiences as exclusions to Brand campaign",
+            "pros": "Brand reaches only new people",
+            "cons": "Reduces Brand reach significantly"
+          },
+          "option_b_accept": {
+            "action": "Accept overlap as intentional frequency reinforcement",
+            "pros": "Multiple touchpoints for same audience",
+            "cons": "Paying twice for same reach"
+          }
+        },
+        "recommendation": "Given Brand is only $3K/month (10.5% of spend), Option B is acceptable. Document as intentional."
+      }
+    }
+  ],
+  "exclusion_implementation_plan": {
+    "phase_1_immediate": {
+      "timeline": "This week",
+      "actions": [
+        {
+          "campaign": "Prospecting - Interest (C001)",
+          "exclusions_to_add": [
+            "Website visitors (180 days)",
+            "All purchasers",
+            "Email list",
+            "Cart abandoners (30 days)"
+          ]
+        },
+        {
+          "campaign": "Prospecting - Lookalike (C002)",
+          "exclusions_to_add": [
+            "Website visitors (180 days)",
+            "All purchasers",
+            "Email list"
+          ]
+        }
+      ]
+    },
+    "phase_2_restructure": {
+      "timeline": "Next 2 weeks",
+      "actions": [
+        {
+          "task": "Create combined LAL seed audience",
+          "details": "Combine Purchasers + High-Value + Email into single 'Best Customers' source"
+        },
+        {
+          "task": "Build tiered LAL structure",
+          "details": "0-1% Tier 1, 1-2% Tier 2 with exclusion cascade"
+        },
+        {
+          "task": "Pause AS005 and AS006",
+          "details": "Redirect budget to new tiered structure"
+        }
+      ]
+    },
+    "phase_3_optimize": {
+      "timeline": "Week 3-4",
+      "actions": [
+        {
+          "task": "Decide on interest consolidation approach",
+          "details": "Monitor 2 weeks of retargeting-excluded data before restructuring"
+        },
+        {
+          "task": "Review Brand campaign overlap decision",
+          "details": "Document as intentional or add exclusions"
+        }
+      ]
+    }
+  },
+  "frequency_analysis": {
+    "current_account_frequency": 3.4,
+    "target_frequency": "2.0-2.5 for conversion campaigns",
+    "assessment": "40-70% above target - confirms significant overlap",
+    "frequency_by_campaign": [
+      {"campaign": "Prospecting - Interest", "frequency": 2.3, "status": "Slightly elevated"},
+      {"campaign": "Prospecting - Lookalike", "frequency": 2.83, "status": "Elevated - LAL overlap"},
+      {"campaign": "Retargeting", "frequency": 5.0, "status": "Acceptable for retargeting"},
+      {"campaign": "Brand Awareness", "frequency": 1.8, "status": "Healthy"}
+    ],
+    "frequency_reduction_expected": {
+      "after_exclusions": "Account frequency should drop to 2.5-2.8",
+      "after_lal_restructure": "LAL campaign frequency should drop to 2.0-2.3"
+    }
+  },
+  "projected_impact": {
+    "total_estimated_monthly_savings": 2850,
+    "savings_breakdown": {
+      "retargeting_bleed_fix": 850,
+      "lal_consolidation": 1200,
+      "interest_optimization": 600,
+      "brand_decision": 200
+    },
+    "efficiency_improvement": {
+      "current_blended_cpa": 24.86,
+      "projected_blended_cpa": 22.80,
+      "improvement": "-8.3%"
+    },
+    "conversion_impact": {
+      "current_conversions": 1070,
+      "projected_additional_conversions": 95,
+      "improvement": "+8.9%",
+      "calculation": "Savings reallocated to best performers at $21.43 CPA"
+    }
+  },
+  "monitoring_recommendations": [
+    {
+      "metric": "Account-level frequency",
+      "current": 3.4,
+      "target": "<2.5",
+      "check_frequency": "Weekly"
+    },
+    {
+      "metric": "LAL campaign CPA",
+      "current": 22.62,
+      "target": "<$21.00",
+      "check_frequency": "Weekly after restructure"
+    },
+    {
+      "metric": "Prospecting conversion rate",
+      "baseline": "Current rate",
+      "expectation": "Should improve with retargeting exclusions (cleaner prospecting pool)",
+      "check_frequency": "Compare 2 weeks pre/post"
+    }
+  ],
+  "executive_summary": "The FitGear Pro Meta account has significant audience overlap issues causing an estimated $2,850/month (10%) in wasted spend. The two most critical issues are: (1) No retargeting exclusions in prospecting campaigns - you're paying prospecting prices ($27+) for retargeting-quality leads ($16). (2) Three overlapping lookalike audiences with 45-68% overlap - you're bidding against yourself. Implementing the recommended exclusions and LAL restructure should reduce blended CPA by 8% and generate ~95 additional conversions at the same spend level."
+}

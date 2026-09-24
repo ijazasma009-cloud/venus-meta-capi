@@ -1,0 +1,17 @@
+{
+  "test_request": "I want to test a new headline that focuses on speed instead of features",
+  "current_state": {
+    "headline": "Project Management Software for Teams",
+    "metric": "CTR",
+    "baseline_value": 4.2,
+    "daily_traffic": 450
+  },
+  "proposed_change": {
+    "headline": "Ship Projects 2x Faster"
+  },
+  "context": {
+    "why_testing": "Competitors using benefit-focused headlines seem to get more engagement",
+    "minimum_improvement_that_matters": "10% CTR improvement",
+    "constraints": "Need results within 3 weeks"
+  }
+}

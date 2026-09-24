@@ -1,0 +1,35 @@
+{
+  "budget": {
+    "monthly_target": 30000,
+    "period": "January 2025"
+  },
+  "current_status": {
+    "date": "January 15, 2025",
+    "day_of_month": 15,
+    "days_in_month": 31,
+    "mtd_spend": 12450
+  },
+  "daily_spend": [
+    {"date": "Jan 1", "spend": 650},
+    {"date": "Jan 2", "spend": 780},
+    {"date": "Jan 3", "spend": 820},
+    {"date": "Jan 4", "spend": 450},
+    {"date": "Jan 5", "spend": 380},
+    {"date": "Jan 6", "spend": 890},
+    {"date": "Jan 7", "spend": 920},
+    {"date": "Jan 8", "spend": 870},
+    {"date": "Jan 9", "spend": 910},
+    {"date": "Jan 10", "spend": 880},
+    {"date": "Jan 11", "spend": 520},
+    {"date": "Jan 12", "spend": 430},
+    {"date": "Jan 13", "spend": 950},
+    {"date": "Jan 14", "spend": 1020},
+    {"date": "Jan 15", "spend": 980}
+  ],
+  "campaigns": [
+    {"name": "Brand", "budget": 5000, "mtd_spend": 2100},
+    {"name": "Non-Brand Core", "budget": 15000, "mtd_spend": 6800},
+    {"name": "Non-Brand Broad", "budget": 6000, "mtd_spend": 2200},
+    {"name": "Remarketing", "budget": 4000, "mtd_spend": 1350}
+  ]
+}

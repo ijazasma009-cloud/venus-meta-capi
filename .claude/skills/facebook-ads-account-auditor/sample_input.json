@@ -1,0 +1,63 @@
+{
+  "account_overview": {
+    "account_name": "Acme E-commerce",
+    "industry": "Fashion/Apparel",
+    "monthly_budget": 15000,
+    "account_age_months": 8
+  },
+  "campaigns": [
+    {
+      "name": "Prospecting - LAL",
+      "objective": "Conversions",
+      "status": "Active",
+      "daily_budget": 200,
+      "ad_sets": 4,
+      "ads_per_ad_set": 2
+    },
+    {
+      "name": "Retargeting - Website Visitors",
+      "objective": "Conversions",
+      "status": "Active",
+      "daily_budget": 100,
+      "ad_sets": 2,
+      "ads_per_ad_set": 3
+    },
+    {
+      "name": "Prospecting - Interest Based",
+      "objective": "Conversions",
+      "status": "Active",
+      "daily_budget": 150,
+      "ad_sets": 6,
+      "ads_per_ad_set": 1
+    }
+  ],
+  "performance_last_30_days": {
+    "total_spend": 12500,
+    "total_conversions": 180,
+    "cpa": 69.44,
+    "roas": 2.1,
+    "ctr": 1.2,
+    "cpm": 18.50
+  },
+  "tracking": {
+    "pixel_installed": true,
+    "capi_enabled": false,
+    "events_configured": ["PageView", "ViewContent", "AddToCart", "Purchase"],
+    "optimization_event": "Purchase",
+    "deduplication": false
+  },
+  "audiences": [
+    {"name": "Website Visitors 30d", "type": "Custom", "size": 45000},
+    {"name": "Purchasers 180d", "type": "Custom", "size": 8000},
+    {"name": "LAL Purchasers 1%", "type": "Lookalike", "size": 2100000},
+    {"name": "LAL Purchasers 3%", "type": "Lookalike", "size": 6300000},
+    {"name": "Fashion Interests", "type": "Interest", "size": 15000000}
+  ],
+  "creative_info": {
+    "total_active_ads": 15,
+    "creative_types": {"static": 10, "video": 3, "carousel": 2},
+    "oldest_ad_age_days": 75,
+    "last_new_creative_days_ago": 21
+  },
+  "concerns": "CPA has increased from $55 to $70 over the last 6 weeks. Not sure why."
+}

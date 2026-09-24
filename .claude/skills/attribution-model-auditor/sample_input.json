@@ -1,0 +1,92 @@
+{
+  "business_context": {
+    "company": "E-commerce DTC - Skincare",
+    "conversion_type": "Purchases",
+    "average_order_value": 85,
+    "typical_time_to_purchase": "2-7 days",
+    "repeat_purchase_rate": "35%",
+    "monthly_ad_spend": 75000
+  },
+  "platforms": {
+    "google_ads": {
+      "monthly_spend": 30000,
+      "reported_conversions": 580,
+      "reported_revenue": 52000,
+      "attribution_window": {
+        "click": "30 days",
+        "view": "1 day"
+      },
+      "attribution_model": "Data-driven",
+      "tracking_setup": {
+        "conversion_tag": true,
+        "enhanced_conversions": true,
+        "ga4_linked": true
+      }
+    },
+    "meta_ads": {
+      "monthly_spend": 35000,
+      "reported_conversions": 720,
+      "reported_revenue": 64000,
+      "attribution_window": {
+        "click": "7 days",
+        "view": "1 day"
+      },
+      "tracking_setup": {
+        "pixel": true,
+        "capi": true,
+        "event_match_quality": 72,
+        "aggregated_events": "8 events configured"
+      }
+    },
+    "tiktok_ads": {
+      "monthly_spend": 10000,
+      "reported_conversions": 180,
+      "reported_revenue": 15500,
+      "attribution_window": {
+        "click": "28 days",
+        "view": "7 days"
+      },
+      "tracking_setup": {
+        "pixel": true,
+        "capi": false,
+        "notes": "Only browser pixel implemented"
+      }
+    }
+  },
+  "actual_data_from_shopify": {
+    "total_orders": 950,
+    "total_revenue": 82000,
+    "orders_from_paid": "estimated 750-800",
+    "notes": "Based on UTM tracking, but many orders have no UTM"
+  },
+  "ga4_data": {
+    "total_conversions": 920,
+    "by_source": {
+      "google_cpc": 410,
+      "facebook_paid": 380,
+      "tiktok_paid": 85,
+      "direct": 180,
+      "organic_search": 120,
+      "email": 95,
+      "other": 50
+    },
+    "notes": "Numbers don't sum to 920 due to some multi-attribution"
+  },
+  "discrepancy_concerns": [
+    "Platforms sum to 1,480 conversions but Shopify shows 950 total orders",
+    "Meta reports 720 conversions but GA4 only shows 380 from Meta",
+    "TikTok seems over-attributed (180 vs GA4 showing 85)",
+    "Not sure if we're losing data on iOS devices"
+  ],
+  "current_challenges": [
+    "Don't know which platform is actually driving sales",
+    "Hard to decide budget allocation when numbers don't make sense",
+    "TikTok CAPI not implemented yet",
+    "Unsure if attribution windows are right for our business"
+  ],
+  "technical_notes": {
+    "utm_consistency": "Generally consistent but some campaigns missing UTMs",
+    "cross_device": "Unknown - not tracking",
+    "shopify_integration": "Meta and Google have Shopify app integrations"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "test_request": {
+    "what_to_test": "Video hook style - question hook vs pain point hook",
+    "hypothesis": "Pain point hooks will generate more engagement because they immediately resonate with the viewer's frustration"
+  },
+  "current_performance": {
+    "creative_type": "Video ads",
+    "current_hook_style": "Benefit-focused statement",
+    "ctr": 1.1,
+    "hook_rate_3s": 35,
+    "conversion_rate": 2.8,
+    "cpa": 52,
+    "daily_conversions": 4
+  },
+  "budget_info": {
+    "daily_budget_available": 300,
+    "can_allocate_to_test": 150,
+    "timeline_pressure": "Moderate - want results in 2-3 weeks"
+  },
+  "creative_details": {
+    "variant_a": "Question hook: 'Tired of [problem]?'",
+    "variant_b": "Pain point hook: '[Problem] is costing you $X every day'",
+    "rest_of_video": "Same product demo and testimonial",
+    "video_length": "30 seconds"
+  },
+  "context": {
+    "industry": "SaaS - Project Management Tool",
+    "target_audience": "Small business owners",
+    "proven_audience": "LAL Purchasers 2%"
+  }
+}

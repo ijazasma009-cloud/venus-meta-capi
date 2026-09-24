@@ -1,0 +1,169 @@
+{
+  "campaign_overview": {
+    "name": "PMax - Lead Generation",
+    "objective": "Leads (Form Submissions)",
+    "target_cpa": 75,
+    "monthly_budget": 15000,
+    "days_running": 45,
+    "learning_status": "Eligible (Optimized)"
+  },
+  "campaign_performance": {
+    "total_spend": 14200,
+    "total_conversions": 142,
+    "cpa": 100.00,
+    "impressions": 2800000,
+    "clicks": 18500,
+    "ctr": 0.66,
+    "conversion_rate": 0.77
+  },
+  "asset_groups": [
+    {
+      "name": "AG1 - Core Services",
+      "status": "Active",
+      "spend": 8500,
+      "conversions": 72,
+      "cpa": 118.06,
+      "impressions": 1650000,
+      "clicks": 11200,
+      "budget_share": "60%"
+    },
+    {
+      "name": "AG2 - Enterprise Solutions",
+      "status": "Active",
+      "spend": 3200,
+      "conversions": 42,
+      "cpa": 76.19,
+      "impressions": 580000,
+      "clicks": 4100,
+      "budget_share": "22%"
+    },
+    {
+      "name": "AG3 - SMB Packages",
+      "status": "Active",
+      "spend": 1800,
+      "conversions": 22,
+      "cpa": 81.82,
+      "impressions": 420000,
+      "clicks": 2400,
+      "budget_share": "13%"
+    },
+    {
+      "name": "AG4 - Industry Specific",
+      "status": "Active",
+      "spend": 700,
+      "conversions": 6,
+      "cpa": 116.67,
+      "impressions": 150000,
+      "clicks": 800,
+      "budget_share": "5%"
+    }
+  ],
+  "asset_performance": {
+    "AG1_Core_Services": {
+      "headlines": [
+        {"text": "Professional Business Solutions", "rating": "Low", "impressions": 450000},
+        {"text": "Get Started Today", "rating": "Low", "impressions": 380000},
+        {"text": "Transform Your Business", "rating": "Good", "impressions": 520000},
+        {"text": "Trusted by 500+ Companies", "rating": "Best", "impressions": 890000},
+        {"text": "Free Consultation Available", "rating": "Good", "impressions": 610000}
+      ],
+      "long_headlines": [
+        {"text": "Discover How Our Solutions Can Help Your Business Grow Faster", "rating": "Good", "impressions": 680000},
+        {"text": "Professional Business Solutions for Companies of All Sizes", "rating": "Low", "impressions": 320000}
+      ],
+      "descriptions": [
+        {"text": "Our team of experts helps businesses streamline operations and boost efficiency. Contact us for a free consultation today.", "rating": "Good", "impressions": 750000},
+        {"text": "Join 500+ companies that trust us for their business needs. Get started with a free demo.", "rating": "Best", "impressions": 920000},
+        {"text": "Professional solutions at competitive prices. Request a quote today.", "rating": "Low", "impressions": 280000}
+      ],
+      "images": {
+        "landscape_1200x628": [
+          {"description": "Team meeting stock photo", "rating": "Low", "impressions": 380000},
+          {"description": "Office building exterior", "rating": "Low", "impressions": 290000},
+          {"description": "Dashboard screenshot", "rating": "Good", "impressions": 580000}
+        ],
+        "square_1200x1200": [
+          {"description": "Logo on blue background", "rating": "Good", "impressions": 520000},
+          {"description": "Team photo", "rating": "Low", "impressions": 310000}
+        ],
+        "portrait_960x1200": []
+      },
+      "videos": [],
+      "logo": {"description": "Company logo", "rating": "Good"}
+    },
+    "AG2_Enterprise_Solutions": {
+      "headlines": [
+        {"text": "Enterprise-Grade Security", "rating": "Best", "impressions": 320000},
+        {"text": "Scale Your Operations", "rating": "Good", "impressions": 280000},
+        {"text": "24/7 Dedicated Support", "rating": "Best", "impressions": 350000},
+        {"text": "Custom Enterprise Solutions", "rating": "Good", "impressions": 260000}
+      ],
+      "long_headlines": [
+        {"text": "Enterprise Solutions Built for Scale - Trusted by Fortune 500 Companies", "rating": "Best", "impressions": 380000}
+      ],
+      "descriptions": [
+        {"text": "Enterprise-grade security and compliance. Dedicated support team. Custom implementation. Request a demo.", "rating": "Best", "impressions": 420000},
+        {"text": "Built for enterprises. 99.9% uptime guarantee. SOC 2 certified. Learn more.", "rating": "Good", "impressions": 310000}
+      ],
+      "images": {
+        "landscape_1200x628": [
+          {"description": "Enterprise dashboard view", "rating": "Best", "impressions": 290000},
+          {"description": "Security certification badges", "rating": "Good", "impressions": 220000}
+        ],
+        "square_1200x1200": [
+          {"description": "Enterprise feature graphic", "rating": "Good", "impressions": 240000}
+        ],
+        "portrait_960x1200": []
+      },
+      "videos": [
+        {"name": "Enterprise Platform Overview", "length_seconds": 45, "rating": "Good", "views": 35000}
+      ],
+      "logo": {"description": "Company logo", "rating": "Good"}
+    }
+  },
+  "search_themes": {
+    "top_themes": [
+      {"theme": "[company name]", "impressions": 680000, "clicks": 5200, "conversions": 48, "type": "brand"},
+      {"theme": "[company name] reviews", "impressions": 180000, "clicks": 1400, "conversions": 12, "type": "brand"},
+      {"theme": "business solutions software", "impressions": 420000, "clicks": 2800, "conversions": 22, "type": "non-brand"},
+      {"theme": "enterprise software solutions", "impressions": 280000, "clicks": 1900, "conversions": 18, "type": "non-brand"},
+      {"theme": "best business management software", "impressions": 320000, "clicks": 2100, "conversions": 14, "type": "non-brand"},
+      {"theme": "free business software", "impressions": 180000, "clicks": 1200, "conversions": 3, "type": "non-brand"},
+      {"theme": "cheap business solutions", "impressions": 140000, "clicks": 950, "conversions": 2, "type": "non-brand"},
+      {"theme": "small business tools", "impressions": 220000, "clicks": 1400, "conversions": 8, "type": "non-brand"},
+      {"theme": "[competitor name] alternative", "impressions": 95000, "clicks": 620, "conversions": 8, "type": "competitor"}
+    ],
+    "brand_percentage": 42,
+    "nonbrand_percentage": 52,
+    "competitor_percentage": 6
+  },
+  "audience_signals": {
+    "configured_signals": [
+      {"type": "Customer Match", "name": "Existing Customers", "size": 8500},
+      {"type": "Website Visitors", "name": "All Visitors 90 Days", "size": 45000},
+      {"type": "Custom Segment", "name": "Business Software Searchers", "keywords": ["business software", "enterprise solutions", "management tools"]},
+      {"type": "In-Market", "name": "Business Software & Services", "size": "N/A"}
+    ],
+    "audience_insights": [
+      {"audience": "Small Business Owners", "index": 2.4, "performance": "High converting"},
+      {"audience": "IT Decision Makers", "index": 1.8, "performance": "Good"},
+      {"audience": "C-Suite Executives", "index": 1.5, "performance": "Good"},
+      {"audience": "Marketing Professionals", "index": 0.8, "performance": "Below average"}
+    ]
+  },
+  "placement_distribution": {
+    "search": {"spend": 5100, "conversions": 68, "cpa": 75.00, "percent": 36},
+    "shopping": {"spend": 0, "conversions": 0, "cpa": null, "percent": 0},
+    "display": {"spend": 4800, "conversions": 32, "cpa": 150.00, "percent": 34},
+    "youtube": {"spend": 2100, "conversions": 22, "cpa": 95.45, "percent": 15},
+    "gmail": {"spend": 1400, "conversions": 12, "cpa": 116.67, "percent": 10},
+    "discover": {"spend": 800, "conversions": 8, "cpa": 100.00, "percent": 5}
+  },
+  "context": {
+    "target_cpa": 75,
+    "has_search_campaigns": true,
+    "has_brand_campaign": true,
+    "product_type": "B2B SaaS",
+    "concerns": "CPA is $100 vs $75 target. Feel like Display is dragging performance down. Not sure if brand traffic is being cannibalized."
+  }
+}

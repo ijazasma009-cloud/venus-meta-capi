@@ -1,0 +1,96 @@
+{
+  "workspace_id": 101,
+  "brand_id": 69,
+  "account_id": "9382431689",
+  "date_range": {
+    "start_date": "2025-01-01",
+    "end_date": "2025-01-31"
+  },
+  "benchmarks": {
+    "ctr": 3.5,
+    "cvr": 4.0
+  },
+  "mcp_response": {
+    "status": "success",
+    "data": [
+      {
+        "campaign": {"id": "123", "name": "Brand Campaign"},
+        "ad_group": {"id": "456", "name": "Luxury Bags"},
+        "ad_group_ad": {
+          "ad": {
+            "id": "789",
+            "type": "RESPONSIVE_SEARCH_AD",
+            "responsive_search_ad": {
+              "headlines": [
+                {"text": "Luxury Designer Bags - 40% Off", "pinned_field": "HEADLINE_1"},
+                {"text": "Free Shipping on All Orders"},
+                {"text": "Shop Atlanta's Best Selection"},
+                {"text": "Authentic Designer Handbags"},
+                {"text": "New Arrivals Weekly"}
+              ],
+              "descriptions": [
+                {"text": "Shop our curated collection of luxury designer bags. Free shipping & easy returns. Authenticity guaranteed on every purchase."},
+                {"text": "Atlanta's premier destination for designer handbags. Browse 500+ styles from top brands. Visit us today!"}
+              ],
+              "path1": "luxury",
+              "path2": "bags"
+            },
+            "final_urls": ["https://atlantaluxurybags.com/shop"]
+          },
+          "ad_strength": "EXCELLENT",
+          "status": "ENABLED",
+          "policy_summary": {
+            "approval_status": "APPROVED"
+          }
+        },
+        "metrics": {
+          "impressions": 25000,
+          "clicks": 1250,
+          "conversions": 62,
+          "cost_micros": 31250000000,
+          "ctr": 0.05,
+          "conversions_from_interactions_rate": 0.0496
+        }
+      },
+      {
+        "campaign": {"id": "123", "name": "Brand Campaign"},
+        "ad_group": {"id": "457", "name": "Generic Bags"},
+        "ad_group_ad": {
+          "ad": {
+            "id": "790",
+            "type": "RESPONSIVE_SEARCH_AD",
+            "responsive_search_ad": {
+              "headlines": [
+                {"text": "Buy Bags Online"},
+                {"text": "Quality Handbags"},
+                {"text": "Shop Now"},
+                {"text": "Great Selection"},
+                {"text": "Best Prices"}
+              ],
+              "descriptions": [
+                {"text": "We sell bags online. Check out our website for more information about our products and services."},
+                {"text": "Looking for bags? We have what you need. Contact us today to learn more."}
+              ],
+              "path1": "bags",
+              "path2": "shop"
+            },
+            "final_urls": ["https://atlantaluxurybags.com/shop"]
+          },
+          "ad_strength": "AVERAGE",
+          "status": "ENABLED",
+          "policy_summary": {
+            "approval_status": "APPROVED"
+          }
+        },
+        "metrics": {
+          "impressions": 18000,
+          "clicks": 360,
+          "conversions": 7,
+          "cost_micros": 10800000000,
+          "ctr": 0.02,
+          "conversions_from_interactions_rate": 0.0194
+        }
+      }
+    ]
+  }
+}

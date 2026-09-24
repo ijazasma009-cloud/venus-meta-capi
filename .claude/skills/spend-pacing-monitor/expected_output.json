@@ -1,0 +1,209 @@
+{
+  "summary": {
+    "status": "YELLOW",
+    "status_text": "Warning - Underpacing",
+    "budget": 30000,
+    "mtd_spend": 12450,
+    "expected_spend": 14516,
+    "variance": -2066,
+    "variance_percent": "-14%",
+    "pacing_percent": "86%"
+  },
+  "current_status": {
+    "period": "January 2025",
+    "as_of": "January 15, 2025",
+    "day_of_month": 15,
+    "days_in_month": 31,
+    "days_remaining": 16,
+    "percent_of_month": "48%",
+    "monthly_budget": 30000,
+    "mtd_spend": 12450,
+    "percent_of_budget_spent": "41.5%",
+    "expected_mtd_linear": 14516,
+    "variance_dollars": -2066,
+    "variance_percent": "-14%",
+    "assessment": "Underpacing by 14% - moderate concern at mid-month"
+  },
+  "projections": {
+    "run_rate": {
+      "daily_average": 830,
+      "projected_month_end": 25730,
+      "vs_budget": -4270,
+      "vs_budget_percent": "-14%",
+      "confidence": "Medium"
+    },
+    "trend_based": {
+      "last_7_days_average": 797,
+      "recent_weekday_average": 912,
+      "recent_weekend_average": 445,
+      "projected_month_end": 26254,
+      "vs_budget": -3746,
+      "vs_budget_percent": "-12%",
+      "confidence": "Medium-High"
+    },
+    "best_estimate": {
+      "method": "Weighted trend with weekend adjustment",
+      "projected_month_end": 26000,
+      "vs_budget": -4000,
+      "vs_budget_percent": "-13%",
+      "shortfall": 4000
+    }
+  },
+  "daily_analysis": {
+    "patterns": {
+      "weekday_average": 880,
+      "weekend_average": 445,
+      "weekend_drop": "-49%",
+      "pattern": "Strong weekend drop (typical for B2B)"
+    },
+    "trend": {
+      "week_1_daily_avg": 710,
+      "week_2_daily_avg": 820,
+      "trend_direction": "Increasing",
+      "trend_percent": "+15%"
+    },
+    "anomalies": [
+      {
+        "date": "Jan 4-5",
+        "observation": "Weekend spend dropped 45% vs weekdays",
+        "assessment": "Normal B2B pattern, not concerning"
+      }
+    ],
+    "daily_breakdown": [
+      {"date": "Jan 1", "spend": 650, "cumulative": 650, "vs_pace": "-33%", "day_type": "Wed"},
+      {"date": "Jan 2", "spend": 780, "cumulative": 1430, "vs_pace": "-26%", "day_type": "Thu"},
+      {"date": "Jan 3", "spend": 820, "cumulative": 2250, "vs_pace": "-23%", "day_type": "Fri"},
+      {"date": "Jan 4", "spend": 450, "cumulative": 2700, "vs_pace": "-30%", "day_type": "Sat"},
+      {"date": "Jan 5", "spend": 380, "cumulative": 3080, "vs_pace": "-36%", "day_type": "Sun"},
+      {"date": "Jan 6", "spend": 890, "cumulative": 3970, "vs_pace": "-32%", "day_type": "Mon"},
+      {"date": "Jan 7", "spend": 920, "cumulative": 4890, "vs_pace": "-28%", "day_type": "Tue"},
+      {"date": "Jan 8", "spend": 870, "cumulative": 5760, "vs_pace": "-26%", "day_type": "Wed"},
+      {"date": "Jan 9", "spend": 910, "cumulative": 6670, "vs_pace": "-23%", "day_type": "Thu"},
+      {"date": "Jan 10", "spend": 880, "cumulative": 7550, "vs_pace": "-22%", "day_type": "Fri"},
+      {"date": "Jan 11", "spend": 520, "cumulative": 8070, "vs_pace": "-24%", "day_type": "Sat"},
+      {"date": "Jan 12", "spend": 430, "cumulative": 8500, "vs_pace": "-27%", "day_type": "Sun"},
+      {"date": "Jan 13", "spend": 950, "cumulative": 9450, "vs_pace": "-25%", "day_type": "Mon"},
+      {"date": "Jan 14", "spend": 1020, "cumulative": 10470, "vs_pace": "-23%", "day_type": "Tue"},
+      {"date": "Jan 15", "spend": 980, "cumulative": 11450, "vs_pace": "-21%", "day_type": "Wed"}
+    ]
+  },
+  "campaign_breakdown": [
+    {
+      "campaign": "Brand",
+      "budget": 5000,
+      "mtd_spend": 2100,
+      "pacing_percent": "87%",
+      "expected_spend": 2419,
+      "variance": -319,
+      "projection": 4340,
+      "status": "YELLOW",
+      "note": "Slightly under, may have IS opportunity"
+    },
+    {
+      "campaign": "Non-Brand Core",
+      "budget": 15000,
+      "mtd_spend": 6800,
+      "pacing_percent": "94%",
+      "expected_spend": 7258,
+      "variance": -458,
+      "projection": 14093,
+      "status": "GREEN",
+      "note": "Pacing well, main driver of account"
+    },
+    {
+      "campaign": "Non-Brand Broad",
+      "budget": 6000,
+      "mtd_spend": 2200,
+      "pacing_percent": "76%",
+      "expected_spend": 2903,
+      "variance": -703,
+      "projection": 4560,
+      "status": "RED",
+      "note": "Significantly underpacing - investigate"
+    },
+    {
+      "campaign": "Remarketing",
+      "budget": 4000,
+      "mtd_spend": 1350,
+      "pacing_percent": "70%",
+      "expected_spend": 1935,
+      "variance": -585,
+      "projection": 2798,
+      "status": "RED",
+      "note": "Underpacing significantly - audience exhaustion?"
+    }
+  ],
+  "alerts": [
+    {
+      "level": "warning",
+      "message": "Account underpacing by 14% at mid-month",
+      "action": "Increase budgets or expand targeting to close gap"
+    },
+    {
+      "level": "alert",
+      "message": "Non-Brand Broad pacing at 76% - will miss budget by ~$1,400",
+      "action": "Check impression share, expand keywords, or increase bids"
+    },
+    {
+      "level": "alert",
+      "message": "Remarketing pacing at 70% - will miss budget by ~$1,200",
+      "action": "Check audience size, refresh creative, or expand windows"
+    }
+  ],
+  "recommendations": {
+    "to_hit_budget": {
+      "current_daily_rate": 830,
+      "required_daily_rate": 1097,
+      "increase_needed": "+32%",
+      "feasibility": "Moderate - requires meaningful changes"
+    },
+    "specific_actions": [
+      {
+        "priority": 1,
+        "campaign": "Non-Brand Broad",
+        "action": "Increase daily budget by 30% and expand keyword targeting",
+        "expected_impact": "+$150/day",
+        "rationale": "Most underpaced campaign with expansion opportunity"
+      },
+      {
+        "priority": 2,
+        "campaign": "Remarketing",
+        "action": "Expand remarketing windows (30→60 days) and refresh creative",
+        "expected_impact": "+$80/day",
+        "rationale": "Audience may be exhausted, need fresh pool"
+      },
+      {
+        "priority": 3,
+        "campaign": "Brand",
+        "action": "Check impression share - if <90%, increase bids",
+        "expected_impact": "+$50/day",
+        "rationale": "Brand campaigns should capture all available demand"
+      }
+    ],
+    "alternative_scenario": {
+      "description": "Accept lower spend, focus on efficiency",
+      "projected_spend": 26000,
+      "variance": "-$4,000 (-13%)",
+      "rationale": "If efficiency is strong, underspend may be acceptable"
+    }
+  },
+  "scenarios": {
+    "current_trajectory": {
+      "projected_spend": 26000,
+      "vs_budget": "-13%",
+      "outcome": "Miss budget by ~$4,000"
+    },
+    "if_increase_20_percent": {
+      "new_daily_rate": 996,
+      "projected_spend": 28250,
+      "vs_budget": "-6%",
+      "outcome": "Close gap significantly, minor underspend"
+    },
+    "if_increase_32_percent": {
+      "new_daily_rate": 1097,
+      "projected_spend": 30000,
+      "vs_budget": "0%",
+      "outcome": "Hit budget target exactly"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "checklist_summary": {
+    "account_name": "GreenClean Products",
+    "campaign_name": "Prospecting - Q1 Launch",
+    "verified_by": "Marketing Manager",
+    "date": "2024-01-20",
+    "sections": {
+      "tier_1_critical": {"status": "Pass", "passed": 11, "failed": 0},
+      "tier_2_important": {"status": "Pass", "passed": 10, "failed": 1, "notes": "Minor LP speed issue"},
+      "tier_3_optimization": {"status": "Pass", "passed": 7, "failed": 0}
+    },
+    "launch_decision": "Ready to Launch"
+  },
+  "tier_1_critical": {
+    "pixel_tracking": [
+      {"check": "Pixel installed on all pages", "status": "Pass", "notes": "Verified with Pixel Helper"},
+      {"check": "Pixel ID matches ad account", "status": "Pass", "notes": "ID 123456789 confirmed"},
+      {"check": "PageView fires correctly", "status": "Pass", "notes": "Fires on all pages"},
+      {"check": "Conversion event fires correctly", "status": "Pass", "notes": "Purchase event verified"},
+      {"check": "No duplicate events", "status": "Pass", "notes": "Single event per conversion"},
+      {"check": "Event parameters populated", "status": "Pass", "notes": "Value, currency, content_ids present"}
+    ],
+    "conversions_api": [
+      {"check": "CAPI enabled", "status": "Pass", "notes": "Server events active"},
+      {"check": "Server events appearing", "status": "Pass", "notes": "Verified in Test Events"},
+      {"check": "Deduplication working", "status": "Pass", "notes": "event_id matching confirmed"},
+      {"check": "Event match quality", "status": "Pass", "score": 7.2, "notes": "Good quality"}
+    ],
+    "conversion_event": [
+      {"check": "Correct optimization event", "status": "Pass", "notes": "Purchase selected"},
+      {"check": "Sufficient volume", "status": "Pass", "notes": "~40/week expected, acceptable for launch"}
+    ]
+  },
+  "tier_2_important": {
+    "ad_creative_compliance": [
+      {"check": "Text <20% of image", "status": "Pass", "notes": "All images compliant"},
+      {"check": "No prohibited content", "status": "Pass", "notes": "Eco-friendly products OK"},
+      {"check": "No misleading claims", "status": "Pass", "notes": "Claims are substantiated"},
+      {"check": "Video specs met", "status": "Pass", "notes": "15s and 30s, 1:1 format"},
+      {"check": "LP matches ad promise", "status": "Pass", "notes": "Product page matches ads"}
+    ],
+    "landing_page": [
+      {"check": "Load time <3s", "status": "Warning", "notes": "3.2s on mobile - optimize images"},
+      {"check": "Mobile-friendly", "status": "Pass", "notes": "Responsive design confirmed"},
+      {"check": "CTA above fold", "status": "Pass", "notes": "Add to Cart visible"},
+      {"check": "Form works", "status": "Pass", "notes": "Checkout tested"},
+      {"check": "HTTPS enabled", "status": "Pass", "notes": "SSL valid"}
+    ],
+    "audience_setup": [
+      {"check": "Audience size appropriate", "status": "Pass", "notes": "~4.5M combined"},
+      {"check": "No overlap issues", "status": "Pass", "notes": "LAL and Interest minimal overlap"},
+      {"check": "Exclusions correct", "status": "Pass", "notes": "Purchasers 30d excluded"},
+      {"check": "Geo-targeting correct", "status": "Pass", "notes": "United States only"}
+    ]
+  },
+  "tier_3_optimization": {
+    "campaign_structure": [
+      {"check": "Objective correct", "status": "Pass", "notes": "Conversions"},
+      {"check": "Budget level appropriate", "status": "Pass", "notes": "ABO at $150/day"},
+      {"check": "Naming conventions", "status": "Pass", "notes": "Clear naming structure"},
+      {"check": "UTM parameters", "status": "Pass", "notes": "utm_source=facebook, etc."}
+    ],
+    "ad_variations": [
+      {"check": "Multiple ads per ad set", "status": "Pass", "notes": "5 ads across 2 ad sets"},
+      {"check": "Creative diversity", "status": "Pass", "notes": "Video, static, carousel mix"},
+      {"check": "Copy variations", "status": "Pass", "notes": "3 different angles tested"}
+    ]
+  },
+  "issues_and_actions": {
+    "critical_issues": [],
+    "important_issues": [
+      {
+        "issue": "Landing page load time slightly over 3 seconds on mobile (3.2s)",
+        "impact": "May reduce conversion rate slightly",
+        "fix": "Compress hero image, defer non-critical scripts",
+        "priority": "Fix within first week"
+      }
+    ],
+    "optimization_opportunities": [
+      {
+        "opportunity": "Event match quality at 7.2 - could improve to 8+",
+        "action": "Add advanced matching parameters (phone, address)"
+      }
+    ]
+  },
+  "launch_approval": {
+    "status": "Ready to Launch",
+    "conditions": "None - all critical checks passed",
+    "post_launch_actions": [
+      "Day 1: Verify conversions appearing in Events Manager",
+      "Day 1: Check for any ad disapprovals",
+      "Week 1: Optimize landing page load time",
+      "Week 1: Monitor CPA vs target"
+    ]
+  }
+}

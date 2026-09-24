@@ -1,0 +1,93 @@
+{
+  "report_metadata": {
+    "client_name": "StyleBox Subscription",
+    "report_month": "January 2024",
+    "prepared_date": "2024-02-01"
+  },
+  "executive_summary": {
+    "headline": "Strong January—exceeded conversion and efficiency targets while scaling budget 17%",
+    "key_results": [
+      {"metric": "CPA", "target": "$45", "actual": "$41.18", "status": "Exceeded"},
+      {"metric": "Conversions", "target": "400", "actual": "425", "status": "Exceeded"},
+      {"metric": "ROAS", "target": "2.5x", "actual": "2.8x", "status": "Exceeded"},
+      {"metric": "Spend", "target": "$18,000", "actual": "$17,500", "status": "On Target"}
+    ],
+    "what_drove_results": "New UGC creative drove 25% better efficiency than previous content. Post-holiday competition lull provided favorable CPMs. Budget increase absorbed well by expanded LAL audiences.",
+    "outlook": "February should maintain momentum. Planning to scale top UGC creative further and test additional creators."
+  },
+  "goal_tracking": {
+    "goals": [
+      {"goal": "CPA", "target": "$45", "actual": "$41.18", "percent_of_target": "109%", "status": "Exceeded"},
+      {"goal": "Conversions", "target": "400", "actual": "425", "percent_of_target": "106%", "status": "Exceeded"},
+      {"goal": "ROAS", "target": "2.5x", "actual": "2.8x", "percent_of_target": "112%", "status": "Exceeded"},
+      {"goal": "Spend", "target": "$18,000", "actual": "$17,500", "percent_of_target": "97%", "status": "On Target"}
+    ],
+    "commentary": "All performance targets exceeded while coming in slightly under budget. This indicates room to scale further next month."
+  },
+  "month_over_month": {
+    "metrics": [
+      {"metric": "Spend", "last_month": "$15,000", "this_month": "$17,500", "change": "+17%", "assessment": "Scaled successfully"},
+      {"metric": "Conversions", "last_month": "340", "this_month": "425", "change": "+25%", "assessment": "Strong growth"},
+      {"metric": "CPA", "last_month": "$44.12", "this_month": "$41.18", "change": "-7%", "assessment": "Improved efficiency"},
+      {"metric": "ROAS", "last_month": "2.4x", "this_month": "2.8x", "change": "+17%", "assessment": "Strong improvement"},
+      {"metric": "CTR", "last_month": "1.2%", "this_month": "1.35%", "change": "+13%", "assessment": "Better engagement"},
+      {"metric": "CPM", "last_month": "$20.00", "this_month": "$22.50", "change": "+13%", "assessment": "Expected with scale"}
+    ],
+    "narrative": "January delivered strong results across all metrics. Despite a 17% budget increase, CPA decreased 7% and conversions grew 25%—meaning we scaled efficiently. The UGC creative refresh was the primary driver, with new content outperforming previous ads by significant margins. CPM increased 13%, which is expected when scaling, but strong CTR improvements offset this cost increase."
+  },
+  "campaign_breakdown": {
+    "campaigns": [
+      {"name": "Prospecting - LAL Subscribers", "spend": "$8,000", "conversions": 180, "cpa": "$44.44", "roas": "2.5x", "mom_change": "-5% CPA", "status": "Star"},
+      {"name": "Prospecting - Interest Fashion", "spend": "$4,000", "conversions": 75, "cpa": "$53.33", "roas": "2.0x", "mom_change": "+10% CPA", "status": "Needs Attention"},
+      {"name": "Retargeting - Site Visitors", "spend": "$3,500", "conversions": 120, "cpa": "$29.17", "roas": "4.0x", "mom_change": "-8% CPA", "status": "Star"},
+      {"name": "Retargeting - Cart Abandoners", "spend": "$2,000", "conversions": 50, "cpa": "$40.00", "roas": "3.2x", "mom_change": "Flat", "status": "Solid"}
+    ],
+    "insights": {
+      "top_performer": {"name": "Retargeting - Site Visitors", "insight": "Continues to deliver lowest CPA at $29. High-intent audience converting well with new creative."},
+      "needs_attention": {"name": "Prospecting - Interest Fashion", "insight": "CPA increased 10% to $53—above target. Creative may be fatiguing with this audience, or interests need refinement."}
+    }
+  },
+  "creative_performance": {
+    "top_ads": [
+      {"rank": 1, "name": "UGC Unboxing Video", "spend": "$4,500", "conversions": 110, "cpa": "$40.91", "ctr": "2.1%", "insight": "Authentic unboxing content resonated strongly with cold audiences"},
+      {"rank": 2, "name": "Before/After Carousel", "spend": "$3,200", "conversions": 85, "cpa": "$37.65", "ctr": "1.8%", "insight": "Transformation visuals drove high engagement and conversion"},
+      {"rank": 3, "name": "Founder Story Video", "spend": "$2,800", "conversions": 60, "cpa": "$46.67", "ctr": "1.5%", "insight": "Brand story built trust, works best for warming cold audiences"}
+    ],
+    "tests": [
+      {"test": "UGC vs Professional video", "result": "UGC won by 25% lower CPA", "learning": "Authenticity beats polish for our subscription audience"},
+      {"test": "Long copy vs Short copy", "result": "Long copy won by 15%", "learning": "Our audience wants details before committing to subscription"}
+    ],
+    "creative_health": {
+      "new_creative_added": 4,
+      "oldest_active_ad_days": 45,
+      "refresh_needed": "Monitor—approaching fatigue window"
+    }
+  },
+  "what_worked": [
+    {"success": "UGC Creative Strategy", "impact": "25% lower CPA vs previous professional content", "next_step": "Source 2-3 more UGC creators for February"},
+    {"success": "Long-Form Copy", "impact": "15% improvement in conversion rate", "next_step": "Apply long-form approach to all prospecting ads"},
+    {"success": "Expanded LAL (2%)", "impact": "Absorbed budget increase without CPA degradation", "next_step": "Test 3% LAL for additional scale headroom"}
+  ],
+  "what_didnt_work": [
+    {"challenge": "Interest-Based Prospecting", "impact": "CPA 18% above target, increasing trend", "fix": "Refresh creative for this audience, test new interest combinations"},
+    {"challenge": "Professional Video Content", "impact": "Lost to UGC by 25%", "fix": "Deprioritize professional shoots, reallocate budget to UGC"}
+  ],
+  "next_month_plan": {
+    "priorities": [
+      "Scale UGC content production—onboard 2 new creators",
+      "Fix interest-based campaign with new creative and targeting",
+      "Test 3% LAL for additional prospecting scale"
+    ],
+    "planned_changes": [
+      "Increase budget to $20,000",
+      "Launch 4-6 new UGC ads",
+      "Pause underperforming professional video content",
+      "Test new interest stack for prospecting"
+    ],
+    "next_month_goals": [
+      {"goal": "CPA", "target": "$43", "rationale": "Maintain efficiency while scaling"},
+      {"goal": "Conversions", "target": "465", "rationale": "+10% growth with budget increase"},
+      {"goal": "Spend", "target": "$20,000", "rationale": "Continue controlled scaling"}
+    ]
+  }
+}

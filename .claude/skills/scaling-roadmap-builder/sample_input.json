@@ -1,0 +1,30 @@
+{
+  "current_state": {
+    "monthly_spend": 12000,
+    "monthly_conversions": 180,
+    "cpa": 66.67,
+    "target_cpa": 80,
+    "campaigns": [
+      {"name": "Brand", "spend": 2500, "conversions": 65, "cpa": 38.46},
+      {"name": "Non-Brand - Core", "spend": 5500, "conversions": 78, "cpa": 70.51},
+      {"name": "Non-Brand - Broad", "spend": 2500, "conversions": 25, "cpa": 100.00},
+      {"name": "Remarketing", "spend": 1500, "conversions": 12, "cpa": 125.00}
+    ]
+  },
+  "growth_target": {
+    "target_spend": 35000,
+    "timeline": "6 months",
+    "preference": "conservative"
+  },
+  "business_context": {
+    "conversion_type": "Demo requests",
+    "average_deal_value": 5000,
+    "close_rate": "15%",
+    "sales_capacity": "Can handle up to 400 demos/month",
+    "market": "B2B SaaS - Project Management"
+  },
+  "constraints": {
+    "max_acceptable_cpa": 100,
+    "budget_approval": "quarterly"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "account_name": "FitGear Pro",
+  "analysis_period": "2024-01-15 to 2024-02-14",
+  "total_monthly_budget": 45000,
+  "optimization_goal": "CPA",
+  "target_cpa": 32.00,
+  "business_constraints": {
+    "minimum_linkedin_presence": true,
+    "linkedin_minimum_spend": 3000,
+    "testing_budget_allocation": "10%"
+  },
+  "platform_data": [
+    {
+      "platform": "Meta",
+      "spend": 28500,
+      "impressions": 2150000,
+      "clicks": 53750,
+      "conversions": 1250,
+      "revenue": 87500,
+      "cpa": 22.80,
+      "roas": 3.07,
+      "cpm": 13.26,
+      "ctr": 2.5,
+      "avg_frequency": 2.4,
+      "trend_30d": "stable",
+      "saturation_estimate": "45%"
+    },
+    {
+      "platform": "TikTok",
+      "spend": 8500,
+      "impressions": 1420000,
+      "clicks": 28400,
+      "conversions": 320,
+      "revenue": 19200,
+      "cpa": 26.56,
+      "roas": 2.26,
+      "cpm": 5.99,
+      "ctr": 2.0,
+      "avg_frequency": 1.8,
+      "trend_30d": "improving",
+      "saturation_estimate": "25%"
+    },
+    {
+      "platform": "LinkedIn",
+      "spend": 5000,
+      "impressions": 180000,
+      "clicks": 2700,
+      "conversions": 85,
+      "revenue": 8500,
+      "cpa": 58.82,
+      "roas": 1.70,
+      "cpm": 27.78,
+      "ctr": 1.5,
+      "avg_frequency": 3.2,
+      "trend_30d": "declining",
+      "saturation_estimate": "70%"
+    },
+    {
+      "platform": "Pinterest",
+      "spend": 3000,
+      "impressions": 450000,
+      "clicks": 9000,
+      "conversions": 95,
+      "revenue": 5700,
+      "cpa": 31.58,
+      "roas": 1.90,
+      "cpm": 6.67,
+      "ctr": 2.0,
+      "avg_frequency": 1.5,
+      "trend_30d": "stable",
+      "saturation_estimate": "20%"
+    }
+  ],
+  "additional_context": {
+    "product_type": "Fitness equipment and apparel",
+    "primary_audience": "25-45 fitness enthusiasts",
+    "secondary_audience": "Corporate wellness (LinkedIn)",
+    "q1_goal": "Maximize conversions while maintaining CPA under $35"
+  }
+}

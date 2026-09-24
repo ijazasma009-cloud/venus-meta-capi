@@ -1,0 +1,106 @@
+{
+  "test_plan": {
+    "test_name": "Hook Test - Question vs Pain Point",
+    "status": "Ready for Launch",
+    "created_date": "2024-01-15"
+  },
+  "test_overview": {
+    "objective": "Determine whether pain point hooks outperform question hooks for driving engagement and conversions",
+    "hypothesis": "If we use a pain point hook that quantifies the cost of the problem, then 3-second hook rate will increase by 20% because specific pain points create stronger emotional resonance than generic questions",
+    "variable_tested": "Video hook style (first 3 seconds)",
+    "test_type": "A/B Test"
+  },
+  "test_variants": {
+    "variant_a": {
+      "name": "Control - Question Hook",
+      "description": "Opens with 'Tired of [problem]?'",
+      "key_element": "Question-based hook prompting self-reflection"
+    },
+    "variant_b": {
+      "name": "Challenger - Pain Point Hook",
+      "description": "Opens with '[Problem] is costing you $X every day'",
+      "key_element": "Quantified pain point with specific cost"
+    },
+    "isolation_confirmed": true,
+    "isolation_note": "Only the first 3 seconds differ; remainder of video is identical"
+  },
+  "statistical_requirements": {
+    "primary_metric": "3-second hook rate (ThruPlays / Impressions for first 3s)",
+    "secondary_metrics": ["CTR", "CPA", "Conversion rate"],
+    "current_baseline": "35% hook rate",
+    "minimum_detectable_effect": "20% relative improvement (35% → 42%)",
+    "required_sample_size": "~15,000 impressions per variant",
+    "confidence_level": "95%"
+  },
+  "test_timeline": {
+    "phases": {
+      "setup": {"day": 0, "details": "Create ads, configure ad set"},
+      "learning": {"days": "1-3", "details": "Let algorithm stabilize"},
+      "data_collection": {"days": "4-14", "details": "Monitor without intervention"},
+      "analysis": {"day": 15, "details": "Evaluate results"}
+    },
+    "minimum_duration_days": 7,
+    "expected_duration_days": 14,
+    "maximum_duration_days": 21
+  },
+  "budget_requirements": {
+    "budget_per_variant_daily": 75,
+    "number_of_variants": 2,
+    "total_daily_budget": 150,
+    "estimated_test_duration_days": 14,
+    "total_test_budget": 2100
+  },
+  "campaign_setup": {
+    "campaign_settings": {
+      "name": "[Test] Hook Test - Question vs Pain Point",
+      "objective": "Conversions",
+      "budget_type": "Ad Set Budget (NOT CBO)"
+    },
+    "ad_set_settings": {
+      "audience": "LAL Purchasers 2%",
+      "placements": "Automatic",
+      "optimization_event": "Purchase",
+      "budget_per_ad_set": 75
+    },
+    "structure": "Single ad set with both ads OR two ad sets with equal budget"
+  },
+  "success_criteria": {
+    "primary_metric": "3-second hook rate",
+    "winner_threshold": "20% improvement with 95% confidence",
+    "outcomes": {
+      "clear_winner": {"criteria": ">20% improvement, p<0.05", "action": "Scale winner, apply hook learning to all future videos"},
+      "marginal_winner": {"criteria": "10-20% improvement, p<0.10", "action": "Extend test to 21 days for more data"},
+      "no_winner": {"criteria": "<10% improvement", "action": "Hook style may not matter for this audience; test different variable"},
+      "clear_loser": {"criteria": ">20% worse, p<0.05", "action": "Kill variant, document that this hook style doesn't work"}
+    }
+  },
+  "rules_during_test": {
+    "do_not": [
+      "Change budgets mid-test",
+      "Pause or restart variants",
+      "Edit ads after launch",
+      "Add new variants mid-test",
+      "Judge results before Day 7"
+    ],
+    "do": [
+      "Monitor daily metrics",
+      "Document any external factors",
+      "Wait for statistical significance",
+      "Record learnings in documentation template"
+    ]
+  },
+  "documentation_template": {
+    "test_completed_date": null,
+    "duration_days": null,
+    "total_spend": null,
+    "results_table": {
+      "variant_a": {"hook_rate": null, "ctr": null, "conversions": null},
+      "variant_b": {"hook_rate": null, "ctr": null, "conversions": null}
+    },
+    "winner": null,
+    "lift_percentage": null,
+    "confidence": null,
+    "learning": null,
+    "next_test": null
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "pre_implementation_plan": {
+    "account": "Atlanta Luxury Bags",
+    "account_id": "9382431689",
+    "campaign": "Brand Campaign",
+    "campaign_id": "123456789",
+    "level": "campaign",
+    "negatives_to_add": {
+      "exact_match": [
+        "free luxury bags",
+        "bag repair atlanta"
+      ],
+      "phrase_match": [
+        "free",
+        "repair",
+        "cleaning",
+        "how to",
+        "jobs",
+        "careers",
+        "hiring",
+        "salary"
+      ],
+      "broad_match": []
+    },
+    "total_negatives": 10,
+    "conflict_check": {
+      "conflicts_found": 0,
+      "warnings": [],
+      "status": "clear"
+    },
+    "estimated_monthly_savings": 444
+  },
+  "mcp_calls": [
+    {
+      "call_number": 1,
+      "description": "Add EXACT match negatives",
+      "payload": {
+        "platform": "google-ads",
+        "workspace_id": 101,
+        "brand_id": 69,
+        "account_id": "9382431689",
+        "action": "add_negative_keywords",
+        "campaign_id": "123456789",
+        "keywords": ["free luxury bags", "bag repair atlanta"],
+        "match_type": "EXACT"
+      }
+    },
+    {
+      "call_number": 2,
+      "description": "Add PHRASE match negatives",
+      "payload": {
+        "platform": "google-ads",
+        "workspace_id": 101,
+        "brand_id": 69,
+        "account_id": "9382431689",
+        "action": "add_negative_keywords",
+        "campaign_id": "123456789",
+        "keywords": ["free", "repair", "cleaning", "how to", "jobs", "careers", "hiring", "salary"],
+        "match_type": "PHRASE"
+      }
+    }
+  ],
+  "post_implementation_report": {
+    "timestamp": "2025-01-20T14:30:00Z",
+    "account": "Atlanta Luxury Bags",
+    "campaign": "Brand Campaign",
+    "results": {
+      "exact_negatives_added": 2,
+      "phrase_negatives_added": 8,
+      "broad_negatives_added": 0,
+      "total_added": 10,
+      "status": "SUCCESS"
+    },
+    "mcp_responses": [
+      {
+        "call": 1,
+        "status": "success",
+        "negative_keywords_added": 2,
+        "level": "campaign",
+        "target_id": "123456789"
+      },
+      {
+        "call": 2,
+        "status": "success",
+        "negative_keywords_added": 8,
+        "level": "campaign",
+        "target_id": "123456789"
+      }
+    ],
+    "next_steps": [
+      "Check search term report in 7 days",
+      "Verify wasted spend reduction",
+      "Run search-term-gold-miner again in 14 days"
+    ],
+    "follow_up_date": "2025-01-27"
+  }
+}

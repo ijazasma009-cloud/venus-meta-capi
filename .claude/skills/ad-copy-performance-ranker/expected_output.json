@@ -1,0 +1,112 @@
+{
+  "executive_summary": {
+    "health_score": "yellow",
+    "ads_analyzed": 2,
+    "period": "2025-01-01 to 2025-01-31",
+    "avg_ctr": "3.74%",
+    "avg_cvr": "4.28%",
+    "top_performing_ad": "Brand Campaign > Luxury Bags > Ad 789",
+    "ads_needing_attention": 1
+  },
+  "top_performing_ads": [
+    {
+      "rank": 1,
+      "campaign": "Brand Campaign",
+      "ad_group": "Luxury Bags",
+      "ad_id": "789",
+      "ctr": "5.00%",
+      "cvr": "4.96%",
+      "ad_strength": "EXCELLENT",
+      "status": "Star"
+    }
+  ],
+  "winning_elements": {
+    "headlines": [
+      {"text": "Luxury Designer Bags - 40% Off", "note": "Benefit + discount in H1"},
+      {"text": "Free Shipping on All Orders", "note": "Clear value proposition"},
+      {"text": "Authentic Designer Handbags", "note": "Trust signal"}
+    ],
+    "descriptions": [
+      {"text": "Shop our curated collection of luxury designer bags. Free shipping & easy returns. Authenticity guaranteed on every purchase.", "note": "Benefit stack with trust elements"}
+    ],
+    "patterns_observed": [
+      "Top ad uses specific discount percentage (40% Off)",
+      "Strong value props: Free shipping, authenticity guarantee",
+      "Local relevance: Atlanta mention",
+      "Pinned headline creates consistency"
+    ]
+  },
+  "underperforming_ads": [
+    {
+      "campaign": "Brand Campaign",
+      "ad_group": "Generic Bags",
+      "ad_id": "790",
+      "ctr": "2.00%",
+      "cvr": "1.94%",
+      "ad_strength": "AVERAGE",
+      "issues": ["Generic headlines", "No differentiation", "Weak CTAs", "No value props"]
+    }
+  ],
+  "common_problems": [
+    "Generic headlines without differentiation ('Buy Bags Online', 'Shop Now')",
+    "No specific benefits or offers",
+    "Weak descriptions that don't compel action",
+    "No urgency or scarcity elements"
+  ],
+  "ad_strength_vs_performance": {
+    "excellent": {"avg_ctr": "5.00%", "avg_cvr": "4.96%", "count": 1, "reality": "Performs well - ad strength aligns"},
+    "average": {"avg_ctr": "2.00%", "avg_cvr": "1.94%", "count": 1, "reality": "Underperforms - needs creative overhaul"}
+  },
+  "headline_audit": {
+    "keep": [
+      "Luxury Designer Bags - 40% Off",
+      "Free Shipping on All Orders",
+      "Authentic Designer Handbags"
+    ],
+    "replace": [
+      "Buy Bags Online - too generic",
+      "Quality Handbags - vague, no proof",
+      "Shop Now - wasted headline slot",
+      "Great Selection - meaningless without specifics",
+      "Best Prices - unsubstantiated claim"
+    ],
+    "gaps": [
+      "Missing: Urgency-based headlines",
+      "Missing: Social proof headlines",
+      "Missing: Question-based headlines"
+    ],
+    "suggested_new": [
+      "Limited Time: Extra 20% Off Today",
+      "Trusted by 10,000+ Atlanta Shoppers",
+      "Looking for the Perfect Designer Bag?"
+    ]
+  },
+  "description_audit": {
+    "star": "Shop our curated collection of luxury designer bags. Free shipping & easy returns. Authenticity guaranteed on every purchase.",
+    "replace": [
+      "We sell bags online. Check out our website for more information about our products and services.",
+      "Looking for bags? We have what you need. Contact us today to learn more."
+    ],
+    "suggested_new": [
+      "Why pay retail? Shop 500+ authentic designer bags at up to 40% off. Free shipping, hassle-free returns. Order today!",
+      "Atlanta's #1 rated luxury bag boutique. Same-day local pickup available. See why customers love us. Shop now!"
+    ]
+  },
+  "quick_wins": {
+    "replace_weak_headlines": {"ads": 1, "est_impact": "+50% CTR potential"},
+    "add_missing_headline_types": {"ads": 1, "est_impact": "Improved ad coverage"},
+    "fix_description_ctas": {"ads": 1, "est_impact": "+20% CVR potential"}
+  },
+  "creative_recommendations": {
+    "pinning_strategy": {
+      "position_1": "Luxury Designer Bags - 40% Off",
+      "position_2": "Leave unpinned for testing",
+      "position_3": "Optional: Brand name headline"
+    },
+    "test_next": [
+      "A/B test urgency headline: 'Sale Ends Sunday'",
+      "Test social proof: 'Rated 4.9/5 Stars'",
+      "Test question hook: 'Ready for Your Dream Bag?'"
+    ]
+  }
+}

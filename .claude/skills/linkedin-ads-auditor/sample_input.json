@@ -1,0 +1,158 @@
+{
+  "account_overview": {
+    "company": "B2B SaaS - Sales Enablement Platform",
+    "target_customer": "VP Sales, Sales Directors, Revenue Leaders at mid-market companies",
+    "deal_size": "$25,000 ACV",
+    "sales_cycle": "60-90 days",
+    "monthly_linkedin_budget": 15000
+  },
+  "performance_summary": {
+    "period": "Last 30 days",
+    "total_spend": 14200,
+    "total_leads": 82,
+    "average_cpl": 173.17,
+    "total_impressions": 485000,
+    "total_clicks": 2180,
+    "overall_ctr": 0.45
+  },
+  "campaigns": [
+    {
+      "name": "Demand Gen - Ebook Download",
+      "objective": "Lead Generation",
+      "format": "Lead Gen Form",
+      "spend": 5500,
+      "impressions": 195000,
+      "clicks": 920,
+      "ctr": 0.47,
+      "leads": 48,
+      "cpl": 114.58,
+      "form_completion_rate": 32,
+      "form_fields": ["First Name", "Last Name", "Email", "Company", "Job Title", "Phone"],
+      "offer": "Ebook: '10 Ways to Increase Sales Productivity'"
+    },
+    {
+      "name": "Demand Gen - Webinar Registration",
+      "objective": "Lead Generation",
+      "format": "Lead Gen Form",
+      "spend": 4200,
+      "impressions": 145000,
+      "clicks": 680,
+      "ctr": 0.47,
+      "leads": 22,
+      "cpl": 190.91,
+      "form_completion_rate": 24,
+      "form_fields": ["First Name", "Last Name", "Email", "Company", "Job Title", "Phone", "Company Size"],
+      "offer": "Live Webinar: 'Scaling Your Sales Team in 2025'"
+    },
+    {
+      "name": "ABM - Target Accounts",
+      "objective": "Website Visits",
+      "format": "Single Image",
+      "spend": 2800,
+      "impressions": 85000,
+      "clicks": 380,
+      "ctr": 0.45,
+      "leads": 8,
+      "cpl": 350.00,
+      "offer": "Demo Request",
+      "notes": "Driving to website landing page, not Lead Gen Form"
+    },
+    {
+      "name": "Retargeting - Website Visitors",
+      "objective": "Lead Generation",
+      "format": "Carousel",
+      "spend": 1700,
+      "impressions": 60000,
+      "clicks": 200,
+      "ctr": 0.33,
+      "leads": 4,
+      "cpl": 425.00,
+      "form_completion_rate": 18,
+      "form_fields": ["First Name", "Last Name", "Email", "Company", "Job Title", "Phone", "What's your biggest sales challenge?"],
+      "offer": "Free Consultation"
+    }
+  ],
+  "targeting": {
+    "campaign_1_ebook": {
+      "job_titles": ["VP Sales", "Director of Sales", "Head of Sales", "Chief Revenue Officer", "Sales Manager", "Account Executive", "SDR Manager", "Sales Operations"],
+      "job_functions": ["Sales"],
+      "seniority": ["Manager", "Director", "VP", "CXO"],
+      "company_size": ["51-200", "201-500", "501-1000", "1001-5000"],
+      "industries": ["Computer Software", "Information Technology", "Financial Services", "Professional Services"],
+      "geography": "United States",
+      "audience_size": 420000
+    },
+    "campaign_2_webinar": {
+      "job_titles": ["VP Sales", "Director of Sales", "Chief Revenue Officer", "Sales Manager"],
+      "job_functions": ["Sales"],
+      "seniority": ["Director", "VP", "CXO"],
+      "company_size": ["201-500", "501-1000", "1001-5000"],
+      "industries": ["Computer Software", "Information Technology"],
+      "geography": "United States",
+      "audience_size": 145000
+    },
+    "campaign_3_abm": {
+      "company_names": "[List of 150 target accounts]",
+      "job_titles": ["VP Sales", "Director of Sales", "Chief Revenue Officer"],
+      "seniority": ["Director", "VP", "CXO"],
+      "audience_size": 12000
+    },
+    "campaign_4_retargeting": {
+      "audience": "Website visitors - last 90 days",
+      "layered_with": "Job Function: Sales, Seniority: Manager+",
+      "audience_size": 8500
+    }
+  },
+  "lead_quality_data": {
+    "total_leads_30_days": 82,
+    "leads_contacted": 75,
+    "leads_qualified_mql": 28,
+    "leads_to_opportunity": 12,
+    "lead_to_opp_rate": "14.6%",
+    "opportunities_to_customer": 2,
+    "sales_feedback": [
+      "Ebook leads are often junior - AEs and SDRs, not decision makers",
+      "Webinar leads are better qualified but fewer",
+      "ABM leads are excellent but very few",
+      "Some leads have wrong company size (too small)"
+    ],
+    "title_match_rate": "65%",
+    "company_fit_rate": "72%"
+  },
+  "creative_details": {
+    "campaign_1_ebook": {
+      "format": "Single Image",
+      "headline": "Download Our Free Ebook",
+      "body": "Learn 10 proven strategies to boost your team's sales productivity. Download the ebook now.",
+      "image": "Stock image of people in meeting",
+      "cta_button": "Download"
+    },
+    "campaign_2_webinar": {
+      "format": "Single Image",
+      "headline": "Join Our Live Webinar",
+      "body": "Discover how leading sales teams are scaling in 2025. Limited spots available.",
+      "image": "Speaker headshot with webinar title overlay",
+      "cta_button": "Register"
+    },
+    "campaign_3_abm": {
+      "format": "Single Image",
+      "headline": "Built for Sales Teams Like Yours",
+      "body": "See how [Company Name] helps sales teams close 30% more deals.",
+      "image": "Product screenshot",
+      "cta_button": "Request Demo"
+    },
+    "campaign_4_retargeting": {
+      "format": "Carousel",
+      "headline": "Still Exploring Sales Enablement?",
+      "body": "Here's why 500+ teams chose us.",
+      "images": "4 slides: feature 1, feature 2, testimonial, CTA",
+      "cta_button": "Book a Call"
+    }
+  },
+  "historical_context": {
+    "avg_cpl_last_quarter": 155,
+    "current_cpl": 173,
+    "trend": "CPL increasing 12% over last quarter",
+    "frequency_last_30_days": 3.8
+  }
+}

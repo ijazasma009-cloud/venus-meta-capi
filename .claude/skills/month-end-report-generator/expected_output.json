@@ -1,0 +1,212 @@
+{
+  "format": "full_report",
+  "report": {
+    "executive_summary": "January delivered 342 demo requests at $70 CPA—exceeding our 300 conversion goal by 14% while beating our $75 CPA target. The new landing page launched mid-month drove a significant improvement in conversion rate, particularly on mobile. Year-over-year, we're up 59% in conversions at 19% lower CPA. February focus: scaling the Product Features campaign while addressing declining remarketing efficiency.",
+
+    "scorecard": {
+      "metrics": [
+        {
+          "metric": "Spend",
+          "this_month": "$23,848",
+          "last_month": "$22,156",
+          "change": "+7.6%",
+          "vs_goal": "95% of $25K budget",
+          "status": "green"
+        },
+        {
+          "metric": "Conversions",
+          "this_month": "342",
+          "last_month": "278",
+          "change": "+23%",
+          "vs_goal": "114% of goal",
+          "status": "green"
+        },
+        {
+          "metric": "CPA",
+          "this_month": "$69.73",
+          "last_month": "$79.70",
+          "change": "-12.5%",
+          "vs_goal": "Below $75 target",
+          "status": "green"
+        },
+        {
+          "metric": "CTR",
+          "this_month": "5.7%",
+          "last_month": "5.49%",
+          "change": "+3.8%",
+          "vs_goal": "—",
+          "status": "green"
+        },
+        {
+          "metric": "Conv Rate",
+          "this_month": "3.82%",
+          "last_month": "3.55%",
+          "change": "+7.6%",
+          "vs_goal": "—",
+          "status": "green"
+        }
+      ],
+      "yoy_comparison": {
+        "conversions": "+59%",
+        "cpa": "-19%",
+        "spend": "+29%",
+        "summary": "Significantly outpacing last January across all metrics"
+      }
+    },
+
+    "goal_performance": [
+      {
+        "goal": "Monthly Conversions",
+        "target": 300,
+        "actual": 342,
+        "status": "ACHIEVED",
+        "variance": "+14%",
+        "note": "Exceeded target driven by landing page improvements and strong Product Features performance"
+      },
+      {
+        "goal": "Target CPA",
+        "target": "$75",
+        "actual": "$69.73",
+        "status": "ACHIEVED",
+        "variance": "-7%",
+        "note": "Best CPA in 6 months, improving efficiency while scaling"
+      },
+      {
+        "goal": "Monthly Budget",
+        "target": "$25,000",
+        "actual": "$23,848",
+        "status": "95% utilized",
+        "variance": "-5%",
+        "note": "Slight underspend due to pausing underperforming ad variations mid-month"
+      }
+    ],
+
+    "campaign_performance": {
+      "top_performers": [
+        {
+          "name": "Non-Brand - Product Features",
+          "spend": "$8,920",
+          "conversions": 124,
+          "cpa": "$71.94",
+          "mom_change": "+28%",
+          "assessment": "Star",
+          "insight": "Biggest growth driver. New landing page increased CVR from 3.1% to 4.2%. Strong candidate for budget increase."
+        },
+        {
+          "name": "Brand - Exact Match",
+          "spend": "$4,250",
+          "conversions": 98,
+          "cpa": "$43.37",
+          "mom_change": "+12%",
+          "assessment": "Star",
+          "insight": "Consistent performer at lowest CPA. Brand search volume increasing—likely driven by content marketing efforts."
+        },
+        {
+          "name": "Non-Brand - Problem/Solution",
+          "spend": "$5,127",
+          "conversions": 68,
+          "cpa": "$75.40",
+          "mom_change": "+18%",
+          "assessment": "Solid",
+          "insight": "Right at target CPA with solid growth. Testing new ad copy to improve further."
+        }
+      ],
+      "needs_attention": [
+        {
+          "name": "Remarketing - Website Visitors",
+          "spend": "$2,100",
+          "conversions": 18,
+          "cpa": "$116.67",
+          "mom_change": "-22%",
+          "issue": "CPA 56% above target",
+          "insight": "Audience appears saturated. Frequency data shows average user seeing ads 8+ times. Recommend refreshing creative and testing new audience segments."
+        },
+        {
+          "name": "Non-Brand - Competitor",
+          "spend": "$3,450",
+          "conversions": 34,
+          "cpa": "$101.47",
+          "mom_change": "-5%",
+          "issue": "CPA 35% above target",
+          "insight": "Competitor conquesting historically challenging. Conversions declining despite stable spend. Recommend reducing budget and reallocating to Product Features."
+        }
+      ]
+    },
+
+    "key_insights": [
+      {
+        "insight": "Landing page optimization drove 23% CVR improvement",
+        "implication": "The new page launched Jan 8 is converting significantly better, especially on mobile (34% improvement)",
+        "action": "Rolling out similar optimization to Problem/Solution campaign landing page in February"
+      },
+      {
+        "insight": "Product Features campaign ready to scale",
+        "implication": "With CPA below target and strong momentum, there's room to capture more volume",
+        "action": "Recommending 20% budget increase ($1,800/month) for February"
+      },
+      {
+        "insight": "Remarketing efficiency declining",
+        "implication": "Audience saturation causing diminishing returns—same users seeing ads repeatedly without converting",
+        "action": "Refreshing creative, testing shorter remarketing windows, and adding new audience segments"
+      },
+      {
+        "insight": "Mobile now 45% of conversions (up from 31%)",
+        "implication": "Landing page optimization particularly effective on mobile, shifting channel mix",
+        "action": "Ensuring all campaigns are mobile-optimized, considering mobile bid adjustments"
+      }
+    ],
+
+    "actions_completed": [
+      {
+        "action": "Launched new landing page for Product Features campaign",
+        "date": "Jan 8",
+        "result": "CVR improved 23%, CPA dropped from $89 to $72"
+      },
+      {
+        "action": "Added 67 negative keywords from search term review",
+        "date": "Jan 15",
+        "result": "Blocked approximately $800/month in irrelevant spend"
+      },
+      {
+        "action": "Tested 4 new RSA variations",
+        "date": "Jan 12",
+        "result": "2 winners identified with +18% CTR, rolled out account-wide Jan 22"
+      }
+    ],
+
+    "next_month_plan": {
+      "priorities": [
+        {
+          "priority": "Scale Product Features campaign",
+          "why": "Best performing non-brand campaign with room to grow",
+          "expected_impact": "+25-30 additional conversions at similar CPA",
+          "action": "Increase budget by $1,800 (20%)"
+        },
+        {
+          "priority": "Fix remarketing efficiency",
+          "why": "Currently above target CPA and declining",
+          "expected_impact": "Reduce CPA from $117 to <$90",
+          "action": "New creative, shorter windows, audience refresh"
+        },
+        {
+          "priority": "Optimize Problem/Solution landing page",
+          "why": "Apply learnings from Product Features success",
+          "expected_impact": "15-20% CVR improvement potential",
+          "action": "Launch updated page by Feb 15"
+        }
+      ],
+      "planned_tests": [
+        "Test video ads in remarketing (hypothesis: higher engagement will improve efficiency)",
+        "Test new Problem/Solution landing page design",
+        "A/B test aggressive vs. conservative bid strategy on Brand campaign"
+      ],
+      "budget_recommendation": "Recommend increasing total budget to $27,000 (+8%) to capture scaling opportunity in Product Features while maintaining other campaigns.",
+      "key_dates": [
+        "Feb 15: New Problem/Solution landing page launch",
+        "Feb 20: Q1 pipeline review—will inform March budget"
+      ]
+    },
+
+    "closing": "January was a strong month—we exceeded conversion goals while improving efficiency. The landing page optimization is paying dividends, and we have a clear path to scale the winning campaigns. Main focus for February is capturing the growth opportunity in Product Features while fixing remarketing before it becomes a bigger drag.\n\nLet me know if you'd like to discuss the budget increase recommendation or have questions about any of the insights."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "business_info": {
+    "account_name": "ModernHome Decor",
+    "business_type": "E-commerce",
+    "product_type": "Home decor and furniture",
+    "price_range": "$50-$500",
+    "average_order_value": 150
+  },
+  "goals": {
+    "primary_objective": "Sales (Purchase)",
+    "target_roas": 3.0,
+    "monthly_budget": 15000,
+    "daily_budget": 500
+  },
+  "current_state": {
+    "existing_account": true,
+    "current_campaigns": 8,
+    "current_ad_sets": 24,
+    "monthly_conversions": 280,
+    "issues": "Too fragmented, hard to manage, inconsistent performance"
+  },
+  "audience_strategy": {
+    "prospecting_audiences": ["LAL Purchasers", "Interest - Home Decor", "Advantage+"],
+    "retargeting_audiences": ["Website Visitors", "Cart Abandoners", "Product Viewers"],
+    "geographic_focus": "United States"
+  },
+  "product_structure": {
+    "categories": ["Furniture", "Lighting", "Decor Accessories"],
+    "hero_products": ["Modular Sofa", "Designer Lamp Collection"],
+    "catalog_size": 200
+  }
+}

@@ -1,0 +1,821 @@
+[
+ {
+  "dimension": "ig-growth-mechanics",
+  "mustDrop": [
+   "The 3 to 5 times sends-versus-likes weighting. No primary source exists; the only publisher of it offers no method. Do not put a multiplier on shares in client-facing copy.",
+   "The 65% versus 37% caption completion figure. Attributed to Metricool, absent from Metricool. Treat as fabricated.",
+   "All Upgrow figures: 55% non-follower share, and reach rates of 22.6% reels, 13.8% carousels, 9.6% images, 6.8% Stories. Vendor page, no sample size, no methodology.",
+   "The 'under 50% non-follower views means you are recycling' rule. Not found in any source. Reads as invented.",
+   "The qsdistribution.com citation in full. Unsourced marketing blog that links to a follower-selling vendor and does not contain the May 2026 purge claim it was cited for.",
+   "The strict hierarchy 'shares and sends above saves above likes and comments'. Hootsuite does not say this; it lists watch time, likes and shares together.",
+   "The flat attribution of 'watch time, likes per reach, sends per reach' to Mosseri in January 2025 as fact. Keep the idea, drop the attribution, or label it as widely repeated but unsourced.",
+   "'Music is the condition for photos' appearing in the Reels tab. The source says photos with music are eligible; it never makes music a requirement.",
+   "The '5 Stories slides at once' suppressor. Not in Hootsuite or any source I retrieved.",
+   "'Length at or under 3 minutes' as a reach driver. The source recommends under 90 seconds, with 3 minutes as the ceiling, which is a materially different instruction.",
+   "'Roughly 3,000 times below normal' as a headline number for the 2M-views case. The arithmetic is right but it compares likes-over-views against engagement-over-reach, so the multiple is inflated. State the anomaly qualitatively instead.",
+   "The probability ranking of causes for the 2M-views anomaly. Present those four as hypotheses to test in Insights, not as an ordered list.",
+   "The fragment 'with images down from 10' attached to the Socialinsider posting medians. Not confirmed."
+  ],
+  "formats": [
+   {
+    "formatName": "Send-first comparison carousel (music enabled)",
+    "structure": "8 to 10 slides. Slide 1 is a hook frame with large English on-screen text naming the decision, for example 'Laser hair removal vs waxing: what actually changes after 6 sessions'. Slides 2 to 7 are one variable per slide, shot in-branch, one fact per slide with no paragraph blocks. Final slide is the practical answer plus a plain question in the caption. Music attached so the carousel qualifies for the Reels tab.",
+    "whyItWorks": "Carousels return 6.90% engagement by reach versus 3.31% for reels and nine times more saves than single images, and adding music makes them eligible for the Reels tab so they get reels-level distribution on top of carousel-level depth. Instagram's own carousel tips name text on the first slide as the reach lever.",
+    "whoDoesIt": "Instagram itself recommends the first-slide-text approach in its carousel reach guidance. No specific clinic account was verified in this research pass.",
+    "sourceUrl": "https://www.lindseygamble.com/blog/instagram-expands-the-reach-of-carousels-and-photos-by-featuring-them-in-the-reels-tab-heres-why-it-matters"
+   },
+   {
+    "formatName": "Eight-second machine reel",
+    "structure": "Total runtime 9 to 12 seconds. Frame 1 is the device or handpiece already in motion, no logo, no face, no intro. Burned-in English text states the one specific thing happening. Cut on the sensation or the visible result. No voiceover needed. Ends without a CTA card.",
+    "whyItWorks": "Average reel watch time on Instagram is 8.5 seconds across a 24.3 million post sample, so the whole argument has to fit inside roughly 8 seconds of held attention. Skip rate is measured on the first 3 seconds, so opening on motion rather than on branding directly protects the metric Instagram exposes.",
+    "whoDoesIt": "Derived from Metricool's measured watch time and Instagram's skip-rate definition. No specific account verified in this pass (inference on the execution).",
+    "sourceUrl": "https://metricool.com/press-release-instagram-study-2026/"
+   },
+   {
+    "formatName": "Trial reel hook ladder",
+    "structure": "Shoot one treatment topic. Cut three versions that differ only in the first 3 seconds and the first on-screen line. Post all three as trial reels on separate days with auto-share off. Read skip rate, watch time, sends and follows at the 24 hour mark. Only the winner gets shared to everyone, then gets rebuilt as a carousel.",
+    "whyItWorks": "Trial reels are shown only to non-followers and never touch the follower feed or the profile grid, so a premium brand can test cold-audience hooks without any reputational exposure. Metrics land at about 24 hours and auto-share decides on views in the first 72 hours, which is a clean experiment window.",
+    "whoDoesIt": "Official Instagram feature, announced by Instagram for Creators on 10 December 2024.",
+    "sourceUrl": "https://creators.instagram.com/blog/instagram-trial-reels"
+   },
+   {
+    "formatName": "Geo-anchored proof reel",
+    "structure": "Shot identifiably in one named Venus branch. On-screen English text references the city or the neighbourhood in the first frame, for example 'What 40 degrees in Lahore does to laser results'. Location tag set to the specific branch, not the city. One local-specific fact that only makes sense to someone who lives there.",
+    "whyItWorks": "The failure mode behind millions of views and almost no follows is reach landing outside the commercial catchment. Anchoring the hook in the local reality filters the audience at the top of the funnel, so the retention signal comes from people who could actually book. Reel insights expose the country and demographic split so the filter can be verified.",
+    "whoDoesIt": "Inference, built from the reel insights audience breakdown that Instagram exposes. No specific account verified in this pass.",
+    "sourceUrl": "https://www.inro.social/blog/instagram-reels-insights"
+   },
+   {
+    "formatName": "Question-close caption on every post",
+    "structure": "Every reel and carousel ends with one genuine, specific, answerable question in the caption, in English. Never 'comment YES', never 'tag someone'. For example: 'Which do you get told to fix first, texture or tone?'. Team replies to every comment within the first hour.",
+    "whyItWorks": "Questions generated 36.70% more comments and comment-focused calls to action generated 202.78% more comments on Metricool's 24.3 million post sample. Crucially, a real question is not engagement bait, which Meta lists as an explicit demotion category, so this gets the comment lift without the demotion risk.",
+    "whoDoesIt": "Measured across Metricool's 2026 study sample of 375,118 accounts.",
+    "sourceUrl": "https://metricool.com/press-release-instagram-study-2026/"
+   },
+   {
+    "formatName": "Stories reply loop",
+    "structure": "Short sequences, 3 to 5 slides maximum per push, several times a day rather than one long block. Each sequence ends on a poll, a slider or an open question sticker that lands in the DM inbox. Replies get answered by a named human, not a template.",
+    "whyItWorks": "Story replies rose 88% year over year, and reply-driven DMs are the same inbox a clinic books from, so the engagement metric and the revenue metric are the same action. Hootsuite also reports that posting more than about 5 Stories slides at once correlates with view and engagement dips, which is why the sequences stay short.",
+    "whoDoesIt": "Metricool's 2026 study for the replies growth, Hootsuite's July 2026 update for the slide-count caution.",
+    "sourceUrl": "https://metricool.com/press-release-instagram-study-2026/"
+   },
+   {
+    "formatName": "Original in-branch footage only, no reposts",
+    "structure": "Every asset shot on Venus premises or with Venus patients and staff. No manufacturer stock clips, no screenshotted infographics, no reposted derm content, no exports carrying a TikTok or CapCut watermark. Third-party material only ever used with substantial original commentary or edit on top.",
+    "whyItWorks": "Instagram extended originality enforcement from Reels to photos and carousels on 30 April 2026. Accounts that mostly share content they did not create or did not meaningfully transform get classified as aggregators and stop being recommended to non-followers, which is the entire acquisition channel. Hootsuite separately lists watermarked video and recycled cross-platform content as reach suppressors.",
+    "whoDoesIt": "Instagram's own policy, reported with Instagram's statement on 30 April 2026.",
+    "sourceUrl": "https://www.socialmediatoday.com/news/instagram-updates-algorithm-to-benefit-original-creators/819016/"
+   },
+   {
+    "formatName": "Saveable protocol carousel",
+    "structure": "A carousel the viewer needs to keep: the actual aftercare sequence, the real session spacing, what to stop using and when, what a normal reaction looks like on day 1, 3 and 7. Dense but one item per slide. No offer, no price, no discount.",
+    "whyItWorks": "Carousels generated nine times more saves than single images on the 24.3 million post sample, and saves sit above likes in the current signal hierarchy. A protocol is also the most naturally forwardable asset a clinic can make, which feeds sends per reach, the signal reported to matter most for reaching non-followers.",
+    "whoDoesIt": "Metricool's 2026 study for the saves multiple; Hootsuite's July 2026 update for the sends-above-saves hierarchy.",
+    "sourceUrl": "https://metricool.com/press-release-instagram-study-2026/"
+   }
+  ],
+  "hooks": [
+   "Open on the device already in motion. No logo, no face, no title card. Skip rate is scored on the first 3 seconds, so nothing in that window can be branding.",
+   "Put the specific number in the first line of on-screen text: '6 sessions', 'day 3', '72 hours', '40 degrees'. A checkable number reads as information, a vague promise reads as an ad.",
+   "Name the comparison the patient is already searching for and cannot resolve: 'laser vs waxing', 'PRP vs exosomes', 'microneedling vs RF', 'is fat freezing permanent'.",
+   "Lead with the thing that goes wrong, then the correction. 'Most people stop after 3 sessions. That is the session the hair was about to stop growing back.'",
+   "Ask the question the viewer would be embarrassed to ask out loud, in plain English, as the first on-screen line.",
+   "Anchor the first frame to the local reality so the reach filters itself: the city, the water, the heat, the wedding season, the specific branch. A hook that only makes sense in Lahore or Islamabad will not travel to audiences who can never book.",
+   "Make slide 1 of every carousel a text hook frame with music attached, because that is the condition Instagram names for carousels reaching into the Reels tab.",
+   "For before-and-after carousels, lead with the after. Instagram's own carousel guidance is visually striking first slide, and the after is the striking frame.",
+   "Build the payoff to be forwardable to one named person, not to a crowd. 'Send this to whoever told you to shave between sessions' is a send. 'Tag a friend' is engagement bait and a named demotion category.",
+   "Withhold exactly one thing. If every question raised is answered on screen, there is no reason to open the profile, which is why high-view reels can produce almost no profile visits.",
+   "Put the decisive information at around second 16 to 23 for longer reels, after the hook has held, rather than front-loading everything into the first 5 seconds.",
+   "Always burn in English on-screen text. Roman Urdu is banned, much of the audience watches on mute, and the text frame is what carries the hook when there is no sound."
+  ]
+ },
+ {
+  "dimension": "intl-clinic-chains",
+  "mustDrop": [
+   "The TikTok patient-voice claim in its entirety. All three quoted strings are attributed to https://www.tiktok.com/@mckennakeiser/video/7326356440296213806 , which returns nothing but 'TikTok - Make Your Day' to an unauthenticated fetch. Three verbatim quotes from an unretrievable page is a fabrication risk, and the client's hard rule is that every factual claim carries a source URL that was actually retrieved.",
+   "The quoted phrase 'humorous healthcare-related content' attributed to Sculpt Spa. Not retrievable from the profile, no reel cited, reads like third-party or generated description. The whole 'the small operator is the one running humour' thesis goes with it unless specific reels are cited.",
+   "The '3-5x the weight of likes' figure for DM sends. It appears only in marketing blogs with no methodology and is absent from Mosseri's own January 2025 post. Also drop 'sends weighted most heavily', Mosseri's word is 'slightly'.",
+   "The claim that Instagram counts 'total seconds watched including replays rather than 3-second views'. Blog elaboration, not in the primary source. Label as inference or cut.",
+   "'sk:n has 40+ UK locations'. No source states it. Available figures are 30+, 50 and 60+ depending on source and date. Appears in two separate claims and must come out of both.",
+   "'around 70 UK sites' for the sk:n insolvency. The cited source says 'more than 60 aesthetics clinics'.",
+   "'SkinSpirit's only incentive is a referral credit'. Refuted by its own homepage, which also runs 20% off microneedling and 15% off a first treatment. Dangerous specifically because the client banned discount content and would be shown a false clean example.",
+   "The quoted CTA strings 'FREE CONSULT' and 'Get started' for Milan Laser, and 'Book a free consultation' for Therapie. None were retrieved as exact button text. Therapie's retrieved CTAs are 'Free Consultation', 'View offers', 'See Offers', 'Book now', 'Buy now'.",
+   "The two Sono Bello comment verbatims 'Does it hurt??' and 'What is trisculpt'. Only paraphrased topics came back from the post, not quotable strings.",
+   "'the slot lists are nearly identical' for Story Highlights. Refuted by the researcher's own five inventories, which show four clearly different strategies.",
+   "'exactly four questions' as the framing for clinic comment sections. The researcher's own evidence includes a fifth category, medical suitability for an existing skin condition, and the sample is 5 to 14 comments per post.",
+   "The businesswire URL for the Ideal Image membership. It returns HTTP 403. Cite the medestheticsmag trade report instead, and date-stamp the claim as February 2021 since the client's rule flags pre-2024 sources as possibly stale."
+  ],
+  "formats": [
+   {
+    "formatName": "3 Truths and a Lie, treatment edition",
+    "structure": "Four on-screen lines over plain treatment b-roll. Lines 1 to 3 are true and each kills one of the three real objections: safe on all skin tones, minimal downtime, plan is customised to you. Line 4 is the deliberate lie and should be the snobbery or exclusivity objection. The caption repeats all four lines verbatim with a bullet on each, and the answer is withheld so viewers argue in the comments. Skin Laundry's exact set: \"Our lasers are safe and effective for all skin tones\", \"The treatment requires minimal downtime\", \"Our Skin Experts will customize a plan to get your skin glowing\", \"Laser Facials are only for celebrities.\"",
+    "whyItWorks": "It manufactures a comment and a save without an offer, and it smuggles three clinical reassurances past a viewer who would scroll past an educational post. It also forces a replay to re-read the four lines, which feeds the watch time signal.",
+    "whoDoesIt": "Skin Laundry",
+    "sourceUrl": "https://www.instagram.com/skinlaundry/reel/DARHR7tC2pu/"
+   },
+   {
+    "formatName": "Results post with a locked spec block",
+    "structure": "One before and after visual. Caption opens with a single plain sentence naming the patient, then a fixed six-line block that never changes: Procedure, Centre, Areas, Practitioner, Time post-op, Book now. Closes with an open question such as \"Drop your questions below!\". Sono Bello's live example lists TriSculpt, Baltimore MD, Full Abdomen plus Waist plus Back, Dr. Epps, 2 Months post-op.",
+    "whyItWorks": "The block does the credibility work so the copy does not have to, which means eight branches can produce identical-quality posts with no copywriter. Stating time elapsed pre-empts the \"how long did this take\" comment, and the closing question harvests the lead in public where other prospects read the answer.",
+    "whoDoesIt": "Sono Bello",
+    "sourceUrl": "https://www.instagram.com/sonobello/p/C30amLssmwL/"
+   },
+   {
+    "formatName": "Hard numeric pre-care instruction",
+    "structure": "One specific numeric instruction is the entire hook, no preamble. Short demo clip. Caption is the instruction restated plus a branded end-state hashtag. LaserAway's version: \"Shave 12-24 hours before each laser hair removal session, then #DitchTheRazor when you've completed your treatment series!\"",
+    "whyItWorks": "Specificity is the hook. A number is unarguable, saveable and sendable to whoever is booked in next week. It also cuts no-shows and bad outcomes, so it pays for itself operationally, not just in reach.",
+    "whoDoesIt": "LaserAway",
+    "sourceUrl": "https://www.instagram.com/laseraway/reel/C__S_feOFrP/"
+   },
+   {
+    "formatName": "Why now, not later, timing explainer",
+    "structure": "Three beats. Question as the hook, \"Why start laser hair removal now?\". The mechanical reason with real numbers, \"6-8 treatments spaced 4-6 weeks apart\". Then the cost of delay stated as a consequence the viewer feels, waiting until summer means staying indoors afterwards to avoid the sun. No offer, no price, no deadline.",
+    "whyItWorks": "It creates urgency out of biology instead of a sale, which is exactly what a brand with a discount ban needs. The numbers also silently answer the total-cost question without naming a figure.",
+    "whoDoesIt": "LaserAway",
+    "sourceUrl": "https://www.instagram.com/laseraway/reel/C4dyeVUPHDg/"
+   },
+   {
+    "formatName": "Myth reversal anchored to a named device",
+    "structure": "State the category myth as the hook, then answer with the condition, the device by its exact model name, and the operator's qualification. LaserAway's version: laser can be done in summer \"as long as treatments are performed with the right technology and clinical expertise. Using the Cynosure Apogee Elite, our experienced nurses can safely treat all skin types year-round.\"",
+    "whyItWorks": "Naming the machine is the answer to the single most repeated technical question in these comment sections, and it converts a defensive myth-bust into a proof of capability. It also separates the clinic from operators who will not say what they are using.",
+    "whoDoesIt": "LaserAway",
+    "sourceUrl": "https://www.instagram.com/reel/DZ5OQUSCeeF/"
+   },
+   {
+    "formatName": "Third-party quote card, brand stays silent",
+    "structure": "The entire caption is a verbatim quote from a named editor or journalist inside quotation marks, attribution on the final line. The video is plain treatment footage. The brand never speaks in its own voice anywhere in the post. Skin Laundry's version quotes an editor by name on the Signature Laser Facial stimulating collagen, correcting uneven pigment and clearing pore buildup.",
+    "whyItWorks": "A claim the clinic cannot make about itself becomes postable when someone else made it. It is also the cleanest way to put clinical benefit language on screen without triggering a self-promotional read or a regulatory problem.",
+    "whoDoesIt": "Skin Laundry",
+    "sourceUrl": "https://www.instagram.com/skinlaundry/reel/DFIq4BPo5fi/"
+   },
+   {
+    "formatName": "The named guarantee, price withheld",
+    "structure": "Four fixed components and no number. A trademark-style package name. A coverage promise in plain words. A numeric results range. One concrete benefit sentence a customer would repeat. Every CTA is consultation-only. Milan Laser's live set: \"Smooth skin for life, guaranteed\", the Unlimited Package covering you for life however many treatments you need, \"Most clients see permanent results in just 7-10 sessions\", \"You'll never pay for hair removal on the same body area again\", with \"FREE CONSULT\" and \"Get started\" as the only buttons.",
+    "whyItWorks": "It answers the price question with certainty rather than a figure, which is the only discount-free way to handle it. The owned name gives the sales team something to quote and competitors nothing to undercut.",
+    "whoDoesIt": "Milan Laser",
+    "sourceUrl": "https://www.milanlaser.com/"
+   },
+   {
+    "formatName": "Flat-price first visit in the bio",
+    "structure": "No percentage anywhere. One bio line pairing third-party validation with a single flat trial price: \"Named Best Spot for Facials by Cosmopolitan. Try your first Facial for $50\". The trial price is treated as a permanent product, not a promotion, so it never expires and never needs a sale post.",
+    "whyItWorks": "It is an acquisition offer that is not a discount, so it survives a discount ban and does not train the audience to wait for sales. The award line gives the low price a reason to exist other than desperation.",
+    "whoDoesIt": "Skin Laundry",
+    "sourceUrl": "https://www.instagram.com/skinlaundry/"
+   },
+   {
+    "formatName": "Credential stack bio",
+    "structure": "Pipe-separated claims in strict rank order: category rank, footprint, tenure, service list, marquee location or partner. SkinSpirit's live version: \"#1 Botox provider | 60+ locations | 20+ yrs of excellence | Facials・Injectables・Lasers・Microneedling | @nordstrom NYC\". LaserAway uses the same shape stacked vertically: leader claim, clinic count, treatment volume.",
+    "whyItWorks": "The bio is the only text every visitor reads, so it carries the proof rather than a slogan. Footprint and volume claims answer the trust question before the first post loads.",
+    "whoDoesIt": "SkinSpirit, and in vertical form LaserAway",
+    "sourceUrl": "https://www.instagram.com/skinspirit/"
+   },
+   {
+    "formatName": "Highlights as a permanent service menu",
+    "structure": "A fixed slot list treated as site navigation, not as an archive, and refreshed rather than added to. The consensus slots across four chains: FAQ, Results, Our Devices or Our Laser, Reviews, Locations, Patient Stories with a branded hashtag, Press, Payment Plans. Milan Laser's live set adds a condition slot, PCOS, and a hashtag slot, #MyMilanStory.",
+    "whyItWorks": "It answers the two most common comment questions, location and price structure, permanently and with zero ongoing production. A patient-story slot named as a hashtag also invites patients to file their own content into it.",
+    "whoDoesIt": "Milan Laser, Skin Laundry, SkinSpirit, Sculpt Spa",
+    "sourceUrl": "https://www.instagram.com/milanlaser/"
+   },
+   {
+    "formatName": "Condition pillar instead of treatment pillar",
+    "structure": "A standing highlight plus recurring posts organised around the medical condition the treatment resolves, not the treatment. Add a named partner organisation and a stated contribution to make it a brand act rather than a topic. Milan Laser runs a permanent PCOS highlight. LaserAway published a carousel on partnering with PCOS Challenge and donating $10,000 for community education and resources.",
+    "whyItWorks": "People search and send condition content, not treatment content. It converts a cosmetic purchase into a medical solution, which raises willingness to pay and removes the need to discount. It is also entirely compatible with bans on discounts and on doctor-personality content.",
+    "whoDoesIt": "Milan Laser, LaserAway",
+    "sourceUrl": "https://www.instagram.com/laseraway/"
+   },
+   {
+    "formatName": "Practitioner as talent, job title supered",
+    "structure": "Cast real staff, never actors. Super their actual job title on screen. Show them both delivering the treatment and personally receiving it. Shoot once as a hero film, then cut down into social reels rather than shooting social separately.",
+    "whyItWorks": "It delivers faces, authority and continuity without building a personality brand around one doctor, which is the exact constraint Venus is working under. Staff who genuinely use the treatment can make claims a script cannot.",
+    "whoDoesIt": "Laser Clinics Australia, produced by Bang Media",
+    "sourceUrl": "https://www.bangmedia.com.au/work/laser-clinics-australia"
+   },
+   {
+    "formatName": "Regulator-first trust block with a callback CTA",
+    "structure": "Name the regulating bodies explicitly rather than claiming certification, stack review volume and rating beside them, and run two CTAs side by side: a booking button and a callback request that promises a human will phone to arrange the consultation. sk:n's live wording: \"Regulated by the Care Quality Commission and Medical Councils\", \"Book Your Consultation\", \"Request A Callback\". Therapie's volume version: \"Over 100,000+ 5 Star Reviews\", \"4.9 Average rating on Google\", \"Trusted by 350,000+ clients\".",
+    "whyItWorks": "A named regulator is unfakeable where \"certified staff\" is claimed by everyone. The callback option captures the large share of prospects who will not complete a self-serve booking, which in Pakistan is most of them.",
+    "whoDoesIt": "sk:n clinics UK, Therapie Clinic",
+    "sourceUrl": "https://www.sknclinics.co.uk/"
+   },
+   {
+    "formatName": "Honest patient session log",
+    "structure": "Patient speaks, not the clinic. Three fixed beats in order: name the session number, declare the honesty stance before any claim, then state the limitation before the result. Working example from a Sculpt Spa patient: \"My third and last session! I am always honest and transparent about anything i get done\", then \"you must still maintain a healthy lifestyle\", then \"This can also take a few months to see final results\".",
+    "whyItWorks": "Stating the limitation first is what makes the result believable, and it is the opposite of what every clinic in Pakistan does. The session number gives the viewer a place on the journey and a reason to come back for the next instalment.",
+    "whoDoesIt": "Patient creators posting about Sculpt Spa",
+    "sourceUrl": "https://www.tiktok.com/@mckennakeiser/video/7326356440296213806"
+   }
+  ],
+  "hooks": [
+   "Three of these are true. One is a lie.",
+   "Shave 12 to 24 hours before. Not on the day.",
+   "Why start now instead of waiting for summer.",
+   "Yes, you can have laser in summer. Here is the one condition.",
+   "Six to eight sessions, four to six weeks apart. That is the real timeline.",
+   "Can I have this if my skin is deeper toned. Here is the honest answer.",
+   "Does it hurt. Session by session, described properly.",
+   "The question in our comments every single day: what does it cost to actually finish.",
+   "This is the machine. This is its model name. This is why it matters.",
+   "Month one, month three, month six. Same light, same angle, same person.",
+   "What we will not treat, and why we will tell you no.",
+   "Read this before you book anywhere, including with us.",
+   "Her third session, and what she said she would change.",
+   "PCOS made this a monthly battle. Here is what changed.",
+   "Eight branches, one protocol. Here is what is identical in every room.",
+   "Fifteen minutes in, no downtime out. Back at your desk by two.",
+   "The consultation is free. Here is exactly what happens in it, minute by minute.",
+   "We stopped offering this treatment. Here is why.",
+   "Our nurse has had this done herself. She is going to tell you the parts we do not advertise.",
+   "Real people. Real results. No filter on this camera."
+  ]
+ },
+ {
+  "dimension": "india-derm-clinics",
+  "mustDrop": [
+   "The ASCI 10 percent disclaimer area rule and the 'ASCI Healthcare Guidelines 2024' before-and-after disclosure requirement. Refuted against ASCI's own guideline index, which lists 16 guidelines with no healthcare or aesthetic-procedures guideline and no 2024 healthcare update; ASCI's real disclaimer guideline specifies font size at 2.6 percent of medium height in static media, not 10 percent of ad area. Source is a single agency blog. Do not put an invented regulatory threshold in front of a client.",
+   "The Indian cosmetic dermatology market at USD 1.2 billion in 2024 growing 20-25 percent a year. Unsourced on the blog that states it and contradicted by named research houses putting India aesthetic dermatology at about USD 169 million in 2024 at 16.34 percent CAGR. Off by roughly 7x.",
+   "The claim that Meta still prohibits side-by-side before and after for anti-ageing and wrinkle treatments including botox and dermal fillers. Meta's own standard, last updated 22 Jul 2026, permits 'General cosmetic products, procedures, surgeries depicting before and after transformation' at 18+ and explicitly lists dermal fillers, injectable treatments, chemical peels and micro-needling as promotable. Telling the client they cannot run before-and-afters for injectables would cost them a format Meta now allows.",
+   "All Indian medical advertising law as a constraint on this client. NMC and IMC regulations, ASCI's code and the Drugs and Magic Remedies Act are Indian instruments with no force in Pakistan. Keep them only as craft reasoning about why Indian clinics write the way they do, never as 'you must' rules for an 8-branch Pakistani chain. The Pakistani framework is different and was not researched here.",
+   "The framing 'NMC 2026 ethics code'. No such code exists. The 2023 NMC Professional Conduct Regulations were placed in abeyance on 23 Aug 2023 and the IMC 2002 Regulations remain operative. Citing a non-existent 2026 code will destroy credibility with anyone who checks.",
+   "The ichelonconsulting 'NMC-compliant substitutes' list as compliance guidance. The firm states these are its own methodology with no regulatory or clinical source, and it contradicts itself by recommending patient video testimonials on one page while calling patient testimonials explicitly prohibited on another.",
+   "All three socialmon multipliers: reels 3-5x more reach than carousels, carousels 4-6x more saves, educational carousel save rates 5-8 percent of reach. Zero citation, zero methodology, vendor content marketing. Do not let these become the calendar's performance targets.",
+   "The pre-bridal specifics '3 to 5 sessions spaced about 4 weeks apart' and 'final energy-device session 2 to 4 weeks before the date'. No cited source states either. They are the researcher's synthesis, and they are clinical scheduling numbers, so publishing them as sourced would put treatment protocol advice in the client's name.",
+   "The Oliva slide-one quote 'Your concerns deserve dermatologist-led results.' attributed to a 9 Sep 2026 reel. No post URL was cited and the line could not be located. Drop the quote; the Oliva bio credential stack is verified and says the same thing.",
+   "The stated like-rate range of 0.01 to 0.14 percent. Both ends are wrong against the researcher's own observations. Use 0.007 to 0.11 percent, or better, quote the raw counts.",
+   "'Bodycraft 71.7K followers, 1,856 posts'. The profile shows 38 posts. The 1,856 figure is wrong and should not appear.",
+   "The Dr Jaishree Sharad personal-versus-treatment comparison as a strategic recommendation. The numbers are real but the comparison is unsound, and the client has banned doctor-as-personality content, so it cannot be acted on. Presenting it invites a conversation the client already closed."
+  ],
+  "formats": [
+   {
+    "formatName": "Results timeline carousel, month by month",
+    "structure": "Slide 1 is a dated conditional in large type, verified on Oliva's 18 Sep 2026 post as \"If you start Precision+ LASER HAIR REDUCTION in September\". The caption tells the viewer what the swipe contains: \"Swipe through to see what your results timeline can look like and book a consultation to get started!\" Subsequent slides run forward in calendar months to an end state, inference, only slide 1 text was readable in the page alt text. Final slide is the consultation CTA.",
+    "whyItWorks": "It answers the number one purchase objection, how long until I see something, without promising a percentage. It converts a single session enquiry into a course. It also creates urgency from the calendar rather than from a discount, which is the only urgency a premium clinic can use cleanly.",
+    "whoDoesIt": "Oliva Skin Hair and Body Clinics, @olivaclinics, 51.9K followers, 18 Sep 2026, 11 likes",
+    "sourceUrl": "https://www.instagram.com/p/DdboieCE7N8/"
+   },
+   {
+    "formatName": "This versus that, numbered episode series",
+    "structure": "Cover frame carries both treatment names split by V/S, then the decision question, then the series badge and episode number. Verified cover text: \"RF V/S MNRF Which one is for you and why? this v/s that Ep.1\". Body compares depth of action, downtime and who each one suits. Caption reframes the post as consultation preparation and asks for questions: \"it's always good to go to your doctor's consultation prepped and prepped from the right source! Drop your questions below\". Bodycraft runs the same shape in prose: \"Babyglow vs Skinvive. Two treatments, different approaches and different ways of supporting your skin. The right choice depends on your skin, concerns and what you're looking to achieve.\"",
+    "whyItWorks": "The clinic sells both sides, so there is no loser and no superlative, which keeps it compliant. Resolution is a decision rule, not a verdict, so the natural next step is a consultation. Episode numbering turns one post into a followable series and gives the calendar a repeatable weekly slot.",
+    "whoDoesIt": "Dr Rashmi Shetty, @drrashmishettyra, 455K followers, 25 Aug 2026, 216 likes and 21 comments. Bodycraft Clinic, @bodycraftclinic, 11 Sep 2026, 31 likes and 6 comments",
+    "sourceUrl": "https://www.instagram.com/reel/DcdhVOWopJe/ , https://www.instagram.com/bodycraftclinic/reel/DdJx00rz_cp/"
+   },
+   {
+    "formatName": "Three things worth knowing before you book, the honest limits post",
+    "structure": "Hook is a question naming the treatment the viewer is already considering, then a hard numbered list of three limitations, then a one line reframe, then the CTA. Verified in full: \"Considering fillers? Here are 3 things worth knowing before you book: 1. Fillers aren't permanent. 2. More filler doesn't always mean better results. 3. Some downtime is normal. The right treatment starts with understanding what's right for you. Book your free consultation via the link in bio.\"",
+    "whyItWorks": "It earned the highest comment to like ratio of any Bodycraft post observed. Naming the downside is the fastest trust signal available and it pre-qualifies the lead, which cuts wasted consultations and post-treatment disputes. It is also the cleanest possible alternative to a discount hook.",
+    "whoDoesIt": "Bodycraft Clinic, @bodycraftclinic, 71.7K followers, 21 Sep 2026, 19 likes and 6 comments",
+    "sourceUrl": "https://www.instagram.com/bodycraftclinic/reel/DdjA0XSzEcm/"
+   },
+   {
+    "formatName": "Concern-first results frame with case ID watermark",
+    "structure": "Split frame labelled Before and After, brand lockup, the words REAL RESULTS, and a case reference code stamped on the image, verified as \"BX-BD5SLATL005\". Caption opens by naming the concern and the failed attempt: \"If you've been trying to fix the pigmentation on your lips, this one's for you.\" then one sentence of mechanism, then a comment-gate CTA: \"Comment below if you are struggling with dark, uneven lip pigmentation and let us help you!\"",
+    "whyItWorks": "The case code implies a real patient file behind the image, which is the specific credibility gap that kills clinic results posts in South Asia. The comment gate converts passive viewers into an addressable list without asking for a DM first. Oliva's two before and after posts were its two highest performers in the observed window.",
+    "whoDoesIt": "Oliva Skin Hair and Body Clinics, @olivaclinics, 30 Jul 2026, 46 likes and 3 comments, and 22 Jul 2026, 56 likes",
+    "sourceUrl": "https://www.instagram.com/p/DbauG3hzQYC/ , https://www.instagram.com/p/DbGIJtNkxB0/"
+   },
+   {
+    "formatName": "Category reframe with an entry price anchor",
+    "structure": "Slide 1 is a three word negation of the cheaper alternative, verified as \"Not Your Regular Facial\". Caption: \"Your skin deserves more than a regular facial. Experience dermat-led Medi-Facials, tailored to what your skin needs. Starting at ₹2,999. Book your appointment now.\" Then a short branded hashtag set and a keyword tag list.",
+    "whyItWorks": "It attacks the salon, not the price, which is exactly the position a premium clinic needs. Publishing a starting price is transparency rather than discounting, and it filtered the comments toward booking questions, \"Address\" and \"How to book an appointment?\", instead of cost haggling.",
+    "whoDoesIt": "Kaya, @kayaskinclinics, 243K followers, 21 Aug 2026, 49 likes and 4 comments",
+    "sourceUrl": "https://www.instagram.com/p/DcTDJFmjeOF/"
+   },
+   {
+    "formatName": "Anti-urgency wedding reframe",
+    "structure": "Two fragment headline built as a negation plus a replacement, verified as \"Not Wedding-Ready. Life-Ready.\" Then a time contrast: \"Your wedding is for 1 day. Your skin stays with you for 1000 days and beyond.\" Then the package name, then a benefit sentence that points past the event, then a phone number. On-frame text repeats the contrast: \"Don Prepare for One Day. Prepare for 1000 Days of Great Skin.\"",
+    "whyItWorks": "Wedding demand is the largest shared seasonal driver between India and Pakistan, and every competitor works it as a countdown or a package discount. Reframing it as long-term skin converts a one-off bridal booking into a maintenance relationship and lets a premium brand play the season without cheapening.",
+    "whoDoesIt": "Clinic Dermatech, @clinic_dermatech, 41.6K followers, 10 Sep 2026, 3 likes and 2 comments, so strong copy on a weak account",
+    "sourceUrl": "https://www.instagram.com/p/DdIvEhsoN6J/"
+   },
+   {
+    "formatName": "Skin tone safety carousel, the myth and fact structure",
+    "structure": "Six to eight slides, one myth per slide with the correction underneath. Recurring myths across Indian clinic sources: laser burns darker skin, laser causes permanent pigmentation, one session is enough, laser is unbearably painful, laser only works on fair skin. Corrections are conditional rather than absolute, for example that temporary pigmentation can occur when aftercare is ignored or sun exposure continues, and that risk falls with the right laser type, cooling, sun protection and aftercare. Device logic is named, Nd:YAG for deeper skin tones, and the claim is capped at hair reduction rather than removal.",
+    "whyItWorks": "Will it work on my skin tone and is it safe are two of the three questions that block a booking, and they are more acute in Pakistan than in the West. Answering them in a saveable carousel means the objection is handled before the DM, and Nd:YAG naming gives a technical reason to trust the clinic over a cheaper salon.",
+    "whoDoesIt": "Multiple Indian clinics publish this in long form: SkinWise Clinic, Skinfinity Derma, Dr Keerthana Kalva, Sakhiya Skin Clinic. The carousel structure itself is described by an agency source, so treat the slide count as directional.",
+    "sourceUrl": "https://skinwise.clinic/blog/smooth-amp-safe-laser-hair-reduction-for-indian-skin , https://www.skinfinityderma.com/is-laser-safe-for-indian-skin/ , https://www.socialmon.ai/blog/71-laser-clinic-instagram-post-ideas-with-examples-that-drive-bookings"
+   },
+   {
+    "formatName": "Named expert verdict, recurring weekly badge",
+    "structure": "A fixed series label plus the expert's role or first name, then a question the audience already argues about. Verified cover lines: \"Dietitian's Verdict: Is breakfast the most important meal of the day?\", \"GLP1 is not the only answer\", \"Dr. Harshita: There is usually a lot more going on\". The expert answers to camera in the clinic, the brand owns the series, not the person.",
+    "whyItWorks": "It buys the authority of a clinician-led answer without turning any one clinician into the brand's personality, which is the exact constraint Venus is under and the one Indian clinics face under their medical council rules. A fixed badge builds return viewing and makes the calendar easy to fill.",
+    "whoDoesIt": "Bodycraft Clinic, @bodycraftclinic, 71.7K followers, 1,856 posts, series running through Sep 2026",
+    "sourceUrl": "https://www.instagram.com/bodycraftclinic/"
+   },
+   {
+    "formatName": "Consultation prep content",
+    "structure": "The post explicitly positions itself as homework before an appointment. Verified caption frame: \"it's always good to go to your doctor's consultation prepped and prepped from the right source!\" Content is the questions to ask, the terms to know, or the difference between two options, and the close is an invitation to ask rather than an instruction to buy.",
+    "whyItWorks": "It is commercial without being solicitation, which matters under the education versus solicitation test that Indian regulators apply and that any premium clinic should apply to itself. It also raises consultation show-up quality, because the patient arrives already sold on the category.",
+    "whoDoesIt": "Dr Rashmi Shetty, @drrashmishettyra, 25 Aug 2026",
+    "sourceUrl": "https://www.instagram.com/reel/DcdhVOWopJe/"
+   },
+   {
+    "formatName": "Bracketed keyword block instead of a hashtag wall",
+    "structure": "Caption ends with two or three brand hashtags only, then a square-bracketed comma separated list of long-tail search phrases. Verified example: \"#OlivaClinics #YouUncompromised [laser hair removal results, when to start laser hair removal, how many sessions for laser hair removal, precision laser hair removal India, smooth skin hair removal treatment, advanced laser hair removal, best laser hair removal clinic India]\".",
+    "whyItWorks": "It captures in-app search intent while keeping the visible caption clean, which a thirty-hashtag block does not. For a premium brand the visual restraint matters as much as the reach. Note that one of Oliva's own phrases uses the word best, which Indian rules treat as a banned superlative, so Venus should strip superlatives from its own list.",
+    "whoDoesIt": "Oliva Skin Hair and Body Clinics, @olivaclinics, across Sep 2026 posts",
+    "sourceUrl": "https://www.instagram.com/p/DdboieCE7N8/ , https://www.instagram.com/p/DdB3R1BE8bB/"
+   },
+   {
+    "formatName": "Story highlights rebuilt as a treatment menu",
+    "structure": "Highlights named by treatment and by stage of care rather than by campaign. Verified Bodycraft set: New launches, Outlets, Testimonials, Aftercare, LHR, Morpheus8, IV Drips, HMF steps. Verified Kaya set: Kaya in Media, Book Now, New Launches, Client Reviews.",
+    "whyItWorks": "Highlights are the only permanently browsable surface on a profile, so they should answer what do you treat, where are you, and what happens after. Compare Clinic Dermatech, whose highlights are Flat 51 percent OFF, Year End OFFER and Price Revising, and whose organic non-discount post scored 3 likes on 41.6K followers.",
+    "whoDoesIt": "Bodycraft Clinic and Kaya as the positive model, Clinic Dermatech as the negative one",
+    "sourceUrl": "https://www.instagram.com/bodycraftclinic/ , https://www.instagram.com/kayaskinclinics/ , https://www.instagram.com/clinic_dermatech/"
+   },
+   {
+    "formatName": "Institutional scale bio, no doctor name",
+    "structure": "Bio leads with counted, checkable scale. Verified: Oliva, \"125+ MD Dermatologists / 35+ Clinics In India / 8L+ Happy Clients\" plus a phone number. Kaya, \"Before skin goals were a thing, there was Kaya. 23 years | 3M+ customers | 120 Dermats | 83 Clinics\". Clinic Dermatech, a Times of India ranking plus \"22 Clinics, 13 cities\".",
+    "whyItWorks": "It carries authority through institution and volume rather than through a personality, which is both the compliant route in India and the route Venus needs with doctor-as-personality banned. Numbers are also the only form of premium claim that survives a superlative ban.",
+    "whoDoesIt": "Oliva, Kaya and Clinic Dermatech, all observed 23 Sep 2026",
+    "sourceUrl": "https://www.instagram.com/olivaclinics/ , https://www.instagram.com/kayaskinclinics/ , https://www.instagram.com/clinic_dermatech/"
+   },
+   {
+    "formatName": "Compliant proof stack without patient faces",
+    "structure": "Three substitutes used in place of identifiable before and after: a consent-verified patient video framed as a journey narrative rather than an outcome demonstration, an anonymised statistical range in the copy such as \"most patients see visible improvement in 3-4 sessions\", and procedure demonstration filmed on a training model rather than a patient. Results imagery, where used, carries a results variability and medical supervision disclaimer occupying a minimum legible area.",
+    "whyItWorks": "It is the only proof architecture that survives a regime where identifiable before and after and patient testimonials are both restricted, and it is close to what Venus needs anyway. The training-model demonstration is one studio day that can supply many posts.",
+    "whoDoesIt": "Described as standard practice for Indian aesthetic dermatology by a specialist marketing consultancy and by an ASCI and NMC compliance guide, rather than observed on a single account",
+    "sourceUrl": "https://ichelonconsulting.com/industries/aesthetic-dermatology , https://upgrowth.in/indian-hospital-marketing-asci-nmc-compliance-guide/"
+   }
+  ],
+  "hooks": [
+   "\"Still compromising with stubborn pigmentation?\" Oliva, 22 Sep 2026. Negative-state question that names the concern and the failure of everything the viewer has already tried. https://www.instagram.com/p/Ddl0l75k-mn/",
+   "\"If you've been trying to fix the pigmentation on your lips, this one's for you.\" Oliva, 30 Jul 2026. The you-have-already-failed opener, which self-selects a high-intent viewer in one line. https://www.instagram.com/p/DbauG3hzQYC/",
+   "\"Afraid to lift your arms up because of dark underarms?\" Oliva, 8 Sep 2026. Behaviour hook rather than appearance hook, it names what the viewer avoids doing rather than how they look. Note this sits close to Meta's negative self-perception line, so it is safer organic than boosted. https://www.instagram.com/p/DdB3R1BE8bB/",
+   "\"If your underarms look like this...\" Oliva slide 1 on-frame text, 8 Sep 2026. Open loop that forces the swipe. https://www.instagram.com/p/DdB3R1BE8bB/",
+   "\"If you start Precision+ LASER HAIR REDUCTION in September\" Oliva slide 1, 18 Sep 2026. Dated conditional, generates urgency from the calendar instead of from a price cut. https://www.instagram.com/p/DdboieCE7N8/",
+   "\"Not Your Regular Facial\" Kaya slide 1, 21 Aug 2026. Three word category negation, attacks the cheaper substitute rather than the price. https://www.instagram.com/p/DcTDJFmjeOF/",
+   "\"Not Wedding-Ready. Life-Ready.\" Clinic Dermatech, 10 Sep 2026. Negation plus replacement in two fragments, the strongest anti-discount wedding hook found. https://www.instagram.com/p/DdIvEhsoN6J/",
+   "\"Your wedding is for 1 day. Your skin stays with you for 1000 days and beyond.\" Clinic Dermatech, 10 Sep 2026. Time-contrast hook, one number against a much larger number. https://www.instagram.com/p/DdIvEhsoN6J/",
+   "\"Your concerns deserve dermatologist-led results.\" Oliva slide 1, 9 Sep 2026. Deserve construction, flatters the viewer while positioning against salons. https://www.instagram.com/p/Ddl0l75k-mn/",
+   "\"Your skin deserves more than a regular facial.\" Kaya, 21 Aug 2026. Same deserve construction applied to the substitute product. https://www.instagram.com/p/DcTDJFmjeOF/",
+   "\"Your sign to drop that razor.\" Oliva, 5 Sep 2026. Your-sign-to construction, a soft imperative that borrows a native Instagram phrasing. https://www.instagram.com/olivaclinics/",
+   "\"Considering fillers? Here are 3 things worth knowing before you book:\" Bodycraft, 21 Sep 2026. Pre-purchase intent hook plus a counted promise, then honest limitations. https://www.instagram.com/bodycraftclinic/reel/DdjA0XSzEcm/",
+   "\"HERE'S WHAT THEY DON'T TELL\" Bodycraft on-frame cover text, 21 Sep 2026. Withheld-information hook. Overused industry-wide, so it needs a genuinely non-obvious payoff or it burns trust. https://www.instagram.com/bodycraftclinic/",
+   "\"RF V/S MNRF Which one is for you and why? this v/s that Ep.1\" Dr Rashmi Shetty on-frame cover, 25 Aug 2026. Versus plus decision question plus series badge and episode number. https://www.instagram.com/reel/DcdhVOWopJe/",
+   "\"Which one did I pick? ENDOLIFT or ULTHERAPY\" Dr Rashmi Shetty cover, 28 Aug 2026. Withheld-choice hook. Requires a named person to answer it, so this one does not transfer to Venus under the no-personality rule. https://www.instagram.com/drrashmishettyra/",
+   "\"read this before you get salmon DNA or exosomes injected\" Dr Rashmi Shetty cover, 3 Sep 2026. Before-you-buy warning hook on a trending injectable, directly relevant to Venus's exosome offering. https://www.instagram.com/drrashmishettyra/",
+   "\"how do you actually choose between: PDRN, PN HA & Biostimulators\" Dr Rashmi Shetty cover, 15 Sep 2026. The word actually does the work, it implies every other explanation was useless. https://www.instagram.com/drrashmishettyra/",
+   "\"Why fillers SHOULD NOT BE YOUR first choice FOR aging\" Dr Rashmi Shetty cover, 8 Sep 2026. Counter-intuitive de-sell of the clinic's own high-margin service, which is why it reads as credible. https://www.instagram.com/drrashmishettyra/",
+   "\"WHY DOES MELASMA HAPPEN?\" and \"WHY DO FILLERS LOOK SO BAD?\" Dr Jaishree Sharad covers, 20 and 17 Sep 2026. Bare mechanism questions in all caps, no cleverness, high search intent. https://www.instagram.com/drjaishreesharad/",
+   "\"Dietitian's Verdict: Is breakfast the most important meal of the day?\" Bodycraft cover, 15 Sep 2026. Series badge plus a contested everyday question, the badge does the hooking as much as the question. https://www.instagram.com/bodycraftclinic/",
+   "\"Comment below if you are struggling with dark, uneven lip pigmentation and let us help you!\" Oliva CTA, 30 Jul 2026. Comment gate keyed to the concern, builds an addressable list without asking for a DM first. https://www.instagram.com/p/DbauG3hzQYC/",
+   "\"Drop your questions below\" Dr Rashmi Shetty CTA, 25 Aug 2026. Question harvest, which also supplies the next month of content ideas for free. https://www.instagram.com/reel/DcdhVOWopJe/",
+   "Structural note, not a quote: every high-performing hook observed named either one concern, one treatment, or two treatments in opposition, within the first six words. None of them opened with the brand name, a greeting, a festival or a price. Inference from the set of posts fetched above."
+  ]
+ },
+ {
+  "dimension": "pakistan-market",
+  "mustDrop": [
+   "Every number from the Skinfudge blog: Botox down 40% in two years, fillers down 30%, peels down 50%, 300+ clinics in major cities vs ~100 in 2020, 40+ clinics in a 5km Lahore radius, 10+ new clinics in 2024, and 60-80% annual staff turnover. The source is a competing Lahore clinic's own marketing post by Dr Burhan Hussein with no date, no data source and no methodology for a single figure. It cannot support 'prices are collapsing'.",
+   "The Oladoc safety framing: that hyperpigmentation is the most common side effect of laser treatment and that blistering may occur. The page says neither. It calls scarring and crusting 'rare', describes pigment change without ranking it, never mentions blistering, and is dated 15 March 2022.",
+   "The patient review complaints about being told laser hair removal was permanent. The top-rated.online page for 3D Lifestyle Karachi shows only the aggregate 4.70 from 756 reviews and no individual review text at all. These came from a search snippet, and attributing unverified complaints to a named competitor is a legal risk, not just a sourcing gap.",
+   "The caviar.pk ratings presented as 'a Karachi roundup'. It is Caviar Aesthetic Clinic's own website ranking itself #1 at 4.9, and it is where the 4.9 for the client's own brand Venus Aesthetics comes from. If it is used at all it must be labelled as a competitor's self-published listicle.",
+   "The winter seasonality argument as currently sourced. Reglowskinclinic is a clinic in Hyderabad, India with no date and no clinical citation, and the SLA page does not mention winter anywhere. Do not build a Sep-Dec 'start your course now' campaign on these two links.",
+   "'50% believe that meeting beauty standards would improve marriage prospects' from the AJK study. The paper says 50% thought their lives would be better, with marriage as the authors' own hedged extrapolation, and the same paper uses 50% for the opposite finding that half the women accept their appearance.",
+   "All percentages from the AJK study stated as percentages. n=20 qualitative interviews, so '5% satisfied' is one woman. Report as counts out of 20 or not at all.",
+   "The 2.7% / 1.4% / 1.3% Reels-versus-carousel-versus-image figures attributed to Socialinsider. They are Dash Social's, they use views as the denominator, and Socialinsider's own Q2 2026 carousel figure is 0.50%. Mixing the two denominators in one paragraph misleads.",
+   "The exact Aesthetics Lab caption quote with the DHA Y block, M M Alam, Johar Town and F6 addresses. Not verified on any page I retrieved; only the WhatsApp number corroborates. Cite the post permalink or cut it.",
+   "CosMedic 7,627 / 638 posts, Skin360 6,258 / 848 posts and Lahore Laser Skin Clinic 2,641 / 33 posts. No URL was cited for any of the three and the claim concedes they are search-reported.",
+   "'Pakistani patients pay a premium for discretion' as a pricing behaviour. The 2021 Dawn Images piece shows price insensitivity and a preference for concealable, low-downtime treatments, which is not the same claim.",
+   "Any named attribution of the Tribune wedding-season quote to a specific photographer. The article does not name them."
+  ],
+  "formats": [
+   {
+    "formatName": "Credential proof / verify before you book",
+    "structure": "Reel or carousel, 20 to 35 seconds. Open on the actual PMDC registration and clinic licence on screen. State the practitioner's name and registration. Then show the viewer how to check any clinic themselves, as a three-step instruction. Close on a single line: ask us for ours before you book, and ask them for theirs too. No competitor named.",
+    "whyItWorks": "The Sindh Healthcare Commission has publicly said unqualified operators market themselves on social media and morning TV, and enforcement actions found clinics run by a sociology graduate, a midwife, a physiotherapist and a matric pass individual. The fear is already in the audience's head from news coverage, so this format answers a question they are actively carrying rather than creating a new one. It is also uncopyable by the operators it competes against.",
+    "whoDoesIt": "Framed by the SHCC's own public advisory urging citizens to verify clinic licences and practitioner qualifications. Skinfudge Lahore runs an adjacent version as a permanent story highlight labelled with a warning emoji about fake machines.",
+    "sourceUrl": "https://pk.dental-tribune.com/news/shcc-seals-10-illegal-aesthetic-clinics-in-dha-karachi-crackdown/"
+   },
+   {
+    "formatName": "Brown skin device specificity",
+    "structure": "Reel, 30 to 45 seconds. On-screen text names the wavelength and device. Show the patch test, the cooling, and the operator reading settings off the machine. Voiceover or captions explain in one sentence why Pakistani skin needs this and what the wrong setting does. End with the patch test offer, not a price.",
+    "whyItWorks": "Pakistani skin is commonly Fitzpatrick IV to VI, and published patient-facing material identifies hyperpigmentation as the most common laser side effect, with blistering and scarring possible. Sources warn that equipment not calibrated for Pakistani skin causes burns and pigmentation. Naming the wavelength is a concrete competence proof that a price cut cannot imitate.",
+    "whoDoesIt": "SLA Aesthetics builds its pricing and safety content on this argument. Skinfudge's bio leads with painless, no side effects, natural looking results on machines it names by country of origin.",
+    "sourceUrl": "https://slaestheticsclinic.com/laser-hair-removal-price-pakistan/"
+   },
+   {
+    "formatName": "Honest session-count arithmetic",
+    "structure": "Carousel, 5 to 6 slides. Slide 1: the promise you were sold. Slide 2: the real number, 6 sessions minimum, 8 for 80 to 90% reduction, 10 to 12 for coarse hair, 4 to 6 weeks apart. Slide 3: what reduction actually looks like at session 3 versus session 8. Slide 4: the maintenance schedule after the course. Slide 5: what to walk away from, including anyone promising permanent results in three sessions. Final slide: total course, from PKR X.",
+    "whyItWorks": "Being misled about permanence is a recurring complaint in Pakistani clinic reviews, and an industry source states plainly that anyone promising permanence in three sessions is either using risky energy or misleading the patient. Publishing the uncomfortable number is the strongest possible differentiator in a market where the default is overpromising, and it pre-empts the main source of post-purchase regret.",
+    "whoDoesIt": "SLA Aesthetics publishes the full session table and the warning against three-session permanence claims.",
+    "sourceUrl": "https://slaestheticsclinic.com/laser-hair-removal-price-pakistan/"
+   },
+   {
+    "formatName": "Published price anchor, no sale",
+    "structure": "Single graphic or short carousel. Per-area starting price in PKR, typical session count, and one line stating that Venus does not run flash sales on medical procedures. Caption repeats the number in text so it is searchable, then branch pin and WhatsApp.",
+    "whyItWorks": "The market is split between clinics that publish full PKR tables and clinics that publish nothing and force a phone call. Publishing a number is a trust act that half the competition refuses to perform, and it is fully compatible with a no-discount rule because a stated price is not a promotion. It also filters bargain hunters, which industry commentary identifies as the wrong customer.",
+    "whoDoesIt": "SLA Aesthetics publishes a full per-area PKR table. Boston Aesthetics Lahore publishes per-session PKR by area. Glamorous Clinic Islamabad publishes nothing and directs to phone and WhatsApp, which is the pattern to beat.",
+    "sourceUrl": "https://bostonaestheticslahore.com/2024/09/10/laser-hair-removal-cost-in-lahore-pakistan/"
+   },
+   {
+    "formatName": "Faceless result proof",
+    "structure": "Reel or carousel showing the treated area only, never the full face, with consistent lighting and a visible session number and date stamp. Caption states the device, the number of sessions elapsed, and that the patient consented in writing to this specific area being shown. Keep a separate permanent highlight for these so the grid is not dominated by them.",
+    "whyItWorks": "Pakistani patients are documented as far more secretive than Western counterparts, with doctors reporting patients do not tell their own families, and paying a premium for discretion. Faceless proof lets Venus show results without asking a patient to break her own privacy, which is both an ethical position and a recruitment pitch for future consents. It also sidesteps the hostile comment reaction that identifiable cosmetic content attracts.",
+    "whoDoesIt": "Aesthetics Lab maintains dedicated Before and After and Happy Clients highlights. The discretion premium is documented in Dawn Images' reporting on Pakistani injectable patients.",
+    "sourceUrl": "https://images.dawn.com/news/1186787"
+   },
+   {
+    "formatName": "Per-branch local creator clinic visit",
+    "structure": "Paid collaboration with a city-level creator, not a national celebrity. Creator walks into the specific branch, shows reception, the treatment room, meets the named practitioner, gets the patch test, states a disclosure and a personal-experience disclaimer, and answers questions in the comments for 48 hours. Posted as a collab so it lands on both grids.",
+    "whyItWorks": "A creator clinic review in Wah Cantt drew 371 likes and 37 comments, a comment-to-like ratio near 1 in 10, far above typical brand-voice performance, because a clinic recommendation triggers questions rather than passive likes. Venus's own data already shows patient voice beating brand voice. Per-branch creators also solve the 8-branch reach dilution problem.",
+    "whoDoesIt": "@lifestyle_soniaumar with @everglowaestheticclinic, April 2026.",
+    "sourceUrl": "https://www.instagram.com/p/DXcNEnGjc_V/"
+   },
+   {
+    "formatName": "Correcting bad Instagram skincare advice",
+    "structure": "Reel, 25 to 40 seconds. Start with a common piece of advice circulating on Pakistani beauty accounts, stated neutrally and without naming or tagging anyone. Explain in one sentence what it actually does to brown skin. Give the clinical alternative. End with what to do if it has already gone wrong.",
+    "whyItWorks": "An academic study of Pakistani women found 95% on Facebook and Instagram, with a participant reporting she bought three serums on an Instagram blogger's recommendation and developed severe acne. There is measurable resentment toward advice that backfired, and the regulator has publicly criticised unqualified social media beauty advice. This format positions Venus against influencer misinformation rather than alongside it, which is exactly where a clinic with real doctors should stand.",
+    "whoDoesIt": "Skinfudge dedicates permanent highlights to warning about fake machines and whitening injections. Prof. Dr. Haroon Nabi's 94.1K-follower account is built primarily on educational treatment content.",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12272099/"
+   },
+   {
+    "formatName": "Wedding countdown reality check",
+    "structure": "Two-track series. Track A, for December and January weddings: a calendar graphic showing that a 6 to 8 session laser course at 4 to 6 week spacing no longer fits, followed by what genuinely delivers inside three weeks. Track B, for March to June 2027 weddings: start now, here is your session map by month, here is what you will see by each function.",
+    "whyItWorks": "Pakistan's peak wedding season now begins in October and runs to March, with December venues at up to a 20% premium, and couples begin planning about three months out. Half of the women in an academic study believed meeting beauty standards would improve marriage prospects, so the wedding trigger is real. The session arithmetic makes the urgency factual rather than promotional, which satisfies the no-discount constraint while still driving October and November bookings.",
+    "whoDoesIt": "Wedding season timing documented by The Express Tribune and Business Recorder using Shadiyana platform data. Session arithmetic from SLA Aesthetics.",
+    "sourceUrl": "https://tribune.com.pk/story/2578666/october-is-the-new-december"
+   },
+   {
+    "formatName": "Winter laser window explainer",
+    "structure": "Single reel or carousel. Why a course started now finishes before summer, why less sun exposure means safer settings and cleaner results, and the month-by-month session map from October to the following May.",
+    "whyItWorks": "The clinical seasonality argument gives Sep to Dec a legitimate urgency mechanic that is not a discount, and it pairs with the wedding calendar to make October the pivotal month. Note the sources for the seasonality claim are clinic marketing blogs rather than peer-reviewed literature, so keep the claim to sun exposure and scheduling rather than efficacy.",
+    "whoDoesIt": "Reglow Skin Clinic and SLA Aesthetics both publish the winter-start argument.",
+    "sourceUrl": "https://reglowskinclinic.com/laser-hair-removal-in-winter-why-its-the-best-time-to-start-your-sessions/"
+   },
+   {
+    "formatName": "Branch-specific caption and WhatsApp footer",
+    "structure": "A fixed caption template applied to every post: one-line hook, two to three lines of substance in plain English, then the relevant branch address and hours, then a Call or WhatsApp line, then a short tight hashtag set including the city.",
+    "whyItWorks": "Aesthetics Lab, the largest clinic account found at 185K, puts branch pins, hours and a WhatsApp number directly in captions and maintains separate city highlights for Islamabad and Faisalabad. With 8 Venus branches, an unlabelled caption wastes the reach it earns in the wrong city. WhatsApp is the established conversion channel for Pakistani clinic marketing.",
+    "whoDoesIt": "Aesthetics Lab, verbatim caption format including Lahore and Islamabad pins with hours and a WhatsApp number.",
+    "sourceUrl": "https://www.instagram.com/aestheticslab.pk/"
+   },
+   {
+    "formatName": "Men's track, stated plainly",
+    "structure": "A separate recurring slot and a dedicated highlight for male treatments: beard line laser, back and chest laser, hair loss PRP and exosomes, acne scarring. Same clinical, credential-forward tone. No jokes at men's expense.",
+    "whyItWorks": "Instagram in Pakistan is 64.1% male by NapoleonCat's August 2026 data and 63.0% male by DataReportal's ad audience data. The largest single age band is 18 to 24. Aesthetics Lab already runs a dedicated Men highlight, which signals the segment is being farmed by the market leader. A women-only content mix is spending two thirds of its reach on an audience it never addresses.",
+    "whoDoesIt": "Aesthetics Lab maintains a Men story highlight alongside its city highlights.",
+    "sourceUrl": "https://stats.napoleoncat.com/social-media-users-in-pakistan/"
+   },
+   {
+    "formatName": "Review-to-Google bridge",
+    "structure": "Monthly post showing the real Google rating and review count per branch, plus a short reel on how to leave a review, plus a post-visit WhatsApp ask. Screenshot real reviews only, never reconstructed text.",
+    "whyItWorks": "Review volume, not follower count, is the visible trust currency in this market. Estheticare Islamabad shows 4.90 from 1.2K reviews and is listed as the most reviewed laser hair removal service in Islamabad, while 3D Lifestyle Karachi shows 4.70 from 756 reviews. Venus already appears at 4.9 in a third-party Karachi roundup, so volume is the gap. Directory counts in the low hundreds mean a concerted quarter can make Venus the most reviewed chain in its cities.",
+    "whoDoesIt": "Estheticare Islamabad and 3D Lifestyle, per aggregated review listings.",
+    "sourceUrl": "https://www.top-rated.online/cities/Islamabad/place/p/9429377/Estheticare"
+   }
+  ],
+  "hooks": [
+   "Ask your clinic these three questions before anyone touches your face. (Grounded in the SHCC advisory urging citizens to verify licences and qualifications: https://pk.dental-tribune.com/news/shcc-seals-10-illegal-aesthetic-clinics-in-dha-karachi-crackdown/)",
+   "Eighteen aesthetic centres in one city were sealed. Here is how to tell if yours would pass. (Sourced hook, no competitor named: https://tribune.com.pk/story/2558030/18-illegal-aesthetic-centres-sealed)",
+   "If your clinic will not tell you the wavelength, you are the test. (Grounded in equipment-calibration risk for Fitzpatrick IV to VI: https://slaestheticsclinic.com/laser-hair-removal-price-pakistan/)",
+   "Anyone promising permanent in three sessions is guessing with your skin. (Near-verbatim from a published industry statement: https://slaestheticsclinic.com/laser-hair-removal-price-pakistan/)",
+   "Six sessions minimum. Eight for real results. Nobody wants to tell you that. (Sourced session arithmetic: https://slaestheticsclinic.com/laser-hair-removal-price-pakistan/)",
+   "Here is our price. On the post. Not in your DMs. (Positions against the DM-for-price default documented across Pakistani clinic pages: https://www.glamorousclinic.com.pk/full-body-laser-hair-removal-cost/)",
+   "We do not do sales. Here is why that should reassure you. (Positions against the documented price war: https://www.skinfudge.pk/blogs/news/the-aesthetic-clinic-boom-in-pakistan-the-illusion-of-easy-money-and-the-harsh-reality-no-one-warns-you-about)",
+   "Your December wedding is too close for laser. Here is what actually works now. (Grounded in Oct to Mar peak season plus 4 to 6 week session spacing: https://tribune.com.pk/story/2578666/october-is-the-new-december)",
+   "March bride? Your first session is this month, not January. (Same sourcing, session map arithmetic: https://tribune.com.pk/story/2578666/october-is-the-new-december)",
+   "Winter is when we start courses. Summer is when you see them. (Seasonality argument, clinic-blog sourced: https://reglowskinclinic.com/laser-hair-removal-in-winter-why-its-the-best-time-to-start-your-sessions/)",
+   "Nobody in your family has to know. That is a service, not a secret. (Grounded in documented patient secrecy and the discretion premium: https://images.dawn.com/news/1186787)",
+   "The serum Instagram sold you is why you are here. Let us undo it. (Grounded in a documented participant account of influencer-recommended serums causing severe acne: https://pmc.ncbi.nlm.nih.gov/articles/PMC12272099/)",
+   "We will not give you a whitening drip. Ask us what we will do instead. (Grounded in a competitor dedicating a prohibition-marked highlight to whitening injections: https://www.instagram.com/skinfudge/)",
+   "How to spot a machine that is not what the sticker says. (Grounded in a competitor's permanent fake-machines warning highlight: https://www.instagram.com/skinfudge/)",
+   "Men: this is the half of the clinic nobody posts about. (Grounded in Instagram Pakistan being 64.1% male: https://stats.napoleoncat.com/social-media-users-in-pakistan/)",
+   "Patch test first. Every time. No exceptions, even if you beg. (Grounded in hyperpigmentation being the most common documented laser side effect: https://oladoc.com/health-zone/is-laser-hair-removal-safe-for-your-skin/)",
+   "Read our 1,000th review before you read our caption. (Review-volume-as-trust hook, benchmarked against Estheticare's 1.2K reviews: https://www.top-rated.online/cities/Islamabad/place/p/9429377/Estheticare)"
+  ]
+ },
+ {
+  "dimension": "q4-seasonality",
+  "mustDrop": [
+   "The meta-analysis of 12 comparative trials with odds ratio 0.26 favouring Nd:YAG over IPL for post-inflammatory hyperpigmentation. PMID 40892306 is a single-arm study of 55 Sudanese women with no IPL comparator and no odds ratio. This citation is fabricated and cannot appear in any client document.",
+   "AQI 331 on 29 October 2026. That date is in the future (today is 23 September 2026). The real reading is 29 October 2025 per Arab News citing IQAir.",
+   "AQI 527 at 8pm on 26 October 2025. The actual reading is Saturday 13 December 2025, reported by Dawn on 14 December 2025.",
+   "The 2024 Lahore annual average AQI of 173. Could not be verified in any source retrieved.",
+   "The claim that overcast skies transmit about 31 percent of UV. The cited AAD page says up to 80 percent penetrates clouds. The 31 percent figure is not in any source retrieved.",
+   "The statement that sunscreen is recommended at UV index 3 or higher attributed to the AAD page. That threshold is not on the page.",
+   "The days 1 to 7 highest-sensitivity window after a chemical peel and the claim that melanocytes overreact to UV in that period. Not present in PMC3560165 and not sourced anywhere.",
+   "The Instagram weighting percentages: 35 percent watch time, 20 percent sends per reach, 5 percent likes per reach, down from 20 percent for likes in 2023. Marketing blogs only, no methodology, and Buffer gives no percentages at all.",
+   "The claim that likes are substantially devalued in Instagram ranking. Mosseri's public framing keeps likes per reach as one of three core reel metrics, weighted slightly higher for connected reach.",
+   "The claim that watch time and completion rate are the top Reels signal per Buffer. Buffer's 2026 guide does not say this.",
+   "The assertion that side-by-side before and after comparisons for weight loss and for anti-ageing injectables remain restricted under Meta policy. The transparency page permits before and after transformation for cosmetic procedures at 18 plus and lists injectable treatments as permitted.",
+   "Every competitor follower and post count. Akhtar Skin and Aesthetic Clinic reads 119K live, not approximately 130K, and these figures change daily so they have no shelf life in a quarterly document.",
+   "Every specific competitor price: 30 percent off, PKR 4,999 to 26,999, full body from 30,999, Depilex 3,500 and 4,500, hydrafacial 5,999, bridal packages 10,000 and 25,000. The anchor source 3dlifestyle.pk publishes no prices at all, and the rest are transient deal-aggregator listings.",
+   "Bridal makeup pricing of PKR 20,000 to over 100,000 and high-end from 75,000. Sourced to a 2017 article and a competing salon's own blog. Nine-year-old Pakistani rupee pricing is unusable.",
+   "The seven-symptom winter skin list attributed to a Pakistani dermatologist. The source lists four signs, never uses transepidermal water loss, and its author is an aesthetic physician, not a dermatologist.",
+   "Lahore December humidity of 59 percent against a 67 percent annual average, and the Islamabad 26 to 53 percent relative humidity range. The climate-data.org source returned HTTP 403 and was never read.",
+   "Daily hair shedding rising from a 50 to 100 baseline to 150 or more and settling over four to eight weeks. Not in either cited source. The only daily figure on that page is about 60 hairs per day in August.",
+   "PRP at monthly 30 day intervals with significant terminal hair density increase at 3 months attributed to PMC10120877. That study used three-week intervals; the 30-day protocol and the 3-month peak come from studies it cites, and its own outcomes were modest at 3.7 percent excellent improvement.",
+   "Cryolipolysis optimal results at 3 to 6 months. Cleveland Clinic says dramatic improvement at about 2 months and 15 to 28 percent at about 4 months. The 3 to 6 month figure is not in the source.",
+   "Post-inflammatory hyperpigmentation taking months to a year to fade, as currently cited. The cited clinic blog does not mention PIH at all. Re-source to peer-reviewed literature or drop.",
+   "Indoor heating as a driver of Pakistani winter skin dryness. Central heating is not typical in Pakistani homes; this is imported Western copy.",
+   "A confident promise of 6 to 8 laser hair removal sessions for Pakistani skin. The best primary evidence for Fitzpatrick IV to VI (Rao and Sankar 2011, n=150) reports a mean of 8.9 sessions, range 4 to 22, and mean hair reduction of 54.3 percent. Promising a session count with an implied outcome also collides with Meta's prohibition on promises of specific outcomes within a set timeframe without disclaimers.",
+   "Pakistan having the highest breast cancer incidence rate in Asia with over 10 million women at risk, cited to pinkribbon.org.pk/pinktober. That page carries neither figure; they trace to a state radio report quoting one official and to advocacy material.",
+   "Pink Ribbon described as the only organisation working dedicatedly on breast cancer in Pakistan. Self-description, contestable, and not on the cited page.",
+   "The 6 to 8 billion US dollar Pakistani wedding industry valuation as a statistic. It is an unattributed figure in a newspaper lifestyle feature with no methodology. Usable as directional colour only, never as a number in a deck."
+  ],
+  "formats": [
+   {
+    "formatName": "The Biology Countdown",
+    "structure": "A dated card or 15 to 25 second reel. Frame 1: a specific wedding date on screen, for example 20 December 2026. Frame 2 onward: one treatment per frame with its real lead time and a verdict, still possible, last chance this week, or start now for next season. Close on the single decision, not an offer. Weekly recurring as the dates compress.",
+    "whyItWorks": "Replaces discount urgency with clinical urgency, which is the only honest lever left once discounting is banned. Every number is defensible: fat freezing needs 3 to 6 months, RF microneedling 4 to 6 weeks, botox peaks at days 9 to 14, a full laser course needs 6 to 8 sessions at 4 to 6 week intervals. It is also inherently forwardable, and sends are the strongest signal for reaching non-followers.",
+    "whoDoesIt": "The lead-time figures come from Cleveland Clinic and bridal-prep clinic protocols. The countdown packaging applied to a Pakistani wedding calendar is inference, and I found no Pakistani clinic running it.",
+    "sourceUrl": "https://my.clevelandclinic.org/health/treatments/21060-fat-freezing-cryolipolysis"
+   },
+   {
+    "formatName": "Smog Diary",
+    "structure": "A fixed weekly slot from late October to end December. One frame with the week's actual Lahore AQI or PM2.5 reading pulled from Punjab EPA, one frame naming a specific mechanism (barrier disruption and higher water loss, sebum increase, melanin via the IRE1a pathway, follicle dermal papilla beta-catenin), one frame with a concrete countermeasure. Same template every week, only the number changes.",
+    "whyItWorks": "Hyperlocal, recurring, factually anchored to a public data source, and impossible for a price-led competitor to copy without the clinical grounding. It gives the clinic a reason to post during the exact weeks when Lahore is the most polluted city in the world, and it makes an editorial asset out of the city's biggest shared grievance. Templated production means low cost across 13 weeks.",
+    "whoDoesIt": "AQI source is Punjab EPA's official Lahore dashboard and IQAir. The skin mechanisms are from International Journal of Molecular Sciences 2024 and the 2025 International Journal of Dermatology review. Format is inference.",
+    "sourceUrl": "https://aqi.punjab.gov.pk/lahore"
+   },
+   {
+    "formatName": "Winter Is A Window, Not A Free Pass",
+    "structure": "Three beats. Beat 1: state the claim the whole category repeats, that winter means no sun so you can skip sunscreen. Beat 2: show Lahore's actual monthly UV index, 6 in October, 4 in November, 3 in December, against the UV 3 threshold at which sunscreen is advised. Beat 3: the correct conclusion, that winter lowers the UV load enough to make lasers and peels practical, and that is a different statement from there being no UV.",
+    "whyItWorks": "Every competitor in Pakistan repeats an imported American claim that is not true of Lahore in December. Correcting it with local numbers is a premium positioning move that costs nothing, cannot be undercut on price, and demonstrates the clinic checks its own claims. Correction content also performs well on saves and sends because it settles an argument.",
+    "whoDoesIt": "UV data from Weather Atlas and Weather and Radar for Lahore. Sunscreen threshold and year-round UVA guidance from American Academy of Dermatology material. The correction framing is inference.",
+    "sourceUrl": "https://www.weather-atlas.com/en/pakistan/lahore-climate"
+   },
+   {
+    "formatName": "Dated Patient Timeline, Not Before And After",
+    "structure": "One patient, her own voice, no doctor on camera. On-screen date stamps at day 0, week 1, week 4, week 12, each filmed in the same light and position. No side-by-side split frame. State the elapsed time explicitly in the caption. End on what she would do differently, including the inconvenient parts.",
+    "whyItWorks": "Threads the platform rules precisely. Meta now allows before and after transformation for general cosmetic procedures at 18 plus, but still restricts side-by-side comparisons for weight loss and anti-ageing injectables and requires that weight-loss creative indicate the time taken to achieve results. A dated sequential timeline satisfies all of that, and simultaneously teaches the real lead time, which feeds the countdown pillar. It is also patient voice rather than brand voice, which the client's prior data already favours.",
+    "whoDoesIt": "Constraints taken directly from Meta's health and wellness ad standards and the August 2026 cross-platform summary. Execution format is inference.",
+    "sourceUrl": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/"
+   },
+   {
+    "formatName": "Send This To Her",
+    "structure": "A single screenshot-ready frame built to be forwarded in a DM rather than read in feed. One clear title such as the December bride's treatment deadlines, four to six dated lines, clinic mark small in the corner. Caption explicitly instructs sending it to the specific person who needs it.",
+    "whyItWorks": "Direct message sends carry the most weight for unconnected reach on Instagram in 2026 and likes have been heavily devalued. Wedding season is the one time of year when a well-defined social graph exists around a shared deadline, sisters, cousins, friends of the bride, so a forwardable artefact travels on its own. Designing for the forward rather than the like is the highest-leverage change available this quarter.",
+    "whoDoesIt": "Signal hierarchy from Buffer's 2026 Instagram algorithm guide citing Adam Mosseri. The single-frame forwardable format is inference.",
+    "sourceUrl": "https://buffer.com/resources/instagram-algorithms/"
+   },
+   {
+    "formatName": "Keyword To DM Guide",
+    "structure": "A reel that teaches roughly 70 percent of a genuinely useful Q4 resource on screen, then offers the complete version, for example the full October to December treatment lead-time planner, in exchange for a single comment keyword. Autoresponder delivers it, then a human follows up with a consultation option only if the person engages.",
+    "whyItWorks": "This is the mechanic from both reels the client shared, isolated from their topic. Both posts drew roughly twice as many comments as likes, which is the fingerprint of the keyword mechanic driving distribution while capturing the lead. For a clinic it solves the real problem, which is that Instagram reach does not equal bookings. The DM is where a consultation is actually booked, and the keyword moves qualified people there without a discount.",
+    "whoDoesIt": "@aashrayy0 on both posts the client shared, using comment PROMPT and comment MASTER. Adaptation to a clinic context is inference.",
+    "sourceUrl": "https://www.instagram.com/p/DdNliMKI8tx/"
+   },
+   {
+    "formatName": "The Shedding Month",
+    "structure": "Publish in the first half of October. Part 1: the normal range, 50 to 100 hairs a day rising to 150 or more during the autumn wave. Part 2: why it happens now, the telogen peak in late summer surfacing as visible shedding six to eight weeks later. Part 3: the four criteria that mean it is not seasonal and warrants an assessment. Part 4: what the clinic does and explicitly does not do. Follow in November with the pollution and hair evidence as a separate post.",
+    "whyItWorks": "October arrives with patients already worried, for a documented physiological reason that has nothing to do with any product. Leading with reassurance and clear exclusion criteria is more persuasive than leading with PRP, and it filters genuine cases into a high-ticket service line. The November follow-up carries unusual weight because the underlying cohort is 5.59 million adults published in JAAD International in 2026, which is far stronger evidence than anything a competitor will cite.",
+    "whoDoesIt": "Seasonal shedding evidence from Courtois 1996 and Pierard-Franchimont 1999 as summarised by Donovan Hair Clinic. Pollution and androgenetic alopecia from JAAD International 2026. Sequencing is inference.",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13400408/"
+   },
+   {
+    "formatName": "Wavelength Explainer",
+    "structure": "A short technical post aimed at the researching patient. What Fitzpatrick IV and V means for most Pakistani skin, why 1064 nm Nd:YAG has the lowest competing epidermal melanin absorption, why that matters against IPL for post-inflammatory hyperpigmentation, and the one question to ask any clinic before a first session. No price, no package.",
+    "whyItWorks": "Moves the conversation off price entirely and onto a variable most competitors cannot match, because many run IPL. It pre-justifies a premium fee without mentioning a fee, and it arms the patient with a question that disqualifies cheaper clinics on the patient's own initiative rather than the brand's. Q4 is when comparison shopping peaks, so this is the right quarter to publish it.",
+    "whoDoesIt": "Clinical basis from the Nd:YAG literature on Fitzpatrick IV to VI hair removal indexed on PubMed. The patient-arming framing is inference.",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/21519944/"
+   },
+   {
+    "formatName": "Branch Hours For The Two Long Weekends",
+    "structure": "Two plain operational posts, one before 7 to 9 November and one before 25 to 27 December. All 8 branches listed, open or closed, with hours. No creative treatment, no offer. Pin to the profile for the week.",
+    "whyItWorks": "These are the only two operational disruptions in the quarter, both are three-day weekends, and both sit inside wedding season. This is pure utility that reduces DM volume, ranks for local intent, and signals that an 8-branch chain is operationally serious. Low effort, high saves, and it is the kind of post that earns the profile visit that converts.",
+    "whoDoesIt": "Holiday dates from the federal 2026 schedule as reported by Business Recorder and Pakistan Calendar. Operational post format is inference.",
+    "sourceUrl": "https://pakistancalendar.com/2026"
+   }
+  ],
+  "hooks": [
+   "Your wedding is on 20 December. Here is the last week each of these treatments can still change anything.",
+   "Lahore hit AQI 331 today. Here is what that number is doing to your skin barrier while you read this.",
+   "If your wedding is next December, the correct month to start is this one. Here is the arithmetic.",
+   "Your hair fall in October is probably not your shampoo. It is a documented seasonal shedding wave.",
+   "Everyone tells you to skip sunscreen in winter. Lahore's December UV index is 3. That is the exact number at which dermatologists say wear it.",
+   "A 5.6 million person study published this year linked the air in cities like ours to hair loss. Here is the mechanism.",
+   "You booked the makeup artist twelve months out. Your skin needs longer than the makeup does.",
+   "This is the wrong month to start laser hair removal for a December wedding. It is the right month to start for next October.",
+   "Six to eight sessions, four to six weeks apart. Count backwards from your date and you will see why we are saying this in October and not in December.",
+   "Three questions to ask any clinic before your first laser session. If they cannot answer the second one, leave.",
+   "Winter is not a sun-free season in Lahore. It is a lower-UV window, and that difference is the whole clinical argument.",
+   "Cold air, gas heaters, hot showers. Why your skin is dry and breaking out at the same time, which sounds impossible and is not.",
+   "Fat freezing takes three to six months to show. If your function is in December, that decision was due weeks ago. Here is what still works instead.",
+   "Send this to whoever in your family is getting married this season. The dates are not negotiable.",
+   "Peak effect for botox is day nine to day fourteen. Book it for your mehndi, not for the week of it.",
+   "Your peel is fine. Your first seven days in this sun are the risk. Here is what those seven days actually require.",
+   "Most Pakistani skin is Fitzpatrick four or five. That single fact should change which machine touches you.",
+   "We will not run a winter sale this season. Here is what we will do instead, and why it is worth more to you."
+  ]
+ },
+ {
+  "dimension": "hook-caption-craft",
+  "mustDrop": [
+   "The 28.34% Health and Beauty hook rate as any kind of Venus target. It is PAID Meta video ad data, not organic Reels, and in a DTC ad dataset 'Health and Beauty' means product sellers. The source's own reasoning puts Venus in Services at 19.95% ('no product to show. No UI. No demo. No unboxing'). The 'second best' rank is also wrong; the page calls it the highest.",
+   "The truncated Meta engagement bait definition. Never ship the quote without its trailing clause 'for purposes other than a specific call to action'. Cutting it turns a narrow rule into a blanket ban and would wrongly kill every DM-us and book-a-consult CTA in the calendar.",
+   "'Comment GLOW and we will send you the menu' presented as compliance-safe. It literally requests a comment, so it survives only if it qualifies as a specific call to action, which is genuinely ambiguous. Compounding this, CreatorFlow documents a 2026 cap of one automated DM per user per 24 hours from comment triggers, which the researcher omitted and which limits the mechanic regardless.",
+   "Aesthetic Vault's 'fake-fear is the dominant objection over price and pain', 'fake-fear content outperforms dramatic transformation content', and 'clinics should focus on saves and DMs over likes and comments'. None of the three is on the page. The page has no data and recommends no KPIs. Only its failing-content list is real.",
+   "The emoji inverted-U presented as an Instagram rule. The study is 64,121 TWEETS from 82 B2B brands in Construction, Chemical, Aerospace and Business Services, ending May 2022. Sound research, wrong platform, wrong audience, stale. Also drop 'may reduce perceived professionalism' as a quotation; that wording is not in the paper.",
+   "The Socialinsider Q1 2026 figure and the 'down from 0.52% in Q1 2025' comparison. Neither is verifiable, and the page itself admits its 2026 values are 2025 values carried forward for want of data.",
+   "Metricool's 'triple comments' and 'up to 37%' presented as dataset-backed. The 24M-post figure is real but is never tied to either number. No methodology, no date range, vendor blog. Using the sample size to lend weight to unmethodologised figures is the exact move to avoid.",
+   "Adpicto's 'cover headline 5 to 8 words'. Fabricated, the source gives no headline word count.",
+   "All three Adpicto carousel benchmarks (60-75% swipe-through, 1.5-3% save rate, 25-40% completion) as Venus KPIs. Self-admittedly sourced to 'aggregated industry studies' with zero citations.",
+   "Every Inro figure: the 5 to 15 minute window, the 30 to 50% after-hours share, and the 500 consultations from 1,000 DMs. Unsourced marketing copy from a company selling the DM automation that the numbers justify. A 50% DM-to-consult rate is a sales claim.",
+   "Opus.pro's '5-10x reach' and '1.7 seconds to capture interest'. No dataset, period or methodology anywhere on the page.",
+   "The '79% more engagement from location tags' figure. Traced to a 6 November 2017 Sprout article that contains no such statistic.",
+   "The '150+ word keyword captions get 38% more non-follower reach' claim. Absent from the page it is attributed to, which says the opposite.",
+   "The '3 to 5 times a like' DM send multiplier as a number. No primary source exists. Keep only the unquantified direction.",
+   "The Socialinsider caption-length study presented as current. Its data is January to July 2023, pre-2024 and stale.",
+   "Buffer's reach multiples (36% over carousels, 2.25x single images, 109% carousel advantage) attributed to the 52M-post 2024-2025 dataset. They come from a separate 4M-post analysis spanning January 2022 to October 2024.",
+   "'DM us to book your FREE consult' and 'DM CONSULT to start'. The first inserts a free-consultation promise the source never made, the second is not in the source at all. Do not hand a clinic a pricing promise invented in a citation error."
+  ],
+  "formats": [
+   {
+    "formatName": "Objection-Retiring Result Reel (the core Venus format)",
+    "structure": "VIDEO: second 0-1 a close crop of skin, not a face and not a logo. Second 1-3 the on-screen text hook naming the fear, for example \"She was scared of looking done\". Cut every 2 seconds. By second 5 the outcome is visible. 12 to 22 seconds total. CAPTION, line by line: Line 1 (under 90 characters, must survive the 125-character truncation): the promise written differently from the on-screen hook, containing the treatment name. Line 2 blank. Lines 3-4: the proof detail, session count, timeline, settings, same lighting, and explicitly what was not done. Line 5 blank. Lines 6-7: the objection answered in plain English, this is where \"you will still look like yourself\" lives. Line 8 blank. Line 9: one send-ask, recipient-focused. Line 10 blank. Line 11: 3 to 5 tags, treatment plus city. Total 40 to 70 words. Zero or one emoji, never in line 1.",
+    "whyItWorks": "The visual open buys the Health and Beauty hook rate of 28.34% instead of the Services 19.95%, the 2-second cutting rhythm protects hold rate, the under-70-word caption matches the under-30-words engagement finding, and the send-ask targets the ranking signal that actually moves non-follower reach instead of the like that mostly moves follower reach.",
+    "whoDoesIt": "This is a synthesis I am proposing, not an observed account. The visual-first open is documented by the Billo hook-rate category data, the 2-second cut spec by the hold-rate source, and the fear-naming caption angle by aesthetic-specific practitioner sources. I did not fetch any clinic Instagram account, so I am not naming one.",
+    "sourceUrl": "https://billo.app/creative-insider/data-insights/hook-rate-benchmarks/"
+   },
+   {
+    "formatName": "Candidacy Filter Carousel (who this is for, who it is not for)",
+    "structure": "10 slides. Slide 1 cover, 5 to 8 words, for example \"Who should not get laser hair removal\". Slides 2-4: three profiles this treatment genuinely suits, one per slide, under 25 words each. Slides 5-7: three profiles it does not suit and what those people should do instead. Slide 8: the honest limitation, for example how many sessions it really takes. Slide 9: what a consultation actually checks. Slide 10: the ask. CAPTION: line 1 restates the disqualification in under 90 characters. Blank. Three to four lines carrying the search keywords naturally, treatment name plus concern plus city, because this is the post doing in-app search work. Blank. CTA: \"DM the word CONSULT and we will send you the three questions we ask before booking.\" Blank. Tags. 90 to 150 words is acceptable here.",
+    "whyItWorks": "Carousels take the highest engagement rate of any format (6.90% of reach on Buffer's data, 0.55% on Socialinsider's follower-based data) and earn roughly 9 times more saves than other formats, so they are the right surface for the longer keyword caption without paying an engagement penalty. Telling people not to buy is the strongest available trust signal for a premium clinic and it needs no discount and no doctor on camera.",
+    "whoDoesIt": "Structure is drawn from published carousel architecture guidance plus the candidacy and safety content type that aesthetic-specific sources recommend. Not observed on a named account.",
+    "sourceUrl": "https://buffer.com/resources/state-of-social-media-engagement-2026/"
+   },
+   {
+    "formatName": "The Next 45 Minutes (procedure walkthrough Reel)",
+    "structure": "VIDEO: real-time fragments of the actual appointment in order, arrival, cleanse, numbing, device, cooling, aftercare. On-screen timestamps. No music-led montage, keep ambient sound. 20 to 30 seconds. CAPTION line 1: \"Nervous about your first hydrafacial? Here is exactly what the next 45 minutes look like.\" Blank. Four short lines, one per stage, each naming the sensation honestly. Blank. CTA: send-ask first, booking second. \"Send this to the friend who keeps saying she is too scared to book.\" Blank. Tags.",
+    "whyItWorks": "Micro-tutorials are named as a send-driving format, and a walkthrough converts the specific fear of the unknown that precedes a first aesthetic appointment. The honest naming of sensation is what separates this from a brochure and is what makes it forwardable to a nervous friend.",
+    "whoDoesIt": "The literal caption opening \"Nervous about your first facial? Here is exactly what the next 45 minutes look like, step by step, so nothing surprises you\" is published as a med spa caption example by the source below.",
+    "sourceUrl": "https://www.socialmon.ai/blog/62-med-spa-instagram-post-ideas-with-examples-that-book-consults"
+   },
+   {
+    "formatName": "Myth Correction Reel (reframe, not rebuttal)",
+    "structure": "VIDEO: open on the wrong thing being done, then cut to the right thing. Text hook states the belief, second beat inverts it. CAPTION line 1 carries the inversion in under 90 characters. Blank. Two lines on why the myth exists, said without condescension. Blank. Two lines on the actual mechanism in plain English, no jargon. Blank. One question CTA the beginner can answer. Blank. Tags. 50 to 80 words.",
+    "whyItWorks": "Contrarian framing is one of the five hook formulas in general circulation, and asking a question is one of the few caption mechanics with large-sample support behind it, up to 37% higher engagement and roughly tripled comment activity when a comment is requested. The reframe version, for example \"the overfilled look is not caused by filler, it is caused by poor strategy\", positions the clinic as the corrective without attacking a competitor by name.",
+    "whoDoesIt": "The reframe example is published by the aesthetic source below. The question-CTA effect is from the 24 million post Metricool dataset.",
+    "sourceUrl": "https://theaestheticvault.com/how-to-create-viral-content-for-your-med-spas-instagram-in-2026/"
+   },
+   {
+    "formatName": "Patient Voice Subtitle Reel (no face required)",
+    "structure": "VIDEO: close-crop treatment or result footage with the patient's own words as burned-in subtitles, audio optional. No identifiable face needed, which removes the consent barrier. CAPTION line 1: a fragment of her actual sentence in quotation marks, under 90 characters. Blank. Two lines of factual context, sessions, timeline, what area. Blank. One line stating that this is a real patient and that results vary. Blank. Send-ask. Blank. Tags. Under 60 words.",
+    "whyItWorks": "Client testimonial clips are a top-performing clinic format and the close-crop approach solves the practical reason clinics do not publish them, which is that most patients will not show their face. The published caption pattern \"No face needed to see this. Two sessions, texture only, same lighting both times.\" is a model of proof density in ten words.",
+    "whoDoesIt": "Caption pattern published by the source below as a close-crop results example.",
+    "sourceUrl": "https://www.socialmon.ai/blog/62-med-spa-instagram-post-ideas-with-examples-that-book-consults"
+   },
+   {
+    "formatName": "Timeline Post (day 1, day 7, day 30, day 90)",
+    "structure": "Carousel of 4 to 6 slides, one per timepoint, identical lighting and framing declared on the slide. Slide 1 cover is the timepoint promise, 5 to 8 words. Final slide is the ask. CAPTION line 1 names the honest waiting period, for example \"PRP for hair does nothing visible for the first six weeks.\" Blank. One line per timepoint. Blank. The expectation-setting line about what happens if someone stops early. Blank. Save-ask plus CTA: \"Save this so you know what week four is supposed to look like. DM CONSULT when you want us to check whether you are a candidate.\" Blank. Tags.",
+    "whyItWorks": "Carousels earn roughly 9 times more saves than other formats and a save is the correct signal to chase for a treatment with a long decision cycle. Naming the disappointing middle period pre-empts the refund conversation and the bad review, which is a commercial outcome, not an engagement one.",
+    "whoDoesIt": "Save-advantage figure from the Metricool dataset. Format construction is mine, not observed.",
+    "sourceUrl": "https://metricool.com/important-instagram-statistics/"
+   },
+   {
+    "formatName": "The Sendable Decision Cheatsheet (built for DMs, not for the feed)",
+    "structure": "Single image or 3-slide carousel that is legible at thumbnail size. Content is a decision table, for example pigmentation type against the treatment that addresses it, or \"which of the three hair loss treatments matches your stage\". No branding larger than a corner mark. CAPTION line 1 states who needs it in under 90 characters. Blank. One line on how to read the table. Blank. Send-ask only, no booking ask: \"Send this to whoever has been asking you what to do about her pigmentation.\" Blank. Tags.",
+    "whyItWorks": "Mini-infographics and cheatsheets are named as the highest send-driving format, and sends per reach is the signal that moves discovery reach. Deliberately withholding the booking CTA on this one post keeps it clean enough to be forwarded, and the forward delivers a warm referral, which is how aesthetic clinics actually acquire patients.",
+    "whoDoesIt": "Format named in the sends-per-reach playbook below. The decision-table specificity and the deliberate omission of the booking CTA are my additions.",
+    "sourceUrl": "https://influencermarketinghub.com/instagram-sends-per-reach-playbook/"
+   },
+   {
+    "formatName": "Treatment Comparison Post (A versus B, and which one you actually need)",
+    "structure": "Carousel, 7 slides. Slide 1: \"Fat freezing or skin tightening. They are not the same thing.\" Slides 2-3: what each one physically does. Slide 4: the body concern each one is right for. Slide 5: the one where people waste money by choosing wrong. Slide 6: what it costs in sessions and time, not in rupees. Slide 7: the ask. CAPTION: line 1 the distinction in under 90 characters. Blank. Three to four keyword-bearing lines, because comparison queries are exactly what people type into Instagram search and Google. Blank. CTA. Blank. Tags. 100 to 150 words permitted.",
+    "whyItWorks": "Comparison intent is late-funnel search intent, so this is the post where a longer keyword-bearing caption is justified by the search job rather than by any reach statistic. Current practice puts keywords naturally in captions and in alt text rather than in hashtag walls, and captions are the indexed text.",
+    "whoDoesIt": "Keyword-placement practice from the Later guide below, which cites no dataset, so treat the SEO mechanism as accepted practice rather than proven.",
+    "sourceUrl": "https://later.com/blog/instagram-seo/"
+   }
+  ],
+  "hooks": [
+   "FEAR NAMED, THEN DISARMED. \"She was terrified of looking done.\" Mechanism: names the category's number one objection in the first frame, so the exact person who has been hesitating for a year self-identifies. Source for the objection ranking: https://www.socialmon.ai/blog/62-med-spa-instagram-post-ideas-with-examples-that-book-consults",
+   "THE DISQUALIFIER. \"You should not get laser hair removal if this is your skin.\" Mechanism: a clinic telling someone not to buy is the cheapest trust purchase available, and it filters the DM queue so consultations arrive pre-qualified.",
+   "THE HONEST WAITING PERIOD. \"PRP does nothing you can see for six weeks. Here is why people quit at week four.\" Mechanism: pre-empts the refund and the bad review, and it is unshareable by competitors because nobody else will say it.",
+   "THE PRICE OF CHOOSING WRONG. \"Most people pay for skin tightening when what they needed was fat freezing.\" Mechanism: loss framing on money already spent, and it sets up the consultation as the thing that prevents the loss.",
+   "THE REFRAME, NOT THE REBUTTAL. \"The overfilled look is not caused by filler. It is caused by poor strategy.\" Mechanism: moves blame from the treatment to the technique, which protects the category while positioning the clinic as the corrective. Published example: https://theaestheticvault.com/how-to-create-viral-content-for-your-med-spas-instagram-in-2026/",
+   "THE SILENT QUESTION. \"Why does your botox stop working sooner than your friend's?\" Mechanism: uses the exact question people type into search but are embarrassed to ask out loud, which is both a hook and an Instagram search match. Source: https://theaestheticvault.com/how-to-create-viral-content-for-your-med-spas-instagram-in-2026/",
+   "THE NO-FACE PROOF. \"No face needed to see this. Two sessions, texture only, same lighting both times.\" Mechanism: proof density in ten words, and it declares the lighting, which is the single credibility variable every before-and-after is suspected of faking. Published example: https://www.socialmon.ai/blog/62-med-spa-instagram-post-ideas-with-examples-that-book-consults",
+   "THE TIMED WALKTHROUGH. \"Nervous about your first hydrafacial? Here is exactly what the next 45 minutes look like.\" Mechanism: converts fear of the unknown, which is the barrier for first-timers, and it is inherently forwardable to a nervous friend. Published example: https://www.socialmon.ai/blog/62-med-spa-instagram-post-ideas-with-examples-that-book-consults",
+   "THE SEASONAL MECHANISM. \"Less sun means it is finally peel and laser season.\" Mechanism: manufactures timing urgency from a clinical fact rather than from a discount, which is the only urgency lever left once sale posts are banned. Published example: https://www.socialmon.ai/blog/62-med-spa-instagram-post-ideas-with-examples-that-book-consults",
+   "THE MISTAKE CONFESSION, CLINIC VERSION. \"We stopped offering this treatment. Here is what changed our mind.\" Mechanism: the mistake-hook structure applied to an institution rather than a person, which keeps the doctor-as-personality ban intact while still buying the credibility that vulnerability buys.",
+   "THE THRESHOLD NUMBER. \"Three sessions is the honest minimum. Anyone promising one is selling you something.\" Mechanism: a specific number plus an implied competitor critique, and specificity is what separates this from a platitude.",
+   "THE WRONG-ORDER HOOK. \"You are doing these in the wrong order and it is why nothing is working.\" Mechanism: implies the viewer already owns the pieces and only needs sequencing, which is a low-threat entry to a consultation.",
+   "THE CATEGORY CORRECTION. \"Fat freezing is not weight loss. It never was.\" Mechanism: flat contradiction of a belief the viewer probably holds, which is the contrarian structure, applied to a factual claim the clinic can actually defend.",
+   "THE DECISION TABLE OPENER. \"Pigmentation has four causes. Only one of them responds to laser.\" Mechanism: a specific count creates a completion loop, and the content it promises is a cheatsheet, which is the format most likely to be sent in a DM. Format evidence: https://influencermarketinghub.com/instagram-sends-per-reach-playbook/",
+   "THE PHYSICAL OPEN WITH NO WORDS AT ALL. First frame is a handpiece already moving on skin, text arrives at second 1. Mechanism: buys the Health and Beauty hook rate of 28.34% rather than the Services 19.95%, because the category difference is driven by whether the thing can be shown visually in the first two seconds. Source: https://billo.app/creative-insider/data-insights/hook-rate-benchmarks/",
+   "THE ANSWERABLE QUESTION. \"Which of these three is causing your pigmentation? One, two or three.\" Mechanism: a question a nervous beginner can answer, which is why it earns comments where an expert-level question does not. Question effect from a 24 million post dataset: https://metricool.com/important-instagram-statistics/"
+  ]
+ },
+ {
+  "dimension": "results-content-trust",
+  "mustDrop": [
+   "The 95 percent video recall versus 10 percent text figure, the 8.2 versus 6.4 video-testimonial authenticity scores, and the 91 percent scripted-response detection accuracy. These were not found on the cited Nextmotion page or anywhere else retrieved. They have no located source and must never appear in a deck or a caption brief.",
+   "The 87 percent of under-45 patients researching on Instagram and the over 70 percent of new patient inquiries from Instagram and TikTok. Both verified as present on the vendor page and verified as carrying zero citation or methodology. Do not use them to justify channel choice or budget.",
+   "Any statement that the Meta Health and Wellness page has a 22 July 2026 effective date. That date is a changelog entry. Say last updated 22 July 2026 or omit the date.",
+   "The claim that AHPRA and bnlaw publish a prohibited list including the phrase 'best version of yourself'. That phrase appears in no retrieved source. Cut it or label it inference.",
+   "The assertion that AHPRA's testimonial ban extends to liking, replying to or resharing patient praise. AHPRA's advertising guidelines do not provide explicit guidance on this and explicitly do not restrict patients independently sharing experiences. Unsupported as written.",
+   "The condition that only the treated area should visibly differ between before and after images. Could not be located in any AHPRA text retrieved. Drop or re-source.",
+   "The attribution of the detailed AHPRA consent conditions to the Clayton Utz article. That page contains none of them. Cite AHPRA directly or the citation will not survive scrutiny.",
+   "The generalisation that 'search-level summaries indicate all platforms enforce stricter rules on ads than on organic content'. No source, and partly contradicted by Meta's own teen sensitive-content rule, which restricts organic cosmetic content more than the ad standard does.",
+   "The framing of AHPRA as 'the strongest published believability standard in the world'. Opinion, unverifiable, and it invites the client to think an Australian rule set binds them.",
+   "Any presentation of AHPRA, UK CAP, ASA, HIPAA or GDPR as rules Venus must follow. None apply in Pakistan. They are voluntary quality standards only. The one binding instrument found is DRAP's Therapeutic Goods Advertisement Rules, 2025.",
+   "The word 'rising' applied to the HIPAA penalty amounts. Three cases across six years is not a demonstrated trend.",
+   "The 2015 California nursing board case presented without its date. Under the brief's own freshness rule it is stale and must be labelled."
+  ],
+  "formats": [
+   {
+    "formatName": "Matched-Frame Result Card",
+    "structure": "Static or 3-second-hold result pair built to the AHPRA standard. Identical lighting, identical camera distance and angle, identical background, identical posture, identical makeup state, only the treated area differs. On-screen text carries three fixed fields: treatment name, number of sessions completed, and how long after the last session the second frame was taken. A fixed line reads 'Result shown is this patient only.' The before frame or the combined view is the most prominent element, never the after alone. No filter, no retouch, no grading applied to one frame and not the other.",
+    "whyItWorks": "Every credibility standard that actually gets enforced anywhere in the world converges on the same mechanics, and those mechanics are precisely what a viewer subconsciously scans for. Matched lighting and matched makeup remove the two cues that make a result read as an ad. Stating the session count and the time delay pre-empts the 'how long did this take' comment that otherwise dominates the thread. CAP's point is the decisive one: pre-production applied only to the after frame will mislead, and viewers sense it even when they cannot name it.",
+    "whoDoesIt": "Codified as a regulatory requirement by AHPRA in Australia (effective 2 September 2025) and as an evidential requirement by CAP in the UK. I did not verify any Pakistani clinic currently meeting this standard, so treat 'no local competitor does this' as inference.",
+    "sourceUrl": "https://www.ahpra.gov.au/Resources/Cosmetic-surgery-hub/Cosmetic-procedure-advertising-guidelines.aspx"
+   },
+   {
+    "formatName": "Hands-Only Process Reel",
+    "structure": "Camera stays tight on the operator's gloved hands, the handpiece and the treated area only. No face, no room signage, no jewellery, no tattoos, no nail art, no distinctive hair in frame. Ambient sound of the device kept, no trending audio over it. On-screen text names the device setting or the technical decision being made, for example the fluence, the spot size, the needle depth, the pass count. Ends on the operator's hands changing a disposable tip.",
+    "whyItWorks": "It solves the consent problem and the credibility problem at the same time. It carries no identifiable patient data, so it can be produced at volume without a marketing consent bottleneck, and it is the only format that shows technical decision-making rather than outcome. Because it reads as procedural education rather than procedure promotion, it also has a better chance of staying inside recommendation eligibility.",
+    "whoDoesIt": "The privacy logic follows directly from the finding that cropping the face is not de-identification and that tattoos and room details have identified patients in enforcement cases. The specific shot design is inference.",
+    "sourceUrl": "https://jacksonllp.com/patientphotos-aesthetics/"
+   },
+   {
+    "formatName": "The Tray",
+    "structure": "Fifteen to twenty second single take of the treatment tray being set up. Sealed packaging opened on camera, disposables unwrapped, needle or tip gauge visible, device screen showing the parameter set, expiry date or batch label held to lens for a beat, surfaces wiped. No patient present at all. One on-screen line stating what is single-use and what is sterilised between patients.",
+    "whyItWorks": "It answers the question the Pakistani market is actually asking after the sealing raids and the Islamabad reporting, which is whether the clinic is safe and whether the consumables are real. It is also entirely free of consent risk, entirely free of platform risk, and can be shot in any branch in five minutes. Sterility and provenance are things a backstreet clinic physically cannot fake on camera.",
+    "whoDoesIt": "Justified by reporting on unlicensed Islamabad clinics using untrained staff for fillers, botox and laser, and by the PHC sealing 1,415 centres in six weeks. Format design is inference.",
+    "sourceUrl": "https://propakistani.pk/2026/02/25/most-of-islamabads-money-making-beauty-clinics-are-illegal/"
+   },
+   {
+    "formatName": "Who This Is Not For",
+    "structure": "Fifteen to thirty seconds. On-screen text or voiceover lists, plainly, the cases where Venus would decline or defer the treatment: wrong hair colour for the laser wavelength, active infection, recent sun exposure, pregnancy, unrealistic expectation of one-session results, skin type outside the device's safe range. Ends by naming what the clinic recommends instead. Process footage or device footage underneath. No patient face needed.",
+    "whyItWorks": "Declining business is the single least fakeable trust signal available. It is also the honest counterweight to unrealistic expectations, which the regulatory literature treats as the central harm in this category. AHPRA requires realistic outcome information and prohibits minimising complexity. Saying no on camera makes every subsequent yes more believable, and it pre-qualifies leads so consult-to-book improves.",
+    "whoDoesIt": "Directly derived from AHPRA's requirement to provide accurate, realistic and educative risk information and not to overstate results or imply unrealistic outcomes.",
+    "sourceUrl": "https://bnlaw.com.au/knowledge-hub/insights/no-filters-advertising-and-performance-guidelines-for-non-surgical-cosmetic-procedures/"
+   },
+   {
+    "formatName": "Session Count Honesty Reel",
+    "structure": "A single result shown mid-course rather than at the end. On-screen text states 'Session 3 of 6' and the visible progress is partial. Voiceover or text explains why this treatment needs a course, tied to the biological mechanism, for example the hair growth cycle for laser or the collagen remodelling window for microneedling RF. Optionally ends with the full course result, still matched-frame.",
+    "whyItWorks": "The credibility problem with aesthetic results content is not that results are unbelievable, it is that they are presented as instant. Showing a partial result is counterintuitive proof of honesty and it directly manages the expectation that regulators identify as the core harm. It also sells the course rather than the single session, which raises order value without a discount.",
+    "whoDoesIt": "Grounded in AHPRA's requirement to state when the after image was taken and not to imply unrealistic outcomes. Mid-course presentation is inference.",
+    "sourceUrl": "https://www.ahpra.gov.au/Resources/Cosmetic-surgery-hub/Cosmetic-procedure-advertising-guidelines.aspx"
+   },
+   {
+    "formatName": "Faceless Patient Voice",
+    "structure": "Patient audio only, or patient filmed from behind, or patient's hands only, over process footage. What she describes is specifically the experience and the process, not the outcome claim: how much it hurt, how long she waited, whether staff explained the risks, what the room was like, whether anyone pressured her. Never a rating, never a superlative, never a result claim. Consent obtained on the separate marketing form naming the platforms.",
+    "whyItWorks": "It reaches the patient who will not show her face, which in a conservative market is the majority. Experience and process detail is also the part of a patient account that survives scrutiny, whereas outcome praise is the part that reads as scripted. The review research points the same way: consumers value a described experience above a high star rating.",
+    "whoDoesIt": "The 'describe the experience' emphasis follows BrightLocal's 2026 ranking of what consumers value in reviews. The faceless production approach is inference built on the consent findings.",
+    "sourceUrl": "https://www.brightlocal.com/research/local-consumer-review-survey/"
+   },
+   {
+    "formatName": "Credential Proof Reel",
+    "structure": "Short, unglamorous, document-forward. Regulator registration for the branch held to camera, the operator's qualification, the device's authorised-distributor or import documentation, the serial plate on the machine. One line naming who performs the procedure and what they are qualified in. No music bed, no doctor monologue, no personality framing.",
+    "whyItWorks": "In a market where Dawn reports no PMDC-recognised aesthetics qualification exists and only 26 aesthetic facilities are registered in Sindh, verifiable paperwork is genuinely scarce and therefore genuinely differentiating. It also satisfies the client's ban on doctor-as-personality content because the subject is the document and the licence, not a personality. AHPRA independently requires registration details in cosmetic advertising, which suggests regulators regard it as material to consumer decisions.",
+    "whoDoesIt": "Registration disclosure is an explicit AHPRA advertising requirement. The Pakistani scarcity argument comes from Dawn's reporting on the oversight gap.",
+    "sourceUrl": "https://www.dawn.com/news/2023253/cosmetic-boom-outpaces-oversight"
+   },
+   {
+    "formatName": "Mechanism Explainer, Not Myth Bust",
+    "structure": "Twenty to forty seconds explaining the physical mechanism of one treatment, in English, with device footage and simple diagrams. What the wavelength targets, why hair colour matters, what depth the needle reaches, what the cooling does. Names the treatment category, never a branded prescription product. Ends on a question the viewer should ask any clinic before booking.",
+    "whyItWorks": "Mechanism content is the safest high-reach format available. It avoids personal-attribute copy, avoids outcome claims, avoids prescription-product naming, and reads as education rather than cosmetic procedure promotion, which matters for recommendation eligibility. Ending on a question the viewer should ask any clinic is a competitive weapon disguised as a public service, and it is unfakeable by clinics that cannot answer it.",
+    "whoDoesIt": "Safety of this framing follows from Meta's personal attributes constraint and from CAP's prescription-only medicine rules. Format design is inference.",
+    "sourceUrl": "https://www.asa.org.uk/advice-online/beauty-and-cosmetics-botulinum-toxin-products.html"
+   },
+   {
+    "formatName": "Consultation-First Injectable Content",
+    "structure": "For botox and filler content only. Never name the molecule or the brand, never show a before-and-after pair, never publish a price list entry naming it. Sell 'an assessment for lines and wrinkles' as one possible option following professional evaluation. Content shows the assessment itself: facial movement analysis, the discussion of what will and will not change, the decision to treat or not treat.",
+    "whyItWorks": "This is the compliant pattern CAP itself sets out, and it maps cleanly onto Pakistan's Therapeutic Goods Advertisement Rules 2025 requirement for prior DRAP Advertisement Board approval before any therapeutic product is promoted to the public. It converts a legal constraint into a higher-intent funnel, because the call to action becomes a consultation rather than a procedure, which is also the better commercial ask.",
+    "whoDoesIt": "CAP states the acceptable approach is promoting a consultation for the treatment of lines and wrinkles following professional assessment, and lists before-and-after photographs as unacceptable for prescription-only medicines.",
+    "sourceUrl": "https://www.asa.org.uk/advice-online/beauty-and-cosmetics-botulinum-toxin-products.html"
+   },
+   {
+    "formatName": "Individual Review Reply, Published",
+    "structure": "A short reel or story showing a real Google review being answered individually, in full, by a named staff member, including a lukewarm or three-star one. No patient name shown, no confirmation that the reviewer was treated, no clinical detail. The reply offers a direct channel. Run as a recurring weekly slot.",
+    "whyItWorks": "The review research is unusually direct here: 80 percent are more likely to use a business that responds to all reviews, 42 percent are unlikely to use one that ignores them, and 50 percent are actively discouraged by generic or templated responses. Publishing the act of replying compounds the effect. Doing it for a mediocre review rather than a glowing one is what makes it read as real. The 'never confirm patient status' discipline keeps it safe.",
+    "whoDoesIt": "Response statistics from BrightLocal 2026. The no-confirmation rule from US healthcare legal guidance. Publishing the reply as content is inference.",
+    "sourceUrl": "https://www.sandsanderson.com/insights/thought/how-many-stars-a-guide-for-healthcare-providers-in-responding-to-negative-online-reviews"
+   },
+   {
+    "formatName": "Aftercare Utility Reel",
+    "structure": "Practical post-treatment instructions for one specific treatment, shot as a checklist. What to avoid for 48 hours, what is normal, what is not normal and warrants a call back, what product to use. Saveable, no patient in frame, no result shown.",
+    "whyItWorks": "Pure utility content earns saves and sends rather than likes, and saves are the signal that matters for reach. It also demonstrates aftercare capability, which is a competence signal rather than an outcome claim, so it carries neither consent risk nor claim risk. It makes existing patients better patients, which improves outcomes and therefore improves future results content.",
+    "whoDoesIt": "AHPRA requires recovery information including timeline, lifestyle changes and aftercare in advertising, which indicates regulators see this as material information consumers need.",
+    "sourceUrl": "https://www.ahpra.gov.au/Resources/Cosmetic-surgery-hub/Cosmetic-procedure-advertising-guidelines.aspx"
+   },
+   {
+    "formatName": "Patch Test On Camera",
+    "structure": "Sixty seconds showing a patch test being performed and then read 24 or 48 hours later, on the same skin, in the same light. States what the clinic is looking for and what result would cause it to change settings or decline treatment.",
+    "whyItWorks": "It is a process that proves competence, proves caution, and produces a genuinely matched-frame comparison with zero credibility risk because the stakes are low. It also directly addresses the burns and scarring harms reported in the Pakistani market, which is the fear actually blocking bookings for laser and RF.",
+    "whoDoesIt": "Justified by reporting of infections, burns and permanent scarring from unqualified operators in Pakistan. Format is inference.",
+    "sourceUrl": "https://propakistani.pk/2026/02/25/most-of-islamabads-money-making-beauty-clinics-are-illegal/"
+   }
+  ],
+  "hooks": [
+   "Session 3 of 6. This is what partial progress actually looks like.",
+   "Same light. Same camera. Same distance. Nothing else changed.",
+   "We turned this treatment down last week. Here is why.",
+   "Ask any clinic this one question before you let them switch the machine on.",
+   "This tip is single use. Watch us open it.",
+   "No filter on either frame. That is the whole point.",
+   "The after photo was taken 14 days after the last session. Here is why that matters.",
+   "This is the setting we chose, and this is why that setting and not the higher one.",
+   "Three things that are normal after this treatment, and one that means you call us.",
+   "She did not want her face on camera. She agreed to let us film her hands and her voice.",
+   "What the laser is actually targeting, in 30 seconds.",
+   "A three star review came in this week. Here is our reply, in full.",
+   "This is who this treatment will not work on.",
+   "Wrong depth, wrong result. Here is what the depth actually does.",
+   "We patch tested first. Here is the 48 hour read."
+  ]
+ }
+]

@@ -1,0 +1,109 @@
+{
+  "analysis_summary": {
+    "account_name": "TechGadgets Online",
+    "analysis_date": "2024-01-15",
+    "period_analyzed": "Last 14 days",
+    "total_daily_budget": 500,
+    "target_cpa": 35,
+    "current_blended_cpa": 38,
+    "current_daily_conversions": 14.8
+  },
+  "current_state": {
+    "campaigns": [
+      {"name": "Prospecting - LAL Purchasers", "daily_budget": 200, "percent_of_total": 40, "conversions_14d": 70, "cpa": 40, "vs_target": "+14%", "status": "Potential", "efficiency_score": 88},
+      {"name": "Prospecting - Interest Based", "daily_budget": 100, "percent_of_total": 20, "conversions_14d": 25, "cpa": 56, "vs_target": "+60%", "status": "Failing", "efficiency_score": 63},
+      {"name": "Retargeting - Website Visitors", "daily_budget": 100, "percent_of_total": 20, "conversions_14d": 55, "cpa": 25.45, "vs_target": "-27%", "status": "Star", "efficiency_score": 138},
+      {"name": "Retargeting - Cart Abandoners", "daily_budget": 50, "percent_of_total": 10, "conversions_14d": 35, "cpa": 20, "vs_target": "-43%", "status": "Star", "efficiency_score": 175},
+      {"name": "Prospecting - Advantage+", "daily_budget": 50, "percent_of_total": 10, "conversions_14d": 22, "cpa": 31.82, "vs_target": "-9%", "status": "Star", "efficiency_score": 110}
+    ],
+    "funnel_distribution": {
+      "prospecting_percent": 70,
+      "prospecting_daily": 350,
+      "retargeting_percent": 30,
+      "retargeting_daily": 150
+    }
+  },
+  "efficiency_analysis": {
+    "efficiency_scores": [
+      {"name": "Retargeting - Cart Abandoners", "score": 175, "trend": "Stable", "marginal_cpa_est": 25, "headroom": "Low (high frequency)"},
+      {"name": "Retargeting - Website Visitors", "score": 138, "trend": "Stable", "marginal_cpa_est": 30, "headroom": "Low (high frequency)"},
+      {"name": "Prospecting - Advantage+", "score": 110, "trend": "Improving", "marginal_cpa_est": 35, "headroom": "High"},
+      {"name": "Prospecting - LAL Purchasers", "score": 88, "trend": "Stable", "marginal_cpa_est": 45, "headroom": "Medium"},
+      {"name": "Prospecting - Interest Based", "score": 63, "trend": "Declining", "marginal_cpa_est": 65, "headroom": "High but inefficient"}
+    ],
+    "diminishing_returns": [
+      {"name": "Retargeting - Cart Abandoners", "saturation": "High", "frequency": 4.5, "cpm_trend": "Rising", "at_limit": true},
+      {"name": "Retargeting - Website Visitors", "saturation": "High", "frequency": 3.2, "cpm_trend": "Stable", "at_limit": true},
+      {"name": "Prospecting - LAL Purchasers", "saturation": "Low", "frequency": 1.8, "cpm_trend": "Stable", "at_limit": false},
+      {"name": "Prospecting - Advantage+", "saturation": "Very Low", "frequency": 1.2, "cpm_trend": "Stable", "at_limit": false}
+    ]
+  },
+  "reallocation_recommendations": {
+    "budget_changes": [
+      {"action": "Reduce", "campaign": "Prospecting - Interest Based", "current": 100, "recommended": 25, "change": -75, "rationale": "CPA 60% above target, declining trend, worst performer"},
+      {"action": "Increase", "campaign": "Prospecting - Advantage+", "current": 50, "recommended": 100, "change": 50, "rationale": "Below target CPA, improving trend, high headroom"},
+      {"action": "Increase", "campaign": "Prospecting - LAL Purchasers", "current": 200, "recommended": 225, "change": 25, "rationale": "Near target, stable, has headroom"},
+      {"action": "Maintain", "campaign": "Retargeting - Website Visitors", "current": 100, "recommended": 100, "change": 0, "rationale": "Strong performer but at frequency limit"},
+      {"action": "Maintain", "campaign": "Retargeting - Cart Abandoners", "current": 50, "recommended": 50, "change": 0, "rationale": "Best CPA but small audience, can't scale"}
+    ],
+    "movement_summary": [
+      {"from": "Prospecting - Interest Based", "to": "Prospecting - Advantage+", "amount": 50, "expected_impact": "+1.5 conversions/day"},
+      {"from": "Prospecting - Interest Based", "to": "Prospecting - LAL Purchasers", "amount": 25, "expected_impact": "+0.5 conversions/day"}
+    ]
+  },
+  "projected_impact": {
+    "current_metrics": {
+      "daily_conversions": 14.8,
+      "blended_cpa": 38,
+      "monthly_conversions": 444
+    },
+    "projected_metrics": {
+      "daily_conversions": 16.8,
+      "blended_cpa": 33.5,
+      "monthly_conversions": 504
+    },
+    "change": {
+      "daily_conversions_change": "+2.0",
+      "cpa_change": "-$4.50",
+      "monthly_conversions_change": "+60"
+    },
+    "confidence_level": "Medium",
+    "assumptions": [
+      "Advantage+ maintains CPA when scaled (likely given headroom)",
+      "Interest-based campaign doesn't improve with reduced budget",
+      "Retargeting audiences don't grow significantly"
+    ]
+  },
+  "implementation_plan": {
+    "week_1": [
+      "Reduce Interest Based from $100 to $50/day",
+      "Increase Advantage+ from $50 to $75/day"
+    ],
+    "week_2": [
+      "If Advantage+ holds CPA, increase to $100/day",
+      "Reduce Interest Based to $25/day",
+      "Add $25 to LAL Purchasers"
+    ],
+    "week_3": [
+      "Evaluate results",
+      "Consider pausing Interest Based if still underperforming"
+    ],
+    "ongoing": [
+      "Weekly CPA monitoring per campaign",
+      "Monthly reallocation review"
+    ]
+  },
+  "risks_and_considerations": [
+    {"risk": "Advantage+ CPA rises when scaled", "likelihood": "Medium", "mitigation": "Scale gradually, monitor daily"},
+    {"risk": "Interest Based campaign has learning setback", "likelihood": "Low", "mitigation": "Maintain minimum viable budget"},
+    {"risk": "Retargeting pools shrink with less prospecting", "likelihood": "Low", "mitigation": "Total prospecting still 70% of budget"}
+  ],
+  "next_review": {
+    "date": "2024-01-29",
+    "key_metrics": [
+      "Advantage+ CPA at new budget level",
+      "Blended CPA trend",
+      "Retargeting audience pool sizes"
+    ]
+  }
+}

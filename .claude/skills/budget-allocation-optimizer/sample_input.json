@@ -1,0 +1,54 @@
+{
+  "total_budget": 15000,
+  "budget_type": "monthly",
+  "target_cpa": 50,
+  "time_period": "Last 30 days",
+  "budget_flexibility": "fixed",
+  "campaigns": [
+    {
+      "name": "Brand - Exact Match",
+      "budget": 3000,
+      "spend": 2987,
+      "conversions": 112,
+      "cpa": 26.67,
+      "budget_status": "capped",
+      "impression_share_lost_budget": "18%"
+    },
+    {
+      "name": "Non-Brand - Product",
+      "budget": 5000,
+      "spend": 4956,
+      "conversions": 89,
+      "cpa": 55.69,
+      "budget_status": "capped",
+      "impression_share_lost_budget": "12%"
+    },
+    {
+      "name": "Non-Brand - Competitor",
+      "budget": 3000,
+      "spend": 2890,
+      "conversions": 24,
+      "cpa": 120.42,
+      "budget_status": "not_capped",
+      "impression_share_lost_budget": "5%"
+    },
+    {
+      "name": "Non-Brand - Problem/Solution",
+      "budget": 2500,
+      "spend": 2478,
+      "conversions": 52,
+      "cpa": 47.65,
+      "budget_status": "capped",
+      "impression_share_lost_budget": "22%"
+    },
+    {
+      "name": "Remarketing",
+      "budget": 1500,
+      "spend": 1234,
+      "conversions": 14,
+      "cpa": 88.14,
+      "budget_status": "not_capped",
+      "impression_share_lost_budget": "3%"
+    }
+  ]
+}

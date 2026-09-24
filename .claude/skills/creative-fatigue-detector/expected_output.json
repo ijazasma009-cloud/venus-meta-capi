@@ -1,0 +1,283 @@
+{
+  "report_date": "2024-02-14",
+  "account_name": "FitGear Pro",
+  "overall_health_score": 58,
+  "health_status": "Early Fatigue Detected",
+  "summary": {
+    "total_creatives_analyzed": 6,
+    "fresh_80_100": 1,
+    "healthy_60_79": 2,
+    "early_fatigue_40_59": 1,
+    "fatigued_20_39": 1,
+    "exhausted_0_19": 1
+  },
+  "creative_health_details": [
+    {
+      "creative_id": "CR_012",
+      "creative_name": "Video_Influencer_Collab_V1",
+      "fatigue_score": 88,
+      "status": "Fresh",
+      "days_running": 21,
+      "current_frequency": 1.5,
+      "frequency_status": "Safe",
+      "ctr_vs_peak": "96.8%",
+      "cpm_vs_peak": "103.6%",
+      "cpa_vs_peak": "105.3%",
+      "weekly_trend": {
+        "ctr": "Stable",
+        "cpm": "Stable",
+        "cpa": "Stable"
+      },
+      "estimated_remaining_life_days": 28,
+      "reach_saturation": "21.2%",
+      "action": "Continue monitoring - healthy runway",
+      "notes": "Still in optimization phase, strong engagement, plenty of runway"
+    },
+    {
+      "creative_id": "CR_014",
+      "creative_name": "UGC_Gym_Routine_Alex",
+      "fatigue_score": 82,
+      "status": "Fresh",
+      "days_running": 14,
+      "current_frequency": 1.0,
+      "frequency_status": "Safe",
+      "ctr_vs_peak": "100%",
+      "cpm_vs_peak": "100%",
+      "cpa_vs_peak": "100%",
+      "weekly_trend": {
+        "ctr": "Improving ↑",
+        "cpm": "Improving ↑",
+        "cpa": "Improving ↑"
+      },
+      "estimated_remaining_life_days": "35+",
+      "reach_saturation": "11.2%",
+      "action": "Scale - showing strong early signals",
+      "notes": "Week 2 better than Week 1, still ramping up. High potential."
+    },
+    {
+      "creative_id": "CR_004",
+      "creative_name": "UGC_BeforeAfter_Mike_V2",
+      "fatigue_score": 72,
+      "status": "Healthy",
+      "days_running": 38,
+      "current_frequency": 2.2,
+      "frequency_status": "Approaching Caution",
+      "ctr_vs_peak": "92.3%",
+      "cpm_vs_peak": "108.3%",
+      "cpa_vs_peak": "108.9%",
+      "weekly_trend": {
+        "ctr": "Slight Decline ↓",
+        "cpm": "Slight Increase ↓",
+        "cpa": "Slight Increase ↓"
+      },
+      "estimated_remaining_life_days": 21,
+      "reach_saturation": "37.6%",
+      "action": "Monitor weekly - begin briefing refresh",
+      "notes": "Gentle decline, still performing well above target. Prepare light refresh."
+    },
+    {
+      "creative_id": "CR_001",
+      "creative_name": "UGC_Testimonial_Sarah_V1",
+      "fatigue_score": 58,
+      "status": "Early Fatigue",
+      "days_running": 45,
+      "current_frequency": 2.9,
+      "frequency_status": "Caution",
+      "ctr_vs_peak": "82.1%",
+      "cpm_vs_peak": "123.5%",
+      "cpa_vs_peak": "130.3%",
+      "weekly_trend": {
+        "ctr": "Declining ↓↓",
+        "cpm": "Rising ↓↓",
+        "cpa": "Rising ↓"
+      },
+      "estimated_remaining_life_days": 14,
+      "reach_saturation": "50%",
+      "pattern_detected": "Gradual Decline",
+      "action": "Reduce spend 20%, launch medium refresh",
+      "notes": "Former star showing clear fatigue. Half of audience reached. Needs immediate attention but worth saving."
+    },
+    {
+      "creative_id": "CR_013",
+      "creative_name": "Carousel_Product_Features_V2",
+      "fatigue_score": 35,
+      "status": "Fatigued",
+      "days_running": 28,
+      "current_frequency": 2.9,
+      "frequency_status": "Caution",
+      "ctr_vs_peak": "78.9%",
+      "cpm_vs_peak": "125.5%",
+      "cpa_vs_peak": "130.8%",
+      "weekly_trend": {
+        "ctr": "Declining ↓↓",
+        "cpm": "Rising ↓↓",
+        "cpa": "Rising ↓↓"
+      },
+      "estimated_remaining_life_days": 7,
+      "reach_saturation": "43.1%",
+      "pattern_detected": "Gradual Decline",
+      "action": "Reduce spend 50%, replacement should be ready",
+      "notes": "Never was a top performer, accelerating decline. Not worth refresh investment."
+    },
+    {
+      "creative_id": "CR_011",
+      "creative_name": "Static_NewYear_Promo",
+      "fatigue_score": 12,
+      "status": "Exhausted",
+      "days_running": 52,
+      "current_frequency": 4.1,
+      "frequency_status": "Danger",
+      "ctr_vs_peak": "54.5%",
+      "cpm_vs_peak": "166.7%",
+      "cpa_vs_peak": "190.9%",
+      "weekly_trend": {
+        "ctr": "Rapid Decline ↓↓",
+        "cpm": "Rapid Increase ↓↓",
+        "cpa": "Rapid Increase ↓↓"
+      },
+      "estimated_remaining_life_days": 0,
+      "reach_saturation": "80%",
+      "pattern_detected": "Gradual Decline (Terminal)",
+      "action": "PAUSE IMMEDIATELY",
+      "notes": "Severely exhausted. CPA 47% over target. Every dollar spent is wasted. Also seasonally irrelevant (New Year promo in February)."
+    }
+  ],
+  "fatigue_alerts": [
+    {
+      "severity": "Critical",
+      "creative": "CR_011 (Static_NewYear_Promo)",
+      "signal": "CPA 190% of peak, CTR down 45%, frequency at 4.1",
+      "wasted_spend_last_7_days": 504,
+      "action": "Pause immediately"
+    },
+    {
+      "severity": "High",
+      "creative": "CR_013 (Carousel_Product_Features_V2)",
+      "signal": "CPA exceeding target, accelerating decline WoW",
+      "wasted_spend_last_7_days": 168,
+      "action": "Reduce spend 50%, prepare replacement"
+    },
+    {
+      "severity": "Medium",
+      "creative": "CR_001 (UGC_Testimonial_Sarah_V1)",
+      "signal": "Former star entering fatigue, frequency approaching danger zone",
+      "wasted_spend_last_7_days": 0,
+      "action": "Reduce spend 20%, brief medium refresh"
+    }
+  ],
+  "trending_concerns": [
+    {
+      "creative": "CR_004 (UGC_BeforeAfter_Mike_V2)",
+      "current_score": 72,
+      "trend": "Declining",
+      "watch_metric": "Frequency - currently 2.2, approaching caution threshold",
+      "estimated_weeks_until_action_needed": 3
+    }
+  ],
+  "time_series_analysis": {
+    "cr_001_trend": {
+      "metric": "CPA",
+      "week_1": 15.20,
+      "week_2": 16.50,
+      "week_3": 17.25,
+      "week_4": 19.80,
+      "total_increase": "30.3%",
+      "acceleration": "Week 4 increase (14.8%) faster than Week 2-3 average (6.6%)"
+    },
+    "cr_011_trend": {
+      "metric": "CPA",
+      "week_1": 22.00,
+      "week_2": 25.50,
+      "week_3": 32.00,
+      "week_4": 42.00,
+      "total_increase": "90.9%",
+      "acceleration": "Exponential - each week worse than last"
+    }
+  },
+  "refresh_queue": [
+    {
+      "creative": "CR_001 (UGC_Testimonial_Sarah_V1)",
+      "priority": 1,
+      "refresh_type": "Medium",
+      "timing": "This week",
+      "rationale": "Former star, worth saving. Try new opening hook while keeping winning testimonial format.",
+      "suggested_refresh": "Re-edit first 3 seconds with stronger hook, keep testimonial content, update CTA to current offer"
+    },
+    {
+      "creative": "CR_004 (UGC_BeforeAfter_Mike_V2)",
+      "priority": 2,
+      "refresh_type": "Light",
+      "timing": "Next 2 weeks",
+      "rationale": "Still healthy but declining. Proactive light refresh to extend life.",
+      "suggested_refresh": "New thumbnail, updated headline text, consider different aspect ratio for Stories/Reels"
+    }
+  ],
+  "kill_list": [
+    {
+      "creative": "CR_011 (Static_NewYear_Promo)",
+      "fatigue_score": 12,
+      "wasted_spend_last_7_days": 504,
+      "total_wasted_estimate": 1200,
+      "replacement_status": "URGENT - need replacement immediately",
+      "reason": "Exhausted beyond recovery, seasonally irrelevant, never was top performer"
+    },
+    {
+      "creative": "CR_013 (Carousel_Product_Features_V2)",
+      "fatigue_score": 35,
+      "wasted_spend_last_7_days": 168,
+      "total_wasted_estimate": 280,
+      "replacement_status": "Should have replacement ready within 7 days",
+      "reason": "Fatigued, never was top performer, not worth refresh investment"
+    }
+  ],
+  "production_pipeline_recommendation": {
+    "current_monthly_spend": 13500,
+    "recommended_new_creatives_per_month": "8-12",
+    "current_healthy_creative_count": 3,
+    "minimum_healthy_creative_count": 4,
+    "gap": 1,
+    "urgency": "Need 1-2 new creatives within 2 weeks to maintain healthy rotation",
+    "brief_priority": [
+      "UGC video with transformation hook (replicate CR_004 success)",
+      "Short-form version of CR_012 for Reels/Stories",
+      "New testimonial content (refresh CR_001 formula with new creator)"
+    ]
+  },
+  "spend_reallocation_recommendation": {
+    "current_distribution": {
+      "cr_001": "18%",
+      "cr_004": "24%",
+      "cr_011": "12%",
+      "cr_012": "22%",
+      "cr_013": "10%",
+      "cr_014": "14%"
+    },
+    "recommended_distribution": {
+      "cr_001": "12%",
+      "cr_004": "22%",
+      "cr_011": "0%",
+      "cr_012": "30%",
+      "cr_013": "5%",
+      "cr_014": "20%",
+      "new_creative_testing": "11%"
+    },
+    "expected_impact": "Reallocation should save ~$672/month in wasted spend and improve blended CPA by 8-12%"
+  },
+  "next_actions": {
+    "immediate": [
+      "Pause CR_011 (Static_NewYear_Promo) - stop bleeding immediately",
+      "Reduce CR_013 spend by 50%",
+      "Reduce CR_001 spend by 20%"
+    ],
+    "this_week": [
+      "Brief medium refresh for CR_001",
+      "Increase spend on CR_014 (fresh, improving)",
+      "Increase spend on CR_012 to 30% of budget"
+    ],
+    "next_2_weeks": [
+      "Launch CR_001 refresh",
+      "Brief light refresh for CR_004",
+      "Have 1-2 new creatives in pipeline for testing"
+    ]
+  }
+}

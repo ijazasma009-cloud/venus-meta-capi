@@ -1,0 +1,181 @@
+{
+  "structure_overview": {
+    "account_name": "ModernHome Decor",
+    "recommended_structure": "Standard",
+    "total_campaigns": 3,
+    "total_ad_sets": 6,
+    "budget_type": "Mixed (CBO for prospecting, ABO for retargeting)",
+    "key_principles": [
+      "Consolidate from 24 ad sets to 6 for better learning",
+      "Separate prospecting and retargeting budgets",
+      "Use DPA for retargeting with product catalog"
+    ]
+  },
+  "campaign_architecture": {
+    "campaign_1": {
+      "name": "[CONV] Prospecting - Cold Traffic",
+      "objective": "Sales",
+      "budget_type": "CBO",
+      "daily_budget": 325,
+      "monthly_budget": 9750,
+      "percent_of_total": 65,
+      "ad_sets": [
+        {
+          "name": "LAL - Purchasers 2% - US",
+          "audience": "Lookalike based on all purchasers",
+          "estimated_size": "4.2M",
+          "ads": 5,
+          "notes": "Primary prospecting audience"
+        },
+        {
+          "name": "LAL - High Value 1% - US",
+          "audience": "Lookalike based on AOV>$200 purchasers",
+          "estimated_size": "2.1M",
+          "ads": 5,
+          "notes": "Quality-focused prospecting"
+        },
+        {
+          "name": "BROAD - Advantage+ Audience",
+          "audience": "Broad targeting with Advantage+",
+          "estimated_size": "50M+",
+          "ads": 5,
+          "notes": "Let algorithm find buyers"
+        }
+      ],
+      "exclusions": ["Website Visitors 30d", "Purchasers 180d"]
+    },
+    "campaign_2": {
+      "name": "[CONV] Retargeting - Warm",
+      "objective": "Sales",
+      "budget_type": "ABO",
+      "daily_budget": 125,
+      "monthly_budget": 3750,
+      "percent_of_total": 25,
+      "ad_sets": [
+        {
+          "name": "RTG - Product Viewers 30d - DPA",
+          "audience": "Viewed products, no purchase",
+          "estimated_size": "Variable",
+          "budget": "$75/day",
+          "ads": "DPA + 2 static",
+          "notes": "Dynamic product ads for viewed items"
+        },
+        {
+          "name": "RTG - Engagers 60d",
+          "audience": "IG + FB engagers, video viewers 50%+",
+          "estimated_size": "~50K",
+          "budget": "$50/day",
+          "ads": 4,
+          "notes": "Social engagement retargeting"
+        }
+      ],
+      "exclusions": ["Purchasers 30d", "Cart Abandoners 14d"]
+    },
+    "campaign_3": {
+      "name": "[CONV] Retargeting - Hot",
+      "objective": "Sales",
+      "budget_type": "ABO",
+      "daily_budget": 50,
+      "monthly_budget": 1500,
+      "percent_of_total": 10,
+      "ad_sets": [
+        {
+          "name": "RTG - Cart Abandoners 14d - DPA",
+          "audience": "Added to cart, no purchase",
+          "estimated_size": "Variable",
+          "budget": "$50/day",
+          "ads": "DPA + urgency creative",
+          "notes": "Highest intent, use urgency messaging"
+        }
+      ],
+      "exclusions": ["Purchasers 7d"]
+    }
+  },
+  "naming_conventions": {
+    "campaign_format": "[OBJECTIVE] [FUNNEL] - [DESCRIPTION]",
+    "ad_set_format": "[AUDIENCE TYPE] - [AUDIENCE NAME] - [DETAIL]",
+    "ad_format": "[CREATIVE TYPE] - [ANGLE] - [VERSION]",
+    "examples": {
+      "campaigns": [
+        "[CONV] Prospecting - Cold Traffic",
+        "[CONV] Retargeting - Warm",
+        "[CONV] Retargeting - Hot"
+      ],
+      "ad_sets": [
+        "LAL - Purchasers 2% - US",
+        "RTG - Product Viewers 30d - DPA",
+        "RTG - Cart Abandoners 14d - DPA"
+      ],
+      "ads": [
+        "VID - Room Transformation - v1",
+        "IMG - Lifestyle - Living Room",
+        "CAR - Best Sellers - Spring",
+        "DPA - Viewed Products"
+      ]
+    }
+  },
+  "budget_distribution": {
+    "campaigns": [
+      {"name": "Prospecting - Cold", "percent": 65, "daily": 325, "monthly": 9750},
+      {"name": "Retargeting - Warm", "percent": 25, "daily": 125, "monthly": 3750},
+      {"name": "Retargeting - Hot", "percent": 10, "daily": 50, "monthly": 1500}
+    ],
+    "funnel_breakdown": {
+      "prospecting": "65%",
+      "retargeting": "35%"
+    }
+  },
+  "consolidation_plan": {
+    "current_state": {
+      "campaigns": 8,
+      "ad_sets": 24,
+      "issues": ["Fragmented data", "Overlapping audiences", "Hard to manage"]
+    },
+    "target_state": {
+      "campaigns": 3,
+      "ad_sets": 6,
+      "benefits": ["Better learning", "Simpler management", "Clear budget control"]
+    },
+    "migration_approach": "Gradual over 3 weeks",
+    "migration_steps": [
+      {"week": 1, "action": "Create new structure, shift 30% budget"},
+      {"week": 2, "action": "Shift additional 40% budget, monitor"},
+      {"week": 3, "action": "Complete migration, pause old campaigns"}
+    ]
+  },
+  "implementation_checklist": {
+    "phase_1_setup": [
+      "Create 3 new campaigns with correct objectives",
+      "Configure CBO for prospecting, ABO for retargeting",
+      "Set up 6 ad sets with correct audiences",
+      "Apply naming conventions to all"
+    ],
+    "phase_2_creative": [
+      "Upload 5 ads to each prospecting ad set",
+      "Set up DPA for product viewer and cart abandoner ad sets",
+      "Upload 4 ads to engagement retargeting ad set",
+      "Verify UTM parameters on all"
+    ],
+    "phase_3_launch": [
+      "Review all settings",
+      "Set budgets per plan",
+      "Apply exclusions",
+      "Launch new structure",
+      "Monitor first 48 hours closely"
+    ]
+  },
+  "best_practices": {
+    "do": [
+      "Keep prospecting and retargeting separate",
+      "Use DPA for product-based retargeting",
+      "Maintain 4-6 ads per ad set",
+      "Exclude appropriately to prevent overlap"
+    ],
+    "dont": [
+      "Mix prospecting and retargeting in same campaign",
+      "Create too many ad sets (fragments data)",
+      "Forget to exclude purchasers from prospecting",
+      "Use inconsistent naming"
+    ]
+  }
+}

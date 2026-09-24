@@ -1,0 +1,67 @@
+{
+  "workspace_id": 101,
+  "brand_id": 69,
+  "account_id": "9382431689",
+  "date_range": {
+    "start_date": "2025-01-01",
+    "end_date": "2025-01-31"
+  },
+  "target_cpa": 50,
+  "min_spend_threshold": 10,
+  "mcp_response": {
+    "status": "success",
+    "data": [
+      {
+        "campaign": {"id": "123", "name": "Brand Campaign"},
+        "ad_group": {"id": "456", "name": "Brand Terms"},
+        "ad_group_criterion": {
+          "keyword": {"text": "luxury bags atlanta", "match_type": "EXACT"},
+          "negative": false
+        },
+        "metrics": {
+          "impressions": 2500,
+          "clicks": 125,
+          "cost_micros": 3750000000,
+          "conversions": 12,
+          "conversions_value": 2400,
+          "ctr": 0.05,
+          "historical_quality_score": 8
+        }
+      },
+      {
+        "campaign": {"id": "123", "name": "Brand Campaign"},
+        "ad_group": {"id": "457", "name": "Generic Terms"},
+        "ad_group_criterion": {
+          "keyword": {"text": "buy handbags online", "match_type": "BROAD"},
+          "negative": false
+        },
+        "metrics": {
+          "impressions": 8500,
+          "clicks": 340,
+          "cost_micros": 8500000000,
+          "conversions": 5,
+          "conversions_value": 1000,
+          "ctr": 0.04,
+          "historical_quality_score": 4
+        }
+      },
+      {
+        "campaign": {"id": "124", "name": "Non-Brand Campaign"},
+        "ad_group": {"id": "458", "name": "Competitor Terms"},
+        "ad_group_criterion": {
+          "keyword": {"text": "designer bags sale", "match_type": "PHRASE"},
+          "negative": false
+        },
+        "metrics": {
+          "impressions": 5000,
+          "clicks": 200,
+          "cost_micros": 6000000000,
+          "conversions": 0,
+          "conversions_value": 0,
+          "ctr": 0.04,
+          "historical_quality_score": 6
+        }
+      }
+    ]
+  }
+}

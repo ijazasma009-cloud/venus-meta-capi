@@ -1,0 +1,36 @@
+{
+  "current_state": {
+    "account_name": "FreshMeals DTC",
+    "current_daily_spend": 300,
+    "current_monthly_spend": 9000,
+    "current_cpa": 42,
+    "current_roas": 2.8,
+    "time_at_current_spend": "3 months",
+    "campaigns": 3,
+    "ad_sets": 6,
+    "active_ads": 12
+  },
+  "scaling_goal": {
+    "target_daily_spend": 1000,
+    "target_monthly_spend": 30000,
+    "timeline_weeks": 8,
+    "acceptable_cpa_increase": "20%",
+    "max_acceptable_cpa": 52
+  },
+  "performance_baseline": {
+    "best_campaigns": ["LAL Purchasers 1%", "Retargeting - Cart Abandoners"],
+    "best_audiences": ["LAL Purchasers 1%", "Website Visitors 30d"],
+    "best_creative": ["UGC Taste Test Video", "Founder Story", "Ingredient Carousel"],
+    "current_bottlenecks": ["Limited creative volume", "Only using 1% LAL"]
+  },
+  "resources": {
+    "creative_production_capacity": "4-6 new ads per month currently",
+    "budget_flexibility": "Flexible, approved up to $35k/month",
+    "team_capacity": "1 person managing ads",
+    "available_audiences": ["Customer list 8k", "Email list 25k", "Website visitors 40k/month"]
+  },
+  "historical_context": {
+    "past_scaling_attempts": "Tried to go from $200 to $500/day last year, CPA went from $40 to $65",
+    "what_went_wrong": "Went too fast, didn't add new creative"
+  }
+}

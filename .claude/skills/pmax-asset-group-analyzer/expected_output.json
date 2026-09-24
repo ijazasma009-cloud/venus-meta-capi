@@ -1,0 +1,377 @@
+{
+  "summary": {
+    "campaign": "PMax - Lead Generation",
+    "total_spend": 14200,
+    "total_conversions": 142,
+    "cpa": 100.00,
+    "target_cpa": 75,
+    "vs_target": "+33%",
+    "health_status": "NEEDS WORK",
+    "primary_issues": [
+      "Display channel at 34% of spend with $150 CPA (2x target)",
+      "Asset Group 1 getting 60% budget but worst CPA ($118)",
+      "42% brand traffic potentially cannibalizing brand campaign",
+      "AG1 has poor asset quality (multiple 'Low' ratings)"
+    ]
+  },
+  "campaign_health_check": {
+    "overall_status": "YELLOW",
+    "metrics": {
+      "cpa_vs_target": {"value": 100, "target": 75, "status": "red", "detail": "+33% above target"},
+      "conversion_volume": {"value": 142, "target": "120+", "status": "green", "detail": "Sufficient for optimization"},
+      "learning_status": {"value": "Optimized", "status": "green"},
+      "asset_coverage": {"value": "Partial", "status": "yellow", "detail": "Missing videos, portrait images"}
+    },
+    "viability_check": {
+      "sufficient_conversions": true,
+      "all_asset_types": false,
+      "audience_signals": true,
+      "final_url_expansion": true,
+      "data_maturity": true
+    }
+  },
+  "asset_group_analysis": {
+    "performance_tiers": {
+      "star_performers": [
+        {
+          "name": "AG2 - Enterprise Solutions",
+          "spend": 3200,
+          "conversions": 42,
+          "cpa": 76.19,
+          "vs_target": "+2%",
+          "budget_share": "22%",
+          "assessment": "Only asset group at target CPA. Strong assets with multiple 'Best' ratings. Being starved of budget while AG1 gets 60%.",
+          "action": "SCALE - Increase budget share to 35-40%"
+        }
+      ],
+      "performers": [
+        {
+          "name": "AG3 - SMB Packages",
+          "spend": 1800,
+          "conversions": 22,
+          "cpa": 81.82,
+          "vs_target": "+9%",
+          "budget_share": "13%",
+          "assessment": "Near target CPA with limited budget. Potential to scale.",
+          "action": "TEST - Increase budget to 20%, monitor CPA"
+        }
+      ],
+      "underperformers": [
+        {
+          "name": "AG1 - Core Services",
+          "spend": 8500,
+          "conversions": 72,
+          "cpa": 118.06,
+          "vs_target": "+57%",
+          "budget_share": "60%",
+          "assessment": "Largest budget, worst CPA. Multiple 'Low' rated assets. Stock images underperforming. Dragging down overall campaign.",
+          "action": "FIX - Replace low-rated assets, reduce budget share to 35%"
+        },
+        {
+          "name": "AG4 - Industry Specific",
+          "spend": 700,
+          "conversions": 6,
+          "cpa": 116.67,
+          "vs_target": "+56%",
+          "budget_share": "5%",
+          "assessment": "Low volume, poor efficiency. May be too niche for PMax to optimize.",
+          "action": "EVALUATE - Consider pausing, moving to targeted Search campaign"
+        }
+      ]
+    },
+    "budget_distribution_assessment": {
+      "current_distribution": {
+        "AG1_Core_Services": "60%",
+        "AG2_Enterprise_Solutions": "22%",
+        "AG3_SMB_Packages": "13%",
+        "AG4_Industry_Specific": "5%"
+      },
+      "recommended_distribution": {
+        "AG1_Core_Services": "35%",
+        "AG2_Enterprise_Solutions": "40%",
+        "AG3_SMB_Packages": "20%",
+        "AG4_Industry_Specific": "5% or pause"
+      },
+      "diagnosis": "Budget is inverted - worst performer gets most budget. This is dragging overall CPA up by ~$15-20."
+    }
+  },
+  "asset_performance_analysis": {
+    "AG1_Core_Services": {
+      "overall_assessment": "POOR - Multiple assets underperforming",
+      "asset_coverage_score": 55,
+      "headlines": {
+        "total": 5,
+        "best": 1,
+        "good": 2,
+        "low": 2,
+        "issues": [
+          "'Professional Business Solutions' - Generic, no specificity or benefit",
+          "'Get Started Today' - Generic CTA, doesn't differentiate"
+        ],
+        "winners": [
+          "'Trusted by 500+ Companies' - Social proof works, keep and create variations"
+        ]
+      },
+      "images": {
+        "total": 5,
+        "best": 0,
+        "good": 1,
+        "low": 4,
+        "portrait": 0,
+        "issues": [
+          "Stock photos underperforming (team meeting, office building)",
+          "No portrait images for mobile placements",
+          "Dashboard screenshot is only Good - needs branded product images"
+        ]
+      },
+      "videos": {
+        "total": 0,
+        "issue": "NO VIDEOS - Missing YouTube and Discover placements"
+      },
+      "recommendations": {
+        "headlines_to_add": [
+          "500+ Companies Trust [Brand] for Business Growth",
+          "Cut Operations Costs by 30% - See How",
+          "Rated #1 Business Solution by [Publication]"
+        ],
+        "headlines_to_remove": [
+          "Professional Business Solutions",
+          "Get Started Today"
+        ],
+        "images_needed": [
+          "Product interface screenshot with real data",
+          "Customer logo grid (social proof)",
+          "Before/after results graphic",
+          "2-3 portrait images for mobile"
+        ],
+        "video_recommendation": "Add 30-60 second product demo video"
+      }
+    },
+    "AG2_Enterprise_Solutions": {
+      "overall_assessment": "STRONG - Well-optimized assets",
+      "asset_coverage_score": 75,
+      "headlines": {
+        "total": 4,
+        "best": 2,
+        "good": 2,
+        "low": 0,
+        "winners": [
+          "'Enterprise-Grade Security' - Speaks to key concern",
+          "'24/7 Dedicated Support' - Clear benefit"
+        ]
+      },
+      "images": {
+        "total": 3,
+        "best": 1,
+        "good": 2,
+        "low": 0,
+        "portrait": 0,
+        "notes": "Better quality than AG1 but still missing portrait"
+      },
+      "videos": {
+        "total": 1,
+        "rating": "Good",
+        "notes": "Has video which AG1 lacks - contributing to better performance"
+      },
+      "recommendations": {
+        "headlines_to_add": [
+          "SOC 2 & GDPR Compliant Platform",
+          "99.9% Uptime Guarantee Included"
+        ],
+        "images_needed": [
+          "2-3 portrait images for mobile placements"
+        ],
+        "video_recommendation": "Add customer testimonial video"
+      }
+    }
+  },
+  "search_themes_analysis": {
+    "brand_vs_nonbrand": {
+      "brand": "42%",
+      "nonbrand": "52%",
+      "competitor": "6%",
+      "assessment": "Brand at 42% is concerning if you have a separate brand Search campaign. Likely some cannibalization occurring."
+    },
+    "theme_performance": {
+      "efficient_themes": [
+        {"theme": "[company name]", "cpa": 64.62, "assessment": "Brand converting well but may be cannibalized"},
+        {"theme": "enterprise software solutions", "cpa": 68.42, "assessment": "High-intent, efficient"},
+        {"theme": "[competitor] alternative", "cpa": 76.25, "assessment": "Competitor conquesting working"}
+      ],
+      "inefficient_themes": [
+        {"theme": "free business software", "cpa": 720.00, "assessment": "Wrong intent - add as negative"},
+        {"theme": "cheap business solutions", "cpa": 665.00, "assessment": "Wrong intent - add as negative"}
+      ]
+    },
+    "recommended_negatives": [
+      "free",
+      "cheap",
+      "open source",
+      "DIY"
+    ],
+    "brand_recommendation": "Add brand terms as campaign-level negatives if you have a dedicated brand Search campaign. This will force PMax to focus on incremental non-brand traffic."
+  },
+  "audience_signal_analysis": {
+    "signal_strength": "MEDIUM",
+    "configured_signals": [
+      {"type": "Customer Match", "assessment": "Good signal, 8500 customers"},
+      {"type": "Website Visitors", "assessment": "Good signal, 45K visitors"},
+      {"type": "Custom Segment", "assessment": "Relevant keywords"},
+      {"type": "In-Market", "assessment": "Broad but useful baseline"}
+    ],
+    "audience_insights_review": {
+      "high_performers": [
+        "Small Business Owners (2.4x index) - Converting well",
+        "IT Decision Makers (1.8x index) - Good fit"
+      ],
+      "low_performers": [
+        "Marketing Professionals (0.8x index) - Consider excluding or separate messaging"
+      ]
+    },
+    "signal_recommendations": [
+      "Add 'Similar to converters' audience from GA4",
+      "Create custom segment for enterprise-specific search terms",
+      "Consider excluding Marketing Professionals from AG2 (Enterprise)"
+    ]
+  },
+  "placement_analysis": {
+    "channel_breakdown": [
+      {"channel": "Search", "spend": 5100, "cpa": 75.00, "percent": 36, "status": "EFFICIENT", "vs_target": "At target"},
+      {"channel": "Display", "spend": 4800, "cpa": 150.00, "percent": 34, "status": "INEFFICIENT", "vs_target": "+100%"},
+      {"channel": "YouTube", "spend": 2100, "cpa": 95.45, "percent": 15, "status": "ACCEPTABLE", "vs_target": "+27%"},
+      {"channel": "Gmail", "spend": 1400, "cpa": 116.67, "percent": 10, "status": "POOR", "vs_target": "+56%"},
+      {"channel": "Discover", "spend": 800, "cpa": 100.00, "percent": 5, "status": "ACCEPTABLE", "vs_target": "+33%"}
+    ],
+    "diagnosis": "Display at 34% of spend with 2x target CPA is the biggest efficiency drag. This alone is adding ~$20 to blended CPA.",
+    "recommendations": [
+      "Cannot directly reduce Display in PMax, but can influence via:",
+      "1. Add more search-focused headlines with keywords",
+      "2. Improve asset quality to boost Search competitiveness",
+      "3. Consider excluding specific Display placements via account-level exclusions",
+      "4. Add video to shift budget toward YouTube (more efficient than Display)"
+    ]
+  },
+  "root_cause_analysis": {
+    "primary_issue": "Budget misallocation + asset quality issues driving CPA 33% above target",
+    "contributing_factors": [
+      {
+        "factor": "AG1 getting 60% budget with worst CPA",
+        "impact": "~$15 CPA inflation",
+        "evidence": "AG1 CPA $118 vs AG2 CPA $76"
+      },
+      {
+        "factor": "Display channel at 34% with 2x target CPA",
+        "impact": "~$10-15 CPA inflation",
+        "evidence": "Display CPA $150 vs Search CPA $75"
+      },
+      {
+        "factor": "AG1 poor asset quality",
+        "impact": "Lower ad relevance, higher CPCs",
+        "evidence": "4 of 5 images rated Low, 2 of 5 headlines rated Low"
+      },
+      {
+        "factor": "No videos in largest asset group",
+        "impact": "Missing YouTube efficiency, more Display",
+        "evidence": "AG2 has video and better CPA"
+      }
+    ],
+    "causal_chain": [
+      "Poor assets in AG1 → Lower Quality Score/relevance",
+      "Lower relevance → Algorithm pushes more to Display (easier to win)",
+      "Display CPA 2x target → Blended CPA inflated",
+      "Meanwhile, AG2 with better assets starved of budget"
+    ]
+  },
+  "action_plan": {
+    "immediate_this_week": [
+      {
+        "action": "Add 'free' and 'cheap' as campaign-level negative keywords",
+        "impact": "Eliminate ~$2,200 wasted spend (themes with $700 CPA)",
+        "effort": "5 minutes"
+      },
+      {
+        "action": "Replace 2 Low-rated headlines in AG1",
+        "impact": "Improve ad relevance, potentially shift budget to Search",
+        "effort": "30 minutes"
+      },
+      {
+        "action": "Upload 3 new product-focused images to AG1",
+        "impact": "Replace underperforming stock photos",
+        "effort": "Depends on asset availability"
+      }
+    ],
+    "short_term_next_2_weeks": [
+      {
+        "action": "Add video to AG1 (product demo, 30-60 seconds)",
+        "impact": "Enable YouTube placements, reduce Display dependence",
+        "effort": "Video production needed"
+      },
+      {
+        "action": "Add brand exclusions to force non-brand focus",
+        "impact": "Reduce brand cannibalization, find incremental traffic",
+        "effort": "15 minutes"
+      },
+      {
+        "action": "Add portrait images (960x1200) to all asset groups",
+        "impact": "Better mobile ad experiences",
+        "effort": "Image resizing"
+      }
+    ],
+    "medium_term_next_month": [
+      {
+        "action": "Monitor and adjust budget distribution",
+        "impact": "After asset improvements, should see AG1 efficiency improve",
+        "note": "Let algorithm redistribute naturally first, then evaluate"
+      },
+      {
+        "action": "Evaluate pausing AG4",
+        "impact": "Concentrate budget on efficient asset groups",
+        "trigger": "If CPA doesn't improve with more data"
+      },
+      {
+        "action": "Consider splitting AG1 into more focused asset groups",
+        "impact": "Better message match, improved relevance",
+        "trigger": "If AG1 improvements don't reduce CPA"
+      }
+    ]
+  },
+  "projected_outcomes": {
+    "if_all_actions_completed": {
+      "current_cpa": 100.00,
+      "projected_cpa": 82.00,
+      "improvement": "-18%",
+      "timeline": "4-6 weeks for full impact"
+    },
+    "breakdown": {
+      "negative_keywords": "-$3 CPA (eliminate wasted spend)",
+      "asset_improvements": "-$8 CPA (better relevance, more Search)",
+      "video_addition": "-$5 CPA (YouTube more efficient than Display)",
+      "brand_exclusions": "-$2 CPA (focus on incremental)"
+    },
+    "confidence": "Medium-High",
+    "caveats": [
+      "Display reduction is indirect - can't guarantee",
+      "Asset improvements take 2+ weeks to impact algorithm",
+      "Brand exclusion impact depends on current overlap"
+    ]
+  },
+  "monitoring_checklist": {
+    "weekly": [
+      "Asset group CPA trends",
+      "Asset rating changes after new uploads",
+      "Search themes for new irrelevant queries",
+      "Channel distribution shifts"
+    ],
+    "bi_weekly": [
+      "Compare to pre-change baseline",
+      "Review audience insights for changes",
+      "Check if AG1 efficiency improving"
+    ],
+    "success_criteria_30_days": [
+      "Blended CPA below $90",
+      "AG1 CPA below $100",
+      "Display share below 30%",
+      "No new Low-rated assets"
+    ]
+  }
+}

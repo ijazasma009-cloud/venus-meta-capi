@@ -1,0 +1,92 @@
+{
+  "account_name": "TechStart SaaS",
+  "month": "January 2025",
+  "audience": "client",
+  "goals": {
+    "monthly_budget": 25000,
+    "conversion_target": 300,
+    "target_cpa": 75
+  },
+  "this_month": {
+    "spend": 23847.56,
+    "conversions": 342,
+    "cpa": 69.73,
+    "clicks": 8945,
+    "impressions": 156780,
+    "ctr": 5.7,
+    "conversion_rate": 3.82
+  },
+  "last_month": {
+    "spend": 22156.34,
+    "conversions": 278,
+    "cpa": 79.70,
+    "clicks": 7823,
+    "impressions": 142560,
+    "ctr": 5.49,
+    "conversion_rate": 3.55
+  },
+  "same_month_last_year": {
+    "spend": 18500,
+    "conversions": 215,
+    "cpa": 86.05
+  },
+  "campaigns": [
+    {
+      "name": "Brand - Exact Match",
+      "spend": 4250,
+      "conversions": 98,
+      "cpa": 43.37,
+      "mom_change": "+12%"
+    },
+    {
+      "name": "Non-Brand - Product Features",
+      "spend": 8920,
+      "conversions": 124,
+      "cpa": 71.94,
+      "mom_change": "+28%"
+    },
+    {
+      "name": "Non-Brand - Competitor",
+      "spend": 3450,
+      "conversions": 34,
+      "cpa": 101.47,
+      "mom_change": "-5%"
+    },
+    {
+      "name": "Non-Brand - Problem/Solution",
+      "spend": 5127,
+      "conversions": 68,
+      "cpa": 75.40,
+      "mom_change": "+18%"
+    },
+    {
+      "name": "Remarketing - Website Visitors",
+      "spend": 2100,
+      "conversions": 18,
+      "cpa": 116.67,
+      "mom_change": "-22%"
+    }
+  ],
+  "actions_taken": [
+    {
+      "action": "Launched new landing page for Product Features campaign",
+      "date": "Jan 8",
+      "result": "CVR improved 23%"
+    },
+    {
+      "action": "Added 67 negative keywords from search term review",
+      "date": "Jan 15",
+      "result": "Blocked ~$800/month irrelevant spend"
+    },
+    {
+      "action": "Tested 4 new RSA variations",
+      "date": "Jan 12",
+      "result": "2 winners identified, rolled out Jan 22"
+    }
+  ],
+  "insights": [
+    "Mobile conversion rate up 34% after landing page optimization",
+    "Product Features campaign showing strong momentum",
+    "Remarketing efficiency declining - audience may be saturated"
+  ]
+}

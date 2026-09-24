@@ -1,0 +1,35 @@
+{
+  "workspace_id": 101,
+  "brand_id": 69,
+  "account_id": "9382431689",
+  "campaign_id": "123456789",
+  "campaign_name": "Brand Campaign",
+  "source": "search-term-gold-miner",
+  "search_term_gold_miner_output": {
+    "immediate_negatives": [
+      {"search_term": "free luxury bags", "clicks": 45, "spend": 135, "conversions": 0},
+      {"search_term": "bag repair atlanta", "clicks": 28, "spend": 84, "conversions": 0},
+      {"search_term": "luxury bag cleaning service", "clicks": 22, "spend": 66, "conversions": 0},
+      {"search_term": "how to clean leather bags", "clicks": 38, "spend": 114, "conversions": 0},
+      {"search_term": "designer bag authentication jobs", "clicks": 15, "spend": 45, "conversions": 0}
+    ],
+    "pattern_negatives": [
+      {"pattern": "free", "reason": "Freebie seekers, no purchase intent"},
+      {"pattern": "repair", "reason": "Service queries, not purchase intent"},
+      {"pattern": "cleaning", "reason": "Maintenance queries, not buyers"},
+      {"pattern": "how to", "reason": "DIY/informational intent"},
+      {"pattern": "jobs", "reason": "Job seekers, wrong audience"}
+    ],
+    "estimated_monthly_waste": 444
+  },
+  "manual_additions": [
+    "careers",
+    "hiring",
+    "salary"
+  ],
+  "implementation_preferences": {
+    "level": "campaign",
+    "default_match_type": "PHRASE",
+    "exact_match_terms": ["free luxury bags", "bag repair atlanta"]
+  }
+}

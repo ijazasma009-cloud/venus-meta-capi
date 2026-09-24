@@ -1,0 +1,307 @@
+{
+  "summary": {
+    "current_portfolio_health": "MODERATE - Top performer exists but fatiguing",
+    "testing_velocity_needed": "3-4 creatives/week",
+    "priority_focus": "Hook variations on winning Before/After concept + new Problem-Solution concept test",
+    "timeline": "6 weeks",
+    "projected_outcome": "2-3 new scalable creatives, reduced blended CPA by 15%"
+  },
+  "current_creative_assessment": {
+    "portfolio_health": {
+      "total_creatives": 6,
+      "winners": 1,
+      "average": 2,
+      "underperformers": 3
+    },
+    "by_creative": [
+      {"name": "Before/After - Transformation", "cpa": 23.08, "status": "TOP PERFORMER", "action": "Iterate immediately"},
+      {"name": "UGC Testimonial - Sarah", "cpa": 28.57, "status": "FATIGUING", "action": "Replace soon"},
+      {"name": "UGC Testimonial - Mike", "cpa": 31.25, "status": "TESTING", "action": "Monitor"},
+      {"name": "Product Demo", "cpa": 34.48, "status": "UNDERPERFORMING", "action": "Pause or reimagine"},
+      {"name": "Carousel - 5 Benefits", "cpa": 34.48, "status": "AVERAGE", "action": "Test new approach"},
+      {"name": "Static - Feature Grid", "cpa": 40.32, "status": "POOR", "action": "Pause"}
+    ],
+    "concepts_analysis": {
+      "working": ["Before/After ($23 CPA)", "Testimonial ($28-31 CPA)"],
+      "not_working": ["Product Demo ($34 CPA)", "Features ($40 CPA)"],
+      "untested": ["Problem-Solution", "Social Proof", "Urgency", "Lifestyle", "Comparison"]
+    },
+    "format_analysis": {
+      "video": "4 creatives, mixed results, best performer is video",
+      "static": "1 creative, poor performance",
+      "carousel": "1 creative, average"
+    },
+    "gap_analysis": [
+      "Only 1 high-performing creative - too much concentration risk",
+      "Before/After winner needs more variations before it fatigues",
+      "5 major concepts never tested",
+      "No hook variations tested - relying on first-try hooks",
+      "Static/carousel underutilized despite lower production cost"
+    ]
+  },
+  "testing_hierarchy_priorities": {
+    "priority_1_highest_impact": {
+      "focus": "Hook variations on winning Before/After concept",
+      "rationale": "Before/After at $23 CPA is proven winner. Testing hooks is low effort, high impact. Historical winner was also Before/After - concept is validated.",
+      "creatives_needed": 5
+    },
+    "priority_2_high_impact": {
+      "focus": "New concept test: Problem-Solution",
+      "rationale": "Untested concept with high relevance to target audience (busy professionals with pain point). Diversifies portfolio.",
+      "creatives_needed": 3
+    },
+    "priority_3_medium_impact": {
+      "focus": "UGC replacement - new testimonials",
+      "rationale": "Sarah is fatiguing, Mike is moderate. Need fresh faces with stronger hooks.",
+      "creatives_needed": 2
+    }
+  },
+  "six_week_roadmap": {
+    "phase_1_weeks_1_2": {
+      "name": "Hook Sprint on Winner",
+      "objective": "Find 2-3 strong hooks for Before/After concept",
+      "tests": [
+        {
+          "test_name": "Before/After Hook Test Round 1",
+          "type": "Hook Test",
+          "hypothesis": "Different hooks on same Before/After concept will find additional winners",
+          "baseline": "Current winner: $23.08 CPA, 2.2% CTR",
+          "success_criteria": "Match or beat $23 CPA with at least one variation",
+          "creatives": [
+            {
+              "name": "B/A Hook 1: Time Call-out",
+              "hook": "15 minutes. 30 days. Watch what happens.",
+              "rationale": "Specific time commitment addresses main objection"
+            },
+            {
+              "name": "B/A Hook 2: Question",
+              "hook": "What if 15 minutes a day could change everything?",
+              "rationale": "Question hooks perform well on Meta"
+            },
+            {
+              "name": "B/A Hook 3: Bold Statement",
+              "hook": "I didn't believe it either. Then I tried it.",
+              "rationale": "Addresses skepticism directly"
+            },
+            {
+              "name": "B/A Hook 4: Curiosity",
+              "hook": "The workout that busy moms are obsessed with...",
+              "rationale": "Audience-specific curiosity hook"
+            },
+            {
+              "name": "B/A Hook 5: Pattern Interrupt",
+              "hook": "[Alarm sound] Your 15 minutes starts now.",
+              "rationale": "Audio pattern interrupt, urgent"
+            }
+          ],
+          "budget": 3000,
+          "duration_days": 10,
+          "decision_date": "End of Week 2"
+        }
+      ],
+      "production_schedule": {
+        "week_1_monday": "Brief 5 hook variations",
+        "week_1_tuesday_wednesday": "Film/edit variations",
+        "week_1_thursday": "Review and finalize",
+        "week_1_friday": "Launch tests",
+        "week_2": "Monitor and gather data"
+      }
+    },
+    "phase_2_weeks_3_4": {
+      "name": "Concept Expansion",
+      "objective": "Test Problem-Solution concept, iterate winning hooks",
+      "tests": [
+        {
+          "test_name": "Problem-Solution Concept Test",
+          "type": "Concept Test",
+          "hypothesis": "Problem-Solution framing will resonate with busy professionals struggling to find workout time",
+          "baseline": "Beat portfolio average ($29 CPA)",
+          "success_criteria": "CPA under $28 (competitive with Testimonial)",
+          "creatives": [
+            {
+              "name": "P/S 1: The Time Problem",
+              "hook": "No time to work out? That's what I thought too.",
+              "body": "Show the problem (calendar chaos) → solution (15-min workout fits anywhere)",
+              "format": "Video, 25-30 seconds"
+            },
+            {
+              "name": "P/S 2: The Guilt Problem",
+              "hook": "Tired of feeling guilty for skipping workouts?",
+              "body": "Show guilt → relief of completing quick workout",
+              "format": "Video, 25-30 seconds"
+            },
+            {
+              "name": "P/S 3: The Excuse Problem",
+              "hook": "Every excuse you've ever made... solved.",
+              "body": "List excuses → how app solves each",
+              "format": "Video, 30 seconds"
+            }
+          ],
+          "budget": 2500,
+          "duration_days": 10,
+          "decision_date": "End of Week 4"
+        },
+        {
+          "test_name": "Winning Hook Iterations",
+          "type": "Iteration",
+          "hypothesis": "Top 2 hooks from Phase 1 can be improved with body variations",
+          "creatives": "2 iterations of each winning hook (4 total)",
+          "variations": "Different transformations shown, different music, different CTA",
+          "budget": 1500,
+          "duration_days": 10
+        }
+      ],
+      "production_schedule": {
+        "week_3_monday": "Brief Problem-Solution creatives + hook iterations",
+        "week_3_tuesday_thursday": "Production",
+        "week_3_friday": "Launch",
+        "week_4": "Monitor, analyze Phase 1 results"
+      }
+    },
+    "phase_3_weeks_5_6": {
+      "name": "Scale & Diversify",
+      "objective": "Scale winners, test new UGC, explore Social Proof concept",
+      "tests": [
+        {
+          "test_name": "New UGC Batch",
+          "type": "Talent/Hook Test",
+          "hypothesis": "New faces with strong hooks can replace fatiguing Sarah testimonial",
+          "creatives": [
+            {
+              "name": "UGC New Face 1",
+              "talent": "New customer with compelling transformation",
+              "hook": "Use winning hook formula from Phase 1",
+              "format": "Video, 30-45 seconds"
+            },
+            {
+              "name": "UGC New Face 2",
+              "talent": "Different demographic (younger or older)",
+              "hook": "Use winning hook formula from Phase 1",
+              "format": "Video, 30-45 seconds"
+            }
+          ],
+          "budget": 1500,
+          "duration_days": 10
+        },
+        {
+          "test_name": "Social Proof Concept Test",
+          "type": "Concept Test",
+          "hypothesis": "500K users is compelling social proof that can drive trust",
+          "creatives": [
+            {
+              "name": "Social Proof 1: Numbers",
+              "hook": "500,000 women can't be wrong.",
+              "body": "Show community, results, app interface",
+              "format": "Video, 20 seconds"
+            },
+            {
+              "name": "Social Proof 2: Montage",
+              "hook": "Join 500K+ women transforming their bodies",
+              "body": "Quick cuts of multiple transformations",
+              "format": "Video, 25 seconds"
+            }
+          ],
+          "budget": 1500,
+          "duration_days": 10
+        }
+      ],
+      "actions_from_prior_phases": [
+        "Scale top Before/After variations to 2x budget",
+        "If Problem-Solution wins, create 3 more variations",
+        "Pause Static - Feature Grid if not improved",
+        "Pause Product Demo if not relaunched with new hook"
+      ]
+    }
+  },
+  "hook_ideas_bank": {
+    "for_before_after_concept": [
+      {"hook": "15 minutes. 30 days. Watch what happens.", "type": "Time Call-out", "priority": "High"},
+      {"hook": "What if 15 minutes a day could change everything?", "type": "Question", "priority": "High"},
+      {"hook": "I didn't believe it either. Then I tried it.", "type": "Skepticism Address", "priority": "High"},
+      {"hook": "The workout that busy moms are obsessed with...", "type": "Curiosity", "priority": "Medium"},
+      {"hook": "[Alarm] Your 15 minutes starts now.", "type": "Pattern Interrupt", "priority": "Medium"},
+      {"hook": "Day 1 vs Day 30. Same person. Different energy.", "type": "Contrast", "priority": "Medium"},
+      {"hook": "She found 15 minutes. Everything changed.", "type": "Third Person", "priority": "Low"}
+    ],
+    "for_problem_solution_concept": [
+      {"hook": "No time to work out? That's what I thought too.", "type": "Empathy", "priority": "High"},
+      {"hook": "Tired of feeling guilty for skipping workouts?", "type": "Pain Point", "priority": "High"},
+      {"hook": "Every excuse you've ever made... solved.", "type": "Bold Promise", "priority": "Medium"},
+      {"hook": "What if 'too busy' was no longer an excuse?", "type": "Question", "priority": "Medium"},
+      {"hook": "Stop planning workouts. Start doing them.", "type": "Command", "priority": "Low"}
+    ],
+    "for_social_proof_concept": [
+      {"hook": "500,000 women can't be wrong.", "type": "Numbers", "priority": "High"},
+      {"hook": "Join 500K+ women transforming their bodies", "type": "Community", "priority": "High"},
+      {"hook": "The app your friends aren't telling you about", "type": "Exclusivity", "priority": "Medium"}
+    ]
+  },
+  "testing_budget_allocation": {
+    "total_6_week_budget": 8000,
+    "by_phase": {
+      "phase_1": {"budget": 3000, "tests": "Hook sprint"},
+      "phase_2": {"budget": 4000, "tests": "Concept + iterations"},
+      "phase_3": {"budget": 3000, "tests": "UGC + Social Proof"}
+    },
+    "note": "Slightly over budget - reallocate from underperforming evergreen if needed"
+  },
+  "production_schedule_summary": {
+    "total_new_creatives": 18,
+    "weekly_velocity": 3,
+    "by_week": {
+      "week_1": "5 creatives (B/A hooks)",
+      "week_2": "Monitor tests",
+      "week_3": "7 creatives (P/S + iterations)",
+      "week_4": "Monitor tests",
+      "week_5": "4 creatives (UGC + Social Proof)",
+      "week_6": "Monitor + scale winners"
+    }
+  },
+  "decision_framework": {
+    "statistical_requirements": {
+      "minimum_conversions_per_variant": 20,
+      "minimum_days": 5,
+      "confidence_threshold": "80%"
+    },
+    "winner_criteria": {
+      "clear_winner": "CPA 15%+ better than baseline",
+      "marginal_winner": "CPA 5-15% better, CTR significantly higher",
+      "no_winner": "All variants within 10% of each other"
+    },
+    "actions_by_result": {
+      "clear_winner": "Scale immediately, create 3 iterations",
+      "marginal_winner": "Scale moderately, test 1-2 variations",
+      "no_winner": "Test more dramatic variations or new concept",
+      "clear_loser": "Document learning, test opposite approach"
+    }
+  },
+  "iteration_pipeline": {
+    "from_winning_before_after": [
+      "Same hook → different transformation person",
+      "Same hook → different music/pacing",
+      "Same hook → carousel format adaptation",
+      "Winning hook → apply to new UGC talent"
+    ],
+    "from_potential_problem_solution_winner": [
+      "Same concept → different problem focus",
+      "Same hook → UGC style vs produced",
+      "Same concept → static image adaptation"
+    ]
+  },
+  "expected_outcomes": {
+    "week_2": "Identify 2-3 winning hooks for Before/After",
+    "week_4": "Validate or invalidate Problem-Solution concept, have 4-6 scalable creatives",
+    "week_6": "8+ tested creatives, 3-4 scalable winners, clear roadmap for next quarter",
+    "cpa_projection": {
+      "current_blended": 29.00,
+      "projected_blended": 24.50,
+      "improvement": "-15%"
+    }
+  },
+  "immediate_actions": [
+    "Pause Static - Feature Grid ($40 CPA, 60 days old)",
+    "Brief 5 Before/After hook variations by Monday",
+    "Source 2 new UGC talents for Week 5 filming",
+    "Set up testing campaign structure with proper naming convention"
+  ]
+}

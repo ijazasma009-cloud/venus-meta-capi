@@ -1,0 +1,296 @@
+{
+  "summary": {
+    "audiences_analyzed": 8,
+    "critical_overlaps_found": 4,
+    "high_overlaps_found": 2,
+    "estimated_wasted_spend": 8500,
+    "cpm_inflation_estimate": "+35%",
+    "overall_health": "CRITICAL",
+    "primary_issue": "Lookalike audiences 100% nested, retargeting audiences not excluded from each other, prospecting hitting retargeting users"
+  },
+  "overlap_matrix": {
+    "description": "Overlap percentage between audience pairs",
+    "matrix": {
+      "LAL_1": {"LAL_2": "100%", "LAL_HV_1": "68%", "Interest": "~15%", "Broad": "2%", "RT_Visitors": "~8%"},
+      "LAL_2": {"LAL_1": "50%", "LAL_HV_1": "72%", "Interest": "~12%", "Broad": "4%", "RT_Visitors": "~6%"},
+      "LAL_HV_1": {"LAL_1": "68%", "LAL_2": "36%", "Interest": "~10%", "Broad": "2%", "RT_Visitors": "~5%"},
+      "RT_Visitors": {"RT_Product": "100%", "RT_Cart": "100%"},
+      "RT_Product": {"RT_Visitors": "53%", "RT_Cart": "100%"},
+      "RT_Cart": {"RT_Visitors": "16%", "RT_Product": "29%"}
+    },
+    "legend": {
+      "critical": ">75%",
+      "high": "50-75%",
+      "moderate": "25-50%",
+      "low": "<25%"
+    }
+  },
+  "critical_overlap_pairs": [
+    {
+      "pair": "LAL - Purchasers 1% × LAL - Purchasers 2%",
+      "overlap_percent": 100,
+      "overlap_score": 95,
+      "severity": "CRITICAL",
+      "combined_spend": 20000,
+      "diagnosis": "LAL 1% is completely contained within LAL 2%. Every dollar spent on LAL 2% competes with LAL 1% for the same users. You're bidding against yourself in every auction for the 2.4M users in the 1% audience.",
+      "impact": {
+        "estimated_wasted_spend": 4000,
+        "cpm_inflation": "+15%",
+        "attribution_confusion": "Conversions from 1% users may be attributed to 2% campaign"
+      },
+      "recommendation": "STOP running both. Options: (A) Run only 1% LAL, or (B) Exclude 1% from 2% campaign"
+    },
+    {
+      "pair": "LAL - Purchasers 1% × LAL - High Value 1%",
+      "overlap_percent": 68,
+      "overlap_score": 82,
+      "severity": "CRITICAL",
+      "combined_spend": 18000,
+      "diagnosis": "Both lookalikes sourced from similar seed lists (purchasers vs high-value purchasers). High-value customers are purchasers, so LALs overlap significantly. 68% of users are in both audiences.",
+      "impact": {
+        "estimated_wasted_spend": 2500,
+        "cpm_inflation": "+12%",
+        "attribution_confusion": "High"
+      },
+      "recommendation": "Consolidate into single LAL from high-value customers (better seed), or exclude LAL 1% from High Value campaign"
+    },
+    {
+      "pair": "Retargeting audiences (all three)",
+      "overlap_type": "Nested hierarchy",
+      "overlap_score": 88,
+      "severity": "CRITICAL",
+      "combined_spend": 10000,
+      "combined_frequency": "8.4+ for cart abandoners",
+      "diagnosis": "Cart abandoners ⊂ Product viewers ⊂ Website visitors. Without exclusions, a cart abandoner sees ads from ALL THREE retargeting ad sets. This explains frequency of 8.4.",
+      "impact": {
+        "estimated_wasted_spend": 2000,
+        "frequency_issue": "Users seeing 15-20+ ads total",
+        "fatigue_acceleration": "Severe"
+      },
+      "recommendation": "Implement exclusion hierarchy: Exclude cart abandoners from product viewers, exclude product viewers from website visitors"
+    },
+    {
+      "pair": "All Prospecting × Retargeting",
+      "overlap_type": "No exclusions",
+      "overlap_score": 75,
+      "severity": "HIGH",
+      "diagnosis": "Retargeting audiences are NOT excluded from prospecting campaigns. Your 180K website visitors can see both prospecting AND retargeting ads.",
+      "impact": {
+        "estimated_wasted_spend": 1500,
+        "message_confusion": "Users see awareness + conversion messaging simultaneously",
+        "attribution": "Prospecting may get credit for retargeting conversions"
+      },
+      "recommendation": "Exclude all retargeting custom audiences from all prospecting campaigns"
+    }
+  ],
+  "audience_level_analysis": [
+    {
+      "audience": "LAL - Purchasers 1%",
+      "size": 2400000,
+      "spend": 12000,
+      "cpm": 18.50,
+      "frequency": 2.8,
+      "overlaps_with": ["LAL 2% (100%)", "LAL HV 1% (68%)", "RT Visitors (~8%)"],
+      "total_overlap_exposure": "High - 68%+ of audience in multiple campaigns",
+      "recommendation": "Keep as primary LAL, exclude from other LAL campaigns"
+    },
+    {
+      "audience": "LAL - Purchasers 2%",
+      "size": 4800000,
+      "spend": 8000,
+      "cpm": 16.20,
+      "frequency": 2.4,
+      "overlaps_with": ["LAL 1% (50% of 2% = 1%)", "LAL HV 1% (72%)"],
+      "issue": "Paying for users already in 1% LAL at higher CPA",
+      "recommendation": "Exclude LAL 1% to target only incremental 2.4M users, OR pause entirely"
+    },
+    {
+      "audience": "LAL - High Value 1%",
+      "size": 2400000,
+      "spend": 6000,
+      "cpm": 19.80,
+      "frequency": 2.6,
+      "overlaps_with": ["LAL 1% (68%)", "LAL 2% (72%)"],
+      "issue": "Highest CPM despite significant overlap with other LALs",
+      "recommendation": "Test as ONLY LAL (best seed), or exclude from standard LAL campaigns"
+    },
+    {
+      "audience": "Interest - Home Decor",
+      "size": 35000000,
+      "spend": 5000,
+      "cpm": 12.40,
+      "frequency": 1.8,
+      "overlaps_with": ["Broad (subset)", "LALs (~10-15%)"],
+      "recommendation": "Low overlap concern, but consider consolidating with Broad using Advantage+"
+    },
+    {
+      "audience": "Retargeting - Cart Abandoners 7d",
+      "size": 28000,
+      "spend": 2500,
+      "cpm": 28.50,
+      "frequency": 8.4,
+      "overlaps_with": ["Product Viewers (100%)", "Website Visitors (100%)"],
+      "issue": "CRITICAL frequency - users being hit by all 3 retargeting ad sets",
+      "recommendation": "Highest priority audience, exclude from other retargeting"
+    }
+  ],
+  "consolidation_recommendations": {
+    "lookalike_strategy": {
+      "current": "3 separate LAL campaigns competing",
+      "recommended": "Single LAL strategy with clear hierarchy",
+      "options": [
+        {
+          "option": "A - Single Best LAL",
+          "structure": "Run only LAL - High Value 1% (best seed quality)",
+          "pros": "Simplest, no overlap, best data signal",
+          "cons": "Limited scale (2.4M audience)"
+        },
+        {
+          "option": "B - Tiered with Exclusions",
+          "structure": "LAL HV 1% (primary) → LAL 2% excluding HV 1% (expansion)",
+          "pros": "Scale + quality, clear priority",
+          "cons": "More complex management"
+        }
+      ],
+      "recommendation": "Option B for scale with efficiency"
+    },
+    "retargeting_strategy": {
+      "current": "3 retargeting audiences, no exclusions, combined frequency 8.4+",
+      "recommended": "Exclusion hierarchy with frequency caps",
+      "structure": {
+        "priority_1": {
+          "audience": "Cart Abandoners 7d",
+          "action": "Highest bid/budget",
+          "exclusions": "None needed (smallest, highest intent)"
+        },
+        "priority_2": {
+          "audience": "Product Viewers 14d",
+          "action": "Medium priority",
+          "exclusions": "Exclude cart abandoners"
+        },
+        "priority_3": {
+          "audience": "Website Visitors 30d",
+          "action": "Lowest priority/bid",
+          "exclusions": "Exclude product viewers AND cart abandoners"
+        }
+      },
+      "frequency_cap": "Set 3/week cap across all retargeting"
+    },
+    "prospecting_protection": {
+      "action": "Create exclusion audience",
+      "steps": [
+        "Create saved audience: 'All Retargeting - Exclude'",
+        "Include: Website visitors 180d + All purchasers",
+        "Apply as exclusion to ALL prospecting campaigns"
+      ]
+    }
+  },
+  "restructured_architecture": {
+    "before": {
+      "campaigns": 5,
+      "audiences": 8,
+      "exclusions": 1,
+      "overlap_issues": "Critical"
+    },
+    "after": {
+      "campaigns": 3,
+      "audiences": 5,
+      "exclusions": 6,
+      "overlap_issues": "Resolved"
+    },
+    "new_structure": [
+      {
+        "campaign": "Prospecting - Lookalike",
+        "audiences": ["LAL - High Value 1%", "LAL - Purchasers 2% (excluding HV 1%)"],
+        "exclusions": ["All website visitors", "All purchasers"],
+        "budget": 20000
+      },
+      {
+        "campaign": "Prospecting - Broad/Interest",
+        "audiences": ["Advantage+ Audience (let Meta optimize)"],
+        "exclusions": ["All website visitors", "All purchasers"],
+        "budget": 9000,
+        "note": "Consolidate Interest + Broad into Advantage+"
+      },
+      {
+        "campaign": "Retargeting - Full Funnel",
+        "audiences": ["Cart Abandoners", "Product Viewers (excl cart)", "Visitors (excl product)"],
+        "exclusions": ["Hierarchical as described"],
+        "budget": 10000,
+        "frequency_cap": "3/week"
+      }
+    ]
+  },
+  "projected_impact": {
+    "cpm_reduction": {
+      "current_avg": 18.50,
+      "projected_avg": 14.00,
+      "reduction": "-24%"
+    },
+    "wasted_spend_eliminated": {
+      "monthly": 8500,
+      "annual": 102000
+    },
+    "frequency_improvement": {
+      "retargeting_current": 8.4,
+      "retargeting_projected": 3.5,
+      "reduction": "-58%"
+    },
+    "efficiency_gain": {
+      "current_blended_cpa": 72.58,
+      "projected_cpa": 62.00,
+      "improvement": "-15%"
+    }
+  },
+  "action_plan": {
+    "immediate_this_week": [
+      {
+        "priority": 1,
+        "action": "Implement retargeting exclusion hierarchy",
+        "details": "Exclude cart from product viewers, product viewers from website visitors",
+        "impact": "Stop 3x frequency on best audiences"
+      },
+      {
+        "priority": 2,
+        "action": "Create and apply 'All Retargeting Exclude' audience to prospecting",
+        "details": "Website visitors 180d + purchasers → exclude from all prospecting",
+        "impact": "Stop prospecting/retargeting collision"
+      },
+      {
+        "priority": 3,
+        "action": "Set frequency cap on retargeting campaign",
+        "details": "3 impressions per week at campaign level",
+        "impact": "Prevent fatigue even with exclusion gaps"
+      }
+    ],
+    "next_2_weeks": [
+      {
+        "action": "Pause LAL - Purchasers 2% campaign",
+        "alternative": "OR exclude LAL 1% from 2% campaign",
+        "impact": "Eliminate 100% overlap competition"
+      },
+      {
+        "action": "Test LAL - High Value 1% as primary/only LAL",
+        "details": "Higher quality seed, test at higher budget",
+        "impact": "Better efficiency, simpler structure"
+      },
+      {
+        "action": "Consolidate Interest + Broad into Advantage+ test",
+        "details": "Let Meta manage overlap automatically",
+        "impact": "Reduced management, algorithm optimization"
+      }
+    ],
+    "monitoring": {
+      "weekly": [
+        "CPM by audience",
+        "Frequency by audience",
+        "Overlap tool check for new audiences"
+      ],
+      "success_criteria": [
+        "CPM below $15 within 2 weeks",
+        "Retargeting frequency below 4.0",
+        "No audience with >50% overlap to another"
+      ]
+    }
+  }
+}

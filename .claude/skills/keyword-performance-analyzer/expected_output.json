@@ -1,0 +1,110 @@
+{
+  "executive_summary": {
+    "health_score": "yellow",
+    "keywords_analyzed": 3,
+    "period": "2025-01-01 to 2025-01-31",
+    "avg_quality_score": 6.0,
+    "keywords_with_qs_issues": 1,
+    "qs_issue_percentage": 33,
+    "estimated_monthly_qs_penalty": 2550
+  },
+  "quality_score_report": {
+    "critical_issues": [
+      {
+        "keyword": "buy handbags online",
+        "match_type": "BROAD",
+        "quality_score": 4,
+        "impressions": 8500,
+        "cpa": 170,
+        "estimated_cpc_penalty": "60%"
+      }
+    ],
+    "improvement_priorities": [
+      {
+        "keyword": "buy handbags online",
+        "quality_score": 4,
+        "issue": "Low expected CTR and ad relevance",
+        "action": "Create dedicated ad group with tighter theme, test new ad copy",
+        "potential_monthly_savings": 2550
+      }
+    ]
+  },
+  "performance_tiers": {
+    "stars": [
+      {
+        "keyword": "luxury bags atlanta",
+        "conversions": 12,
+        "cpa": 31.25,
+        "vs_target": "-37.5%",
+        "quality_score": 8,
+        "recommendation": "Increase bid 15%, add budget"
+      }
+    ],
+    "bleeders": [
+      {
+        "keyword": "designer bags sale",
+        "spend": 600,
+        "conversions": 0,
+        "quality_score": 6,
+        "action": "Pause or reduce bid 30%"
+      }
+    ],
+    "qs_victims": [
+      {
+        "keyword": "buy handbags online",
+        "conversions": 5,
+        "current_cpa": 170,
+        "quality_score": 4,
+        "potential_cpa_if_qs_8": 106.25
+      }
+    ]
+  },
+  "match_type_recommendations": {
+    "migrate_to_exact": [],
+    "consider_pausing": [
+      {
+        "keyword": "buy handbags online",
+        "current_match": "BROAD",
+        "reason": "High spend with poor QS, likely irrelevant traffic"
+      }
+    ]
+  },
+  "bid_adjustments": {
+    "increase": [
+      {
+        "keyword": "luxury bags atlanta",
+        "current_cpa": 31.25,
+        "recommendation": "Increase bid 15%",
+        "rationale": "CPA 37% below target, room to scale"
+      }
+    ],
+    "decrease": [
+      {
+        "keyword": "buy handbags online",
+        "current_cpa": 170,
+        "recommendation": "Decrease bid 30%",
+        "rationale": "CPA 240% above target"
+      },
+      {
+        "keyword": "designer bags sale",
+        "current_cpa": null,
+        "recommendation": "Pause",
+        "rationale": "No conversions with $600 spend"
+      }
+    ]
+  },
+  "quick_wins": {
+    "pause_bleeders": {
+      "keywords": 1,
+      "estimated_savings": 600
+    },
+    "fix_qs_issues": {
+      "keywords": 1,
+      "estimated_savings": 2550
+    },
+    "scale_stars": {
+      "keywords": 1,
+      "estimated_additional_conversions": 3
+    }
+  }
+}

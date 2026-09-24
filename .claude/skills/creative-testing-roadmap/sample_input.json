@@ -1,0 +1,120 @@
+{
+  "business_context": {
+    "product": "Online fitness coaching app",
+    "price_point": "$29/month subscription",
+    "target_audience": "Women 25-45, interested in fitness, busy professionals",
+    "primary_goal": "Free trial signups",
+    "target_cpa": 25,
+    "unique_selling_points": [
+      "15-minute workouts designed for busy schedules",
+      "Personalized plans based on goals",
+      "No equipment needed",
+      "500K+ active users"
+    ]
+  },
+  "platform": "Meta Ads",
+  "current_creative_portfolio": {
+    "total_creatives": 6,
+    "monthly_spend": 25000,
+    "creatives": [
+      {
+        "name": "UGC Testimonial - Sarah",
+        "format": "Video",
+        "length_seconds": 45,
+        "concept": "Testimonial",
+        "hook": "I used to skip workouts because I had no time...",
+        "days_running": 35,
+        "spend": 8000,
+        "conversions": 280,
+        "cpa": 28.57,
+        "ctr": 1.8,
+        "status": "Fatiguing (CTR down 20%)"
+      },
+      {
+        "name": "Product Demo - App Walkthrough",
+        "format": "Video",
+        "length_seconds": 30,
+        "concept": "Product Demo",
+        "hook": "Here's how it works...",
+        "days_running": 42,
+        "spend": 5000,
+        "conversions": 145,
+        "cpa": 34.48,
+        "ctr": 1.2,
+        "status": "Underperforming"
+      },
+      {
+        "name": "Before/After - Transformation",
+        "format": "Video",
+        "length_seconds": 25,
+        "concept": "Before/After",
+        "hook": "30 days. 15 minutes a day. This happened.",
+        "days_running": 21,
+        "spend": 6000,
+        "conversions": 260,
+        "cpa": 23.08,
+        "ctr": 2.2,
+        "status": "Top performer"
+      },
+      {
+        "name": "Static - Feature Grid",
+        "format": "Image",
+        "concept": "Product Features",
+        "days_running": 60,
+        "spend": 2500,
+        "conversions": 62,
+        "cpa": 40.32,
+        "ctr": 0.9,
+        "status": "Poor performer"
+      },
+      {
+        "name": "Carousel - 5 Benefits",
+        "format": "Carousel",
+        "concept": "Benefits List",
+        "days_running": 28,
+        "spend": 2000,
+        "conversions": 58,
+        "cpa": 34.48,
+        "ctr": 1.1,
+        "status": "Average"
+      },
+      {
+        "name": "UGC Testimonial - Mike",
+        "format": "Video",
+        "length_seconds": 50,
+        "concept": "Testimonial",
+        "hook": "I was skeptical at first...",
+        "days_running": 14,
+        "spend": 1500,
+        "conversions": 48,
+        "cpa": 31.25,
+        "ctr": 1.5,
+        "status": "Testing"
+      }
+    ]
+  },
+  "concepts_tested": {
+    "tested": ["Testimonial", "Product Demo", "Before/After", "Features", "Benefits"],
+    "not_tested": ["Problem-Solution", "Social Proof (numbers)", "Urgency", "Comparison", "Lifestyle"]
+  },
+  "historical_winners": [
+    {
+      "creative": "Original Before/After video",
+      "performance": "Best CPA ever ($18)",
+      "lifespan": "6 weeks before fatigue",
+      "notes": "Hook was very strong - showed side-by-side in first 2 seconds"
+    }
+  ],
+  "constraints": {
+    "creative_production_capacity": "3-4 new creatives per week",
+    "video_production": "Can do UGC and simple edited videos",
+    "design_capacity": "Can do static and carousel",
+    "testing_budget": 8000,
+    "brand_guidelines": "Energetic, empowering, authentic"
+  },
+  "goals": {
+    "immediate": "Find new winner to replace fatiguing UGC - Sarah",
+    "medium_term": "Build repeatable testing system",
+    "long_term": "Reduce blended CPA to $22"
+  }
+}

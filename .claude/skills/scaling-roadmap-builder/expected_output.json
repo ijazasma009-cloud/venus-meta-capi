@@ -1,0 +1,204 @@
+{
+  "summary": {
+    "current_spend": 12000,
+    "target_spend": 35000,
+    "growth_multiple": "2.9x",
+    "timeline": "6 months",
+    "phases": 4,
+    "confidence": "Medium-High"
+  },
+  "readiness_assessment": {
+    "score": "4/5",
+    "requirements": {
+      "conversion_tracking": {"status": "pass", "notes": "180 conversions/month, solid signal"},
+      "baseline_efficiency": {"status": "pass", "notes": "$67 CPA vs $80 target = 17% buffer"},
+      "data_volume": {"status": "pass", "notes": "180 conv/month exceeds 30 threshold"},
+      "account_structure": {"status": "pass", "notes": "4 campaigns, logical structure"},
+      "landing_pages": {"status": "warning", "notes": "Not assessed - recommend audit"}
+    },
+    "verdict": "Ready to scale. Landing page audit recommended but not blocking."
+  },
+  "current_performance_analysis": {
+    "monthly_spend": 12000,
+    "monthly_conversions": 180,
+    "blended_cpa": 66.67,
+    "vs_target": "-17%",
+    "primary_campaign": "Non-Brand - Core (43% of conversions)",
+    "efficiency_distribution": {
+      "efficient": ["Brand ($38 CPA)", "Non-Brand Core ($71 CPA)"],
+      "borderline": ["Non-Brand Broad ($100 CPA)"],
+      "inefficient": ["Remarketing ($125 CPA)"]
+    },
+    "scaling_capacity": "High - CPA buffer and budget-limited campaigns suggest room to grow"
+  },
+  "scaling_target": {
+    "start": 12000,
+    "end": 35000,
+    "increase": 23000,
+    "growth_rate": "192%",
+    "projected_outcomes": {
+      "optimistic": {"conversions": 400, "cpa": 87.50},
+      "realistic": {"conversions": 350, "cpa": 100.00},
+      "conservative": {"conversions": 300, "cpa": 116.67}
+    },
+    "key_assumptions": [
+      "Market can absorb 3x spend at reasonable efficiency",
+      "CPA will increase 20-40% when scaling 3x",
+      "New campaign types will be needed to reach full target"
+    ]
+  },
+  "roadmap": {
+    "phase_1": {
+      "name": "Optimize & Foundation",
+      "duration": "Weeks 1-4",
+      "budget": {"start": 12000, "end": 15000, "increase": 3000, "percent": "+25%"},
+      "objective": "Maximize efficiency of existing campaigns before major scaling",
+      "actions": [
+        "Audit and fix Remarketing (currently 56% above target CPA)",
+        "Expand Non-Brand Core keywords based on search term analysis",
+        "Increase Brand budget to capture more branded demand",
+        "Launch landing page tests on highest-volume pages"
+      ],
+      "budget_allocation": {
+        "Brand": {"old": 2500, "new": 3500, "change": "+1000"},
+        "Non-Brand Core": {"old": 5500, "new": 7000, "change": "+1500"},
+        "Non-Brand Broad": {"old": 2500, "new": 2500, "change": "0"},
+        "Remarketing": {"old": 1500, "new": 2000, "change": "+500"}
+      },
+      "success_criteria": [
+        "Blended CPA stays below $75",
+        "Conversions increase to 210+",
+        "Remarketing CPA drops to <$100"
+      ],
+      "checkpoint": "End of Week 4"
+    },
+    "phase_2": {
+      "name": "Vertical Scaling",
+      "duration": "Weeks 5-10",
+      "budget": {"start": 15000, "end": 22000, "increase": 7000, "percent": "+47%"},
+      "objective": "Scale winning campaigns to their efficient ceiling",
+      "actions": [
+        "Increase Non-Brand Core budget aggressively (proven winner)",
+        "Launch Non-Brand Core variations (new ad groups, expanded keywords)",
+        "Test Target CPA bidding on Non-Brand campaigns",
+        "Scale Brand if impression share allows"
+      ],
+      "budget_allocation": {
+        "Brand": {"old": 3500, "new": 4500, "change": "+1000"},
+        "Non-Brand Core": {"old": 7000, "new": 12000, "change": "+5000"},
+        "Non-Brand Broad": {"old": 2500, "new": 3000, "change": "+500"},
+        "Remarketing": {"old": 2000, "new": 2500, "change": "+500"}
+      },
+      "success_criteria": [
+        "Blended CPA stays below $85",
+        "Conversions increase to 280+",
+        "Non-Brand Core maintains CPA <$80"
+      ],
+      "checkpoint": "End of Week 10"
+    },
+    "phase_3": {
+      "name": "Horizontal Expansion",
+      "duration": "Weeks 11-18",
+      "budget": {"start": 22000, "end": 30000, "increase": 8000, "percent": "+36%"},
+      "objective": "Launch new campaign types to diversify traffic sources",
+      "actions": [
+        "Launch Dynamic Search Ads campaign",
+        "Test Performance Max campaign",
+        "Expand to new audience segments (in-market, custom intent)",
+        "Launch competitor conquesting campaign (careful CPA management)"
+      ],
+      "new_campaigns": [
+        {"name": "DSA - Broad Capture", "budget": 3000},
+        {"name": "Performance Max", "budget": 2500},
+        {"name": "Competitor Conquest", "budget": 2000}
+      ],
+      "budget_allocation": {
+        "Brand": {"old": 4500, "new": 5000},
+        "Non-Brand Core": {"old": 12000, "new": 13000},
+        "Non-Brand Broad": {"old": 3000, "new": 2500},
+        "Remarketing": {"old": 2500, "new": 2000},
+        "DSA": {"old": 0, "new": 3000},
+        "Performance Max": {"old": 0, "new": 2500},
+        "Competitor": {"old": 0, "new": 2000}
+      },
+      "success_criteria": [
+        "Blended CPA stays below $95",
+        "Conversions increase to 330+",
+        "New campaigns achieve CPA <$110 within 4 weeks"
+      ],
+      "checkpoint": "End of Week 18"
+    },
+    "phase_4": {
+      "name": "Optimization & Target",
+      "duration": "Weeks 19-24",
+      "budget": {"start": 30000, "end": 35000, "increase": 5000, "percent": "+17%"},
+      "objective": "Fine-tune allocation, hit target spend, optimize for efficiency",
+      "actions": [
+        "Reallocate from underperformers to winners",
+        "Implement portfolio bid strategy across non-brand",
+        "Scale what's working from Phase 3",
+        "Cut what isn't working"
+      ],
+      "success_criteria": [
+        "Blended CPA at or below $100",
+        "Conversions reach 350+",
+        "No single campaign >40% of spend (diversification)"
+      ],
+      "checkpoint": "End of Week 24"
+    }
+  },
+  "projected_growth_curve": [
+    {"month": 1, "spend": 15000, "conversions": 210, "cpa": 71.43},
+    {"month": 2, "spend": 18500, "conversions": 240, "cpa": 77.08},
+    {"month": 3, "spend": 22000, "conversions": 275, "cpa": 80.00},
+    {"month": 4, "spend": 26000, "conversions": 300, "cpa": 86.67},
+    {"month": 5, "spend": 30000, "conversions": 330, "cpa": 90.91},
+    {"month": 6, "spend": 35000, "conversions": 360, "cpa": 97.22}
+  ],
+  "risks_and_mitigation": [
+    {
+      "risk": "CPA inflation beyond target",
+      "likelihood": "Medium",
+      "impact": "Profitability erosion",
+      "mitigation": "Built 17% efficiency buffer; pause scaling if CPA exceeds $100 for 2+ weeks"
+    },
+    {
+      "risk": "Market saturation",
+      "likelihood": "Low-Medium",
+      "impact": "Can't reach target spend efficiently",
+      "mitigation": "Phase 3 diversification into new campaign types; geographic expansion possible"
+    },
+    {
+      "risk": "Sales team capacity",
+      "likelihood": "Low",
+      "impact": "Wasted leads",
+      "mitigation": "Current capacity 400/month; projecting 360 at max—comfortable buffer"
+    },
+    {
+      "risk": "Competitive response",
+      "likelihood": "Medium",
+      "impact": "CPC increases",
+      "mitigation": "Monitor auction insights; maintain efficiency focus over volume"
+    }
+  ],
+  "pause_triggers": [
+    "CPA exceeds $100 for 2+ consecutive weeks",
+    "Conversion volume doesn't increase despite budget increase",
+    "Close rate drops below 10% (lead quality issue)",
+    "Sales team requests fewer leads"
+  ],
+  "strategic_recommendations": {
+    "quick_wins": [
+      "Fix Remarketing immediately—currently dragging blended CPA",
+      "Increase Brand budget—most efficient campaign is likely budget-capped"
+    ],
+    "medium_term": [
+      "Non-Brand Core is the workhorse—scale it methodically",
+      "Landing page optimization could improve efficiency across all campaigns"
+    ],
+    "long_term": [
+      "Performance Max and DSA will be key for reaching $35K efficiently",
+      "Consider YouTube/Display for upper funnel as scale increases"
+    ]
+  }
+}

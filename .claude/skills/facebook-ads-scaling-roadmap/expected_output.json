@@ -1,0 +1,160 @@
+{
+  "scaling_overview": {
+    "account_name": "FreshMeals DTC",
+    "current_daily_spend": 300,
+    "target_daily_spend": 1000,
+    "change_percentage": 233,
+    "timeline_weeks": 8,
+    "scaling_approach": "Moderate",
+    "weekly_increase_rate": "25%",
+    "current_cpa": 42,
+    "target_cpa_ceiling": 52,
+    "acceptable_cpa_increase": "20%"
+  },
+  "readiness_assessment": {
+    "requirements": [
+      {"item": "Tracking (Pixel + CAPI)", "status": "Check", "notes": "Verify CAPI is enabled"},
+      {"item": "Profitable campaigns", "status": "Pass", "notes": "2.8 ROAS is healthy"},
+      {"item": "Conversion volume", "status": "Pass", "notes": "~50 conversions/week"},
+      {"item": "Creative diversity", "status": "Warning", "notes": "12 ads is borderline for 3x scale"},
+      {"item": "Creative pipeline", "status": "Warning", "notes": "4-6/month won't sustain scale"},
+      {"item": "Budget approved", "status": "Pass", "notes": "$35k approved"}
+    ],
+    "readiness_score": "Almost Ready",
+    "pre_scaling_actions": [
+      "Verify CAPI is enabled and working",
+      "Increase creative production to 10-12 new ads per month",
+      "Build 4-week creative backlog before Week 3"
+    ]
+  },
+  "budget_progression": {
+    "weekly_plan": [
+      {"week": "Current", "daily_budget": 300, "weekly_spend": 2100, "milestone": "Baseline"},
+      {"week": 1, "daily_budget": 375, "weekly_spend": 2625, "milestone": "Foundation complete"},
+      {"week": 2, "daily_budget": 470, "weekly_spend": 3290, "milestone": "First scaling phase"},
+      {"week": 3, "daily_budget": 590, "weekly_spend": 4130, "milestone": "New audiences live"},
+      {"week": 4, "daily_budget": 735, "weekly_spend": 5145, "milestone": "Mid-point check"},
+      {"week": 5, "daily_budget": 820, "weekly_spend": 5740, "milestone": "Creative refresh"},
+      {"week": 6, "daily_budget": 900, "weekly_spend": 6300, "milestone": "Approaching target"},
+      {"week": 7, "daily_budget": 950, "weekly_spend": 6650, "milestone": "Final push"},
+      {"week": 8, "daily_budget": 1000, "weekly_spend": 7000, "milestone": "Target reached"}
+    ],
+    "budget_distribution": {
+      "prospecting": {"percent": 65, "at_target": 650},
+      "retargeting": {"percent": 25, "at_target": 250},
+      "testing": {"percent": 10, "at_target": 100}
+    }
+  },
+  "audience_expansion_plan": {
+    "sequence": [
+      {"priority": 1, "audience": "LAL Purchasers 2%", "current_status": "Not created", "action": "Create and launch", "timeline": "Week 2"},
+      {"priority": 2, "audience": "LAL Email Subscribers 1%", "current_status": "Not created", "action": "Create from 25k list", "timeline": "Week 3"},
+      {"priority": 3, "audience": "LAL Purchasers 3%", "current_status": "Not created", "action": "Create for scale", "timeline": "Week 4"},
+      {"priority": 4, "audience": "Advantage+ Shopping", "current_status": "Not tested", "action": "Test broad targeting", "timeline": "Week 5"},
+      {"priority": 5, "audience": "Interest - Health Food", "current_status": "Not tested", "action": "Test as backup", "timeline": "Week 6"}
+    ],
+    "saturation_monitoring": {
+      "frequency_target": "<3.0 per week",
+      "cpm_flag": ">25% increase",
+      "review_frequency": "Weekly"
+    }
+  },
+  "creative_requirements": {
+    "velocity_needed": {
+      "new_ads_per_month": 15,
+      "new_ads_per_week": 4
+    },
+    "calendar": [
+      {"weeks": "1-2", "new_concepts": 3, "iterations": 2, "refreshes": 1, "total": 6},
+      {"weeks": "3-4", "new_concepts": 3, "iterations": 3, "refreshes": 2, "total": 8},
+      {"weeks": "5-6", "new_concepts": 4, "iterations": 3, "refreshes": 2, "total": 9},
+      {"weeks": "7-8", "new_concepts": 3, "iterations": 3, "refreshes": 2, "total": 8}
+    ],
+    "production_checklist": [
+      "Source 2 new UGC creators",
+      "Brief 6 new concepts before Week 1",
+      "Create 3 variations of top performer (UGC Taste Test)",
+      "Prepare refresh versions of Founder Story and Ingredient Carousel"
+    ]
+  },
+  "risk_mitigation": {
+    "risks": [
+      {"risk": "CPA spike", "mitigation": "Scale gradually, monitor daily", "trigger": ">$55 CPA for 5 days"},
+      {"risk": "Creative fatigue", "mitigation": "4 new ads/week pipeline", "trigger": "CTR drops >25%"},
+      {"risk": "Audience saturation", "mitigation": "LAL expansion ready", "trigger": "Frequency >3.0"}
+    ],
+    "rollback_plan": {
+      "trigger": "CPA exceeds $55 for 5+ consecutive days",
+      "actions": [
+        "Reduce all budgets by 30%",
+        "Pause lowest performing ad sets",
+        "Diagnose root cause",
+        "Resume scaling at 15% weekly increases"
+      ]
+    }
+  },
+  "roadmap_phases": {
+    "phase_1": {
+      "name": "Foundation",
+      "days": "1-14",
+      "goal": "Prepare for scaling",
+      "tasks": [
+        "Verify CAPI is enabled and firing correctly",
+        "Create LAL Purchasers 2%",
+        "Brief 6 new creative concepts",
+        "Build 4-week creative backlog",
+        "Set up tracking dashboard for scaling metrics"
+      ],
+      "success_criteria": "Creative pipeline built, new audiences created"
+    },
+    "phase_2": {
+      "name": "Early Scaling",
+      "days": "15-28",
+      "goal": "First budget increases, $300 → $470",
+      "tasks": [
+        "Week 1: Increase budget to $375 (+25%)",
+        "Week 2: Increase budget to $470 (+25%)",
+        "Launch LAL 2% ad set",
+        "Launch first batch of new creative (6 ads)",
+        "Monitor CPA daily"
+      ],
+      "success_criteria": "CPA stable under $48, new audiences live"
+    },
+    "phase_3": {
+      "name": "Growth",
+      "days": "29-42",
+      "goal": "Reach $735/day, test new audiences",
+      "tasks": [
+        "Week 3: Increase to $590",
+        "Week 4: Increase to $735",
+        "Create and launch LAL Email Subscribers",
+        "Create LAL 3%",
+        "Launch 8 new ads",
+        "Pause any underperforming ad sets"
+      ],
+      "success_criteria": "CPA under $50, 3+ audiences performing"
+    },
+    "phase_4": {
+      "name": "Final Push & Stabilization",
+      "days": "43-56",
+      "goal": "Reach and stabilize at $1000/day",
+      "tasks": [
+        "Week 5-6: Scale to $900",
+        "Week 7-8: Reach $1000",
+        "Test Advantage+ Shopping campaign",
+        "Refresh any fatigued creative",
+        "Consolidate underperformers",
+        "Document scaling playbook"
+      ],
+      "success_criteria": "Stable at $1000/day with CPA under $52"
+    }
+  },
+  "success_metrics": {
+    "kpis": [
+      {"metric": "Daily spend vs plan", "target": "Within 10%", "review": "Daily"},
+      {"metric": "CPA vs ceiling", "target": "Under $52", "review": "Weekly"},
+      {"metric": "Creative pipeline", "target": "4+ ads ready", "review": "Weekly"},
+      {"metric": "Audience frequency", "target": "Under 3.0", "review": "Weekly"}
+    ]
+  }
+}

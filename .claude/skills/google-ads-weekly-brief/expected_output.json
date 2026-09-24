@@ -1,0 +1,92 @@
+{
+  "format": "email",
+  "subject_line": "Acme Corp Weekly Brief: Conversions Up 24%, CPA Beats Target | Week of Jan 13",
+  "body": {
+    "headline": "Strong week: conversions up 24% to 78 as new landing page and ad copy tests drove efficiency. CPA at $42 vs. $50 target. On pace for best month yet.",
+    "scorecard": {
+      "metrics": [
+        {
+          "metric": "Spend",
+          "this_week": "$3,246",
+          "last_week": "$3,102",
+          "change": "+5%",
+          "vs_target": "43% of monthly",
+          "status": "green"
+        },
+        {
+          "metric": "Conversions",
+          "this_week": "78",
+          "last_week": "63",
+          "change": "+24%",
+          "vs_target": "On pace",
+          "status": "green"
+        },
+        {
+          "metric": "CPA",
+          "this_week": "$41.61",
+          "last_week": "$49.24",
+          "change": "-15%",
+          "vs_target": "Below $50 target",
+          "status": "green"
+        },
+        {
+          "metric": "CTR",
+          "this_week": "4.2%",
+          "last_week": "3.9%",
+          "change": "+8%",
+          "vs_target": "—",
+          "status": "green"
+        }
+      ]
+    },
+    "wins": [
+      "CPA dropped 15% to $42, well below our $50 target. The new landing page (launched Tuesday) is converting at a higher rate—early data shows 18% improvement in page conversion rate.",
+      "Product Features campaign conversions up 23% after new RSA variations launched last week started winning impressions. The 'Free Demo' messaging is outperforming."
+    ],
+    "concerns": [
+      "Competitor campaign CPA remains high at $89.50. Conversions dropped further this week. Recommend pausing to reallocate budget unless conquesting is strategic priority."
+    ],
+    "campaign_highlights": {
+      "top_performer": {
+        "name": "Brand - Exact",
+        "stats": "34 conversions at $28.50 CPA (+15% WoW)",
+        "insight": "Brand searches increasing—likely driven by recent PR coverage",
+        "action": "Maintain. Consider expanding brand terms to capture variations."
+      },
+      "needs_attention": {
+        "name": "Non-Brand - Competitor",
+        "stats": "4 conversions at $89.50 CPA (-12% WoW)",
+        "insight": "Competitor conquesting historically low ROI. Users searching for competitors rarely switch.",
+        "action": "Recommend pausing and reallocating $350/week to Product Features campaign."
+      }
+    },
+    "actions": {
+      "completed": [
+        "Launched 3 new RSA variations in Product Features → Early winner identified ('Free Demo' CTA)",
+        "Added 15 negative keywords from search term review → Blocked ~$200/month in irrelevant spend"
+      ],
+      "next_week": [
+        "A/B test new landing page headline (hypothesis: specificity will improve CVR)",
+        "Expand exact match coverage in Product Features based on converting search terms",
+        "Review Competitor campaign—prepare pause recommendation if CPA doesn't improve"
+      ]
+    },
+    "pacing": {
+      "conversions": {
+        "goal": 300,
+        "achieved": 141,
+        "percent": "47%",
+        "pace": "On track",
+        "projection": "~315"
+      },
+      "budget": {
+        "goal": 15000,
+        "achieved": 6348,
+        "percent": "42%",
+        "pace": "Slightly under",
+        "projection": "~$14,200"
+      }
+    },
+    "closing": "Overall, a strong week. The new landing page is already showing impact, and we have room to scale the winning campaigns. Main decision point: whether to continue the Competitor campaign or reallocate that budget.\n\nLet me know if you have questions or want to discuss the Competitor campaign strategy."
+  }
+}

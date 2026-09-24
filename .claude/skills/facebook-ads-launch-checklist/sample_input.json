@@ -1,0 +1,35 @@
+{
+  "launch_info": {
+    "account_name": "GreenClean Products",
+    "campaign_name": "Prospecting - Q1 Launch",
+    "launch_date": "2024-01-20",
+    "verified_by": "Marketing Manager"
+  },
+  "campaign_details": {
+    "objective": "Conversions",
+    "optimization_event": "Purchase",
+    "daily_budget": 150,
+    "audiences": ["LAL Purchasers 2%", "Interest - Eco-Friendly"],
+    "placements": "Automatic",
+    "creative_types": ["Video", "Static Image", "Carousel"]
+  },
+  "tracking_status": {
+    "pixel_installed": true,
+    "pixel_id": "123456789",
+    "capi_enabled": true,
+    "events_configured": ["PageView", "ViewContent", "AddToCart", "Purchase"],
+    "test_conversion_completed": true,
+    "event_match_quality": 7.2
+  },
+  "creative_details": {
+    "number_of_ads": 5,
+    "video_count": 2,
+    "static_count": 2,
+    "carousel_count": 1,
+    "landing_page_url": "https://greenclean.com/shop"
+  },
+  "concerns": [
+    "First time running ads on this account",
+    "Not sure if CAPI deduplication is working"
+  ]
+}

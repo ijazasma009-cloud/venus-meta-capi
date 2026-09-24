@@ -1,0 +1,250 @@
+{
+  "brief_id": "UGC-FGP-024",
+  "brand": "FitGear Pro",
+  "product": "PowerBand Resistance Set",
+  "due_date": "[To be assigned]",
+  "creator": "[To be assigned]",
+  "full_brief": {
+    "section_1_overview": {
+      "objective": "Create a transformation-style UGC video that drives purchases by showing the convenience of the PowerBand Resistance Set for busy people who can't always get to the gym.",
+      "performance_benchmark": {
+        "based_on": "UGC_BeforeAfter_Mike_V2",
+        "cpa": "$19.05 (33% better than account average)",
+        "ctr": "2.4%",
+        "hook_rate": "45% (excellent)",
+        "hold_rate": "31% (excellent)",
+        "key_winning_element": "Visual transformation from frustrated gym-packer to happy portable-fitness user"
+      },
+      "creator_requirements": {
+        "demographics": "25-40, any gender, fitness-interested appearance (doesn't need to be a fitness influencer)",
+        "vibe": "Relatable, approachable, 'everyday person' energy - NOT fitness model/influencer energy",
+        "setting": "Home environment (bedroom, living room, or hotel room for travel angle)",
+        "product_interaction": "Actually use the resistance bands, show the quick-change clips, demonstrate portability"
+      }
+    },
+    "section_2_hook": {
+      "hook_type": "Transformation",
+      "duration": "First 3 seconds",
+      "opening_options": [
+        {
+          "option": "A",
+          "script": "*Looking frustrated at gym bag* 'I used to spend 30 minutes just packing for the gym...'",
+          "visual": "Creator looking annoyed, surrounded by gym equipment/bag"
+        },
+        {
+          "option": "B",
+          "script": "*Holding up stuffed gym bag* 'There's no way I'm lugging this to my hotel room again.'",
+          "visual": "Show overstuffed gym bag, exasperated expression"
+        },
+        {
+          "option": "C",
+          "script": "*In a small space, maybe hotel room* 'My gym membership is $80/month and I've gone twice.'",
+          "visual": "Creator in relatable setting, slightly self-deprecating tone"
+        }
+      ],
+      "visual_requirement": "Show the 'before' state - frustration, inconvenience, or wasted money on traditional gym approach",
+      "do_not": [
+        "Start with the product in hand (save the reveal)",
+        "Open with a generic greeting ('Hey guys!')",
+        "Start with the brand name"
+      ],
+      "why_this_hook": "Transformation hooks achieved 45% hook rate - highest among all tested hook types. The frustrated-to-happy arc creates emotional engagement that carries through the video."
+    },
+    "section_3_body": {
+      "structure": "Problem-Solution-Proof",
+      "duration": "12-20 seconds (middle section)",
+      "key_messages": [
+        "The PowerBand set replaces an entire gym's worth of equipment",
+        "It's so portable it fits in any bag - laptop bag, carry-on, purse",
+        "The quick-change clips make switching resistance levels instant (this is the USP)"
+      ],
+      "talking_points": [
+        "Show the before frustration transition to 'Then I found these...'",
+        "'Five resistance levels in one set - I can do literally every exercise'",
+        "'Look how small this packs down' *demonstrate fitting in bag*",
+        "'These clips though - I can switch resistance in like 2 seconds' *demonstrate quick-change clips*",
+        "'I've done more workouts in my living room this month than I did at the gym all year'"
+      ],
+      "product_showcase_moments": [
+        {
+          "timestamp": "5-8 seconds",
+          "what_to_show": "Reveal the product - first view should emphasize how compact/portable"
+        },
+        {
+          "timestamp": "10-15 seconds",
+          "what_to_show": "Demonstrate the quick-change clips (USP moment)"
+        },
+        {
+          "timestamp": "15-18 seconds",
+          "what_to_show": "Quick montage of 2-3 exercises OR fit-in-bag moment"
+        }
+      ],
+      "tone_guidance": "Start with relatable frustration, transition to genuine excitement/relief when showing product. NOT infomercial energy. Think 'telling your friend about something you actually love.'",
+      "authenticity_notes": "The transition from frustrated to happy should feel earned. Don't oversell - understatement is more credible. The 'this actually changed my routine' angle is more believable than 'THIS CHANGED MY LIFE.'"
+    },
+    "section_4_cta": {
+      "cta_type": "Value",
+      "duration": "Final 3-5 seconds",
+      "verbal_cta": {
+        "primary": "'They're doing 20% off right now with code FIT20 - link's in my bio'",
+        "alternative": "'Link below - use code FIT20 for 20% off and free shipping'"
+      },
+      "visual_cta": "Product in hand or in use, happy expression, can point down/gesture to link",
+      "energy": "Genuine recommendation energy, not urgent/salesy",
+      "offer_to_mention": "20% off with code FIT20 + free shipping",
+      "do_not": [
+        "Sound like you're reading a script",
+        "Create false urgency ('ONLY 5 LEFT!')",
+        "Forget the code - FIT20 must be mentioned verbally"
+      ]
+    },
+    "section_5_technical": {
+      "platforms": ["Meta (Feed + Reels)", "TikTok"],
+      "aspect_ratio": "9:16 (vertical) - PRIMARY",
+      "duration": "25-35 seconds optimal",
+      "filming": {
+        "orientation": "Vertical ONLY",
+        "lighting": "Natural light preferred, ring light acceptable",
+        "background": "Home environment - bedroom, living room, or hotel room (avoid gym settings)",
+        "audio": "Built-in phone mic OK if quiet environment, external mic preferred"
+      },
+      "delivery": {
+        "format": "MP4 or MOV",
+        "resolution": "Minimum 1080p, 4K preferred",
+        "no_watermarks": true,
+        "raw_footage_required": true
+      },
+      "versions_needed": [
+        {
+          "version": "Full version",
+          "duration": "25-35 seconds",
+          "required": true
+        },
+        {
+          "version": "Cut-down version",
+          "duration": "15-20 seconds",
+          "required": true
+        },
+        {
+          "version": "Hook variations",
+          "count": 3,
+          "required": true,
+          "note": "Same body/CTA, different hook openings (Options A, B, C)"
+        }
+      ]
+    },
+    "section_6_dos_and_donts": {
+      "dos": [
+        "Show genuine frustration → relief emotional arc",
+        "Actually demonstrate the quick-change clips (key differentiator)",
+        "Film in a relatable home setting",
+        "Speak naturally - improvise within the key messages",
+        "Show the product fitting into a everyday bag (laptop bag, purse, carry-on)",
+        "Include #ad disclosure (beginning or end of video)"
+      ],
+      "donts": [
+        "Make weight loss claims or promises",
+        "Say 'guaranteed results' or similar",
+        "Compare to specific gym brands by name",
+        "Film in a gym (defeats the message)",
+        "Use copyrighted music",
+        "Sound scripted or robotic",
+        "Forget to mention code FIT20"
+      ],
+      "compliance": {
+        "required_disclosures": "#ad or #sponsored must be visible",
+        "claim_restrictions": "No weight loss claims, no 'guaranteed' language, no specific competitor mentions"
+      }
+    },
+    "section_7_references": {
+      "top_performer_to_emulate": {
+        "reference": "UGC_BeforeAfter_Mike_V2 (will be provided as video file)",
+        "why_it_works": {
+          "hook": "Opens with relatable frustration (packing gym bag), immediately creates 'same!' moment with viewer",
+          "body": "Shows the transformation naturally - not forced. Product feels like a genuine discovery.",
+          "cta": "Casual recommendation, not hard sell. Code mentioned clearly but not screamed."
+        },
+        "elements_to_borrow": [
+          "The frustrated → relieved emotional journey",
+          "Showing the product fitting in a normal bag (not a fitness bag)",
+          "The 'wait, this actually works?' genuine reaction",
+          "Mentioning specific use case (travel, home, hotel)"
+        ]
+      },
+      "what_to_avoid": {
+        "anti_reference": "Generic fitness influencer content",
+        "issues": [
+          "Too polished/professional looking",
+          "Obvious gym setting defeats convenience message",
+          "Over-the-top enthusiasm feels fake",
+          "Not showing the actual USP (quick-change clips)"
+        ]
+      }
+    }
+  },
+  "quick_reference_card": {
+    "brief_id": "UGC-FGP-024",
+    "product": "PowerBand Resistance Set",
+    "hook_options": [
+      "A: *Frustrated at gym bag* 'I used to spend 30 minutes just packing for the gym...'",
+      "B: *Holding stuffed bag* 'There's no way I'm lugging this to my hotel room again.'",
+      "C: *Small space* 'My gym membership is $80/month and I've gone twice.'"
+    ],
+    "key_messages": [
+      "Replaces entire gym",
+      "Fits in any bag",
+      "Quick-change clips = instant resistance switch"
+    ],
+    "cta": "'20% off with code FIT20 - link in bio'",
+    "duration": "25-35 seconds",
+    "format": "9:16 vertical",
+    "must_include": "#ad disclosure, code FIT20, quick-change clip demo",
+    "must_avoid": "Weight loss claims, gym settings, competitor names"
+  },
+  "feedback_rubric": {
+    "hook_checklist": [
+      {"item": "Opens with relatable frustration/problem", "weight": "Critical"},
+      {"item": "First 3 seconds don't show product", "weight": "Important"},
+      {"item": "No generic greeting opening", "weight": "Important"},
+      {"item": "Creates emotional hook (frustration/curiosity)", "weight": "Critical"}
+    ],
+    "body_checklist": [
+      {"item": "All 3 key messages included", "weight": "Critical"},
+      {"item": "Quick-change clips demonstrated", "weight": "Critical"},
+      {"item": "Product shown fitting in everyday bag", "weight": "Important"},
+      {"item": "Tone is relatable, not infomercial", "weight": "Important"},
+      {"item": "Transformation arc is clear", "weight": "Important"}
+    ],
+    "cta_checklist": [
+      {"item": "Code FIT20 mentioned verbally", "weight": "Critical"},
+      {"item": "Not overly salesy/urgent", "weight": "Important"},
+      {"item": "Clear direction to link", "weight": "Important"}
+    ],
+    "technical_checklist": [
+      {"item": "9:16 vertical format", "weight": "Critical"},
+      {"item": "25-35 seconds duration", "weight": "Important"},
+      {"item": "Minimum 1080p resolution", "weight": "Important"},
+      {"item": "Good audio quality", "weight": "Important"},
+      {"item": "#ad disclosure visible", "weight": "Critical"},
+      {"item": "3 hook variations provided", "weight": "Required"}
+    ]
+  },
+  "success_prediction": {
+    "expected_performance": {
+      "target_cpa": "$19-$24",
+      "rationale": "Replicating proven winner with same hook type, structure, and tone. New creator may not match exactly but should be within 20% of original."
+    },
+    "key_success_factors": [
+      "Hook nails the frustrated → relieved transition",
+      "Quick-change clips get clear demo (USP visibility)",
+      "Creator is relatable, not fitness-influencer polished",
+      "Home/travel setting reinforces convenience message"
+    ],
+    "potential_failure_points": [
+      "Creator too polished/influencer-like (loses relatability)",
+      "Skips quick-change clip demo (misses USP)",
+      "Too short - doesn't give enough time for transformation arc",
+      "Forgets code in CTA"
+    ]
+  }
+}

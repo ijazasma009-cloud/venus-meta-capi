@@ -1,0 +1,96 @@
+{
+  "strategy_summary": {
+    "business_name": "FitGear Pro",
+    "objective": "Sales (Purchase)",
+    "monthly_budget": 8000,
+    "daily_budget": 267,
+    "strategy_approach": "Full-funnel with emphasis on LAL expansion and retargeting segmentation"
+  },
+  "audience_inventory": {
+    "website_visitors": {"available": true, "size": 25000, "quality_rating": 3},
+    "purchasers": {"available": true, "size": 3500, "quality_rating": 5},
+    "email_list": {"available": true, "size": 12000, "quality_rating": 4},
+    "video_viewers": {"available": true, "size": "unknown", "quality_rating": 3},
+    "social_engagers": {"available": true, "size": 23000, "quality_rating": 2},
+    "best_lal_source": "Purchasers (3,500)"
+  },
+  "audience_architecture": {
+    "hot_audiences": {
+      "budget_percentage": 15,
+      "daily_budget": 40,
+      "audiences": [
+        {"name": "Cart Abandoners 14d", "type": "Website Custom", "size": "~1,500", "window": "14 days", "priority": "P1"},
+        {"name": "Product Viewers 7d No Purchase", "type": "Website Custom", "size": "~3,000", "window": "7 days", "priority": "P2"}
+      ],
+      "exclusions": ["Purchasers 30d"]
+    },
+    "warm_audiences": {
+      "budget_percentage": 20,
+      "daily_budget": 53,
+      "audiences": [
+        {"name": "Website Visitors 30d", "type": "Website Custom", "size": "~15,000", "window": "30 days", "priority": "P1"},
+        {"name": "Video Viewers 50%+", "type": "Engagement Custom", "size": "~5,000", "window": "180 days", "priority": "P2"},
+        {"name": "IG Engagers 90d", "type": "Engagement Custom", "size": "~8,000", "window": "90 days", "priority": "P3"}
+      ],
+      "exclusions": ["Cart Abandoners 14d", "Purchasers 30d"]
+    },
+    "cold_audiences": {
+      "budget_percentage": 65,
+      "daily_budget": 174,
+      "audiences": [
+        {"name": "LAL High-Value Purchasers 1%", "type": "Lookalike", "size": "2.1M", "priority": "P1"},
+        {"name": "LAL All Purchasers 2%", "type": "Lookalike", "size": "4.2M", "priority": "P2"},
+        {"name": "Advantage+ Audience", "type": "Broad", "size": "Variable", "priority": "P3"}
+      ],
+      "exclusions": ["Website Visitors 30d", "Purchasers 180d"]
+    }
+  },
+  "custom_audiences_to_create": {
+    "website_custom": [
+      {"name": "All Visitors 180d", "rules": "All website traffic", "window": "180 days", "purpose": "LAL source"},
+      {"name": "Product Viewers 30d", "rules": "Viewed any product page", "window": "30 days", "purpose": "Retargeting"},
+      {"name": "Cart Abandoners 14d", "rules": "AddToCart but no Purchase", "window": "14 days", "purpose": "Hot retargeting"},
+      {"name": "Purchasers 180d", "rules": "Purchase event", "window": "180 days", "purpose": "LAL source, exclusion"},
+      {"name": "Purchasers 30d", "rules": "Purchase event", "window": "30 days", "purpose": "Exclusion only"}
+    ],
+    "engagement_custom": [
+      {"name": "Video Viewers 50%", "rules": "50%+ video watched", "window": "365 days", "purpose": "Warm audience"},
+      {"name": "Video Viewers 95%", "rules": "95%+ video watched", "window": "365 days", "purpose": "LAL source"},
+      {"name": "IG Profile Engagers", "rules": "Any IG engagement", "window": "180 days", "purpose": "Warm audience"}
+    ],
+    "customer_list": [
+      {"name": "All Customers", "source": "Full customer export", "segment": "All", "refresh": "Monthly"},
+      {"name": "High-Value Customers", "source": "Top 25% by LTV", "segment": "LTV > $300", "refresh": "Monthly"},
+      {"name": "Email Subscribers Non-Customers", "source": "Email list", "segment": "No purchase", "refresh": "Monthly"}
+    ]
+  },
+  "lookalike_strategy": [
+    {"name": "LAL High-Value Purchasers 1%", "source": "High-Value Customers", "percentage": "1%", "country": "US", "estimated_size": "2.1M", "test_priority": 1},
+    {"name": "LAL All Purchasers 2%", "source": "Purchasers 180d", "percentage": "2%", "country": "US", "estimated_size": "4.2M", "test_priority": 2},
+    {"name": "LAL Video Viewers 95%", "source": "Video Viewers 95%", "percentage": "2%", "country": "US", "estimated_size": "4.2M", "test_priority": 3},
+    {"name": "LAL Add to Cart", "source": "Cart Abandoners", "percentage": "3%", "country": "US", "estimated_size": "6.3M", "test_priority": 4}
+  ],
+  "overlap_prevention": [
+    {"when_using": "Any Prospecting Audience", "exclude": "Website Visitors 30d, Purchasers 180d"},
+    {"when_using": "Warm Retargeting", "exclude": "Cart Abandoners 14d, Purchasers 30d"},
+    {"when_using": "LAL Purchasers 2%", "exclude": "LAL Purchasers 1% (if running both)"}
+  ],
+  "implementation_checklist": {
+    "week_1": [
+      "Create all website custom audiences",
+      "Upload customer lists (All + High-Value)",
+      "Create engagement audiences"
+    ],
+    "week_2": [
+      "Create LAL from High-Value Customers 1%",
+      "Create LAL from All Purchasers 2%",
+      "Set up exclusions in ad sets",
+      "Launch prospecting test with top 2 LALs"
+    ],
+    "ongoing": [
+      "Refresh customer lists monthly",
+      "Check audience overlap quarterly in Ads Manager",
+      "Test new LAL percentages as budget scales"
+    ]
+  }
+}

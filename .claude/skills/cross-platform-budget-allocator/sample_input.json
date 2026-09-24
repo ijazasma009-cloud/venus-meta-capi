@@ -1,0 +1,112 @@
+{
+  "business_context": {
+    "company": "B2B SaaS - HR Software",
+    "conversion_type": "Demo Requests",
+    "target_cpa": 150,
+    "average_deal_value": 12000,
+    "sales_capacity": "Can handle up to 200 demos/month"
+  },
+  "budget_parameters": {
+    "total_monthly_budget": 60000,
+    "budget_flexibility": "Fixed total, flexible allocation",
+    "planning_period": "Q1 2025",
+    "testing_budget_preference": "10-15% for experiments"
+  },
+  "current_allocation": {
+    "google_ads": {
+      "monthly_spend": 30000,
+      "conversions": 180,
+      "cpa": 166.67,
+      "roas": null,
+      "impression_share": 68,
+      "trend": "stable",
+      "campaign_types": ["Search - Brand", "Search - Non-Brand", "Performance Max"],
+      "notes": "Non-brand struggling, brand efficient, PMax inconsistent"
+    },
+    "meta_ads": {
+      "monthly_spend": 20000,
+      "conversions": 95,
+      "cpa": 210.53,
+      "roas": null,
+      "frequency": 2.8,
+      "trend": "declining",
+      "campaign_types": ["Prospecting - Lookalikes", "Retargeting"],
+      "notes": "Was better 3 months ago, creative fatigue suspected"
+    },
+    "linkedin_ads": {
+      "monthly_spend": 10000,
+      "conversions": 55,
+      "cpa": 181.82,
+      "roas": null,
+      "frequency": 3.5,
+      "trend": "stable",
+      "campaign_types": ["Sponsored Content", "Lead Gen Forms"],
+      "notes": "Smaller volume but decent quality leads, audience getting saturated"
+    }
+  },
+  "platform_details": {
+    "google_ads": {
+      "brand_spend": 8000,
+      "brand_conversions": 75,
+      "brand_cpa": 106.67,
+      "nonbrand_spend": 15000,
+      "nonbrand_conversions": 72,
+      "nonbrand_cpa": 208.33,
+      "pmax_spend": 7000,
+      "pmax_conversions": 33,
+      "pmax_cpa": 212.12,
+      "search_impression_share": 68,
+      "budget_limited_campaigns": 2
+    },
+    "meta_ads": {
+      "prospecting_spend": 14000,
+      "prospecting_conversions": 55,
+      "prospecting_cpa": 254.55,
+      "retargeting_spend": 6000,
+      "retargeting_conversions": 40,
+      "retargeting_cpa": 150.00,
+      "top_audience": "LAL - Customers 1%",
+      "audience_size": "1.2M"
+    },
+    "linkedin_ads": {
+      "sponsored_content_spend": 7000,
+      "sponsored_content_conversions": 35,
+      "sponsored_content_cpa": 200.00,
+      "lead_gen_spend": 3000,
+      "lead_gen_conversions": 20,
+      "lead_gen_cpa": 150.00,
+      "target_audience_size": 450000,
+      "audience_match_rate": "85%"
+    }
+  },
+  "historical_context": {
+    "last_quarter_performance": {
+      "google_ads": {"spend": 28000, "conversions": 175, "cpa": 160.00},
+      "meta_ads": {"spend": 18000, "conversions": 108, "cpa": 166.67},
+      "linkedin_ads": {"spend": 9000, "conversions": 50, "cpa": 180.00}
+    },
+    "notes": "Meta has degraded significantly (CPA up 26%), Google and LinkedIn relatively stable"
+  },
+  "constraints": {
+    "google_minimum": 25000,
+    "google_maximum": null,
+    "meta_minimum": 10000,
+    "meta_maximum": null,
+    "linkedin_minimum": 5000,
+    "linkedin_maximum": 15000,
+    "brand_carveout": 8000,
+    "new_platform_interest": ["Microsoft Ads", "TikTok (skeptical for B2B)"]
+  },
+  "goals": {
+    "primary": "Reduce blended CPA while maintaining volume",
+    "target_conversions": "330+ demos/month",
+    "target_cpa": 150,
+    "secondary": "Test Microsoft Ads as potential Google supplement"
+  },
+  "attribution": {
+    "google": "Data-driven attribution",
+    "meta": "7-day click, 1-day view",
+    "linkedin": "30-day click",
+    "notes": "Attribution windows differ - LinkedIn may overclaim relative to others"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "account_name": "FitGear Pro",
+  "platform": "Meta",
+  "analysis_date": "2024-02-14",
+  "monthly_spend": 28500,
+  "campaigns": [
+    {
+      "campaign_id": "C001",
+      "campaign_name": "Prospecting - Interest",
+      "objective": "Conversions",
+      "monthly_spend": 12000,
+      "ad_sets": [
+        {
+          "ad_set_id": "AS001",
+          "ad_set_name": "Fitness Enthusiasts",
+          "targeting": {
+            "interests": ["Fitness", "Gym", "Weight training", "CrossFit"],
+            "age": "25-45",
+            "gender": "All",
+            "locations": "United States"
+          },
+          "audience_size": 45000000,
+          "frequency": 2.1,
+          "spend": 5000,
+          "conversions": 180,
+          "cpa": 27.78
+        },
+        {
+          "ad_set_id": "AS002",
+          "ad_set_name": "Yoga & Wellness",
+          "targeting": {
+            "interests": ["Yoga", "Pilates", "Wellness", "Home workout"],
+            "age": "25-45",
+            "gender": "All",
+            "locations": "United States"
+          },
+          "audience_size": 38000000,
+          "frequency": 2.3,
+          "spend": 4000,
+          "conversions": 135,
+          "cpa": 29.63
+        },
+        {
+          "ad_set_id": "AS003",
+          "ad_set_name": "Running & Cardio",
+          "targeting": {
+            "interests": ["Running", "Marathon", "Cardio", "Fitness"],
+            "age": "25-45",
+            "gender": "All",
+            "locations": "United States"
+          },
+          "audience_size": 32000000,
+          "frequency": 2.5,
+          "spend": 3000,
+          "conversions": 95,
+          "cpa": 31.58
+        }
+      ]
+    },
+    {
+      "campaign_id": "C002",
+      "campaign_name": "Prospecting - Lookalike",
+      "objective": "Conversions",
+      "monthly_spend": 8500,
+      "ad_sets": [
+        {
+          "ad_set_id": "AS004",
+          "ad_set_name": "LAL 1% Purchasers",
+          "targeting": {
+            "lookalike": "1% from Purchasers",
+            "age": "25-55",
+            "gender": "All",
+            "locations": "United States"
+          },
+          "audience_size": 2100000,
+          "frequency": 2.8,
+          "spend": 4500,
+          "conversions": 210,
+          "cpa": 21.43
+        },
+        {
+          "ad_set_id": "AS005",
+          "ad_set_name": "LAL 1% High-Value",
+          "targeting": {
+            "lookalike": "1% from High-Value Purchasers (AOV>$100)",
+            "age": "25-55",
+            "gender": "All",
+            "locations": "United States"
+          },
+          "audience_size": 2100000,
+          "frequency": 3.1,
+          "spend": 2500,
+          "conversions": 105,
+          "cpa": 23.81
+        },
+        {
+          "ad_set_id": "AS006",
+          "ad_set_name": "LAL 1% Email List",
+          "targeting": {
+            "lookalike": "1% from Email Subscribers",
+            "age": "25-55",
+            "gender": "All",
+            "locations": "United States"
+          },
+          "audience_size": 2100000,
+          "frequency": 2.6,
+          "spend": 1500,
+          "conversions": 55,
+          "cpa": 27.27
+        }
+      ]
+    },
+    {
+      "campaign_id": "C003",
+      "campaign_name": "Retargeting",
+      "objective": "Conversions",
+      "monthly_spend": 5000,
+      "ad_sets": [
+        {
+          "ad_set_id": "AS007",
+          "ad_set_name": "Website Visitors 30d",
+          "targeting": {
+            "custom_audience": "Website visitors last 30 days",
+            "exclusions": ["Purchasers last 30 days"]
+          },
+          "audience_size": 85000,
+          "frequency": 4.2,
+          "spend": 3000,
+          "conversions": 165,
+          "cpa": 18.18
+        },
+        {
+          "ad_set_id": "AS008",
+          "ad_set_name": "Cart Abandoners",
+          "targeting": {
+            "custom_audience": "Added to cart last 14 days",
+            "exclusions": ["Purchasers last 14 days"]
+          },
+          "audience_size": 12000,
+          "frequency": 5.8,
+          "spend": 2000,
+          "conversions": 125,
+          "cpa": 16.00
+        }
+      ]
+    },
+    {
+      "campaign_id": "C004",
+      "campaign_name": "Brand Awareness",
+      "objective": "Reach",
+      "monthly_spend": 3000,
+      "ad_sets": [
+        {
+          "ad_set_id": "AS009",
+          "ad_set_name": "Broad Fitness",
+          "targeting": {
+            "interests": ["Fitness", "Health", "Exercise"],
+            "age": "18-55",
+            "gender": "All",
+            "locations": "United States"
+          },
+          "audience_size": 85000000,
+          "frequency": 1.8,
+          "spend": 3000,
+          "reach": 420000
+        }
+      ]
+    }
+  ],
+  "account_level_frequency": 3.4,
+  "known_exclusions": {
+    "prospecting_campaigns": "No retargeting exclusions currently applied"
+  },
+  "overlap_tool_data": {
+    "AS001_AS002": "35%",
+    "AS001_AS003": "42%",
+    "AS002_AS003": "28%",
+    "AS004_AS005": "68%",
+    "AS004_AS006": "45%",
+    "AS005_AS006": "52%"
+  }
+}
