@@ -1,0 +1,27 @@
+# NEVER commit client data. The lead sheet holds patient names, phone numbers
+# and email addresses. Nothing derived from it belongs in this repository.
+*.pkl
+*.xlsx
+*.xls
+/data/
+/exports/
+*-real.csv
+*-live.csv
+venus-lead-flow*
+
+# Credentials. The Meta token lives in Apps Script Script Properties only.
+.env
+.env.*
+*.key
+*.pem
+client_secret*.json
+service-account*.json
+credentials.json
+.clasprc.json
+
+# Build and editor noise
+node_modules/
+test/.*_t.cjs
+.DS_Store
+Thumbs.db
+*.log

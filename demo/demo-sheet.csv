@@ -1,0 +1,13 @@
+ Date,Full Name,Booked Status,Pabau Status,CONSULATION STATUS UPDATED AT,Meta Lead ID,Lead Phone,Lead Email,Pabau Client Mobile,Pabau Client Email,Meta Stage Sent
+2026-09-23 19:22:44,Ayesha Khan,No Contact,,,9001000000000001,+92300-1111111,ayesha.khan@example.com,,,
+2026-09-23 19:22:44,Bilal Ahmed,Call Later,,,9001000000000002,+92301-2222222,bilal.ahmed@example.com,,,
+2026-09-22 19:22:44,Sana Malik,Booked,,,9001000000000003,+92302-3333333,sana.malik@example.com,,,
+2026-09-21 19:22:44,Usman Tariq,Booked,Waiting,,9001000000000004,+92303-4444444,usman.tariq@example.com,,,
+2026-09-21 19:22:44,Hina Raza,Booked,Complete,2026-09-23 19:22:44,9001000000000005,+92304-5555555,hina.raza@example.com,+92304-5555555,hina.raza@example.com,
+2026-09-20 19:22:44,Omar Sheikh,Booked,Arrived,2026-09-22 19:22:44,9001000000000006,+92305-6666666,omar.sheikh@example.com,+92305-6666666,omar.sheikh@example.com,
+2026-09-20 19:22:44,Zara Iqbal,Booked,No Show,2026-09-22 19:22:44,9001000000000007,+92306-7777777,zara.iqbal@example.com,+92306-7777777,zara.iqbal@example.com,
+2026-09-19 19:22:44,Kamran Butt,Not Interested,,,9001000000000008,+92307-8888888,kamran.butt@example.com,,,
+2026-09-22 19:22:44,Nadia Aslam,Booked,,,,,,,,
+2026-09-21 19:22:44,Faisal Qureshi,Booked,Complete,2026-09-23 19:22:44,9001000000000010,+92309-9999999,faisal.q@example.com,,,ShowedUp
+2026-09-21 19:22:44,Rabia Noor,Booked,Complete,2026-09-23 19:22:44,9001000000000011,+92310-1010101,rabia.noor@example.com,,,ScheduledAppointment
+2026-09-04 19:22:44,Old Record,Booked,Complete,2026-09-04 19:22:44,9001000000000012,+92311-1111000,old.record@example.com,,,

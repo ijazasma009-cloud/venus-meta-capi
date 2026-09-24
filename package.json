@@ -1,0 +1,11 @@
+{
+  "name": "venus-meta-capi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sends patient-arrival outcomes from the Venus lead sheet to Meta via the Conversions API",
+  "scripts": {
+    "test": "node test/units.cjs && node test/harness.cjs",
+    "demo": "node tools/make-demo-sheet.cjs"
+  },
+  "engines": { "node": ">=18" }
+}
