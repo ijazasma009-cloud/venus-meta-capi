@@ -28,3 +28,4 @@ Thumbs.db
 
 # The three calendar workbooks are deliverables, not client data.
 !context/content-calendar/*.xlsx
+!context/creative-assets/**/*.xlsx

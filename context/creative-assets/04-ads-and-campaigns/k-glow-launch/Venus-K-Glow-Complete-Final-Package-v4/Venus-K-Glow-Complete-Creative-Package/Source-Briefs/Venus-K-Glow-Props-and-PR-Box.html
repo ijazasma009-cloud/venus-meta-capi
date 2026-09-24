@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Venus K-Glow · Props &amp; PR Box Spec</title>
+</head>
+<body>
+<style>
+  :root{
+    --bg:#F5F4F2; --bg2:#EBEAE7; --card:#FFFFFF; --card2:#F7F6F4; --ink:#111013;
+    --ink-soft:#55535C; --ink-faint:#8C8A93;
+    --hot:#D81B54; --cyan:#0C7F86;
+    --line:rgba(0,0,0,.11); --line2:rgba(0,0,0,.2);
+    --maxw:980px;
+    --grot:"Helvetica Neue",Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    --kr:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+    --mono:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0C0B0E; --bg2:#141317; --card:#18171C; --card2:#1E1D23; --ink:#F2F1F5;
+      --ink-soft:#A5A3AD; --ink-faint:#706E79;
+      --hot:#FF4E80; --cyan:#4CD3DA;
+      --line:rgba(255,255,255,.11); --line2:rgba(255,255,255,.2);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0C0B0E; --bg2:#141317; --card:#18171C; --card2:#1E1D23; --ink:#F2F1F5;
+    --ink-soft:#A5A3AD; --ink-faint:#706E79;
+    --hot:#FF4E80; --cyan:#4CD3DA;
+    --line:rgba(255,255,255,.11); --line2:rgba(255,255,255,.2);
+  }
+  :root[data-theme="light"]{
+    --bg:#F5F4F2; --bg2:#EBEAE7; --card:#FFFFFF; --card2:#F7F6F4; --ink:#111013;
+    --ink-soft:#55535C; --ink-faint:#8C8A93;
+    --hot:#D81B54; --cyan:#0C7F86;
+    --line:rgba(0,0,0,.11); --line2:rgba(0,0,0,.2);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--grot); font-size:16px; line-height:1.5}
+  .kr{font-family:var(--kr)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+
+  header.hero{padding:46px 0 24px; border-bottom:2px solid var(--ink)}
+  header.hero .kr{font-size:clamp(18px,3vw,26px); color:var(--cyan); font-weight:800; margin-bottom:4px}
+  header.hero h1{font-size:clamp(26px,5vw,42px); font-weight:800; letter-spacing:-.035em; margin:0; line-height:1.04}
+  header.hero p{margin:12px 0 0; color:var(--ink-soft); max-width:62ch}
+  .toc{display:flex; flex-wrap:wrap; gap:6px; margin-top:20px}
+  .toc a{font-family:var(--mono); font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+    color:var(--ink-soft); text-decoration:none; border:1px solid var(--line);
+    border-radius:6px; padding:7px 11px; background:var(--card)}
+  .toc a:hover{color:var(--hot); border-color:var(--hot)}
+  .toc a:focus-visible{outline:2px solid var(--hot); outline-offset:2px}
+
+  section{padding:28px 0; border-bottom:1px solid var(--line); scroll-margin-top:14px}
+  .shead{margin:0 0 16px}
+  .shead .n{font-family:var(--mono); font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--hot); font-weight:700}
+  .shead h2{font-size:clamp(20px,3.4vw,28px); font-weight:800; letter-spacing:-.03em; margin:8px 0 0; line-height:1.08}
+  .shead .krl{font-family:var(--kr); font-size:17px; color:var(--cyan); margin-top:4px; font-weight:700}
+
+  .it{background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin-bottom:9px}
+  .it > header{display:flex; flex-wrap:wrap; gap:9px; align-items:center; padding:10px 14px;
+    border-bottom:1px solid var(--line); background:var(--card2)}
+  .it > header .code{font-family:var(--mono); font-size:10.5px; font-weight:700; color:#fff; background:var(--hot);
+    border-radius:5px; padding:3px 7px; letter-spacing:.04em}
+  .it > header h3{font-size:15.5px; font-weight:800; letter-spacing:-.02em; margin:0; flex:1 1 auto; min-width:120px}
+  .it > header .krn{font-family:var(--kr); font-size:13.5px; color:var(--cyan); font-weight:700}
+  .it > header .qty{font-family:var(--mono); font-size:10px; letter-spacing:.09em; text-transform:uppercase;
+    color:var(--ink); border:1px solid var(--line2); border-radius:100px; padding:3px 9px; font-weight:700}
+  .it .bd{padding:12px 14px}
+  .it.hero{border:2px solid var(--hot)}
+  .it.hero > header{background:color-mix(in srgb,var(--hot) 12%,var(--card2))}
+
+  .row{display:grid; grid-template-columns:88px 1fr; gap:12px; padding:7px 0; border-top:1px solid var(--line)}
+  .row:first-child{border-top:none; padding-top:0}
+  .row .lb{font-family:var(--mono); font-size:9px; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--hot); font-weight:700; padding-top:2px}
+  .row .vl{font-size:13.4px; color:var(--ink-soft); line-height:1.48; min-width:0}
+  .row .vl b{color:var(--ink); font-weight:700}
+  .row .vl code{font-family:var(--mono); font-size:12px; color:var(--cyan); background:var(--card2);
+    padding:1px 5px; border-radius:4px}
+  .row.krtext .vl{font-family:var(--kr); font-size:15.5px; color:var(--ink); font-weight:700}
+  .row.krtext .vl small{font-family:var(--grot); font-size:12.2px; color:var(--ink-faint); font-weight:400; display:block; margin-top:2px}
+
+  .tblwrap{overflow-x:auto; border:1px solid var(--line); border-radius:10px; background:var(--card)}
+  table{border-collapse:collapse; width:100%; min-width:460px}
+  th,td{text-align:left; padding:9px 13px; border-bottom:1px solid var(--line); font-size:13.2px}
+  th{font-family:var(--mono); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); font-weight:700; white-space:nowrap}
+  td{color:var(--ink-soft)}
+  td b{color:var(--ink); font-weight:700}
+  td.c{font-family:var(--mono); color:var(--hot); font-weight:700; white-space:nowrap; font-size:11.5px}
+  td.q{font-family:var(--mono); text-align:right; white-space:nowrap; color:var(--ink); font-weight:700}
+  tbody tr:last-child td{border-bottom:none}
+
+  .warn{border:1px solid var(--hot); background:color-mix(in srgb,var(--hot) 9%,transparent);
+    border-radius:10px; padding:13px 16px; font-size:13.6px; color:var(--ink-soft); margin-top:12px}
+  .warn b{color:var(--hot)}
+
+  footer{padding:26px 0 48px; text-align:center}
+  footer .kr{font-size:21px; font-weight:800; color:var(--ink-faint)}
+  footer .m{font-family:var(--mono); font-size:10px; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-faint); margin-top:7px}
+
+  @media (max-width:640px){ .row{grid-template-columns:1fr; gap:3px} body{font-size:15.5px} }
+  @media print{ body{background:#fff; color:#000; font-size:10pt} .toc,footer{display:none} .it{break-inside:avoid} }
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kr">소품 리스트</div>
+    <h1>Props and PR box spec.</h1>
+    <p>Seventeen items. Material, size, the Korean text that goes on it, and quantity.</p>
+    <div class="toc">
+      <a href="#box">PR box</a><a href="#inside">Contents</a><a href="#creator">Creator</a><a href="#clinic">Clinic</a><a href="#party">Party</a><a href="#set">Set</a><a href="#qty">Quantities</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="box">
+    <div class="shead"><span class="n">Part 1</span><h2>The PR box.</h2><div class="krl kr">박스</div></div>
+
+    <div class="it hero"><header><span class="code">P-01</span><h3>The box</h3><span class="krn kr">박스</span><span class="qty">15</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Size</span><span class="vl"><code>250 × 250 × 80mm</code> internal. Rigid two-piece, magnetic flap lid.</span></div>
+        <div class="row"><span class="lb">Build</span><span class="vl">1200gsm greyboard, wrapped in 157gsm art paper. <b>Matte lamination plus soft-touch coating.</b></span></div>
+        <div class="row"><span class="lb">Print</span><span class="vl">Wrapped edge to edge in dense small Korean type, chrome foil on black. One holographic K, roughly 90mm, on the lid. <b>No English and no logo on the outside.</b></span></div>
+        <div class="row"><span class="lb">Insert</span><span class="vl">Black die-cut EVA foam tray. Cavities for the K prop, the cards and the photocards. Shirt sits underneath in its own compartment.</span></div>
+      </div></div>
+
+    <div class="it hero"><header><span class="code">P-02</span><h3>Mirror lid</h3><span class="krn kr">거울</span><span class="qty">15</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Material</span><span class="vl"><code>2mm acrylic mirror</code>, cut <code>220 × 200mm</code>, polished edges, adhesive mounted flush inside the lid. <b>Acrylic, not glass.</b></span></div>
+        <div class="row"><span class="lb">Print</span><span class="vl">White or chrome, UV or screen printed directly onto the mirror, across the top third so the face sits in clear mirror below.</span></div>
+        <div class="row krtext"><span class="lb">Korean</span><span class="vl">유리피부<small>Large across the top. Below it, small: 8월 24일</small></span></div>
+        <div class="row"><span class="lb">Finish</span><span class="vl">Protective peel film both sides, left on for delivery.</span></div>
+      </div></div>
+  </section>
+
+  <section id="inside">
+    <div class="shead"><span class="n">Part 2</span><h2>Box contents.</h2><div class="krl kr">박스 안에</div></div>
+
+    <div class="it"><header><span class="code">P-03</span><h3>Shirt</h3><span class="krn kr">티셔츠</span><span class="qty">25</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">Black boxy oversized tee, <b>heavyweight 220 to 240gsm cotton</b>.</span></div>
+        <div class="row"><span class="lb">Print</span><span class="vl">Front: chrome K, roughly 250mm, DTF or plastisol. Left sleeve: vertical line of small Korean in white. Back: <b>Venus Aesthetics logo small between the shoulders</b>.</span></div>
+        <div class="row krtext"><span class="lb">Korean</span><span class="vl">유리피부 · 서울<small>Down the left sleeve, vertical</small></span></div>
+        <div class="row"><span class="lb">Sizes</span><span class="vl">10 × L, 10 × XL, 5 × M. Oversized only.</span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-04</span><h3>The card</h3><span class="krn kr">카드</span><span class="qty">50</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl"><code>90 × 140mm</code>, 600gsm black board, chrome foil both sides.</span></div>
+        <div class="row krtext"><span class="lb">Front</span><span class="vl">곧 온다<small>Chrome foil, filling most of the card. Korean only.</small></span></div>
+        <div class="row krtext"><span class="lb">Back</span><span class="vl">8월 24일<small>Small, upper area. Venus Aesthetics logo in chrome foil, centred at the bottom.</small></span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-05</span><h3>Chrome K</h3><span class="krn kr">케이</span><span class="qty">20</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">Roughly <code>120mm tall</code>. 5mm mirror-finish acrylic, laser cut, on a short matte black acrylic handle.</span></div>
+        <div class="row"><span class="lb">Finish</span><span class="vl">Protective film both sides.</span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-06</span><h3>Photocards</h3><span class="krn kr">포토카드</span><span class="qty">500</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl"><code>55 × 85mm</code>, 350gsm, holographic foil lamination, 3mm rounded corners.</span></div>
+        <div class="row"><span class="lb">Design</span><span class="vl">Seven designs, one per treatment. Front: Korean name large plus the coloured line icon. Back: English name and one line on what it treats.</span></div>
+        <div class="row"><span class="lb">Colours</span><span class="vl">Gold, bronze, champagne, violet, teal, red, navy.</span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-07</span><h3>Sticker sheet</h3><span class="krn kr">스티커</span><span class="qty">500</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">A5, holographic vinyl, kiss cut. Roughly 12 shapes per sheet.</span></div>
+        <div class="row"><span class="lb">Design</span><span class="vl">Chrome K, Korean word stickers, sparkles, droplet, small speech bubbles.</span></div>
+      </div></div>
+  </section>
+
+  <section id="creator">
+    <div class="shead"><span class="n">Part 3</span><h2>Creator props.</h2><div class="krl kr">촬영 소품</div></div>
+
+    <div class="it"><header><span class="code">P-08</span><h3>Handheld paddles</h3><span class="krn kr">핸드 소품</span><span class="qty">35</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">5mm acrylic, laser cut, on 200mm matte black handles. Mirror chrome, holographic and glossy black finishes mixed.</span></div>
+        <div class="row"><span class="lb">Shapes</span><span class="vl">Two speech bubbles, giant mirror K, sparkle burst, hand-mirror shape, droplet, small blank sign. <b>Five sets of seven.</b></span></div>
+        <div class="row krtext"><span class="lb">Korean</span><span class="vl">뭐야 이거? · 대박 · 유리피부 · 곧<small>One phrase per paddle</small></span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-09</span><h3>K standee</h3><span class="krn kr">스탠디</span><span class="qty">2</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">Roughly <code>1700mm tall</code>, freestanding. 10mm foam board or 5mm forex, mirror-chrome vinyl wrap, weighted base.</span></div>
+        <div class="row"><span class="lb">Print</span><span class="vl">Small Korean type down one edge.</span></div>
+      </div></div>
+  </section>
+
+  <section id="clinic">
+    <div class="shead"><span class="n">Part 4</span><h2>Clinic props.</h2><div class="krl kr">클리닉 사인</div></div>
+
+    <div class="it"><header><span class="code">P-10</span><h3>Hanging signs</h3><span class="krn kr">천장 사인</span><span class="qty">50</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl"><code>200 × 300mm</code>, 5mm frosted acrylic, UV printed, coloured edge band, thin gold chain with ceiling clips.</span></div>
+        <div class="row"><span class="lb">Design</span><span class="vl">Line icon top, Korean name large, English name small underneath. One colour per treatment.</span></div>
+        <div class="row"><span class="lb">Icons</span><span class="vl">Droplet, wave, DNA helix, hexagon molecule, eye, lips, pipette.</span></div>
+        <div class="row"><span class="lb">Placement</span><span class="vl">Seven per clinic, hung above the room that does that treatment.</span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-11</span><h3>Window vinyl</h3><span class="krn kr">윈도우 시트</span><span class="qty">6 sets</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">Mirror chrome cut vinyl, oversized Korean characters, applied inside the front glass.</span></div>
+        <div class="row"><span class="lb">Add</span><span class="vl">Small pink LED flex or neon K in one corner.</span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-12</span><h3>Framed photocards</h3><span class="krn kr">액자</span><span class="qty">42</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">A6 black frames with a wide mount, one photocard per frame.</span></div>
+        <div class="row"><span class="lb">Placement</span><span class="vl">Seven per clinic, hung in a tight row in reception.</span></div>
+      </div></div>
+  </section>
+
+  <section id="party">
+    <div class="shead"><span class="n">Part 5</span><h2>Party kit.</h2><div class="krl kr">파티 키트</div></div>
+
+    <div class="it"><header><span class="code">P-13</span><h3>Prize wheel</h3><span class="krn kr">돌림판</span><span class="qty">1</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl"><code>900mm diameter</code>, 8 segments, weighted freestanding base, <b>detachable for transport</b>. Glossy black, hot pink, chrome and holographic segments, chrome pointer.</span></div>
+        <div class="row"><span class="lb">Segments</span><span class="vl">Free session · K-Lip Dew add-on · K-Lumi Eyes add-on · gift box · aftercare serum · silk headband · glow match for a friend · front of queue next party.</span></div>
+        <div class="row"><span class="lb">Print</span><span class="vl">Korean on each segment, English small underneath. Segment text as <b>separate applied vinyl</b> so prizes can change.</span></div>
+        <div class="row"><span class="lb">Rule</span><span class="vl"><b>No discount on any segment.</b> Gifts, add-ons and upgrades only.</span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-14</span><h3>Gift bags</h3><span class="krn kr">기프트백</span><span class="qty">600</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">Matte black paper bag, rope handles, Korean type in chrome on one side. Numbered sticker on the base.</span></div>
+        <div class="row"><span class="lb">Contents</span><span class="vl">One photocard, one sticker sheet, one sample or mini, numbered card.</span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-15</span><h3>Glow bar kit</h3><span class="krn kr">글로우 바</span><span class="qty">1 kit</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Hardware</span><span class="vl">Glass drink dispensers, glassware, white and gold serving plates, tiered stands, cool box for sheet masks. <b>Nothing disposable.</b></span></div>
+        <div class="row"><span class="lb">Signage</span><span class="vl">A5 acrylic table signs, Korean drink names with English underneath.</span></div>
+      </div></div>
+
+    <div class="it"><header><span class="code">P-16</span><h3>Glow match desk</h3><span class="krn kr">상담 데스크</span><span class="qty">1 kit</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Spec</span><span class="vl">Printed match cards, small acrylic sign, pens, booking slips.</span></div>
+      </div></div>
+  </section>
+
+  <section id="set">
+    <div class="shead"><span class="n">Part 6</span><h2>Travelling set.</h2><div class="krl kr">세트</div></div>
+
+    <div class="it hero"><header><span class="code">P-17</span><h3>Set panels</h3><span class="krn kr">패널</span><span class="qty">1 set</span></header>
+      <div class="bd">
+        <div class="row"><span class="lb">Build</span><span class="vl">Three panels, each <code>1200 × 2400mm</code>, light timber frame with folding feet. <b>Two people must be able to carry and stand each panel.</b></span></div>
+        <div class="row"><span class="lb">Panel 1</span><span class="vl">Pale oak slat cladding, vertical, 20mm gaps.</span></div>
+        <div class="row"><span class="lb">Panel 2</span><span class="vl">Backlit translucent screen. Acrylic diffuser over an LED strip frame, warm white, dimmable.</span></div>
+        <div class="row"><span class="lb">Panel 3</span><span class="vl">Plain wall with mounted chrome K and a floating glass shelf lit from beneath.</span></div>
+        <div class="row"><span class="lb">Dressing</span><span class="vl">Stone-effect plinth, ceramic vase, white plum blossom branch, sheer ivory curtain, seven display objects for the shelf.</span></div>
+        <div class="row"><span class="lb">Lighting</span><span class="vl">Two warm LED panels and one soft key. Clinic ceiling lights off in that corner.</span></div>
+        <div class="row"><span class="lb">Transport</span><span class="vl">Padded cover per panel, labelled flight case for the dressing.</span></div>
+      </div></div>
+  </section>
+
+  <section id="qty">
+    <div class="shead"><span class="n">Summary</span><h2>Quantities.</h2></div>
+    <div class="tblwrap">
+      <table>
+        <thead><tr><th>Code</th><th>Item</th><th class="q">Qty</th></tr></thead>
+        <tbody>
+          <tr><td class="c">P-01</td><td><b>Box</b>, rigid, printed, foiled</td><td class="q">15</td></tr>
+          <tr><td class="c">P-02</td><td><b>Acrylic mirror inserts</b>, printed</td><td class="q">15</td></tr>
+          <tr><td class="c">P-03</td><td><b>Shirts</b>, printed, oversized</td><td class="q">25</td></tr>
+          <tr><td class="c">P-04</td><td><b>Cards</b>, black board, foiled, with logo</td><td class="q">50</td></tr>
+          <tr><td class="c">P-05</td><td><b>Chrome K props</b>, laser cut</td><td class="q">20</td></tr>
+          <tr><td class="c">P-06</td><td><b>Photocards</b>, holo laminated</td><td class="q">500</td></tr>
+          <tr><td class="c">P-07</td><td><b>Sticker sheets</b>, holo vinyl</td><td class="q">500</td></tr>
+          <tr><td class="c">P-08</td><td><b>Handheld paddles</b>, 5 sets of 7</td><td class="q">35</td></tr>
+          <tr><td class="c">P-09</td><td><b>K standees</b></td><td class="q">2</td></tr>
+          <tr><td class="c">P-10</td><td><b>Hanging signs</b>, frosted acrylic</td><td class="q">50</td></tr>
+          <tr><td class="c">P-11</td><td><b>Window vinyl</b> and LED K</td><td class="q">6 sets</td></tr>
+          <tr><td class="c">P-12</td><td><b>Frames</b>, A6 black</td><td class="q">42</td></tr>
+          <tr><td class="c">P-13</td><td><b>Prize wheel</b></td><td class="q">1</td></tr>
+          <tr><td class="c">P-14</td><td><b>Gift bags</b></td><td class="q">600</td></tr>
+          <tr><td class="c">P-15</td><td><b>Glow bar hardware</b></td><td class="q">1 kit</td></tr>
+          <tr><td class="c">P-16</td><td><b>Glow match desk kit</b></td><td class="q">1 kit</td></tr>
+          <tr><td class="c">P-17</td><td><b>Set panels</b> and dressing</td><td class="q">1 set</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="warn"><b>Get every Korean word proofed by a native speaker before anything prints.</b> Wrong Korean cannot be fixed once it is on a box.</div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="kr">소품 리스트</div>
+    <div class="m">Venus K-Glow Boosters · Props and PR box</div>
+  </div>
+</footer>
+
+</body>
+</html>

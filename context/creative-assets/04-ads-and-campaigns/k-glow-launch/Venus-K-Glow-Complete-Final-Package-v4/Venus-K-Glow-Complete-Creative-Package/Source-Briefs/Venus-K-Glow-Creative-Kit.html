@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Venus K-Glow · Creative Kit</title>
+</head>
+<body>
+<style>
+  :root{
+    --bg:#0A0A0B; --bg2:#111114; --card:#151519; --card2:#1B1B21;
+    --ink:#F5F5F7; --ink-soft:#A3A3AE; --ink-faint:#6E6E7A;
+    --hot:#FF3D77; --cyan:#5CE1E6; --chrome:#C9CBD4;
+    --line:rgba(255,255,255,.10); --line2:rgba(255,255,255,.18);
+    --maxw:1000px;
+    --grot:"Helvetica Neue",Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    --kr:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+    --mono:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  :root:not([data-theme="dark"]){
+    --bg:#0A0A0B; --bg2:#111114; --card:#151519; --card2:#1B1B21;
+    --ink:#F5F5F7; --ink-soft:#A3A3AE; --ink-faint:#6E6E7A;
+    --line:rgba(255,255,255,.10); --line2:rgba(255,255,255,.18);
+  }
+  @media (prefers-color-scheme:light){
+    :root:not([data-theme="dark"]){
+      --bg:#F4F4F6; --bg2:#EAEAEE; --card:#FFFFFF; --card2:#F7F7FA;
+      --ink:#0C0C0E; --ink-soft:#55555F; --ink-faint:#8A8A96;
+      --hot:#E01F5C; --cyan:#0E9BA1; --chrome:#5A5C66;
+      --line:rgba(0,0,0,.12); --line2:rgba(0,0,0,.22);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#F4F4F6; --bg2:#EAEAEE; --card:#FFFFFF; --card2:#F7F7FA;
+    --ink:#0C0C0E; --ink-soft:#55555F; --ink-faint:#8A8A96;
+    --hot:#E01F5C; --cyan:#0E9BA1; --chrome:#5A5C66;
+    --line:rgba(0,0,0,.12); --line2:rgba(0,0,0,.22);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--grot); font-size:16.5px; line-height:1.55;
+  }
+  .kr{font-family:var(--kr)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+
+  /* hero */
+  header.hero{padding:64px 0 34px; border-bottom:1px solid var(--line2)}
+  .tagrow{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:22px}
+  .tagrow span{font-family:var(--mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+    border:1px solid var(--line2); border-radius:100px; padding:5px 11px; color:var(--ink-soft)}
+  .tagrow span.hot{color:var(--hot); border-color:color-mix(in srgb,var(--hot) 50%,transparent)}
+  .hero .krmega{font-family:var(--kr); font-size:clamp(48px,13vw,132px); line-height:.86; font-weight:800;
+    letter-spacing:-.03em;
+    background:linear-gradient(175deg,#FFFFFF 8%,var(--chrome) 42%,#8A8D96 60%,var(--chrome) 78%,#FFFFFF 96%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .hero h1{font-size:clamp(26px,5vw,52px); font-weight:800; letter-spacing:-.035em; margin:6px 0 0; line-height:1}
+  .hero h1 em{font-style:normal; color:var(--hot)}
+  .hero p{margin:18px 0 0; color:var(--ink-soft); max-width:62ch; font-size:17px}
+  .toc{display:flex; flex-wrap:wrap; gap:7px; margin-top:26px}
+  .toc a{font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--ink-soft); text-decoration:none; border:1px solid var(--line);
+    border-radius:6px; padding:7px 12px; background:var(--card); transition:.15s}
+  .toc a:hover{color:var(--hot); border-color:var(--hot)}
+  .toc a:focus-visible{outline:2px solid var(--hot); outline-offset:2px}
+
+  section{padding:44px 0; border-bottom:1px solid var(--line); scroll-margin-top:14px}
+  .shead{margin:0 0 24px}
+  .shead .n{font-family:var(--mono); font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--hot); font-weight:700}
+  .shead h2{font-size:clamp(24px,4.2vw,38px); font-weight:800; letter-spacing:-.03em; margin:10px 0 0; line-height:1.05}
+  .shead .krl{font-family:var(--kr); font-size:20px; color:var(--cyan); margin-top:6px; font-weight:700}
+  .shead p{margin:12px 0 0; color:var(--ink-soft); max-width:68ch}
+
+  /* kill / keep */
+  .kk{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .kkbox{border:1px solid var(--line); border-radius:12px; padding:18px; background:var(--card)}
+  .kkbox.kill{border-color:color-mix(in srgb,var(--hot) 40%,transparent)}
+  .kkbox.keep{border-color:color-mix(in srgb,var(--cyan) 40%,transparent)}
+  .kkbox h3{margin:0 0 12px; font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-family:var(--mono)}
+  .kkbox.kill h3{color:var(--hot)} .kkbox.keep h3{color:var(--cyan)}
+  .kkbox ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:9px}
+  .kkbox li{font-size:14.5px; color:var(--ink-soft); padding-left:16px; position:relative; line-height:1.45}
+  .kkbox li::before{content:""; position:absolute; left:0; top:9px; width:7px; height:2px; background:currentColor; opacity:.5}
+  .kkbox li b{color:var(--ink)}
+
+  /* palette */
+  .pal{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px}
+  .sw{border:1px solid var(--line); border-radius:10px; overflow:hidden; background:var(--card)}
+  .sw .chip{height:62px}
+  .sw .meta{padding:10px 12px}
+  .sw .nm{font-size:12.5px; font-weight:700}
+  .sw .hx{font-family:var(--mono); font-size:11px; color:var(--ink-faint); margin-top:2px}
+
+  /* box contents */
+  .items{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px}
+  .item{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; position:relative}
+  .item .no{font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; color:var(--hot); font-weight:700}
+  .item h3{margin:8px 0 3px; font-size:17px; font-weight:800; letter-spacing:-.02em}
+  .item .krn{font-family:var(--kr); font-size:15px; color:var(--cyan); font-weight:700}
+  .item p{margin:9px 0 0; font-size:13.8px; color:var(--ink-soft); line-height:1.5}
+  .item p b{color:var(--ink)}
+  .item.hero{background:linear-gradient(160deg,color-mix(in srgb,var(--hot) 16%,var(--card)),var(--card));
+    border-color:color-mix(in srgb,var(--hot) 42%,transparent)}
+
+  /* prompt cards */
+  .pr{background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin-bottom:11px}
+  .pr > header{display:flex; flex-wrap:wrap; gap:9px; align-items:center; padding:11px 16px;
+    border-bottom:1px solid var(--line); background:var(--card2)}
+  .pr > header .id{font-family:var(--mono); font-size:11px; color:var(--hot); font-weight:700; letter-spacing:.08em}
+  .pr > header .ttl{font-size:14.5px; font-weight:700; flex:1 1 auto; min-width:140px; letter-spacing:-.01em}
+  .pr > header .spec{font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ink-faint); border:1px solid var(--line); border-radius:100px; padding:3px 9px}
+  .pr .body{padding:14px 16px; font-family:var(--mono); font-size:12.6px; line-height:1.62;
+    color:var(--ink-soft); white-space:pre-wrap; word-break:break-word; user-select:all}
+  .pr .note{padding:0 16px 13px; font-size:12.5px; color:var(--ink-faint); line-height:1.45}
+  .pr .note b{color:var(--ink-soft)}
+
+  .grp{margin:30px 0 14px; display:flex; align-items:baseline; gap:12px; flex-wrap:wrap}
+  .grp .gn{font-family:var(--mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--hot); font-weight:700}
+  .grp h3{font-size:20px; font-weight:800; letter-spacing:-.025em; margin:0}
+  .grp .cnt{font-family:var(--mono); font-size:11px; color:var(--ink-faint)}
+
+  /* posts */
+  .post{background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin-bottom:11px}
+  .post > header{display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; padding:12px 16px;
+    border-bottom:1px solid var(--line); background:var(--card2)}
+  .post > header .dt{font-family:var(--mono); font-size:12.5px; color:var(--hot); font-weight:700}
+  .post > header .fm{font-family:var(--mono); font-size:10px; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--ink-faint); border:1px solid var(--line); border-radius:100px; padding:3px 9px}
+  .post > header .jb{font-size:12px; color:var(--ink-faint); flex:1 1 auto; text-align:right; min-width:110px}
+  .post .pb{padding:15px 16px}
+  .post .hk{font-family:var(--kr); font-size:22px; color:var(--cyan); font-weight:800; line-height:1.2}
+  .post .he{font-size:19px; font-weight:800; letter-spacing:-.025em; margin-top:3px}
+  .post .fld{margin-top:12px}
+  .post .fld .fl{display:block; font-family:var(--mono); font-size:9.5px; letter-spacing:.15em;
+    text-transform:uppercase; color:var(--hot); font-weight:700; margin-bottom:4px}
+  .post .fld .fv{font-size:13.8px; color:var(--ink-soft); line-height:1.5}
+  .post .fld.cap .fv{white-space:pre-line; color:var(--ink); padding-left:12px;
+    border-left:2px solid color-mix(in srgb,var(--cyan) 55%,transparent); font-size:14px}
+  .post.big{border-color:color-mix(in srgb,var(--hot) 45%,transparent)}
+  .post.big > header{background:linear-gradient(160deg,color-mix(in srgb,var(--hot) 18%,var(--card2)),var(--card2))}
+
+  /* korean bank */
+  .bank{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px}
+  .bk{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px}
+  .bk .k{font-family:var(--kr); font-size:22px; font-weight:800; color:var(--cyan); line-height:1.2}
+  .bk .r{font-family:var(--mono); font-size:10.5px; color:var(--ink-faint); margin-top:4px}
+  .bk .e{font-size:13.5px; color:var(--ink-soft); margin-top:5px}
+  .bk .u{font-size:12px; color:var(--ink-faint); margin-top:6px; font-style:italic}
+
+  .warn{border:1px solid color-mix(in srgb,var(--hot) 45%,transparent);
+    background:color-mix(in srgb,var(--hot) 10%,transparent); border-radius:12px;
+    padding:16px 18px; font-size:14.5px; color:var(--ink-soft); margin-top:16px}
+  .warn b{color:var(--hot)}
+  .note2{border:1px solid color-mix(in srgb,var(--cyan) 42%,transparent);
+    background:color-mix(in srgb,var(--cyan) 9%,transparent); border-radius:12px;
+    padding:16px 18px; font-size:14.5px; color:var(--ink-soft); margin-top:16px}
+  .note2 b{color:var(--cyan)}
+
+  .steps{display:flex; flex-direction:column; gap:8px}
+  .step{display:grid; grid-template-columns:112px 1fr; gap:15px; align-items:baseline;
+    background:var(--card); border:1px solid var(--line); border-radius:10px; padding:13px 16px}
+  .step .k{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--hot); font-weight:700}
+  .step .v{font-size:14.2px; color:var(--ink-soft); line-height:1.5}
+  .step .v b{color:var(--ink)}
+
+  footer{padding:36px 0 60px; text-align:center}
+  footer .kr{font-size:26px; font-weight:800; color:var(--chrome)}
+  footer .m{font-family:var(--mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--ink-faint); margin-top:9px}
+
+  @media (max-width:680px){
+    .kk{grid-template-columns:1fr}
+    .step{grid-template-columns:1fr; gap:5px}
+    body{font-size:16px}
+  }
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="tagrow">
+      <span class="hot">Creative kit</span><span>Venus K-Glow Boosters</span><span>Art direction · box · prompts</span>
+    </div>
+    <div class="krmega">유리피부</div>
+    <h1>Not a clinic brochure. <em>A drop.</em></h1>
+    <p>The box was product-led and the look was too polite. This fixes both: prop-led box, Korean-first artwork, fewer posts, and every prompt you need to generate the assets yourself.</p>
+    <div class="toc">
+      <a href="#pivot">The pivot</a><a href="#look">Art direction</a><a href="#box">The box</a><a href="#unbox">Unboxing</a><a href="#posts">The posts</a><a href="#prompts">Prompt library</a><a href="#korean">Korean bank</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="pivot">
+    <div class="shead"><span class="n">What changed</span><h2>Three things were wrong.</h2></div>
+    <div class="steps">
+      <div class="step"><div class="k">The box</div><div class="v"><b>Vials were the mistake.</b> An unlabelled vial reads as a sample, and a sample kills mystery instantly, because everyone assumes it is serum. The box now contains <b>zero product</b>. It is a prop kit. Nothing inside can be mistaken for a thing you rub on your face.</div></div>
+      <div class="step"><div class="k">The look</div><div class="v"><b>Cream and gold serif was the wrong register.</b> It read expensive and forgettable. The new direction is black, chrome, holo, huge Korean type, direct flash. Something people screenshot, not something people respect.</div></div>
+      <div class="step"><div class="k">The volume</div><div class="v"><b>Seven daily treatment posts was too many.</b> One carousel does all seven on launch day. Everything else is reels, reactions and street content. Roughly three posts a week, not seven.</div></div>
+    </div>
+    <div class="note2"><b>Dropped:</b> "K-Beauty has landed" as the launch line. The new one is one word. <b class="kr">왔다.</b> It is here. That is the whole headline.</div>
+  </section>
+
+  <section id="look">
+    <div class="shead"><span class="n">Art direction</span><h2>Seoul convenience store, not Seoul spa.</h2>
+      <div class="krl kr">촌스럽지 않게, 세게</div>
+      <p>The reference is not a luxury dermatology clinic. It is a K-pop album insert, a Seoul subway ad, a photocard, a sticker sheet, a claw machine. Loud, glossy, a bit chaotic, extremely designed.</p></div>
+
+    <div class="kk">
+      <div class="kkbox kill"><h3>Kill</h3><ul>
+        <li>Cream and ivory backgrounds</li>
+        <li><b>Didot and every thin serif</b></li>
+        <li>Soft porcelain product still life</li>
+        <li>Gold foil as the only accent</li>
+        <li>Calm spa lighting and empty space</li>
+        <li>Polite captions in full sentences</li>
+        <li>Anything that looks like a hospital</li>
+      </ul></div>
+      <div class="kkbox keep"><h3>Use</h3><ul>
+        <li>Near-black grounds, chrome and holographic</li>
+        <li><b>Heavy grotesque and Korean gothic, oversized</b></li>
+        <li>Direct on-camera flash, hard shadows</li>
+        <li>Sticker layers, cut-out edges, tape, scan lines</li>
+        <li>Hot pink and cyan against black</li>
+        <li>Captions that sound like a person, not a brand</li>
+        <li>Korean text bigger than the English, always</li>
+      </ul></div>
+    </div>
+
+    <div class="pal" style="margin-top:14px">
+      <div class="sw"><div class="chip" style="background:#0A0A0B"></div><div class="meta"><div class="nm">Void</div><div class="hx">#0A0A0B</div></div></div>
+      <div class="sw"><div class="chip" style="background:linear-gradient(135deg,#FFFFFF,#C9CBD4 45%,#8A8D96 60%,#E8E9EE)"></div><div class="meta"><div class="nm">Chrome</div><div class="hx">gradient</div></div></div>
+      <div class="sw"><div class="chip" style="background:#FF3D77"></div><div class="meta"><div class="nm">Hot</div><div class="hx">#FF3D77</div></div></div>
+      <div class="sw"><div class="chip" style="background:#5CE1E6"></div><div class="meta"><div class="nm">Cyan</div><div class="hx">#5CE1E6</div></div></div>
+      <div class="sw"><div class="chip" style="background:linear-gradient(120deg,#FFB3D9,#B3E5FF,#D9FFB3,#FFE0B3)"></div><div class="meta"><div class="nm">Holo</div><div class="hx">iridescent</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F5F5F7"></div><div class="meta"><div class="nm">Paper</div><div class="hx">#F5F5F7</div></div></div>
+    </div>
+
+    <div class="note2"><b>The one rule that carries the whole look:</b> Korean type is always the biggest thing on the frame, and the English is always small enough that you have to lean in. That single ratio is what makes it feel imported rather than translated.</div>
+  </section>
+
+  <section id="box">
+    <div class="shead"><span class="n">The box</span><h2>No product. Only props.</h2>
+      <div class="krl kr">뭐야 이거?</div>
+      <p>Ten boxes. Everything inside is either wearable, holdable or collectable. Nothing inside explains anything. The outside is covered in Korean and carries no English at all.</p></div>
+
+    <div class="items">
+      <div class="item hero"><div class="no">01 · hero item</div><h3>The chrome K</h3><div class="krn kr">케이</div>
+        <p>A palm-sized <b>solid chrome mirror K on a short handle</b>, same shape as the handheld paddle. It is the first thing they lift out and the thing they hold up to the camera. <b>Every unboxing will contain this object</b>, which is what makes ten different videos look like one campaign.</p></div>
+
+      <div class="item"><div class="no">02</div><h3>The tee</h3><div class="krn kr">티셔츠</div>
+        <p>Black boxy cropped tee. Big chrome K on the front, Korean running down one sleeve, nothing in English. <b>Wearable means it appears in their content again later</b>, long after the box video is gone.</p></div>
+
+      <div class="item"><div class="no">03</div><h3>Seven photocards</h3><div class="krn kr">포토카드</div>
+        <p>Holographic, K-pop photocard size and finish. One per treatment. <b>Korean name on the front only.</b> Tiny English on the back. Collectable, tradeable, and they trigger the exact question we want: what does this one say.</p></div>
+
+      <div class="item"><div class="no">04</div><h3>Sticker sheet</h3><div class="krn kr">스티커</div>
+        <p>Die-cut holo sheet. Korean words, the K mark, sparkles, small speech bubbles. <b>They go on laptops and phone cases</b>, so the branding keeps travelling for months.</p></div>
+
+      <div class="item"><div class="no">05</div><h3>The capsule</h3><div class="krn kr">캡슐</div>
+        <p>A sealed gacha capsule, the kind from a claw machine. Twist it open on camera. Inside is a single metal card stamped only <b>8.24</b>. No words. That is the entire message.</p></div>
+
+      <div class="item"><div class="no">06</div><h3>Mini mirror</h3><div class="krn kr">거울</div>
+        <p>Chrome compact, <b class="kr">유리피부</b> etched on the lid. They will open it and film their own skin in it without being asked, which is precisely the point.</p></div>
+    </div>
+
+    <div class="warn"><b>What is deliberately not in the box:</b> no serum, no vial, no ampoule, no sample, no leaflet, no price list, no product name, no English. If a creator can work out what we sell from the box, the box has failed.</div>
+
+    <h3 style="font-size:19px;font-weight:800;letter-spacing:-.02em;margin:28px 0 12px">The box itself</h3>
+    <div class="steps">
+      <div class="step"><div class="k">Outside</div><div class="v">Matte black rigid magnetic box. <b>Wrapped edge to edge in dense Korean type</b> like a Seoul subway poster, printed in chrome foil. A single oversized holographic K. No logo, no English, no address label visible on the lid.</div></div>
+      <div class="step"><div class="k">Inside lid</div><div class="v">One line only, chrome foil on black: <b class="kr">8월 24일</b>. Nothing else. They will google it.</div></div>
+      <div class="step"><div class="k">Fill</div><div class="v">Black shredded tissue and a holo crinkle layer, not foam. It has to make noise and move when they dig through it.</div></div>
+      <div class="step"><div class="k">Outer</div><div class="v">Plain black mailer, hot pink tape printed with Korean. <b>The tape is the first frame of the video</b>, so it has to look right before the box is even open.</div></div>
+    </div>
+  </section>
+
+  <section id="unbox">
+    <div class="shead"><span class="n">Unboxing</span><h2>What we actually ask them to do.</h2>
+      <div class="krl kr">열어봐</div>
+      <p>One page, sent with the box. Short enough that they read it. The less we ask for, the more usable what comes back is.</p></div>
+    <div class="steps">
+      <div class="step"><div class="k">Do</div><div class="v">Film opening it. React honestly. <b>Hold the chrome K up to camera at least once.</b> Say one line: <b class="kr">"뭐야 이거?"</b> or the English, what even is this.</div></div>
+      <div class="step"><div class="k">Do</div><div class="v">Twist the capsule open on camera and read the number out loud. <b>8.24.</b></div></div>
+      <div class="step"><div class="k">Do</div><div class="v">Ask your audience what they think it is. That is the only question in the whole brief.</div></div>
+      <div class="step"><div class="k">Do not</div><div class="v"><b>Do not guess the brand or the treatment on camera</b>, even if you work it out. Do not tag Venus yet. Tag only the K.</div></div>
+      <div class="step"><div class="k">Do not</div><div class="v">Do not explain anything. <b>You genuinely do not know what this is, and that is the content.</b></div></div>
+      <div class="step"><div class="k">When</div><div class="v">Post between <b>19 and 21 August</b>. Anything after the 22nd is worthless, so pay for the date, not just the post.</div></div>
+    </div>
+    <div class="warn"><b>Tell the PR agency twice:</b> creators must not be sent a product sheet, a brand deck, or a treatment list before the 23rd. Agencies send those by reflex. If it goes out, the mystery is dead and so is the box.</div>
+  </section>
+
+  <section id="posts">
+    <div class="shead"><span class="n">The posts</span><h2>Fewer, louder.</h2>
+      <p>Eight posts from box drop to first party, instead of twenty. One carousel carries all seven treatments. Captions below are final, paste them as they are.</p></div>
+
+    <div class="post"><header><span class="dt">Tue 19 Aug</span><span class="fm">Grid · single</span><span class="jb">Box drop</span></header>
+      <div class="pb"><div class="hk kr">곧</div><div class="he">Soon.</div>
+        <div class="fld"><span class="fl">Frame</span><span class="fv">Direct-flash photo of the closed black box on a hot pink surface, Korean type covering it, one hard shadow. Shot on a phone, not styled. It should look like someone photographed a parcel, not like a product shoot.</span></div>
+        <div class="fld cap"><span class="fl">Caption</span><span class="fv">곧.
+10 boxes just went out. Not even they know what is inside.
+DM "K" if you want in.</span></div>
+      </div></div>
+
+    <div class="post"><header><span class="dt">Thu 21 Aug</span><span class="fm">Reel · 15s</span><span class="jb">Peak confusion</span></header>
+      <div class="pb"><div class="hk kr">뭐야 이거?</div><div class="he">Nobody knows what it is.</div>
+        <div class="fld"><span class="fl">Frame</span><span class="fv">Compilation of the ten creator reactions. Their own audio, hard cuts, no music bed underneath their voices. End on a wall of chrome Ks held up to camera.</span></div>
+        <div class="fld cap"><span class="fl">Caption</span><span class="fv">뭐야 이거?
+Ten people. One box. Zero answers.
+Guess in the comments. 8.24</span></div>
+      </div></div>
+
+    <div class="post"><header><span class="dt">Sat 22 Aug</span><span class="fm">Reel · 30s</span><span class="jb">Reach</span></header>
+      <div class="pb"><div class="hk kr">유리피부 아세요?</div><div class="he">We asked Lahore about glass skin.</div>
+        <div class="fld"><span class="fl">Frame</span><span class="fv">Street and mall interviews, phone shot, subtitled in Korean and English. Three questions: do you know Korean glass skin, would you try a Korean treatment, guess what is in this box. Hold the actual box while asking.</span></div>
+        <div class="fld cap"><span class="fl">Caption</span><span class="fv">유리피부 아세요?
+We took the box to a mall and asked strangers. Some of them were close.
+Tomorrow we film. Monday you find out.</span></div>
+      </div></div>
+
+    <div class="post big"><header><span class="dt">Mon 24 Aug</span><span class="fm">Carousel · 9 cards</span><span class="jb">LAUNCH</span></header>
+      <div class="pb"><div class="hk kr">왔다.</div><div class="he">It is here.</div>
+        <div class="fld"><span class="fl">The carousel</span><span class="fv"><b>Card 1:</b> 왔다 in huge chrome Korean on black, tiny English underneath. <b>Cards 2 to 8:</b> one per treatment, built like a photocard, Korean name huge, English name small, one line on what it fixes. <b>Card 9:</b> all seven together with DM "K".</span></div>
+        <div class="fld"><span class="fl">Also today</span><span class="fv">All ten creator videos go live in the same hour. The offer opens. The Sunday tour dates get posted to stories.</span></div>
+        <div class="fld cap"><span class="fl">Caption</span><span class="fv">왔다.
+7 Korean skin boosters. Hydration, pores, repair, recovery, under-eyes, lips, oil control.
+Swipe to find yours. DM "K" for prices.</span></div>
+      </div></div>
+
+    <div class="post"><header><span class="dt">Tue 25 Aug</span><span class="fm">Reel · 20s</span><span class="jb">Payoff</span></header>
+      <div class="pb"><div class="hk kr">이제 알겠지</div><div class="he">The capsule made sense.</div>
+        <div class="fld"><span class="fl">Frame</span><span class="fv">Cut of creators from the 23rd shoot realising what the box was, intercut with their confused faces from the 19th. Before and after, but of the reaction, not the skin.</span></div>
+        <div class="fld cap"><span class="fl">Caption</span><span class="fv">이제 알겠지.
+Same people. Six days apart.
+7 boosters, one glow. DM "K".</span></div>
+      </div></div>
+
+    <div class="post"><header><span class="dt">Thu 27 Aug</span><span class="fm">Reel · 45s</span><span class="jb">Saves</span></header>
+      <div class="pb"><div class="hk kr">PDRN이 뭔데?</div><div class="he">What even is PDRN?</div>
+        <div class="fld"><span class="fl">Frame</span><span class="fv">Doctor to camera, but shot like a creator not a consultant. Handheld, direct flash, jump cuts, Korean subtitle cards between points. Plain language only.</span></div>
+        <div class="fld cap"><span class="fl">Caption</span><span class="fv">PDRN이 뭔데?
+Korea has been doing this for years. Our doctor explains it in 45 seconds, no jargon.
+Save this one. DM "K".</span></div>
+      </div></div>
+
+    <div class="post"><header><span class="dt">Sat 29 Aug</span><span class="fm">Carousel · 4 cards</span><span class="jb">Proof</span></header>
+      <div class="pb"><div class="hk kr">필터 없음</div><div class="he">No filter. Same light.</div>
+        <div class="fld"><span class="fl">Frame</span><span class="fv">Before and after from the 23rd shoot. Same light, same angle, dates stamped on. No smoothing between the pair, ever. Card 4 teases tomorrow at Lake City.</span></div>
+        <div class="fld cap"><span class="fl">Caption</span><span class="fv">필터 없음.
+Same light, same angle, 6 days apart. That is it.
+Tomorrow we are at Lake City. DM "PARTY".</span></div>
+      </div></div>
+
+    <div class="post"><header><span class="dt">Sun 30 Aug</span><span class="fm">Reel · 20s</span><span class="jb">Party 1</span></header>
+      <div class="pb"><div class="hk kr">레이크시티 대박</div><div class="he">Lake City went off.</div>
+        <div class="fld"><span class="fl">Frame</span><span class="fv">Party recap cut the same night. Fast, flash-lit, loud. Spin the wheel, the props, the room. Live as a paid ad Monday morning.</span></div>
+        <div class="fld cap"><span class="fl">Caption</span><span class="fv">레이크시티 대박.
+Next Sunday, Karachi.
+DM "PARTY" to get in.</span></div>
+      </div></div>
+
+    <div class="note2"><b>After this it settles into a weekly rhythm:</b> Monday recap, Wednesday party invite for that city, Friday creator wave, Sunday party. Three or four posts a week, right through to 4 October.</div>
+  </section>
+
+  <section id="prompts">
+    <div class="shead"><span class="n">Prompt library</span><h2>Thirty prompts, ready to paste.</h2>
+      <p>Paste straight into Higgsfield. Suggested model is <b>nano_banana_pro</b> for anything with text or fine detail, since it holds type best. Every prompt is written with no people in frame, because every human shot comes from the real shoot on the 23rd and never from AI.</p></div>
+
+    <div class="warn"><b>Korean text in generated images will come out wrong.</b> Image models mangle hangul, reliably. Treat every Korean word in these renders as a placeholder for position and weight only, then have your designer set the real type over the top. Never send a generated image to print with its AI-made Korean still on it.</div>
+
+    <div class="grp"><span class="gn">Group A</span><h3>The box</h3><span class="cnt">8 prompts</span></div>
+
+    <div class="pr"><header><span class="id">A1</span><span class="ttl">Closed box, flash</span><span class="spec">4:5 · nano_banana_pro</span></header>
+      <div class="body">Direct on-camera flash photograph of a matte black rigid magnetic gift box sitting on a hot pink seamless surface. The box lid is wrapped edge to edge in dense small Korean hangul typography printed in mirror chrome foil, arranged like a Seoul subway poster. One oversized holographic iridescent letter K in the centre of the lid, catching rainbow light. Hard flash shadow falling to the right, slightly blown highlights, shot like a phone snapshot rather than a studio product photo. Gen Z K-beauty PR packaging. High contrast, punchy, no props, no people, no hands.</div>
+      <div class="note"><b>Use:</b> the 19 August box drop post.</div></div>
+
+    <div class="pr"><header><span class="id">A2</span><span class="ttl">Box open, full contents</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">Overhead flat lay, direct flash. An open matte black magnetic box on a glossy black surface, lid covered in chrome-foil Korean hangul type. Inside, on black shredded tissue and iridescent holographic crinkle filler: a palm-sized solid chrome mirror-finish letter K on a short handle, a folded black cropped t-shirt with a large chrome K printed on it, seven small holographic iridescent trading cards fanned out, a die-cut holographic sticker sheet, a clear plastic gacha capsule, and a small round chrome compact mirror. No liquids, no bottles, no vials, no tubes, no jars anywhere. Hot pink and cyan reflections, hard flash shadows, glossy, chaotic but arranged. No people, no hands, no faces.</div>
+      <div class="note"><b>Use:</b> the hero image of the box. This is the one to send the supplier. <b>Note the explicit no-bottles instruction</b>, models add them by default.</div></div>
+
+    <div class="pr"><header><span class="id">A3</span><span class="ttl">Inside lid detail</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">Extreme close-up, direct flash, of the inside of a matte black box lid. Printed in mirror chrome foil across the centre, large: Korean hangul characters and the numerals 8.24. Everything else is empty black textured card. Shallow depth of field, sharp foil highlight, slight grain. Minimal, stark, high contrast. No people, no hands, no objects.</div>
+      <div class="note"><b>Use:</b> story frame during hype week. The number does the work.</div></div>
+
+    <div class="pr"><header><span class="id">A4</span><span class="ttl">Sealed mailer and tape</span><span class="spec">4:5 · nano_banana_pro</span></header>
+      <div class="body">Direct flash photograph of a plain matte black cardboard shipping mailer sealed with wide hot pink packing tape printed with repeating small white Korean hangul characters. The parcel sits on a pale concrete floor. Harsh flash, strong shadow, slightly off-centre framing, phone snapshot energy. Streetwear drop packaging aesthetic. No people, no hands, no labels, no addresses.</div>
+      <div class="note"><b>Use:</b> the first frame of every unboxing, and a story teaser on the 17th when they ship.</div></div>
+
+    <div class="pr"><header><span class="id">A5</span><span class="ttl">Stack of ten</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">Ten identical matte black boxes stacked and scattered on a glossy black studio floor, each lid covered in chrome-foil Korean hangul typography with a large holographic K. Shot wide with a single hard flash from the left, deep shadows, iridescent rainbow glints across the foil. Moody, editorial, streetwear product drop. No people, no hands.</div>
+      <div class="note"><b>Use:</b> the 17 August shipping-day story. Proof that ten went out.</div></div>
+
+    <div class="pr"><header><span class="id">A6</span><span class="ttl">Box on hot pink, top down</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">Top-down flat lay on a saturated hot pink background. A closed matte black box with chrome Korean hangul typography and a holographic K, positioned off-centre. Scattered around it: a few loose holographic stickers and one clear gacha capsule. Very hard direct flash, sharp shadow, glossy surfaces, high saturation. Bold, graphic, Gen Z beauty drop. No people, no hands, no bottles.</div>
+      <div class="note"><b>Use:</b> carousel card or ad creative. Leaves clean space for type.</div></div>
+
+    <div class="pr"><header><span class="id">A7</span><span class="ttl">Chrome variant</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">A rigid gift box with a full mirror chrome finish, reflecting a black studio and pink and cyan gel lights. Korean hangul typography etched into the chrome surface, catching light. One matte black letter K on the lid, the only non-reflective element. Liquid metal aesthetic, Y2K, high gloss, studio flash. No people, no hands.</div>
+      <div class="note"><b>Alternative box direction.</b> More expensive to produce but much stronger on camera. Worth pricing before you commit to matte black.</div></div>
+
+    <div class="pr"><header><span class="id">A8</span><span class="ttl">Box, motion blur</span><span class="spec">9:16 · nano_banana_pro</span></header>
+      <div class="body">Vertical frame. A matte black box with chrome Korean typography caught mid-air against a black background, slight motion blur trailing, direct flash freezing the front face. Holographic filler and stickers flying out around it, suspended. Energetic, chaotic, tossed. Hot pink rim light. Flash photography, high contrast. No people, no hands.</div>
+      <div class="note"><b>Use:</b> reel cover or story. Reads as movement even as a still.</div></div>
+
+    <div class="grp"><span class="gn">Group B</span><h3>What is inside</h3><span class="cnt">7 prompts</span></div>
+
+    <div class="pr"><header><span class="id">B1</span><span class="ttl">The chrome K prop</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">Product photograph of a palm-sized solid mirror-chrome letter K mounted on a short matte black handle, like a handheld paddle or a hand mirror. Highly reflective, liquid metal finish, reflecting hot pink and cyan studio gels. Standing upright on a glossy black surface against a black background, direct flash, sharp specular highlights. Premium streetwear collectable object. No people, no hands, no faces.</div>
+      <div class="note"><b>The single most important object in the campaign.</b> Every creator holds it, so it appears in ten videos.</div></div>
+
+    <div class="pr"><header><span class="id">B2</span><span class="ttl">Seven photocards</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">Seven holographic iridescent trading cards, K-pop photocard size and finish, fanned out overlapping on a glossy black surface. Each card has a different coloured foil edge: gold, bronze, champagne, violet, teal, red, navy. Each front shows large Korean hangul characters and a small line-art icon, no photographs of people on the cards, no English. Rainbow holographic sheen shifting across the surfaces, direct flash, hard shadow. Collectable card aesthetic. No people, no hands in frame.</div>
+      <div class="note"><b>Icons per card:</b> droplet, wave, helix, hexagon, eye, lips, dropper. Same seven as the hanging signs.</div></div>
+
+    <div class="pr"><header><span class="id">B3</span><span class="ttl">Sticker sheet</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">Overhead shot of a single die-cut holographic sticker sheet on a black surface. The sheet contains a mix of shapes: a large chrome letter K, several small speech bubbles containing Korean hangul, sparkle and star bursts, a droplet, a small mirror shape, and a few rectangular word stickers. Iridescent rainbow foil finish catching light, glossy, kiss-cut with visible cut lines. Direct flash, high saturation, Gen Z sticker pack. No people, no hands.</div>
+      <div class="note"><b>Cheapest item in the box</b> and the one that keeps working for months on laptops and phone cases.</div></div>
+
+    <div class="pr"><header><span class="id">B4</span><span class="ttl">The tee</span><span class="spec">4:5 · nano_banana_pro</span></header>
+      <div class="body">A black boxy cropped t-shirt laid flat on a glossy black surface, shot from directly above with direct flash. A large mirror-chrome letter K printed across the chest, and a vertical line of small Korean hangul characters running down one sleeve in white. Heavyweight cotton texture, slight sheen on the chrome print, hard shadow. Streetwear product flat lay. No people, no bodies, no mannequin, no hangers.</div>
+      <div class="note"><b>Wearable is the point.</b> It shows up in their content again weeks after the box video.</div></div>
+
+    <div class="pr"><header><span class="id">B5</span><span class="ttl">The capsule</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">Macro photograph of a clear plastic gacha capsule, the kind from a Japanese vending machine, sitting on a glossy black surface. Inside the capsule, visible through the plastic, a small brushed metal card stamped with the numerals 8.24. Direct flash, sharp reflections on the curved plastic, hot pink and cyan light bouncing off the surface, shallow depth of field. Playful and collectable. No people, no hands.</div>
+      <div class="note"><b>The reveal device.</b> They twist it open on camera and read the number out loud.</div></div>
+
+    <div class="pr"><header><span class="id">B6</span><span class="ttl">Chrome compact</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">Macro product shot of a small round chrome compact mirror, closed, lying on a black glossy surface. Korean hangul characters deeply etched into the polished chrome lid, catching a hard flash highlight. Mirror finish reflecting pink and cyan gel lighting and the black studio around it. Extremely reflective, liquid metal, luxury collectable object. No people, no faces, no hands, no reflections of people.</div>
+      <div class="note"><b>Watch the reflection.</b> If a face appears in the mirror, regenerate.</div></div>
+
+    <div class="pr"><header><span class="id">B7</span><span class="ttl">Everything, exploded</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">Knolling flat lay, everything separated and precisely aligned on a hot pink surface, shot from directly above with direct flash. Objects: an open matte black box with chrome Korean typography, a chrome letter K paddle, a folded black cropped t-shirt, seven holographic cards in a neat row, a holographic sticker sheet, a clear gacha capsule, a chrome compact mirror, and loose black shredded tissue. No bottles, no vials, no tubes, no jars, no liquid products of any kind. Hard shadows, glossy, saturated, organised chaos. No people, no hands.</div>
+      <div class="note"><b>Use:</b> the "what is in the box" carousel card, and the brief for your packer so every box goes out identical.</div></div>
+
+    <div class="grp"><span class="gn">Group C</span><h3>Clinic ambience, Korean</h3><span class="cnt">8 prompts</span></div>
+
+    <div class="pr"><header><span class="id">C1</span><span class="ttl">Reception, Korean</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">Interior of a modern Korean-inspired aesthetic clinic reception. Pale warm oak slat wall behind a low travertine desk. Behind the desk, a large backlit sign with oversized Korean hangul characters in warm white light. A soft pink neon tube tracing the ceiling line. Glossy cream terrazzo floor. Chrome and glass accents, a single branch of white plum blossom in a tall ceramic vase. Warm concealed cove lighting, no harsh overhead white light. Calm but modern and slightly playful, Seoul clinic rather than hospital. Architectural interior photography, ultra sharp. No people, no faces, no bodies.</div>
+      <div class="note"><b>Use:</b> the branch look. Show this to whoever fits out the clinics.</div></div>
+
+    <div class="pr"><header><span class="id">C2</span><span class="ttl">Treatment room</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">A modern Korean-style aesthetic clinic treatment room. A clean white treatment bed with a pale sand throw folded at the end, a chrome instrument trolley, a pale oak slat accent wall. Above the bed, a hanging frosted acrylic sign on a thin chain with Korean hangul characters and a small line icon. Soft warm cove lighting and one soft key light, no clinical ceiling glare. A small backlit paper screen panel in the corner. Cream, chrome and pale wood palette. Calm, expensive, minimal. Architectural interior photography. No people, no faces, no bodies.</div>
+      <div class="note"><b>The hanging sign is the detail that sells it.</b> One per treatment room, matched to the treatment done in it.</div></div>
+
+    <div class="pr"><header><span class="id">C3</span><span class="ttl">The shoot corner</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">A photo and filming backdrop corner built inside a clinic. A pale oak slat wall panel, a large backlit translucent rice paper screen glowing warm white, and a floating glass shelf lit from beneath displaying seven small objects. A large mirror-chrome letter K mounted on the wall. A low travertine plinth with white plum blossom. Sheer ivory curtain to one side. Warm cove lighting, soft daylight from the left. Modular, built from panels. Seoul studio aesthetic. Architectural photography, ultra sharp. No people, no faces, no bodies.</div>
+      <div class="note"><b>This is the set that travels</b> to all six clinics for the Sunday parties. Build it as panels.</div></div>
+
+    <div class="pr"><header><span class="id">C4</span><span class="ttl">Neon corridor</span><span class="spec">9:16 · nano_banana_pro</span></header>
+      <div class="body">Vertical frame. A narrow clinic corridor at night, dark and moody. Along one wall, a hot pink neon sign spelling large Korean hangul characters, reflecting off a polished dark floor. Pale oak slats on the opposite wall catching a soft cyan bounce. Deep shadows, strong colour, cinematic. Seoul back-alley energy inside a premium clinic. No people, no faces, no bodies.</div>
+      <div class="note"><b>Use:</b> reel backdrop and story frames. This one photographs far better than the daylight rooms.</div></div>
+
+    <div class="pr"><header><span class="id">C5</span><span class="ttl">Waiting lounge</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">A small waiting lounge in a Korean-inspired clinic. Two low bouclé armchairs in cream, a chrome side table, a pale oak slat wall. On the wall, seven small framed holographic cards displayed in a neat row, each with Korean hangul characters. A tall paper lantern floor light glowing warm. Glossy cream terrazzo floor, a low ceramic vase with a single branch. Warm, calm, modern Seoul. Architectural interior photography. No people, no faces, no bodies.</div>
+      <div class="note"><b>The framed photocards</b> turn the collectable from the box into permanent clinic decor. Cheap, and it ties the whole thing together.</div></div>
+
+    <div class="pr"><header><span class="id">C6</span><span class="ttl">Product shelf wall</span><span class="spec">4:5 · nano_banana_pro</span></header>
+      <div class="body">A backlit display wall in a clinic. Recessed glass shelves lit from within with warm white light, holding a row of seven small identical frosted objects, each with a differently coloured metallic cap. Above the shelves, large Korean hangul characters in brushed chrome mounted directly on a pale oak slat wall. Dark surround so the shelves glow. Museum display lighting, premium retail, sharp reflections. No people, no faces, no hands.</div>
+      <div class="note"><b>Use:</b> in-clinic merchandising and the background for the launch carousel.</div></div>
+
+    <div class="pr"><header><span class="id">C7</span><span class="ttl">Party set, lit</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">A clinic room dressed for an evening event. The oak slat and paper screen backdrop is up, lit with hot pink and cyan gel lights washing across it. Seven hanging frosted acrylic signs on gold chains suspended at different heights, each with Korean hangul characters and a small icon. A prize wheel with coloured segments stands to one side. A drinks table with glassware and small plated snacks. Balloon-free, no banners, no clutter. Moody party lighting, glossy floor reflections, energetic. Event photography. No people, no faces, no bodies.</div>
+      <div class="note"><b>Use:</b> the Sunday party set. Show this to whoever dresses the room in each city.</div></div>
+
+    <div class="pr"><header><span class="id">C8</span><span class="ttl">Exterior window</span><span class="spec">4:5 · nano_banana_pro</span></header>
+      <div class="body">Night-time exterior of a clinic storefront. A large glass window with oversized Korean hangul characters applied in mirror chrome vinyl, backlit from inside with warm light. A soft pink neon K glowing in the corner of the window. Wet pavement reflecting the light. Dark street, shallow depth of field, cinematic night photography. Seoul shopfront energy. No people, no faces, no bodies, no cars.</div>
+      <div class="note"><b>Use:</b> window vinyl brief. Cheapest high-impact change you can make to a branch.</div></div>
+
+    <div class="grp"><span class="gn">Group D</span><h3>Props and graphics</h3><span class="cnt">7 prompts</span></div>
+
+    <div class="pr"><header><span class="id">D1</span><span class="ttl">Hanging signs, seven</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">Seven hanging frosted acrylic signs suspended in a row on thin gold chains against a dark charcoal wall, product mockup sheet. Each sign is a rounded rectangle with a differently coloured glowing edge: gold, bronze, champagne, violet, teal, red, navy. Each carries a small minimal line icon at the top and large Korean hangul characters below with small English text underneath. Backlit so the edges glow. Even studio lighting with a soft rim, gentle shadows on the wall. Modern Seoul clinic signage. No people, no hands.</div>
+      <div class="note"><b>Icons in order:</b> droplet, wave, DNA helix, hexagon molecule, eye, lips, pipette.</div></div>
+
+    <div class="pr"><header><span class="id">D2</span><span class="ttl">Handheld paddles</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">Flat lay of handheld photo-booth paddle props on a hot pink surface, shot from directly above with direct flash. Die-cut shapes on short matte black handles: a glossy speech bubble with Korean hangul, an oversized mirror-chrome letter K, a sparkle burst, a hand-mirror shape with Korean characters on the frame, a droplet in translucent holographic acrylic, and a small rectangular sign. Glossy finishes, holographic edges, hard shadows, saturated colour. Gen Z content creator prop kit. No people, no hands, no faces.</div>
+      <div class="note"><b>Every creator holds at least two.</b> This is what makes ten videos look like one campaign.</div></div>
+
+    <div class="pr"><header><span class="id">D3</span><span class="ttl">Life-size standee</span><span class="spec">9:16 · nano_banana_pro</span></header>
+      <div class="body">Vertical frame. A life-size freestanding cardboard standee shaped like a giant mirror-chrome letter K, roughly human height, standing on a glossy dark floor against a dark wall. Small Korean hangul characters printed down one edge. Lit with a hot pink gel from the left and cyan from the right, casting two coloured shadows. Glossy, reflective, bold. Event photo-op prop. No people, no faces, no bodies.</div>
+      <div class="note"><b>Use:</b> the photo moment at every party. People will queue to stand next to it.</div></div>
+
+    <div class="pr"><header><span class="id">D4</span><span class="ttl">Prize wheel</span><span class="spec">4:5 · nano_banana_pro</span></header>
+      <div class="body">A freestanding prize wheel on a matte black stand, front on, in a dark room lit with pink and cyan gels. The wheel has eight equal segments alternating between glossy black, hot pink, chrome silver and holographic iridescent, each segment carrying small Korean hangul characters. A chrome pointer at the top. Glossy, reflective, playful, premium. Event prop photography. No people, no hands, no faces.</div>
+      <div class="note"><b>Eight segments, every one a win.</b> Prizes stay gifts and add-ons, never a discount.</div></div>
+
+    <div class="pr"><header><span class="id">D5</span><span class="ttl">Countdown card</span><span class="spec">1:1 · nano_banana_pro</span></header>
+      <div class="body">Graphic poster design, square. Pure black background. In the centre, oversized brushed chrome numerals reading 8.24 with a strong metallic gradient and sharp specular highlight. Above them, a line of large Korean hangul characters in white. Below, tiny white sans-serif English text. A thin hot pink line rule across the lower third. Subtle film grain and a faint holographic streak across one corner. Minimal, bold, high contrast, Gen Z poster design. No people, no photographs.</div>
+      <div class="note"><b>Template for every countdown frame.</b> Swap the numerals, keep everything else identical.</div></div>
+
+    <div class="pr"><header><span class="id">D6</span><span class="ttl">Treatment card template</span><span class="spec">4:5 · nano_banana_pro</span></header>
+      <div class="body">Graphic design template for a social carousel card, portrait. Black background with a subtle holographic iridescent gradient washing across the top third. A small coloured line icon at the top left. Below it, very large Korean hangul characters in white filling most of the frame. Underneath, small English sans-serif text on two lines. Bottom right, a small mirror-chrome letter K. A thin coloured rule down the left edge. Extremely bold type hierarchy, generous negative space, poster-like. No people, no photographs.</div>
+      <div class="note"><b>The launch carousel.</b> Seven of these, one per treatment, only the icon colour and the words change.</div></div>
+
+    <div class="pr"><header><span class="id">D7</span><span class="ttl">Chrome texture plate</span><span class="spec">16:9 · nano_banana_pro</span></header>
+      <div class="body">Abstract background texture. Liquid mirror chrome flowing in soft organic waves, reflecting a hot pink and cyan gradient environment, with iridescent holographic shimmer across the surface. Extremely glossy, high resolution, no objects, no text, no logos. Y2K liquid metal aesthetic. Seamless, suitable as a design background layer.</div>
+      <div class="note"><b>Use:</b> story backgrounds, carousel dividers, reel end cards. Generate three or four variants and reuse them everywhere.</div></div>
+
+  </section>
+
+  <section id="korean">
+    <div class="shead"><span class="n">Korean bank</span><h2>The words, and what they actually mean.</h2>
+      <p>Short, casual, current. Nothing textbook, nothing touristy. Give this to your designer as the approved list and do not improvise beyond it.</p></div>
+    <div class="bank">
+      <div class="bk"><div class="k kr">곧</div><div class="r">got</div><div class="e">Soon.</div><div class="u">Hype posts, box teaser</div></div>
+      <div class="bk"><div class="k kr">왔다</div><div class="r">watda</div><div class="e">It's here. It arrived.</div><div class="u">Launch day headline</div></div>
+      <div class="bk"><div class="k kr">뭐야 이거?</div><div class="r">mwoya igeo</div><div class="e">What is this?</div><div class="u">Unboxing, very casual</div></div>
+      <div class="bk"><div class="k kr">유리피부</div><div class="r">yuri pibu</div><div class="e">Glass skin.</div><div class="u">The core term, everywhere</div></div>
+      <div class="bk"><div class="k kr">대박</div><div class="r">daebak</div><div class="e">Amazing. No way.</div><div class="u">Party recaps, reactions</div></div>
+      <div class="bk"><div class="k kr">열어봐</div><div class="r">yeoreobwa</div><div class="e">Open it.</div><div class="u">On the box, on stickers</div></div>
+      <div class="bk"><div class="k kr">궁금해?</div><div class="r">gunggeumhae</div><div class="e">Curious?</div><div class="u">Teasers, story stickers</div></div>
+      <div class="bk"><div class="k kr">광채</div><div class="r">gwangchae</div><div class="e">Radiance, glow.</div><div class="u">Treatment cards</div></div>
+      <div class="bk"><div class="k kr">필터 없음</div><div class="r">pilteo eopseum</div><div class="e">No filter.</div><div class="u">Before and after posts</div></div>
+      <div class="bk"><div class="k kr">모공</div><div class="r">mogong</div><div class="e">Pores.</div><div class="u">K-Tox Refine, K-Colla</div></div>
+      <div class="bk"><div class="k kr">수분</div><div class="r">subun</div><div class="e">Hydration, moisture.</div><div class="u">K-Glass Hydration</div></div>
+      <div class="bk"><div class="k kr">8월 24일</div><div class="r">8-wol 24-il</div><div class="e">24 August.</div><div class="u">Inside the box lid</div></div>
+    </div>
+    <div class="warn"><b>Get this proofed by a Korean speaker before anything goes to print.</b> Not a translation app, an actual person. This whole idea depends on the Korean looking effortless to the handful of people who can read it, and clumsy Korean on a printed box is the one mistake you cannot fix after the boxes ship. It is a one-hour job and it protects the entire concept.</div>
+  </section>
+
+  <section>
+    <div class="shead"><span class="n">Next</span><h2>What I need back.</h2></div>
+    <div class="steps">
+      <div class="step"><div class="k">Today</div><div class="v"><b>Approve the box contents</b> so the chrome K, the tee and the photocards can be ordered. The chrome K has the longest lead time of the six items.</div></div>
+      <div class="step"><div class="k">Today</div><div class="v">Run prompts <b>A2, B1 and B7</b> first. Those three are what your supplier actually needs to quote from.</div></div>
+      <div class="step"><div class="k">This week</div><div class="v">The <b>seven prices</b> for the WhatsApp menu, and a Korean speaker booked to proof the copy.</div></div>
+      <div class="step"><div class="k">Still open</div><div class="v">Which clinic hosts the <b>23 August shoot</b>, and the two branches missing from the six-city tour.</div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="kr">왔다.</div>
+    <div class="m">Venus K-Glow Boosters · Creative Kit</div>
+  </div>
+</footer>
+
+</body>
+</html>

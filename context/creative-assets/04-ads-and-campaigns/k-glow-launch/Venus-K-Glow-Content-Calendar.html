@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Venus K-Glow · Content Calendar for Design</title>
+</head>
+<body>
+<style>
+  :root{
+    --bg:#F5F5F7; --bg2:#ECECF0; --card:#FFFFFF; --card2:#F8F8FB; --ink:#0D0D10;
+    --ink-soft:#54545F; --ink-faint:#8B8B97;
+    --hot:#E01F5C; --cyan:#0E8E94; --line:rgba(0,0,0,.11); --line2:rgba(0,0,0,.2);
+    --maxw:1080px;
+    --grot:"Helvetica Neue",Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    --kr:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+    --mono:ui-monospace,"Cascadia Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0C0C0E; --bg2:#141418; --card:#17171C; --card2:#1D1D23; --ink:#F2F2F5;
+      --ink-soft:#A6A6B2; --ink-faint:#71717D;
+      --hot:#FF4B84; --cyan:#4FD6DB; --line:rgba(255,255,255,.11); --line2:rgba(255,255,255,.2);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0C0C0E; --bg2:#141418; --card:#17171C; --card2:#1D1D23; --ink:#F2F2F5;
+    --ink-soft:#A6A6B2; --ink-faint:#71717D;
+    --hot:#FF4B84; --cyan:#4FD6DB; --line:rgba(255,255,255,.11); --line2:rgba(255,255,255,.2);
+  }
+  :root[data-theme="light"]{
+    --bg:#F5F5F7; --bg2:#ECECF0; --card:#FFFFFF; --card2:#F8F8FB; --ink:#0D0D10;
+    --ink-soft:#54545F; --ink-faint:#8B8B97;
+    --hot:#E01F5C; --cyan:#0E8E94; --line:rgba(0,0,0,.11); --line2:rgba(0,0,0,.2);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--grot); font-size:16px; line-height:1.5}
+  .kr{font-family:var(--kr)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+
+  header.hero{padding:52px 0 28px; border-bottom:2px solid var(--ink)}
+  .tagrow{display:flex; gap:7px; flex-wrap:wrap; margin-bottom:18px}
+  .tagrow span{font-family:var(--mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase;
+    border:1px solid var(--line2); border-radius:100px; padding:5px 11px; color:var(--ink-soft)}
+  .tagrow span.hot{color:var(--hot); border-color:var(--hot); font-weight:700}
+  header.hero h1{font-size:clamp(28px,5.5vw,50px); font-weight:800; letter-spacing:-.035em; margin:0; line-height:1.02}
+  header.hero .kr{font-size:clamp(20px,3.4vw,30px); color:var(--cyan); font-weight:800; margin-bottom:4px}
+  header.hero p{margin:14px 0 0; color:var(--ink-soft); max-width:64ch}
+
+  .statbar{display:grid; grid-template-columns:repeat(auto-fit,minmax(112px,1fr)); gap:1px;
+    background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden; margin-top:22px}
+  .statbar div{background:var(--card); padding:13px 14px}
+  .statbar .n{font-family:var(--mono); font-size:22px; font-weight:700; color:var(--hot); line-height:1}
+  .statbar .l{font-size:11px; color:var(--ink-faint); margin-top:5px; letter-spacing:.03em}
+
+  section{padding:34px 0; border-bottom:1px solid var(--line); scroll-margin-top:14px}
+  .shead{margin:0 0 20px}
+  .shead .n{font-family:var(--mono); font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--hot); font-weight:700}
+  .shead h2{font-size:clamp(21px,3.6vw,32px); font-weight:800; letter-spacing:-.03em; margin:9px 0 0; line-height:1.06}
+  .shead p{margin:11px 0 0; color:var(--ink-soft); max-width:70ch}
+
+  .toc{display:flex; flex-wrap:wrap; gap:6px; margin-top:22px}
+  .toc a{font-family:var(--mono); font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+    color:var(--ink-soft); text-decoration:none; border:1px solid var(--line);
+    border-radius:6px; padding:7px 11px; background:var(--card)}
+  .toc a:hover{color:var(--hot); border-color:var(--hot)}
+  .toc a:focus-visible{outline:2px solid var(--hot); outline-offset:2px}
+
+  .specs{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px}
+  .spec{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:15px 16px}
+  .spec h3{margin:0 0 8px; font-size:12px; letter-spacing:.13em; text-transform:uppercase; font-family:var(--mono); color:var(--hot)}
+  .spec ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:6px}
+  .spec li{font-size:13.4px; color:var(--ink-soft); line-height:1.45}
+  .spec li b{color:var(--ink); font-weight:700}
+  .spec li code{font-family:var(--mono); font-size:12.4px; color:var(--cyan)}
+
+  .wk{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin:34px 0 12px;
+    padding-bottom:9px; border-bottom:2px solid var(--ink)}
+  .wk .lbl{font-family:var(--mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--hot); font-weight:700}
+  .wk h3{font-size:20px; font-weight:800; letter-spacing:-.025em; margin:0}
+  .wk .rng{font-family:var(--mono); font-size:12px; color:var(--ink-faint); margin-left:auto}
+
+  .p{background:var(--card); border:1px solid var(--line); border-radius:11px; overflow:hidden; margin-bottom:10px}
+  .p > header{display:flex; flex-wrap:wrap; gap:9px; align-items:center; padding:11px 15px;
+    border-bottom:1px solid var(--line); background:var(--card2)}
+  .p > header .num{font-family:var(--mono); font-size:11px; font-weight:700; color:#fff; background:var(--hot);
+    border-radius:5px; padding:3px 7px; letter-spacing:.04em}
+  .p > header .dt{font-family:var(--mono); font-size:12.5px; font-weight:700; color:var(--ink)}
+  .p > header .fm{font-family:var(--mono); font-size:9.5px; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--cyan); border:1px solid color-mix(in srgb,var(--cyan) 50%,transparent); border-radius:100px; padding:3px 9px; font-weight:700}
+  .p > header .job{font-size:12px; color:var(--ink-faint); flex:1 1 auto; text-align:right; min-width:100px}
+  .p > header .sz{font-family:var(--mono); font-size:10px; color:var(--ink-faint)}
+  .p .bd{padding:14px 15px}
+
+  .hd{border-left:3px solid var(--cyan); padding-left:12px; margin-bottom:13px}
+  .hd .hk{font-family:var(--kr); font-size:23px; font-weight:800; color:var(--cyan); line-height:1.22}
+  .hd .he{font-size:19px; font-weight:800; letter-spacing:-.025em; margin-top:2px; line-height:1.15}
+  .hd .hs{font-size:13.5px; color:var(--ink-soft); margin-top:4px}
+
+  .row{display:grid; grid-template-columns:112px 1fr; gap:14px; padding:9px 0; border-top:1px solid var(--line)}
+  .row .lb{font-family:var(--mono); font-size:9.5px; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--hot); font-weight:700; padding-top:2px}
+  .row .vl{font-size:13.6px; color:var(--ink-soft); line-height:1.5; min-width:0}
+  .row .vl b{color:var(--ink); font-weight:700}
+  .row .vl code{font-family:var(--mono); font-size:12.2px; color:var(--cyan); background:var(--card2);
+    padding:1px 5px; border-radius:4px}
+  .row.cap .vl{white-space:pre-line; color:var(--ink); font-size:14px; background:var(--card2);
+    padding:11px 13px; border-radius:8px; border:1px solid var(--line); user-select:all}
+  .row .vl .tags{color:var(--cyan); font-size:12.8px; display:block; margin-top:7px; font-family:var(--mono)}
+
+  .p.big{border:2px solid var(--hot)}
+  .p.big > header{background:color-mix(in srgb,var(--hot) 12%,var(--card2))}
+
+  .note{border:1px solid color-mix(in srgb,var(--cyan) 45%,transparent);
+    background:color-mix(in srgb,var(--cyan) 9%,transparent); border-radius:10px;
+    padding:15px 17px; font-size:14px; color:var(--ink-soft); margin-top:14px}
+  .note b{color:var(--cyan)}
+  .warn{border:1px solid var(--hot); background:color-mix(in srgb,var(--hot) 9%,transparent);
+    border-radius:10px; padding:15px 17px; font-size:14px; color:var(--ink-soft); margin-top:14px}
+  .warn b{color:var(--hot)}
+
+  .tblwrap{overflow-x:auto; border:1px solid var(--line); border-radius:10px; background:var(--card)}
+  table{border-collapse:collapse; width:100%; min-width:600px}
+  th,td{text-align:left; padding:10px 14px; border-bottom:1px solid var(--line); font-size:13.5px; vertical-align:top}
+  th{font-family:var(--mono); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); font-weight:700; white-space:nowrap}
+  td{color:var(--ink-soft); line-height:1.45}
+  td b{color:var(--ink); font-weight:700}
+  td.d{font-family:var(--mono); color:var(--hot); font-weight:700; white-space:nowrap; font-size:12.5px}
+  tbody tr:last-child td{border-bottom:none}
+
+  footer{padding:32px 0 56px; text-align:center}
+  footer .kr{font-size:24px; font-weight:800; color:var(--ink-faint)}
+  footer .m{font-family:var(--mono); font-size:10.5px; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-faint); margin-top:8px}
+
+  @media (max-width:660px){
+    .row{grid-template-columns:1fr; gap:4px}
+    body{font-size:15.5px}
+  }
+  @media print{
+    body{background:#fff; color:#000; font-size:11pt}
+    .toc,footer{display:none}
+    .p{break-inside:avoid; page-break-inside:avoid}
+  }
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="tagrow">
+      <span class="hot">Feed calendar only</span><span>For design and content</span><span>Feed posts only</span>
+    </div>
+    <div class="kr">콘텐츠 캘린더</div>
+    <h1>Content calendar, post by post.</h1>
+    <p>Twenty-nine feed posts from the first tease to the campaign close. Each one gives you the heading in Korean and English, the layout spec, the asset needed and the caption to paste. Feed posts only.</p>
+    <div class="statbar">
+      <div><div class="n">29</div><div class="l">Feed posts</div></div>
+      <div><div class="n">7</div><div class="l">Weeks</div></div>
+      <div><div class="n">17</div><div class="l">Reels</div></div>
+      <div><div class="n">7</div><div class="l">Grid singles</div></div>
+      <div><div class="n">5</div><div class="l">Carousels</div></div>
+      <div><div class="n">6</div><div class="l">Party days</div></div>
+    </div>
+    <div class="toc">
+      <a href="#system">Design system</a><a href="#hype">Hype</a><a href="#launch">Launch week</a><a href="#tour">Tour weeks</a><a href="#close">Close</a><a href="#assets">Asset list</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="system">
+    <div class="shead"><span class="n">Before you start</span><h2>The design system, in one screen.</h2>
+      <p>Everything below assumes these. If a post does not specify something, it follows these defaults.</p></div>
+    <div class="specs">
+      <div class="spec"><h3>Sizes</h3><ul>
+        <li>Grid portrait <code>1080 × 1350</code></li>
+        <li>Carousel card <code>1080 × 1350</code></li>
+        <li>Reel <code>1080 × 1920</code></li>
+        <li>Reel cover <code>1080 × 1920</code></li>
+      </ul></div>
+      <div class="spec"><h3>Safe areas</h3><ul>
+        <li>Reels: keep type <b>250px clear of the bottom</b>, the app UI covers it</li>
+        <li>Reels: <b>120px clear of the top</b></li>
+        <li>Reel cover: centre the type inside <code>1080 × 1440</code> so the grid crop still reads</li>
+        <li>Carousels: <b>60px inner margin</b> all round</li>
+      </ul></div>
+      <div class="spec"><h3>Type</h3><ul>
+        <li>Korean: heavy gothic, <b>always the largest element on the frame</b></li>
+        <li>English: heavy grotesque, tracking <code>-3%</code></li>
+        <li>English never bigger than <b>40%</b> of the Korean size</li>
+        <li><b>No thin serifs anywhere</b></li>
+      </ul></div>
+      <div class="spec"><h3>Colour</h3><ul>
+        <li>Ground <code>#0A0A0B</code></li>
+        <li>Hot <code>#FF3D77</code></li>
+        <li>Cyan <code>#5CE1E6</code></li>
+        <li>Chrome: silver gradient, never flat grey</li>
+        <li>Holo: iridescent, accent only</li>
+      </ul></div>
+      <div class="spec"><h3>Fixed elements</h3><ul>
+        <li>Chrome <b>K</b> bottom right of every graphic, same size, same position</li>
+        <li>Korean heading top left, English directly beneath</li>
+        <li>Never centre the type unless the post says so</li>
+      </ul></div>
+      <div class="spec"><h3>Photography</h3><ul>
+        <li><b>Direct on-camera flash</b>, hard shadows</li>
+        <li>Never soft spa lighting</li>
+        <li>Every face comes from the 23 August shoot</li>
+        <li><b>No AI faces, no AI skin, ever</b></li>
+        <li>Before and after: identical light, no smoothing</li>
+      </ul></div>
+    </div>
+    <div class="warn"><b>Where a post says <code>ref D6</code> or similar</b>, that is a prompt ID in the Creative Kit document. Generate it and use the output as a visual reference only, then set the real Korean type over the top. <b>Never ship AI-generated Korean.</b> It comes out wrong every time.</div>
+  </section>
+
+  <section id="hype">
+    <div class="shead"><span class="n">Phase 1</span><h2>Hype. Three posts.</h2>
+      <p>No product, no price, no logo, no explanation. Korean only on the artwork. The first is a single keyword, the other two do different jobs.</p></div>
+
+    <div class="wk"><span class="lbl">Week of</span><h3>Wed 19 to Sat 22 August</h3><span class="rng">Tease</span></div>
+
+    <div class="p"><header><span class="num">01</span><span class="dt">Wed 19 Aug</span><span class="fm">Grid single</span><span class="sz">1080 × 1350</span><span class="job">The keyword</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">곧</div><div class="he">Soon.</div><div class="hs">One Korean word and nothing else. This is the simplest graphic in the campaign and it should stay that way.</div></div>
+        <div class="row"><span class="lb">Graphic</span><span class="vl">Pure typography, no photograph. Solid black frame. <b class="kr">곧</b> set in chrome gradient filling roughly <b>60% of the frame height</b>, positioned slightly above centre. English "SOON" underneath at 30% of its size in flat white. A single holographic streak across one corner. Chrome K bottom right. <code>ref D5</code></span></div>
+        <div class="row"><span class="lb">Asset</span><span class="vl">None. Built entirely in design.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">곧.
+Something Korean is coming to Venus.
+DM "K" if you want to know first.<span class="tags">#VenusKGlowBoosters #VenusAesthetics</span></span></div>
+      </div></div>
+
+    <div class="p"><header><span class="num">02</span><span class="dt">Fri 21 Aug</span><span class="fm">Reel · 30s</span><span class="sz">1080 × 1920</span><span class="job">Reach</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">유리피부 아세요?</div><div class="he">Do you know glass skin?</div><div class="hs">The post most likely to travel outside your own followers. Real people, not brand content.</div></div>
+        <div class="row"><span class="lb">Edit</span><span class="vl">Street and mall interviews. Three questions: have you heard of Korean glass skin, would you try a Korean treatment, what do you think it costs. Collect 15 to 20 answers, keep the best 8. <b>Burned-in subtitles in Korean and English</b>, white with a hot pink keyline. Hard cuts, their own audio, no music over speech.</span></div>
+        <div class="row"><span class="lb">Shoot</span><span class="vl"><b>Film Wed 19 or Thu 20</b> so it is edited in time. Phone, gimbal, clip mic. Busy Lahore mall, early evening when the light drops.</span></div>
+        <div class="row"><span class="lb">Cover</span><span class="vl">A real person mid-answer, flash lit. Korean heading across the top third, English small beneath.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">유리피부 아세요?
+We asked Lahore what Korean glass skin actually is. Some of them were close.
+Monday you find out. DM "K".<span class="tags">#VenusKGlowBoosters #VenusAesthetics #GlassSkin</span></span></div>
+      </div></div>
+
+    <div class="p"><header><span class="num">03</span><span class="dt">Sat 22 Aug</span><span class="fm">Grid single</span><span class="sz">1080 × 1350</span><span class="job">Countdown</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">이틀 남았다</div><div class="he">Two days.</div><div class="hs">Same construction as post 01 so the two bookend the week. Only the word changes.</div></div>
+        <div class="row"><span class="lb">Graphic</span><span class="vl">Black frame. Large chrome <b>8.24</b> numerals as the hero element, Korean <b class="kr">이틀 남았다</b> above them, English "TWO DAYS" small beneath. Thin hot pink rule across the lower third. Chrome K bottom right. <code>ref D5</code></span></div>
+        <div class="row"><span class="lb">Asset</span><span class="vl">None. Built in design.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">이틀 남았다.
+Monday, 8.24. Seven of them.
+DM "K".<span class="tags">#VenusKGlowBoosters #VenusAesthetics</span></span></div>
+      </div></div>
+
+    <div class="note"><b>Sunday 23 August is the shoot day, not a posting day.</b> Nothing goes on the feed. Everything filmed that day feeds posts 04 through 08 and every proof post for the next six weeks.</div>
+  </section>
+
+  <section id="launch">
+    <div class="shead"><span class="n">Phase 2</span><h2>Launch week.</h2>
+      <p>Monday is the biggest build of the campaign: nine carousel cards covering all seven treatments.</p></div>
+
+    <div class="wk"><span class="lbl">Week of</span><h3>Mon 24 to Sun 30 August</h3><span class="rng">Launch</span></div>
+
+    <div class="p big"><header><span class="num">04</span><span class="dt">Mon 24 Aug</span><span class="fm">Carousel · 9 cards</span><span class="sz">1080 × 1350</span><span class="job">LAUNCH</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">왔다.</div><div class="he">It is here.</div><div class="hs">One word carries the reveal. This is the single most important graphic in the campaign.</div></div>
+        <div class="row"><span class="lb">Card 1</span><span class="vl"><b class="kr">왔다.</b> in chrome filling most of the frame on black, English "IT IS HERE" at 30% underneath. Holographic streak across one corner. <code>ref D5</code></span></div>
+        <div class="row"><span class="lb">Cards 2–8</span><span class="vl">One per treatment, identical template. Coloured line icon top left, huge Korean name, English name small, one line on what it fixes, coloured rule down the left edge, chrome K bottom right. <code>ref D6</code><br><br><b>2.</b> <span class="kr">유리 수분</span> · K-Glass Hydration · gold · droplet · dehydrated, dull, crepey skin<br><b>3.</b> <span class="kr">콜라겐 탄력</span> · K-Colla Bounce · bronze · wave · pores, texture, bounce<br><b>4.</b> <span class="kr">PDRN 리셋</span> · K-PDRN Reset · champagne · helix · stressed, rough, tired skin<br><b>5.</b> <span class="kr">엑소좀 광채</span> · K-Exo Glow · violet · hexagon · recovery and barrier<br><b>6.</b> <span class="kr">눈가 광채</span> · K-Lumi Eyes · teal · eye · under-eye lines, tired eyes<br><b>7.</b> <span class="kr">입술 촉촉</span> · K-Lip Dew · red · lips · dry lips<br><b>8.</b> <span class="kr">모공 정돈</span> · K-Tox Refine · navy · dropper · pores, oil, fine lines</span></div>
+        <div class="row"><span class="lb">Card 9</span><span class="vl">All seven icons together on black, chrome K centred, <b>DM "K"</b> large. The only card carrying a CTA on the artwork.</span></div>
+        <div class="row"><span class="lb">Asset</span><span class="vl">Icons and template built in design. No photography needed on any card.</span></div>
+        <div class="row"><span class="lb">Also today</span><span class="vl">Creator videos from the 23rd go live on their accounts <b>in the same hour</b>. Offer opens. Someone must be on the inbox from the moment it posts.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">왔다.
+7 Korean skin boosters. Hydration, pores, repair, recovery, under-eyes, lips, oil control.
+Swipe to find yours. DM "K" for prices.<span class="tags">#VenusKGlowBoosters #VenusAesthetics #KBeauty #GlassSkin</span></span></div>
+      </div></div>
+
+    <div class="p"><header><span class="num">05</span><span class="dt">Tue 25 Aug</span><span class="fm">Reel · 20s</span><span class="sz">1080 × 1920</span><span class="job">Kill the fear</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">시술 중</div><div class="he">This is what it actually looks like.</div><div class="hs">Most people have never seen one done and imagine it is worse than it is. This post removes that.</div></div>
+        <div class="row"><span class="lb">Edit</span><span class="vl">Real footage from the 23rd of creators in the chair. Doctor's gloved hands, the device, the client's face relaxed and talking. <b>Show the whole thing, do not cut away from the moment of treatment.</b> One creator's genuine reaction at the end. Korean subtitle cards between sections.</span></div>
+        <div class="row"><span class="lb">Cover</span><span class="vl">Mid-treatment frame, flash lit. Korean heading top, English beneath.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">시술 중.
+No filter on this one. This is exactly what a booster session looks like, start to finish.
+Which one is yours? DM "K".<span class="tags">#VenusKGlowBoosters #VenusAesthetics</span></span></div>
+      </div></div>
+
+    <div class="p"><header><span class="num">06</span><span class="dt">Thu 27 Aug</span><span class="fm">Reel · 45s</span><span class="sz">1080 × 1920</span><span class="job">Saves</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">PDRN이 뭔데?</div><div class="he">What even is PDRN?</div><div class="hs">Educational. This is the post people send to a friend, which is the only sharing that brings a booking.</div></div>
+        <div class="row"><span class="lb">Edit</span><span class="vl">Doctor to camera but shot like a creator, not a consultant. Handheld, direct flash, jump cuts every few seconds. <b>Korean subtitle cards between each point</b>, chrome on black, held half a second. Plain language only, no jargon. This is where Korea gets named properly.</span></div>
+        <div class="row"><span class="lb">Cover</span><span class="vl">Doctor mid-sentence. Korean heading large across the top, English small.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">PDRN이 뭔데?
+Korea has been doing this for years. Our doctor explains it in 45 seconds with no jargon.
+Save this one. DM "K".<span class="tags">#VenusKGlowBoosters #VenusAesthetics #KBeauty</span></span></div>
+      </div></div>
+
+    <div class="p"><header><span class="num">07</span><span class="dt">Sat 29 Aug</span><span class="fm">Carousel · 4 cards</span><span class="sz">1080 × 1350</span><span class="job">Proof</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">필터 없음</div><div class="he">No filter. Same light.</div><div class="hs">The highest converting post of the launch. Give it the most care of anything this week.</div></div>
+        <div class="row"><span class="lb">Cards 1–3</span><span class="vl">Before and after pairs from the 23rd shoot. <b>Identical lighting, identical angle, dates stamped in the corner.</b> Split down the middle with a thin cyan rule. No smoothing and no grading difference between the halves, ever.</span></div>
+        <div class="row"><span class="lb">Card 4</span><span class="vl">Tomorrow at Lake City. Address, time, and the free session line.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">필터 없음.
+Same light, same angle, six days apart. That is the whole post.
+Tomorrow we are at Lake City. DM "PARTY".<span class="tags">#VenusKGlowBoosters #VenusAesthetics #GlassSkin</span></span></div>
+      </div></div>
+
+    <div class="p big"><header><span class="num">08</span><span class="dt">Sun 30 Aug</span><span class="fm">Reel · 20s</span><span class="sz">1080 × 1920</span><span class="job">Party 1 · Lake City</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">레이크시티 대박</div><div class="he">Lake City went off.</div><div class="hs">Cut and posted the same night so it can run as an ad from Monday morning.</div></div>
+        <div class="row"><span class="lb">Edit</span><span class="vl">Fast, flash lit, loud. Room filling, the wheel spinning, props being held, the glow bar, the draw at the end. Music led, no voiceover. <b>No discount visible anywhere in the footage.</b></span></div>
+        <div class="row"><span class="lb">Template</span><span class="vl"><b>Lock this edit structure now.</b> All six party recaps use it identically, only the city and the footage change. That is what makes the six read as one series.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">레이크시티 대박.
+Next Sunday, Karachi.
+DM "PARTY" to get in.<span class="tags">#VenusKGlowBoosters #VenusAesthetics</span></span></div>
+      </div></div>
+  </section>
+
+  <section id="tour">
+    <div class="shead"><span class="n">Phase 3</span><h2>The tour. Five repeating weeks.</h2>
+      <p>Four posts a week, same three templates plus a rotating Thursday. Only the city, the footage and the Thursday content change.</p></div>
+
+    <div class="wk"><span class="lbl">Repeats</span><h3>Monday · Wednesday · Thursday · Sunday</h3><span class="rng">31 Aug to 4 Oct</span></div>
+
+    <div class="p"><header><span class="num">M</span><span class="dt">Every Monday</span><span class="fm">Reel · 20s</span><span class="sz">1080 × 1920</span><span class="job">Recap</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">[도시] 대박</div><div class="he">[City] went off.</div><div class="hs">Yesterday's recap, recut to end on the next city's name.</div></div>
+        <div class="row"><span class="lb">Graphic</span><span class="vl">End card: next city in Korean and English, next Sunday's date, chrome K.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">[도시] 대박.
+Next Sunday, [next city].
+DM "PARTY" to get in.<span class="tags">#VenusKGlowBoosters #VenusAesthetics</span></span></div>
+      </div></div>
+
+    <div class="p"><header><span class="num">W</span><span class="dt">Every Wednesday</span><span class="fm">Grid single</span><span class="sz">1080 × 1350</span><span class="job">Party invite</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">이번 일요일, [도시]</div><div class="he">This Sunday, [City].</div><div class="hs">Identical layout every week. Only the city, address and crowd photo change.</div></div>
+        <div class="row"><span class="lb">Graphic</span><span class="vl">Crowd shot from the most recent party as a darkened background. Korean city line large in chrome across the middle, English beneath. Address, time and the free session line in small type at the bottom. Chrome K bottom right. <code>ref C7</code></span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">이번 일요일, [도시].
+Book any booster on the day and your session is on us, plus a gift to take home.
+DM "PARTY" to reserve your spot.<span class="tags">#VenusKGlowBoosters #VenusAesthetics</span></span></div>
+      </div></div>
+
+    <div class="p"><header><span class="num">T</span><span class="dt">Every Thursday</span><span class="fm">Rotates</span><span class="sz">varies</span><span class="job">Educational or proof</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">주제별 콘텐츠</div><div class="he">The rotating slot.</div><div class="hs">This is what stops five weeks of pure party promotion. See the table for which runs when.</div></div>
+        <div class="row"><span class="lb">Formats</span><span class="vl"><b>Doctor reel</b> 45s, same build as post 06. <b>Before and after</b> 3-card carousel, same rules as post 07. <b>Street interview</b> 30s, same format as post 02. <b>Guess the treatment</b> carousel, seven icons, guess which does what, answers on the last card.</span></div>
+      </div></div>
+
+    <div class="p"><header><span class="num">S</span><span class="dt">Every Sunday</span><span class="fm">Reel · 20s</span><span class="sz">1080 × 1920</span><span class="job">Party</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">[도시] 대박</div><div class="he">[City] went off.</div><div class="hs">Locked template from post 08. Cut the same night, no exceptions.</div></div>
+        <div class="row"><span class="lb">Note</span><span class="vl">Monday's recap is this same file recut with a new end card. One edit, two posts.</span></div>
+      </div></div>
+
+    <h3 style="font-size:18px;font-weight:800;letter-spacing:-.02em;margin:26px 0 12px">What changes each week</h3>
+    <div class="tblwrap">
+      <table>
+        <thead><tr><th>Posts</th><th>Week</th><th>City</th><th>Thursday slot</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td class="d">09 · 10 · 11 · 12</td><td>31 Aug to 6 Sep</td><td><b>Karachi</b><br><span class="kr">카라치</span></td><td><b>Doctor reel:</b> what exosomes are, for K-Exo Glow</td><td>Biggest audience of the tour. Push Wednesday hardest here.</td></tr>
+          <tr><td class="d">13 · 14 · 15 · 16</td><td>7 to 13 Sep</td><td><b>Faisalabad</b><br><span class="kr">파이살라바드</span></td><td><b>Before and after:</b> first real client results, not shoot footage</td><td>By now you have three weeks of genuine client results. Use them.</td></tr>
+          <tr><td class="d">17 · 18 · 19 · 20</td><td>14 to 20 Sep</td><td><b>Islamabad</b><br><span class="kr">이슬라마바드</span></td><td><b>Street interview 2:</b> filmed in Islamabad, not Lahore</td><td>Local faces for a local audience. Worth the travel day.</td></tr>
+          <tr><td class="d">21 · 22 · 23 · 24</td><td>21 to 27 Sep</td><td><b>MM Alam</b><br><span class="kr">엠엠 알람</span></td><td><b>Guess the treatment:</b> seven icons carousel</td><td>Second Lahore peak. Can lean on Lake City familiarity.</td></tr>
+          <tr><td class="d">25 · 26 · 27 · 28</td><td>28 Sep to 4 Oct</td><td><b>Gujranwala</b><br><span class="kr">구지란왈라</span></td><td><b>Doctor reel 3</b> carrying the closing deadline</td><td>Final week. Every post carries the 4 October close.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note"><b>Post 28 is the finale.</b> Sunday 4 October is party six and the offer closes at midnight, so that recap carries a second end card: <b class="kr">오늘 밤 종료</b>, ends tonight.</div>
+  </section>
+
+  <section id="close">
+    <div class="shead"><span class="n">Phase 4</span><h2>The close.</h2></div>
+    <div class="p big"><header><span class="num">29</span><span class="dt">Mon 5 Oct</span><span class="fm">Carousel · 7 cards</span><span class="sz">1080 × 1350</span><span class="job">Campaign close</span></header>
+      <div class="bd">
+        <div class="hd"><div class="hk kr">고마워요</div><div class="he">Thank you.</div><div class="hs">One card per city, then the seven left live permanently.</div></div>
+        <div class="row"><span class="lb">Cards 1–6</span><span class="vl">One crowd shot per city, city name in Korean large, English small. Same crop and treatment on all six so they read as a set.</span></div>
+        <div class="row"><span class="lb">Card 7</span><span class="vl">All seven treatment icons together with <b>still available, every clinic</b>. Chrome K centred.</span></div>
+        <div class="row cap"><span class="lb">Caption</span><span class="vl">고마워요.
+Six cities in six Sundays. The launch offer has closed but all seven boosters are here permanently.
+DM "K" any time.<span class="tags">#VenusKGlowBoosters #VenusAesthetics</span></span></div>
+      </div></div>
+  </section>
+
+  <section id="assets">
+    <div class="shead"><span class="n">Asset list</span><h2>What has to be shot, and by when.</h2>
+      <p>Hand this half to whoever is filming. Nothing on the calendar can be built without these.</p></div>
+    <div class="tblwrap">
+      <table>
+        <thead><tr><th>Deadline</th><th>Asset</th><th>Feeds</th></tr></thead>
+        <tbody>
+          <tr><td class="d">Fri 15 Aug</td><td><b>The seven treatment cards</b>, master template plus all seven built out</td><td>Post 04, and every treatment graphic after it</td></tr>
+          <tr><td class="d">Fri 15 Aug</td><td><b>Korean copy proofed by a native speaker</b>, all headings signed off</td><td>Every post. Do this once, properly, up front.</td></tr>
+          <tr><td class="d">Thu 20 Aug</td><td><b>Street interview footage</b>, 15 to 20 answers</td><td>Post 02</td></tr>
+          <tr><td class="d">Sun 23 Aug</td><td><b>Before photos</b>, every creator, same light, three angles, dated</td><td>Post 07 and every proof post for six weeks</td></tr>
+          <tr><td class="d">Sun 23 Aug</td><td><b>Treatment footage</b>, in the chair, uncut, several creators</td><td>Post 05</td></tr>
+          <tr><td class="d">Sun 23 Aug</td><td><b>Doctor explainers</b>, all seven treatments filmed in one sitting</td><td>Post 06 and three Thursday slots</td></tr>
+          <tr><td class="d">Sun 23 Aug</td><td><b>Creator treatment films</b>, one usable cut per creator</td><td>Their own accounts on the 24th</td></tr>
+          <tr><td class="d">Sat 29 Aug</td><td><b>After photos</b>, identical setup to the 23rd</td><td>Post 07</td></tr>
+          <tr><td class="d">Each Sunday</td><td><b>Party footage</b>, cut the same night</td><td>That Sunday's post and Monday's recap</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="warn"><b>The 23 August shoot carries the whole campaign.</b> Five of the twenty-nine posts and every proof post for six weeks come out of that one day. If it is not captured on the 23rd it does not exist, so go in with this list printed and tick it off on the day.</div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="kr">콘텐츠 캘린더</div>
+    <div class="m">Venus K-Glow Boosters · Feed calendar for design</div>
+  </div>
+</footer>
+
+</body>
+</html>
